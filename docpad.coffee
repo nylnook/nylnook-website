@@ -1,4 +1,5 @@
 # The DocPad Configuration File
+# http://docpad.org/docs/config
 # It is simply a CoffeeScript Object which is parsed by CSON
 docpadConfig = {
 
@@ -12,27 +13,27 @@ docpadConfig = {
 		# Specify some site properties
 		site:
 			# The production url of our website
-			url: "http://website.com"
+			url: "http://nylnook.com"
 
 			# Here are some old site urls that you would like to redirect from
 			oldUrls: [
-				'www.website.com',
-				'website.herokuapp.com'
+				'www.nylnook.com'
 			]
 
 			# The default title of our website
-			title: "Your Website"
+			title: "nylnook"
 
 			# The website description (for SEO)
 			description: """
-				When your website appears in search results in say Google, the text here will be shown underneath your website's title.
+				Free illustration and creative wallpapers to share, adapt and reuse freely in the best quality.
 				"""
 
 			# The website keywords (for SEO) separated by commas
 			keywords: """
-				place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website
+				wallpaper, wallpapers, HD, FHD, 4K, 8K, illustration, free, open source, creative commons, source, creative, share, adapt, reuse, quality
 				"""
-
+			# The website author
+			author: "Camille Bissuel"
 
 		# -----------------------------
 		# Helper Functions
@@ -79,6 +80,12 @@ docpadConfig = {
 				return value.indexOf('.min.js') > -1
 			_.map scripts, (value) ->
 				return value.replace 'out', ''
+				
+	# =================================
+	# Collections
+	collections:
+		pages: ->
+			@getCollection("html").findAllLive({isPage:true}, [{filename:1}])
 
 
 	# =================================

@@ -1,36 +1,25 @@
 {
-	"name": "html5-boilerplate-frontend.docpad",
+	"name": "nylnook-website",
 	"version": "0.1.0",
-	"private": true,
-	"description": "HTML5 Boilerplate skeleton for DocPad. Bare essentials for building a modern website with best practices. Adds frontend plugins asset compilation.",
-	"homepage": "https://github.com/lukekarrys/html5-boilerplate.docpad",
+	"description": "DocPad project for nylnook.com",
+	"homepage": "http://www.nylnook.com",
 	"keywords": [
-		"docpad-skeleton",
+		"nylnook",
 		"docpad",
 		"website",
-		"skeleton",
-		"html5 boilerplate",
-		"h5bp",
 		"grunt"
 	],
-	"author": "Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
-	"maintainers": [
-		"Luke Karrys (http://lukekarrys.com)"
-	],
-	"contributors": [
-		"Benjamin Lupton <b@lupton.cc> (http://balupton.com)",
-		"Luke Karrys (http://lukekarrys.com)"
-	],
+	"author": "Camille Bissuel <welcome@nylnook.com> (http://www.nylnook.com)",
 	"bugs": {
-		"url": "https://github.com/lukekarrys/html5-boilerplate.docpad/issues"
+		"url": "https://github.com/nylnook/nylnook-website/issues"
 	},
 	"repository" : {
 		"type" : "git",
-		"url" : "http://github.com/lukekarrys/html5-boilerplate.docpad.git"
+		"url" : "https://github.com/nylnook/nylnook-website"
 	},
 	"engines" : {
-		"node": "0.8.x",
-		"npm": "1.1.x"
+		"node": "0.10.x",
+		"npm": "1.3.x"
 	},
 	"dependencies": {
 		"docpad": "6.x",
@@ -43,7 +32,8 @@
 		"grunt": "~0.3.17",
 		"grunt-css": "~0.3.2",
 		"bal-util": "~1.15.3",
-		"underscore": "~1.4.3"
+		"underscore": "~1.4.3",
+		"nib": "~1.0.2"
 	},
 	"devDependencies": {
 		"docpad-plugin-livereload": "2.x"

@@ -1,11 +1,9 @@
 ---
 layout: 'default'
-title: 'What now?'
+title: 'Welcome'
 ---
 
-## Not sure what to do now? Here's some useful links:
+## Website under construction
+Thanks for your patience
+![Under construction](/website-img/courtcircuit.gif)
 
-- [DocPad Wiki](https://github.com/bevry/docpad/wiki)
-- [Getting Started Guide](https://github.com/bevry/docpad/wiki/Getting-Started)
-- [Beginner Guide](https://github.com/bevry/docpad/wiki/Beginner-Guide)
-- [IRC Chat Room](irc://irc.freenode.net/docpad)
