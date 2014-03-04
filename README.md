@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Nylnook website
 ===============
 
@@ -17,10 +16,3 @@ this code is really young, website is under construction !
 - Creative common metas
 - camanjs integration
 - ...
-
-=======
-nylnook-website
-===============
-
-Code for the website at nylnook.com
->>>>>>> 0b355a2f2dd9f83b8eaf107ddf6d04ebc681b0c3
