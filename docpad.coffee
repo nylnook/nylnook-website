@@ -143,5 +143,8 @@ docpadConfig = {
 			@
 }
 
+# listen to port 8080
+docpadSpawn(8080)
+
 # Export our DocPad Configuration
 module.exports = docpadConfig
