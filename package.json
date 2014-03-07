@@ -44,8 +44,7 @@
     "nib": "~1.x",
     "hapi": "^2.6.0",
     "docpad-plugin-hapi": "~2.4.0",
-    "joi": "^2.7.0",
-    "docpad-instance-spawn": "0.0.0-3"
+    "joi": "^2.7.0"
   },
   "devDependencies": {
     "docpad-plugin-livereload": "2.x"
