@@ -49,6 +49,6 @@
 	},
 	"main": "server.js",
 	"scripts": {
-		"start": "node_modules/docpad/bin/docpad-server"
+		"start": "server.js"
 	}
 }
