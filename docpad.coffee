@@ -10,7 +10,7 @@ docpadConfig = {
 	
 	# Change the port DocPad uses from the default 9778 to 8080
 	port: 8080
-	env: "production"
+	#env: "production"
 
 	templateData:
 
