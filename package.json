@@ -41,10 +41,7 @@
     "grunt-css": "~0.3.2",
     "bal-util": "~1.15.3",
     "underscore": "~1.4.x",
-    "nib": "~1.x",
-    "hapi": "^2.6.0",
-    "docpad-plugin-hapi": "~2.4.0",
-    "joi": "^2.7.0"
+    "nib": "~1.x"
   },
   "devDependencies": {
     "docpad-plugin-livereload": "~2.6.0"
