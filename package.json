@@ -47,5 +47,5 @@
   "devDependencies": {
     "docpad-plugin-livereload": "~2.6.0"
   },
-  "main": "server.js"
+  "main": "node_modules/docpad/bin/docpad-server"
 }
