@@ -1,2 +1,1 @@
-// Just send to docpad server
-node docpad run
+/home/nylnook/Crea/nylnook-website/node_modules/docpad/bin/docpad-server

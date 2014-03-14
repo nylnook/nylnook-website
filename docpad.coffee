@@ -8,9 +8,15 @@ docpadConfig = {
 	# These are variables that will be accessible via our templates
 	# To access one of these within our templates, refer to the FAQ: https://github.com/bevry/docpad/wiki/FAQ
 	
-	# Change the port DocPad uses from the default 9778 to 8080
-	port: 8080
-	#env: "production"
+	env: "production"
+	
+	environments:
+		production:
+			maxAge: 86400000
+
+			# Change the port DocPad uses from the default 9778 to 8080
+			port: 8080
+	
 
 	templateData:
 
