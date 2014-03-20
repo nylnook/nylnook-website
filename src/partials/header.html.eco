@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="no-js">
 	<head>
 		<!-- Standard Meta -->
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="wwidth=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<!-- Site Properities -->
 		<title><%= @getPreparedTitle() %></title>
@@ -15,7 +15,7 @@
 		<%- @getBlock('meta').toHTML() %>
 
 		<!-- DocPad Styles + Our Own -->
-		<%- @getBlock('styles').add(@getGruntedStyles()).toHTML() %>
+		<%- @getBlock('styles').add(@getStyles()).toHTML() %>
 
 		<!-- Favicons and Icons -->
 		<!-- Basic favicon, 32x32px -->
@@ -30,20 +30,25 @@
 
 	</head>
 	<body>
-	    <!--[if lt IE 9]>
+	    <!--[if lt IE 10]>
 	        <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
 	    <![endif]-->
 		<header>
-			<img src="/website-img/logo-nylnook.svg" width="30%" height="auto" />
+			<div id="logo">
+				<img src="/website-img/logo-nylnook-invert.svg"  alt="Nylnook logo" />
+			</div>
+			<nav id="language-selector">
+				<a href="http://nylnook.com" class="current-lang">en<a>
+				<a href="">fr<a>
+				<a href="">es<a>
+				<a href="">de<a>
+			</nav>
+			<nav id="top-nav">
+				<ul>
+					<li><a href="">Wallpapers<img src="/website-img/icon-wallpapers.svg"  alt="Wallapers icon" /></a></li>
+					<li><a href="">Shop & Gifts<img src="/website-img/icon-gifts.svg"  alt="Gifts icon" /></a></li>
+					<li><a href="">Blog<img src="/website-img/icon-blog.svg"  alt="Blog icon" /></a></li>
+				</ul>
+			</nav>
+			<h2 id="site-description"><%= @getPreparedDescription() %></h2
 		</header>
-	
-		<article>
-			<%- @content %>
-		</article>
-	
-		<footer>
-		</footer>
-		<!-- DocPad Scripts + Our Own -->
-		<%- @getBlock('scripts').add(@getGruntedScripts()).toHTML() %>
-	</body>
-</html>

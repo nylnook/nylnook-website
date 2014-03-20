@@ -2,32 +2,52 @@
 
 // ====================================
 // Imports nib (CSS3 features for Stylus)
- 
-// Nib
 @import 'nib'
+
+
+// ====================================
+// Global Variables
+site-width = 80%
+site-margin = ((100% - site-width) / 2)
+
+mobile-wide = "screen and (min-width: 470px)"
+tablet = "screen and (min-width: 641px)"
+desktop = "screen and (min-width: 1000px)"
+desktop-wide = "screen and (min-width: 1220px)"
+desktop-extra-wide = "screen and (min-width: 1580px)"
+
+
+darkbluenyl = rgba(58,69,71,1)
+lightbluenyl = rgba(128,153,158,1)
+greennyl = rgba(128,158,133,1)
+yellownyl = rgba(193,193,141,1)
+greynyl = rgba(153,153,153,1)
+pinknyl = rgba(158,128,135,1)
+
 
 
 // ====================================
 // Base styles: opinionated defaults
 
 html, button, input, select, textarea
-	color: #222
+	color: greynyl
 
 
+// global control for size
 html
 	font-size: 1em
-	line-height: 1.4
+	line-height: 1.25
+	@media desktop-extra-wide
+		font-size: 1.1em
 
-// Remove text-shadow in selection highlight: h5bp.com/i
 // These selection rule sets have to be separate.
-// Customize the background color to match your design.
 
 ::-moz-selection
-	background: #80999e
+	background: lightbluenyl
 	text-shadow: none
 	
 ::selection
-	background: #80999e
+	background: lightbluenyl
 	text-shadow: none
 
 // A better looking default horizontal rule
@@ -56,9 +76,12 @@ fieldset
 
 
 // Allow only vertical resizing of textareas.
-
 textarea
 	resize: vertical;
+	
+// Include paddings inside our width for everything
+*
+	box-sizing border-box
 
 // ==================================== 
 // Browse Happy prompt
@@ -74,24 +97,197 @@ textarea
 // Styles for Nylnook.com
 // ==================================== 
 
+/*! Cantarell Font, Copyright (c) 2009 Dave Crossland, please see Licence */
 
-// Include paddings inside our width for everything
-*
-	box-sizing border-box
+@font-face
+	font-family: "Cantarell";
+	font-weight: normal;
+	src url('../fonts/cantarell-regular-webfont.woff') format('woff'),
+	src url('../fonts/cantarell-regular-webfont.ttf') format('truetype'),
+	src url('../fonts/cantarell-regular-webfont.svg#cantarellregular') format('svg');
+	
+
+@font-face
+	font-family: "Cantarell";
+	font-weight: bold;
+	src url('../fonts/cantarell-bold-webfont.woff') format('woff'),
+	src url('../fonts/cantarell-bold-webfont.ttf') format('truetype'),
+	src url('../fonts/cantarell-bold-webfont.svg#cantarellbold') format('svg');
+	
+
+@font-face
+	font-family: "Cantarell";
+	font-style: italic;
+	font-style: oblique;
+	src url('../fonts/cantarell-oblique-webfont.woff') format('woff'),
+	src url('../fonts/cantarell-oblique-webfont.ttf') format('truetype'),
+	src url('../fonts/cantarell-oblique-webfont.svg#cantarelloblique') format('svg');
 
 
-// Variables
-site-width = 70%
-site-margin = ((100% - site-width) / 2)
+// generic properties
+	
+a, a:visited
+	color: yellownyl;
+	text-decoration: none;
+
+a:hover, a:focus, a:active
+	text-decoration: underline;
+
+// cross WIP links
+a[href='']
+	text-decoration: line-through
+
+
 
 body
-	margin-top: 1%
+	font-family: Cantarell, "Cantarell", Ubuntu, Verdana, sans-serif;
+	color: white
 	margin-left: site-margin
 	margin-right: site-margin
 	text-align: center
-	transition: margin 0.3s ease-out
+	background: url(../website-img/paper-tilt-rotate.png) repeat, darkbluenyl repeat
+	
+// Navigation
+	
+header
+	margin-top: 9rem
+	@media mobile-wide
+		margin-top: 1rem
 
 
+#language-selector
+	font-size: 0.9rem
+	
+	a:not(.current-lang), a:visited:not(.current-lang)
+		color: greynyl
+		
+	@media mobile-wide
+		text-align: left
+		margin-left: 5.5rem
+	@media desktop
+		margin-left: 4rem
+	@media desktop-wide
+		margin-left: 2rem
+	@media desktop-extra-wide
+		margin-left: 1rem
+
+.current-lang
+	font-weight: bold
+	background: url("../website-img/icon-talk.svg") no-repeat scroll 0.4rem 0.7rem rgba(0, 0, 0, 0)
+	padding: 1rem
+	margin: 0
+	
+	@media desktop-extra-wide
+		background-position: 0.5rem 0.9rem
+
+#site-description
+	font-size: 0.9rem
+	font-weight: normal
+	margin: 1.5rem 0
+	@media mobile-wide
+		padding: 0 8rem
+	@media desktop
+		padding: 0
+
+
+
+nav-before-list()
+	position: absolute
+	z-index: -1
+	content: ""
+	box-shadow: 0 0 0.5rem 0.1rem black
+	width: 20.5rem
+	height: 10rem
+
+#logo:before, #top-nav:before
+	nav-before-list()
+
+#logo:before, #top-nav:before
+	top: -7rem
+	
+#logo:before
+	left: -8rem
+	background: url(../website-img/paper-tilt.png) repeat, lightbluenyl repeat
+	transform: rotate(65deg)
+	
+#top-nav:before
+	background: url(../website-img/paper-tilt.png) repeat, greennyl repeat
+	transform: rotate(-65deg)
+	right: -8rem
+	
+@media tablet
+	#bottom-nav:before
+		nav-before-list()
+		bottom: -7rem
+		right: -8rem
+		background: url(../website-img/paper-tilt.png) repeat, yellownyl repeat
+		transform: rotate(65deg)
+		
+		
+
+nav-in-list()
+	z-index: 10
+	position: fixed
+	margin: 0
+	padding: 0
+	
+#logo, #top-nav
+	nav-in-list()
+	top: 0
+	
+#top-nav
+	text-align: right
+	right: 0
+	
+#logo
+	text-align: left
+	left: 0
+
+#bottom-nav li
+	display: inline-block
+	padding: 0.5rem 1rem
+
+@media tablet
+	#bottom-nav
+		nav-in-list()
+		bottom: 0
+		text-align: right
+		right: 0
+		
+	#bottom-nav li
+		display: block
+		padding: 0
+
+#logo>img
+	width: 10rem
+	height: auto
+	padding: 1rem
+
+nav
+	a,  a:visited
+		color: white
+	ul
+		list-style: none
+		font-size: 0.85rem
+		line-height: 2.5rem
+		padding: 0 1rem
+		margin:0
+
+	img
+		width: 2rem
+		margin: 0.2rem
+	
+
+footer
+	font-size: 0.7rem
+	
+
+// Content
+	
+article
+	padding: 1%
+	background: url(../website-img/paper-tilt-rotate.png) repeat, yellownyl repeat
+	color: black
 
 
 
