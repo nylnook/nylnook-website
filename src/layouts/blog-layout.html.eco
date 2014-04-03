@@ -1,0 +1,19 @@
+<%- @partial('header') %>
+
+	<section id="intro">
+		<h1 class="page-title"><%- @document.title %></h1>
+		<%- @content %>
+	</section>
+	
+	<% for post in @getCollection("posts").toJSON(): %>
+	        <article class="post">
+		    <h2><a href="<%= post.url %>"><%- post.title %></a></h2>
+		    <time pubdate="<%- post.date %>"><%- post.date %></time>
+		    
+		       <%- post.contentRenderedWithoutLayouts %>
+		    
+		</article>
+	<% end %>
+	
+	
+<%- @partial('footer') %>

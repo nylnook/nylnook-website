@@ -1,0 +1,23 @@
+---
+cacheable: true
+---
+<% if (@getLicense() == 'by-nc-nd') : %>
+	<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" src="/website-img/cc-by-nc-nd.svg" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+<% else if (@getLicense() == 'by-nc-sa') : %>
+	<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" src="/website-img/cc-by-nc-sa.svg" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+<% else if (@getLicense() == 'by-sa') : %>
+	<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="/website-img/cc-by-sa.svg" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+<% else if (@getLicense() == 'by') : %>
+	<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="/website-img/cc-by.svg" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+<% else if (@getLicense() == 'zero') : %>
+	<p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
+	<a rel="license" href="http://creativecommons.org/publicdomain/zero/1.0/">
+	<img src="/website-img/cc-zero.svg" alt="CC0" />
+	</a>
+	<br />To the extent possible under law, <a rel="dct:publisher" href="http://nylnook.com"><span property="dct:title">Camille Bissuel</span></a> has waived all copyright and related or neighboring rights to this work. This work is published from: <span property="vcard:Country" datatype="dct:ISO3166" content="FR" about="http://nylnook.com"> France</span>.
+	</p>
+<% else if (@getLicense() == '©') : %>
+	Sorry, exceptionaly this is not free, and ©<%= @site.author %>, <%= @site.title %>
+<% else : %>
+	Error with license, it is unknown ! In the meantime, consider it ©<%= @site.author %>, <%= @site.title %>
+<% end %>

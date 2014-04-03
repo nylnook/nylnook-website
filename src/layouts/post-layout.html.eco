@@ -1,0 +1,9 @@
+<%- @partial('header') %>
+	
+	<article class="single-post">
+		<h1><%- @document.title %></h1>
+		<time pubdate="<%- @document.computerDate %>"><%- @document.humanDate %></time>
+		<%- @content %>
+	</article>
+	
+<%- @partial('footer') %>

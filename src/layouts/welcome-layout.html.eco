@@ -1,0 +1,49 @@
+<%- @partial('header') %>
+	
+	<article class="warning">
+		<%- @content %>
+	</article>
+	
+	<section id="latest-img">
+	<% for img in @getCollection("images").toJSON().slice(0,1): %>
+		<a href="<%- img.url %>">
+			<picture data-alt="<%- img.title %> thumbnail">
+				<source srcset="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-350x350.jpg 1x, <%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-700x700.jpg 2x"></source>
+				<source srcset="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-550x550.jpg 1x, <%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-1100x1100.jpg 2x" media="(min-width: 481px)"></source>
+				<source srcset="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-700x700.jpg 1x, <%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-1400x1400.jpg 2x" media="(min-width: 981px)"></source>
+				<source srcset="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-1100x1100.jpg 1x, <%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-2200x2200.jpg 2x" media="(min-width: 1581px)"></source>
+				<!-- Fallback content -->
+				<noscript>
+				    <img src="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-700x700.jpg" alt="<%- img.title %> thumbnail">
+				</noscript>
+			</picture>
+		</a>
+		<div class="meta">
+			<h1><a href="<%= img.url %>"><%- img.title %></a></h2>
+			<time pubdate="<%- img.computerDate %>"><%- img.humanDate %></time>
+	    	</div>
+	<% end %>
+	</section>
+	
+	<section id="img-browser">
+	<% for img in @getCollection("images").toJSON().slice(1,19): %>
+	        <div class="thumb">
+			<a href="<%- img.url %>">
+				<picture data-alt="<%- img.title %> thumbnail">
+					<source srcset="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-350x350.jpg 1x, <%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-700x700.jpg 2x"></source>
+					
+					<!-- Fallback content -->
+					<noscript>
+					    <img src="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-350x350.jpg" alt="<%- img.title %> thumbnail">
+					</noscript>
+				</picture>
+			</a>
+			<div class="meta">
+				<h3><a href="<%= img.url %>"><%- img.title %></a></h2>
+				<time pubdate="<%- img.computerDate %>"><%- img.humanDate %></time>
+		    	</div>
+		</div>
+	<% end %>
+	</section>
+	
+<%- @partial('footer') %>

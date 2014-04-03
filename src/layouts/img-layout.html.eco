@@ -1,0 +1,35 @@
+<%- @partial('header') %>
+	
+<article class="img-page" about="<%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-700x700.jpg">
+	<picture data-alt="<%- @document.title %>">
+		<source srcset="<%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-350x350.jpg 1x, <%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-700x700.jpg 2x"></source>
+		<source srcset="<%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-550x550.jpg 1x, <%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-1100x1100.jpg 2x" media="(min-width: 481px)"></source>
+		<source srcset="<%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-700x700.jpg 1x, <%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-1400x1400.jpg 2x" media="(min-width: 981px)"></source>
+		<source srcset="<%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-1100x1100.jpg 1x, <%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-2200x2200.jpg 2x" media="(min-width: 1581px)"></source>
+		<!-- Fallback content -->
+		<noscript>
+		    <img src="<%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-700x700.jpg" alt="<%- @document.title %>" />
+		</noscript>
+	</picture>
+	<section>
+		<h1><%- @document.title %></h1>
+		<time pubdate="<%- @document.computerDate %>"><%- @document.humanDate %></time>
+		<%- @content %>
+	</section>
+	<section>
+		<h2>Download for your screen size</h2>
+		<% toolongname = "nylnook-"+@document.basename+"-" %>
+		<% for file in @getDocument().getAssociatedFiles({name:1}).toJSON(): %>
+			<% if !(/thumb/.test(file.basename)) : %>
+			<% definition = file.basename.replace(toolongname, ''); %>
+				<a href="<%= file.url %>" download><%= definition %> px</a>
+			<% end %>
+		<% end %>
+	</section>
+	<section>
+		<h2>License</h2>
+		<%- @partial('license') %>
+	</section>
+</article>
+	
+<%- @partial('footer') %>

@@ -1,3 +1,6 @@
+---
+cacheable: true
+---
 <!DOCTYPE html>
 <html class="no-js">
 	<head>
@@ -16,39 +19,44 @@
 
 		<!-- DocPad Styles + Our Own -->
 		<%- @getBlock('styles').add(@getStyles()).toHTML() %>
+		
+		<!-- Scripts that must not be defered -->
+		<script async="true" src="/vendor/picturefill.js"></script>
 
 		<!-- Favicons and Icons -->
 		<!-- Basic favicon, 32x32px -->
-        	<link rel="icon" href="favicon.ico" />
+        	<link rel="icon" href="/favicon.ico" />
         	<!-- IE 10 Metro tile icon -->
         	<meta name="msapplication-TileColor" content="#FFFFFF">
-		<meta name="msapplication-TileImage" content="favicon-144.png">
+		<meta name="msapplication-TileImage" content="/favicon-144.png">
 		<!-- Touch icon for iOS 2.0+ and Android 2.1+ -->
-        	<link rel="apple-touch-icon-precomposed" href="favicon-152.png">
+        	<link rel="apple-touch-icon-precomposed" href="/favicon-152.png">
         	<!-- Generic favicon for other cases, 64x64px -->
-        	<link rel="icon" type="image/png" href="favicon-64.png" />
+        	<link rel="icon" type="image/png" href="/favicon-64.png" />
 
 	</head>
 	<body>
 	    <!--[if lt IE 10]>
-	        <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+	        <p class="browsehappy">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
 	    <![endif]-->
 		<header>
 			<div id="logo">
-				<img src="/website-img/logo-nylnook-invert.svg"  alt="Nylnook logo" />
+				<a href="/" >
+					<img src="/website-img/logo-nylnook-invert.svg"  alt="Nylnook logo" />
+				</a>
 			</div>
 			<nav id="language-selector">
-				<a href="http://nylnook.com" class="current-lang">en<a>
-				<a href="">fr<a>
-				<a href="">es<a>
-				<a href="">de<a>
+				<a href="/" class="current-lang">en</a>
+				<a href="">fr</a>
+				<a href="">es</a>
+				<a href="">de</a>
 			</nav>
 			<nav id="top-nav">
 				<ul>
-					<li><a href="">Wallpapers<img src="/website-img/icon-wallpapers.svg"  alt="Wallapers icon" /></a></li>
+					<li><a href="/">Wallpapers<img src="/website-img/icon-wallpapers.svg"  alt="Wallapers icon" /></a></li>
 					<li><a href="">Shop & Gifts<img src="/website-img/icon-gifts.svg"  alt="Gifts icon" /></a></li>
-					<li><a href="">Blog<img src="/website-img/icon-blog.svg"  alt="Blog icon" /></a></li>
+					<li><a href="/blog.html">Blog<img src="/website-img/icon-blog.svg"  alt="Blog icon" /></a></li>
 				</ul>
 			</nav>
-			<h2 id="site-description"><%= @getPreparedDescription() %></h2
+			<h2 id="site-description"><%= @getPreparedDescription() %></h2>
 		</header>

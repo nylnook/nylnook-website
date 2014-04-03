@@ -1,7 +1,0 @@
-<%- @partial('header') %>
-	
-	<article>
-		<%- @content %>
-	</article>
-	
-<%- @partial('footer') %>

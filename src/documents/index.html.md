@@ -1,9 +1,10 @@
 ---
-layout: 'welcome'
+layout: 'welcome-layout'
 title: 'Welcome'
+isPage: true
 ---
 
-## Website under construction
-Thanks for your patience
-![Under construction](/website-img/courtcircuit.gif)
+## ⚠ Website under construction
+Thanks for your patience / Status : alpha release
+
 

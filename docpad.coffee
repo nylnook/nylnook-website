@@ -44,9 +44,15 @@ docpadConfig = {
 				"""
 			# The website author
 			author: "Camille Bissuel"
+			
+			#default Creative commons license for content
+			defaultLicense:  "by-sa"
 
 		# -----------------------------
 		# Helper Functions
+		
+		getSiteUrl: ->
+			@site.url
 
 		# Get the prepared site/document title
 		# Often we would like to specify particular formatting to our page's title
@@ -54,7 +60,7 @@ docpadConfig = {
 		getPreparedTitle: ->
 			# if we have a document title, then we should use that and suffix the site's title onto it
 			if @document.title
-				"#{@document.title} | #{@site.title}"
+				"#{@document.title} ❄ #{@site.title}"
 			# if our document does not have it's own title, then we should just use the site's title
 			else
 				@site.title
@@ -68,20 +74,46 @@ docpadConfig = {
 		getPreparedKeywords: ->
 			# Merge the document keywords with the site keywords
 			@site.keywords.concat(@document.keywords or []).join(', ')
+		
+		getLicense:->
+			@document.license or @site.defaultLicense
+			
 
 		getStyles: ->
 			(["/vendor/normalize.css", "/styles/styles.css"])
 				
 
-		getScripts: ->
-			(["/vendor/modernizr.js","/vendor/log.js","/scripts/scripts.js"])
+		getDeferedScripts: ->
+			(["/vendor/log.js","/scripts/scripts.js"])
+			
 				
 	# =================================
 	# Collections
 	collections:
 		pages: ->
 			@getCollection("html").findAllLive({isPage:true}, [{filename:1}])
+		posts: ->
+			@getCollection("html").findAllLive({relativeOutDirPath:'blog'},[{date:-1}]).on "add", (model) ->
+				model.setMetaDefaults({layout:"post-layout"})
+		images: ->
+			@getCollection("html").findAllLive({relativeOutDirPath:'img'},[{date:-1}]).on "add", (model) ->
+				model.setMetaDefaults({layout:"img-layout"})
+			
+	plugins:
+		moment:
+			formats: [
+				{raw: 'date', format: 'MMMM Do YYYY', formatted: 'humanDate'}
+				{raw: 'date', format: 'YYYY-MM-DD', formatted: 'computerDate'}
+			]
+			
+		associatedfiles:
+			# The paths for the associated files.
+			associatedFilesPath: 'img'
 
+			# Whether to use relative base paths for the document. This would
+			# use associated-files/subfolder/myarticle/image.jpg instead of
+			# associated-files/myarticle/image.jpg.
+			useRelativeBase: false
 
 	# =================================
 	# DocPad Events
