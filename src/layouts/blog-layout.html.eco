@@ -1,3 +1,4 @@
+<%- @partial('head') %>
 <%- @partial('header') %>
 
 	<section id="intro">

@@ -1,16 +1,26 @@
-var spawn = require('child_process').spawn
+// Create Server and Express Application
+var express = require('express');
+var http = require('http');
+var app = express();
+var server = http.createServer(app).listen(8080);
 
-var args = ['server'];
-spawn('node_modules/.bin/docpad', args, {stdio:'inherit'}).on('close', function(err) {
+// Add our Application Middlewares
+app.use(app.router);
 
-    if (err)
-        console.log("docpad failed");
-    else
-        console.log("docpad running");
+// Add DocPad to our Application
+var docpadInstanceConfiguration = {
+    // Give it our express application and http server
+    serverExpress: app,
+    serverHttp: server,
 
-});
+    // Tell it not to load the standard middlewares (as we handled that above)
+    middlewareStandard: false
+};
+var docpadInstance = require('docpad').createInstance(docpadInstanceConfiguration, function(err){
+    if (err)  return console.log(err.stack);
 
-docpadInstance.action('generate watch', function(err,result){
-	if (err)  return console.log(err.stack);
-	console.log('OK');
+    // Tell DocPad to perform a generation, extend our server with its routes, and watch for changes
+    docpadInstance.action('generate server watch', function(err){
+        if (err)  return console.log(err.stack);
+    });
 });

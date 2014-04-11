@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Site Properities -->
+		<title><%= @getPreparedTitle() %></title>
+		<meta name="description" content="<%= @getPreparedDescription() %>" />
+		<meta name="keywords" content="<%= @getPreparedKeywords() %>" />

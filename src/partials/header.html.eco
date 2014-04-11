@@ -1,18 +1,10 @@
 ---
 cacheable: true
 ---
-<!DOCTYPE html>
-<html class="no-js">
-	<head>
 		<!-- Standard Meta -->
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-		<!-- Site Properities -->
-		<title><%= @getPreparedTitle() %></title>
-		<meta name="description" content="<%= @getPreparedDescription() %>" />
-		<meta name="keywords" content="<%= @getPreparedKeywords() %>" />
 
 		<!-- DocPad Meta -->
 		<%- @getBlock('meta').toHTML() %>
@@ -58,5 +50,5 @@ cacheable: true
 					<li><a href="/blog.html">Blog<img src="/website-img/icon-blog.svg"  alt="Blog icon" /></a></li>
 				</ul>
 			</nav>
-			<h2 id="site-description"><%= @getPreparedDescription() %></h2>
+			<h2 id="site-baseline"><%= @getPreparedBaseline() %></h2>
 		</header>

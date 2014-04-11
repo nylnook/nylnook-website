@@ -1,3 +1,4 @@
+<%- @partial('head') %>
 <%- @partial('header') %>
 	
 <article class="img-page" about="<%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-700x700.jpg">
@@ -18,13 +19,102 @@
 	</section>
 	<section>
 		<h2>Download for your screen size</h2>
+		<p>Note : definition is given "width x height"</p>
+		
+		<% deflist = "" %>
 		<% toolongname = "nylnook-"+@document.basename+"-" %>
-		<% for file in @getDocument().getAssociatedFiles({name:1}).toJSON(): %>
+		<% for file in @getDocument().getAssociatedFiles().toJSON(): %>
 			<% if !(/thumb/.test(file.basename)) : %>
-			<% definition = file.basename.replace(toolongname, ''); %>
-				<a href="<%= file.url %>" download><%= definition %> px</a>
+				<% definition = file.basename.replace(toolongname, ''); %>
+				<% deflist += definition + ", " %>
 			<% end %>
 		<% end %>
+		
+		<% downloadpath = @document.basename+"/files/nylnook-"+@document.basename+"-" %>
+		<% extpath = ".jpg" %>
+		<% unit = "px" %>
+		
+		<% img = (def, note) -> %>
+			<% deftest = new RegExp(def) %>
+			<% if (deftest.test(deflist)) : %>
+				<% if (note?) : %>
+			 		<a href="<%- downloadpath %><%- def %><%- extpath %>" download><%- def %><%- unit %> (<%- note %>)</a>
+			 	<% else : %>
+			 		<a href="<%- downloadpath %><%- def %><%- extpath %>" download><%- def %><%- unit %></a>
+			 	<% end %>
+			 <% end %>
+		<% end %>
+		
+		
+		<h3>Mobile and Tablets</h3>
+			
+			<%- img('240x320') %>
+			<%- img('320x240') %>
+			<%- img('320x396') %>
+			<%- img('320x480') %>
+			<%- img('320x568') %>
+			<%- img('360x640') %>
+			<%- img('480x360') %>
+			<%- img('480x800') %>
+			<%- img('540x960') %>
+			<%- img('640x480', 'VGA') %>
+			<%- img('720x1280') %>
+			<%- img('800x600', 'SVGA') %>
+			<%- img('1024x600', 'WSVGA') %>
+			<%- img('1024x1024') %>
+			<%- img('1280x720', 'WXGA') %>
+			<%- img('1280x768', 'WXGA') %>
+			<%- img('1280x800', 'WXGA') %>
+			<%- img('1920x1200', 'WUXGA') %>
+			<%- img('2048x2048', 'WUXGA') %>
+			
+		<h3>Desktop</h3>
+		
+			<%- img('768x1024') %>
+			<%- img('800x600', 'SVGA') %>
+			<%- img('1024x600', 'WSVGA') %>
+			<%- img('1024x768', 'XGA') %>
+			<%- img('1052x946', 'WSVGA') %>
+			<%- img('1093x614') %>
+			<%- img('1152x864', 'XGA+') %>
+			<%- img('1280x800', 'WXGA') %>
+			<%- img('1280x960', 'SXGA– or UVGA') %>
+			<%- img('1280x1024', 'SXGA') %>
+			<%- img('1311x737') %>
+			<%- img('1360x768', 'HD') %>
+			<%- img('1364x768', 'HD') %>
+			<%- img('1400x1050', 'SXGA+') %>
+			<%- img('1440x900', 'WXGA+') %>
+			<%- img('1536x864') %>
+			<%- img('1600x900', 'HD+') %>
+			<%- img('1600x1200', 'UXGA') %>
+			<%- img('1680x1050', 'WSXGA+') %>
+			<%- img('1920x1080', 'Full HD') %>
+			<%- img('1920x1200', 'WUXGA') %>
+			<%- img('2048x1152', 'QWXGA') %>
+			<%- img('2560x1440', 'WQHD') %>
+			<%- img('2560x1600', 'WQXGA') %>
+			<%- img('2880x1800', 'Retina') %>
+
+		<h3>Big pictures or multiples monitors</h3>
+			<%- img('1920x1080', 'Full HD') %>
+			<%- img('1920x1200', 'WUXGA') %>
+			<%- img('2048x1152', 'QWXGA') %>
+			<%- img('2048x2048', '2K Fulldome') %>
+			<%- img('2560x1440', 'WQHD') %>
+			<%- img('2560x1600', 'WQXGA') %>
+			<%- img('2880x1800', 'Retina') %>
+			<%- img('4096x4096', '4K Fulldome') %>
+			<%- img('8192x8192', '8K Fulldome') %>
+			
+		
+		<h3>Square sizes for texturing</h3>
+			<%- img('512x512') %>
+			<%- img('1024x1024', '1K') %>
+			<%- img('2048x2048', '2K') %>
+			<%- img('4096x4096', '4K') %>
+			<%- img('8192x8192', '8K') %>
+			
 	</section>
 	<section>
 		<h2>License</h2>

@@ -37,6 +37,11 @@ docpadConfig = {
 			description: """
 				Free illustrations and creative wallpapers to share, adapt and reuse freely in the best quality !
 				"""
+			
+			# The website baseline 
+			baseline: """
+				Free illustrations and creative wallpapers to share, adapt and reuse freely in the best quality !
+				"""
 
 			# The website keywords (for SEO) separated by commas
 			keywords: """
@@ -69,6 +74,11 @@ docpadConfig = {
 		getPreparedDescription: ->
 			# if we have a document description, then we should use that, otherwise use the site's description
 			@document.description or @site.description
+		
+		# Get the prepared site/document description
+		getPreparedBaseline: ->
+			# if we have a document description, then we should use that, otherwise use the site's description
+			@site.baseline
 
 		# Get the prepared site/document keywords
 		getPreparedKeywords: ->
@@ -85,6 +95,8 @@ docpadConfig = {
 
 		getDeferedScripts: ->
 			(["/vendor/log.js","/scripts/scripts.js"])
+
+
 			
 				
 	# =================================

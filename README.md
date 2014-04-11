@@ -1,10 +1,10 @@
 Nylnook website
 ===============
 
-Code for the website at nylnook.com, based on [DocPad](https://github.com/bevry/docpad) and the [HTML5 Boilerplate with grunt skeleton](https://github.com/lukekarrys/html5-boilerplate.docpad). 
+Code for the website at [nylnook.com](http://nylnook.com/), based on [DocPad](https://github.com/bevry/docpad) and the [HTML5 Boilerplate with grunt skeleton](https://github.com/lukekarrys/html5-boilerplate.docpad). 
 
 ## Technologies
-Responsive design, HTML5, CSS3, SVG icons...   
+Responsive design, Picture element, HTML5, CSS3, SVG icons...   
 Internet Explorer before version 10 is not supported
 
 ## License
