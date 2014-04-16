@@ -1,7 +1,9 @@
 ---
 layout: 'welcome-layout'
-title: 'Welcome'
+title: 'Free illustrations and creative wallpapers'
 isPage: true
+changfreq: 'daily'
+priority: 1
 ---
 
 ## ⚠ Website under construction

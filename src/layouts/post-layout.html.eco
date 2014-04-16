@@ -4,7 +4,17 @@
 	<article class="single-post">
 		<h1><%- @document.title %></h1>
 		<time pubdate="<%- @document.computerDate %>"><%- @document.humanDate %></time>
+		<p>by <a href="/about" rel="author">Camille Bissuel</a></p>
+		
 		<%- @content %>
+		<section id="share">
+			    <h2>Share</h2>
+			    <%- @getServiceButtons() %>
+		</section>
+		<section id="comments">
+			<h2>Comment</h2>
+			<%- @getDisqus() %>
+		</section>
 	</article>
 	
 <%- @partial('footer') %>

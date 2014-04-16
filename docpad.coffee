@@ -16,6 +16,14 @@ docpadConfig = {
 	environments:
 		production:
 			maxAge: 86400000
+						
+			
+		development:
+			templateData:
+				site:
+					services:
+						googleAnalytics: false
+
 	
 
 	templateData:
@@ -45,13 +53,23 @@ docpadConfig = {
 
 			# The website keywords (for SEO) separated by commas
 			keywords: """
-				wallpaper, wallpapers, HD, FHD, 4K, 8K, illustration, free, open source, creative commons, source, creative, share, adapt, reuse, quality
+				wallpaper, HD, FHD, 4K, 8K, illustration, free, open source, creative commons, creative
 				"""
 			# The website author
 			author: "Camille Bissuel"
 			
 			#default Creative commons license for content
 			defaultLicense:  "by-sa"
+			
+			services:
+				hackerNewsSubmitButton: false
+				
+				flattrButton: '2878350/nylnook'
+				githubFollowButton: 'nylnook'
+				githubStarButton: 'nylnook/nylnook-website'
+
+				googleAnalytics: 'UA-50089163-1'
+				disqus: 'nylnook'
 
 		# -----------------------------
 		# Helper Functions
@@ -90,11 +108,11 @@ docpadConfig = {
 			
 
 		getStyles: ->
-			(["/vendor/normalize.css", "/styles/styles.css"])
+			(["/styles/styles.css"])
 				
 
 		getDeferedScripts: ->
-			(["/vendor/log.js","/scripts/scripts.js"])
+			(["/scripts/scripts.js"])
 
 
 			
@@ -126,7 +144,12 @@ docpadConfig = {
 			# use associated-files/subfolder/myarticle/image.jpg instead of
 			# associated-files/myarticle/image.jpg.
 			useRelativeBase: false
-
+			
+		sitemap:
+			cachetime: 600000
+			changefreq: 'weekly'
+			priority: 0.5
+			
 	# =================================
 	# DocPad Events
 

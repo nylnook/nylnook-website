@@ -36,18 +36,17 @@ cacheable: true
 				<a href="/" >
 					<img src="/website-img/logo-nylnook-invert.svg"  alt="Nylnook logo" />
 				</a>
+				<h1 class="visuallyhidden"><%- @site.title %></h1>
 			</div>
 			<nav id="language-selector">
 				<a href="/" class="current-lang">en</a>
 				<a href="">fr</a>
-				<a href="">es</a>
-				<a href="">de</a>
 			</nav>
 			<nav id="top-nav">
 				<ul>
 					<li><a href="/">Wallpapers<img src="/website-img/icon-wallpapers.svg"  alt="Wallapers icon" /></a></li>
 					<li><a href="">Shop & Gifts<img src="/website-img/icon-gifts.svg"  alt="Gifts icon" /></a></li>
-					<li><a href="/blog.html">Blog<img src="/website-img/icon-blog.svg"  alt="Blog icon" /></a></li>
+					<li><a href="/blog">Blog<img src="/website-img/icon-blog.svg"  alt="Blog icon" /></a></li>
 				</ul>
 			</nav>
 			<h2 id="site-baseline"><%= @getPreparedBaseline() %></h2>

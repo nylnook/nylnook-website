@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="39.599" height="37.16" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="32" height="30.03" version="1.1">
  <metadata id="metadata5577"/>
- <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-451.62916,-813.78403)">
-  <path sodipodi:nodetypes="sccsccsssccscsssccccc" inkscape:connector-curvature="0" id="path4784" d="m 454.63163,813.78403 c -1.1192,0 -1.6163,0.6327 -1.6562,1.4063 l -1.3438,25.5625 c -0.058,1.1177 0.9121,2.0312 2.0313,2.0312 l 13.3437,0 0,0.75 c -2.9548,0.6638 -5,1.9647 -5,3.4688 0,2.1757 4.2179,3.9375 9.4063,3.9375 5.1884,0 9.4063,-1.7618 9.4063,-3.9375 0,-1.4662 -1.9479,-2.7279 -4.7813,-3.4063 l 0,-0.8125 13.1563,0 c 1.1192,0 2.0892,-0.9135 2.0313,-2.0312 l -1.3438,-25.5625 c -0.043,-0.8181 -0.7451,-1.4063 -1.6563,-1.4063 z m 1.3438,2.5938 31.189,0.094 0.8815,21.9687 -33.3205,0 z" opacity="0.8" fill="#ffffff" fill-rule="evenodd" color="#000000"/>
+ <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-451.62916,-820.91416)">
+  <path sodipodi:nodetypes="sccsccsssccscsssccccc" inkscape:connector-curvature="0" id="path4784" d="m 454.05547,820.91416 c -0.90443,0 -1.30614,0.51129 -1.33838,1.13643 l -1.08593,20.65718 c -0.0469,0.90321 0.73707,1.64142 1.6415,1.64142 l 10.7831,0 0,0.60608 c -2.38779,0.53642 -4.04052,1.58768 -4.04052,2.80315 0,1.75819 3.4085,3.18191 7.60127,3.18191 4.19277,0 7.60128,-1.42372 7.60128,-3.18191 0,-1.18484 -1.57411,-2.20443 -3.86379,-2.75265 l 0,-0.65658 10.63166,0 c 0.90443,0 1.68829,-0.73821 1.6415,-1.64142 l -1.08593,-20.65718 c -0.0347,-0.66111 -0.60212,-1.13643 -1.33846,-1.13643 z m 1.08593,2.09606 25.20397,0.076 0.71234,17.75301 -26.92644,0 z" opacity="0.8" fill="#1a1a1a" fill-rule="evenodd" color="#000000"/>
  </g>
 </svg>

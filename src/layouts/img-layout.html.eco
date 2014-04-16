@@ -15,12 +15,13 @@
 	<section>
 		<h1><%- @document.title %></h1>
 		<time pubdate="<%- @document.computerDate %>"><%- @document.humanDate %></time>
+		<p>by <a href="/about" rel="author">Camille Bissuel</a></p>
 		<%- @content %>
 	</section>
 	<section>
 		<h2>Download for your screen size</h2>
 		<p>Note : definition is given "width x height"</p>
-		
+				
 		<% deflist = "" %>
 		<% toolongname = "nylnook-"+@document.basename+"-" %>
 		<% for file in @getDocument().getAssociatedFiles().toJSON(): %>
@@ -44,7 +45,6 @@
 			 	<% end %>
 			 <% end %>
 		<% end %>
-		
 		
 		<h3>Mobile and Tablets</h3>
 			
@@ -120,6 +120,19 @@
 		<h2>License</h2>
 		<%- @partial('license') %>
 	</section>
+	<section id="share">
+		<h2>Share</h2>
+		<%- @getServiceButtons() %>
+	</section>
+	<section id="support">
+		<h2>Support</h2>
+		<script id='fbngrtt'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=nylnook&url='+encodeURIComponent(document.URL);f.title='Flattr';f.height=62;f.width=56;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fbngrtt');</script>
+	</section>
+	<section id="comments">
+		<h2>Comment</h2>
+		<%- @getDisqus() %>
+	</section>
+	
 </article>
 	
 <%- @partial('footer') %>

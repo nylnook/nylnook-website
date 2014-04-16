@@ -9,10 +9,8 @@
 	<% for post in @getCollection("posts").toJSON(): %>
 	        <article class="post">
 		    <h2><a href="<%= post.url %>"><%- post.title %></a></h2>
-		    <time pubdate="<%- post.date %>"><%- post.date %></time>
-		    
+		    <time pubdate="<%- @document.computerDate %>"><%- @document.humanDate %></time>		    
 		       <%- post.contentRenderedWithoutLayouts %>
-		    
 		</article>
 	<% end %>
 	

@@ -8,7 +8,7 @@
 	<section id="latest-img">
 	<% for img in @getCollection("images").toJSON().slice(0,1): %>
 		<a href="<%- img.url %>">
-			<picture data-alt="<%- img.title %> thumbnail">
+			<picture>
 				<source srcset="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-350x350.jpg 1x, <%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-700x700.jpg 2x"></source>
 				<source srcset="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-550x550.jpg 1x, <%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-1100x1100.jpg 2x" media="(min-width: 481px)"></source>
 				<source srcset="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-700x700.jpg 1x, <%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-1400x1400.jpg 2x" media="(min-width: 981px)"></source>
@@ -30,7 +30,7 @@
 	<% for img in @getCollection("images").toJSON().slice(1,19): %>
 	        <div class="thumb">
 			<a href="<%- img.url %>">
-				<picture data-alt="<%- img.title %> thumbnail">
+				<picture>
 					<source srcset="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-350x350.jpg 1x, <%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-700x700.jpg 2x"></source>
 					
 					<!-- Fallback content -->

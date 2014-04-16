@@ -5,7 +5,7 @@ cacheable: true
 			<ul>
 				<li><a href="">Follow<img src="/website-img/icon-follow.svg"  alt="Follow icon" /></a></li>
 				<li><a href="">Support a gnome<img src="/website-img/icon-support.svg"  alt="Support a gnome icon" /></a></li>
-				<li><a href="/about.html">About<img src="/website-img/icon-contact.svg"  alt="Contact icon" /></a></li>
+				<li><a href="/about">About<img src="/website-img/icon-contact.svg"  alt="Contact icon" /></a></li>
 			</ul>
 		</nav>
 		<footer>
