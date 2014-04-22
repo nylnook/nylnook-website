@@ -38,7 +38,6 @@
     "docpad-plugin-marked": "~2.2.1",
     "docpad-plugin-moment": "~2.0.2",
     "docpad-plugin-partials": "~2.9.0",
-    "docpad-plugin-raw": "~2.3.2",
     "docpad-plugin-services": "~2.5.0",
     "docpad-plugin-sitemap": "~2.2.0",
     "docpad-plugin-stylus": "~2.6.0",

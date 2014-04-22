@@ -149,11 +149,6 @@ docpadConfig = {
 			cachetime: 600000
 			changefreq: 'weekly'
 			priority: 0.5
-		
-		raw:
-			nylnooksources:
-				src: "../nylnook-src/"
-				out: "nylnook-src"
 			
 	# =================================
 	# DocPad Events
