@@ -115,6 +115,9 @@
 			<%- img('4096x4096', '4K') %>
 			<%- img('8192x8192', '8K') %>
 			
+		<h3>Get sources</h3>
+			<a href="../../../nylnook-src/<%- @document.basename %>.zip" download>Source for <%- @document.title %></a>
+			
 	</section>
 	<section>
 		<h2>License</h2>

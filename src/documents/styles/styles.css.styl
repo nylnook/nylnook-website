@@ -547,7 +547,6 @@ header
 		padding: 0
 
 
-
 nav-before-list()
 	position: absolute
 	z-index: -1
@@ -606,6 +605,7 @@ nav-in-list()
 	left: 0
 
 #bottom-nav 
+	background: yellownyl repeat
 	margin-top: 2rem
 	li
 		display: inline-block
@@ -617,6 +617,7 @@ nav-in-list()
 		bottom: 0
 		text-align: right
 		right: 0
+		background: none
 		
 	#bottom-nav li
 		display: block
@@ -645,6 +646,15 @@ nav
 footer
 	margin-top: 2rem
 	font-size: 0.7rem
+	
+footer > p
+	@media tablet
+		padding-right: 10rem
+	@media desktop-wide
+		padding-right: 5rem
+	@media desktop-extra-wide
+		padding-right: 0
+		
 	
 
 // Content
