@@ -2,15 +2,12 @@
 <%- @partial('header') %>
 	
 <article class="img-page" about="<%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-700x700.jpg">
-	<picture data-alt="<%- @document.title %>">
-		<source srcset="<%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-350x350.jpg 1x, <%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-700x700.jpg 2x"></source>
-		<source srcset="<%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-550x550.jpg 1x, <%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-1100x1100.jpg 2x" media="(min-width: 481px)"></source>
-		<source srcset="<%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-700x700.jpg 1x, <%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-1400x1400.jpg 2x" media="(min-width: 981px)"></source>
+	<picture>
 		<source srcset="<%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-1100x1100.jpg 1x, <%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-2200x2200.jpg 2x" media="(min-width: 1581px)"></source>
-		<!-- Fallback content -->
-		<noscript>
-		    <img src="<%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-700x700.jpg" alt="<%- @document.title %>" />
-		</noscript>
+		<source srcset="<%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-700x700.jpg 1x, <%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-1400x1400.jpg 2x" media="(min-width: 981px)"></source>
+		<source srcset="<%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-550x550.jpg 1x, <%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-1100x1100.jpg 2x" media="(min-width: 481px)"></source>
+		<source srcset="<%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-350x350.jpg 1x, <%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-700x700.jpg 2x"></source>
+		<img srcset="<%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-700x700.jpg" alt="<%- @document.title %>" />
 	</picture>
 	<section>
 		<h1><%- @document.title %></h1>
@@ -116,7 +113,7 @@
 			<%- img('8192x8192', '8K') %>
 			
 		<h3>Get sources</h3>
-			<a href="../../../nylnook-src/<%- @document.basename %>.zip" download>Source for <%- @document.title %></a>
+			<a href="../nylnook-src/nylnook-<%- @document.basename %>.zip" download>Source for <%- @document.title %></a>
 			
 	</section>
 	<section>

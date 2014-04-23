@@ -13,7 +13,7 @@ cacheable: true
 		<%- @getBlock('styles').add(@getStyles()).toHTML() %>
 		
 		<!-- Scripts that must not be defered -->
-		<script async="true" src="/vendor/picturefill.js"></script>
+		<script src="/vendor/picturefill.js"></script>
 
 		<!-- Favicons and Icons -->
 		<!-- Basic favicon, 32x32px -->

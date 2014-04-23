@@ -9,7 +9,7 @@ cacheable: true
 			</ul>
 		</nav>
 		<footer>
-			<p>© Camille Bissuel - Images are licensed under various <a href="http://creativecommons.org/">Creative commons</a> licences, see each image for details   /   This website is <a href="http://github.com/nylnook/nylnook-website/blob/master/LICENSE">MIT licensed</a> and based on <a href="http://docpad.org/">Docpad</a> - Fork it on <a href="http://github.com/nylnook/nylnook-website">Github</a>   /   Find us on <a href="https://plus.google.com/100469891772739601744" rel="publisher">Google+</a>   /   <a href="http://abattis.org/cantarell/">Cantarell Font</a> by Dave Crossland, GPLv3 licence<p>
+			<p>© Camille Bissuel - Images are licensed under various <a href="http://creativecommons.org/">Creative commons</a> licences, see each image for details   /   This website is <a href="http://github.com/nylnook/nylnook-website/blob/master/LICENSE">MIT licensed</a> and based on <a href="http://docpad.org/">Docpad</a> - Fork it on <a href="http://github.com/nylnook/nylnook-website">Github</a>   /   Find us on <a href="https://plus.google.com/+Nylnook-art" rel="publisher">Google+</a>   /   <a href="http://abattis.org/cantarell/">Cantarell Font</a> by Dave Crossland, GPLv3 licence<p>
 		</footer>
 		<!-- DocPad Scripts + Our Own -->
 		<%- @getBlock('scripts').add(@getDeferedScripts()).toHTML() %>

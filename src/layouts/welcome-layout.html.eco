@@ -9,14 +9,11 @@
 	<% for img in @getCollection("images").toJSON().slice(0,1): %>
 		<a href="<%- img.url %>">
 			<picture>
-				<source srcset="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-350x350.jpg 1x, <%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-700x700.jpg 2x"></source>
-				<source srcset="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-550x550.jpg 1x, <%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-1100x1100.jpg 2x" media="(min-width: 481px)"></source>
-				<source srcset="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-700x700.jpg 1x, <%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-1400x1400.jpg 2x" media="(min-width: 981px)"></source>
 				<source srcset="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-1100x1100.jpg 1x, <%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-2200x2200.jpg 2x" media="(min-width: 1581px)"></source>
-				<!-- Fallback content -->
-				<noscript>
-				    <img src="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-700x700.jpg" alt="<%- img.title %> thumbnail">
-				</noscript>
+				<source srcset="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-700x700.jpg 1x, <%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-1400x1400.jpg 2x" media="(min-width: 981px)"></source>
+				<source srcset="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-550x550.jpg 1x, <%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-1100x1100.jpg 2x" media="(min-width: 481px)"></source>
+				<source srcset="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-350x350.jpg 1x, <%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-700x700.jpg 2x"></source>
+				<img srcset="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-700x700.jpg" alt="<%- img.title %> thumbnail">
 			</picture>
 		</a>
 		<div class="meta">
@@ -32,11 +29,7 @@
 			<a href="<%- img.url %>">
 				<picture>
 					<source srcset="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-350x350.jpg 1x, <%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-700x700.jpg 2x"></source>
-					
-					<!-- Fallback content -->
-					<noscript>
-					    <img src="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-350x350.jpg" alt="<%- img.title %> thumbnail">
-					</noscript>
+					<img srcset="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-350x350.jpg" alt="<%- img.title %> thumbnail">
 				</picture>
 			</a>
 			<div class="meta">
