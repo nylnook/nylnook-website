@@ -24,11 +24,36 @@ docpadConfig = {
 					services:
 						googleAnalytics: false
 
-	
-
 	templateData:
-
-		# Specify some site properties
+	
+		# -----------------------------
+		# Language Definition
+		
+		# List all available languages here
+		# Must match with a corresponding directory in src/documents/ 
+		languages: ['en', 'fr']
+		
+		# Define default language
+		default_lang: 'en'
+		
+		# Define plural for each language. A list is available here : https://github.com/airbnb/polyglot.js/blob/master/lib/polyglot.js (don't forget to convert to coffeescript !)
+		plural_types:
+			en: (n) -> (if n isnt 1 then 1 else 0)
+			fr: (n) -> (if n > 1 then 1 else 0)
+		
+		# Translation file location
+		# Depending on your translation system, you may want to change that
+		# remember this path start from the docpad directory
+		translation_files:
+			en: 'src/documents/en/en.json'
+			fr: 'src/documents/fr/fr.json'
+			
+		# Translations will be loaded into this object. Requiered.
+		translations: {}
+		
+		
+		# -----------------------------
+		# Non translated definitions (untranslated names, urls ..)
 		site:
 			# The production url of our website
 			url: "http://nylnook.com"
@@ -41,25 +66,11 @@ docpadConfig = {
 			# The default title of our website
 			title: "nylnook"
 
-			# The website description (for SEO)
-			description: """
-				Free illustrations and creative wallpapers to share, adapt and reuse freely in the best quality !
-				"""
-			
-			# The website baseline 
-			baseline: """
-				Free illustrations and creative wallpapers to share, adapt and reuse freely in the best quality !
-				"""
-
-			# The website keywords (for SEO) separated by commas
-			keywords: """
-				wallpaper, HD, FHD, 4K, 8K, illustration, free, open source, creative commons, creative
-				"""
 			# The website author
 			author: "Camille Bissuel"
 			
 			#default Creative commons license for content
-			defaultLicense:  "by-sa"
+			default_license:  "by-sa"
 			
 			services:
 				hackerNewsSubmitButton: false
@@ -70,12 +81,78 @@ docpadConfig = {
 
 				googleAnalytics: 'UA-50089163-1'
 				disqus: 'nylnook'
+				
 
 		# -----------------------------
 		# Helper Functions
 		
-		getSiteUrl: ->
-			@site.url
+		# -----------------------------
+		# Internationalization functions
+		
+		# Allow to obtain current language from URL if @document.lang isn't available
+		# Using @document.lang is prefered for performance
+		langFromPath: (document) ->
+			if not document
+				document = @document
+			return document.relativeDirPath.split('/').slice(0,1)
+			
+		# Get a path without current language. Maybe useful in templates to get a file path
+		# Example : <%= @pathWithoutLang(post) %>
+		pathWithoutLang: (document) ->
+			if not document
+				document = @document
+			return document.relativeOutDirPath.split('/').slice(1)
+		
+		# Returns a human readable formatted date. Require Moment.js
+		# Example : @date()
+		# Example with parameters : @date(post.date, post.lang)
+		date: (date, lang) ->
+			if not date
+				date = @document.date
+			if not lang
+				lang = @document.lang
+			moment = require 'moment'
+			moment.lang(lang)
+			return moment(date).format('LL');
+		
+		# Returns a computer readable formatted date. Require Moment.js
+		# Example : @computerDate()
+		# Example with parameters : @computerDate(post.date)
+		# Example in HTML5: <time pubdate="<%- @computerDate() %>"><%- @date() %></time>
+		computerDate: (date) ->
+			if not date
+				date = @document.date
+			moment = require 'moment'
+			return moment(date).format('YYYY-MM-DD');
+			
+		# Translate the given key into the language of the current document.
+		# Fallback to default language if the key if not found or fallback again to unstranslated string.	
+		# You can use simple templates: @_ 'The answer is {num}', num: 42	        
+		_: (key, translations_with_parameters=null) ->
+			translations_with_parameters ?= []
+			if @translations[@document.lang][key]?
+				message = @translations[@document.lang][key]
+			else if @translations[@default_lang][key]?
+				message = @translations[@default_lang][key]
+			else
+				message = key
+			message.replace /\{([^\}]+)\}/g, (translation, param) ->
+				translations_with_parameters[param] or translation
+				
+		# Plural form for translations
+		# Fallback to default language if the key if not found or fallback again to unstranslated string.	
+		# Simple example : @plural(3, 'dog|dogs')
+		# Example in context : @_ '{num} {posts}', num: documents.length, posts: @plural(documents.length, 'post|posts')
+		plural: (n, key) ->
+			if @translations[@document.lang][key]?
+				return ((@_ key).split '|')[@plural_types[@document.lang](n)]
+			else if @translations[@default_lang][key]?
+				return ((@_ key).split '|')[@plural_types[@default_lang](n)]
+			else
+				return ((@_ key).split '|').slice(0,1)
+				
+		# -----------------------------
+		# Generic functions
 
 		# Get the prepared site/document title
 		# Often we would like to specify particular formatting to our page's title
@@ -88,23 +165,18 @@ docpadConfig = {
 			else
 				@site.title
 
-		# Get the prepared site/document description
+		# Get the prepared site/document description. Require previous i18n functions
 		getPreparedDescription: ->
 			# if we have a document description, then we should use that, otherwise use the site's description
-			@document.description or @site.description
+			@document.description or @_ 'site-description'
 		
-		# Get the prepared site/document description
-		getPreparedBaseline: ->
-			# if we have a document description, then we should use that, otherwise use the site's description
-			@site.baseline
 
-		# Get the prepared site/document keywords
+		# Same for keywords. Require previous i18n functions
 		getPreparedKeywords: ->
-			# Merge the document keywords with the site keywords
-			@site.keywords.concat(@document.keywords or []).join(', ')
+			@document.keywords or @_ 'keywords'
 		
 		getLicense:->
-			@document.license or @site.defaultLicense
+			@document.license or @site.default_license
 			
 
 		getStyles: ->
@@ -113,38 +185,69 @@ docpadConfig = {
 
 		getDeferedScripts: ->
 			(["/scripts/scripts.js"])
-
-
+		
 			
 				
 	# =================================
 	# Collections
 	collections:
-		pages: ->
-			@getCollection("html").findAllLive({isPage:true}, [{filename:1}])
-		posts: ->
-			@getCollection("html").findAllLive({relativeOutDirPath:'blog'},[{date:-1}]).on "add", (model) ->
-				model.setMetaDefaults({layout:"post-layout"})
-		images: ->
-			@getCollection("html").findAllLive({relativeOutDirPath:'img'},[{date:-1}]).on "add", (model) ->
-				model.setMetaDefaults({layout:"img-layout"})
-			
-	plugins:
-		moment:
-			formats: [
-				{raw: 'date', format: 'MMMM Do YYYY', formatted: 'humanDate'}
-				{raw: 'date', format: 'YYYY-MM-DD', formatted: 'computerDate'}
-			]
-			
-		associatedfiles:
-			# The paths for the associated files.
-			associatedFilesPath: 'img'
+		# This is internationalized, and only to build automatic template data !!!
+		# If you try to use it in your files, you will obtain all results in every language
+		# In your templates, use for example @getCollection("html").findAllLive({relativeOutDirPath: @document.lang+'/blog'},[{date:-1}]) instead of thoses collections
+		
+		# This collection is absolutely required to make internationalization work !
+		# this wil add a "lang" metadata correponding to the same directory to each file in documents
+		setlangforalldocuments: (database) ->
+			lang_dirs = ('/'+lang+'/' for lang in @config.templateData.languages)
+			lang_regex = ('^'+lang_dir for lang_dir in lang_dirs).join('|')
 
-			# Whether to use relative base paths for the document. This would
-			# use associated-files/subfolder/myarticle/image.jpg instead of
-			# associated-files/myarticle/image.jpg.
-			useRelativeBase: false
-			
+			@getCollection('documents').createChildCollection()
+				.setFilter 'search', (model) ->
+					return false if not model.get('url')
+
+					lang_match = model.get('url').match(lang_regex)
+					return false if not lang_match
+
+					lang = lang_match[0].replace(/^\/|\/$/g, '')
+					model.setMetaDefaults { lang: lang }
+					true
+		
+		# Build template data for posts (only relative path and metadata change)
+		posts: (database) ->
+			lang_dirs = ('/'+lang+'/blog' for lang in @config.templateData.languages)
+			lang_regex = ('^'+lang_dir for lang_dir in lang_dirs).join('|')
+
+			@getCollection('documents').createChildCollection()
+				.setFilter 'search', (model) ->
+					return false if not model.get('url')
+
+					lang_match = model.get('url').match(lang_regex)
+					return false if not lang_match
+
+					lang = lang_match[0].replace(/^\/|\/$/g, '')
+					model.setMetaDefaults { layout:"post-layout"}
+					true
+		
+		# Build template data for images (only relative path and metadata change)	
+		images: (database) ->
+			lang_dirs = ('/'+lang+'/img' for lang in @config.templateData.languages)
+			lang_regex = ('^'+lang_dir for lang_dir in lang_dirs).join('|')
+
+			@getCollection('documents').createChildCollection()
+				.setFilter 'search', (model) ->
+					return false if not model.get('url')
+
+					lang_match = model.get('url').match(lang_regex)
+					return false if not lang_match
+
+					lang = lang_match[0].replace(/^\/|\/$/g, '')
+					model.setMetaDefaults { layout:"img-layout" }
+					true
+					
+					
+	# =================================
+	# Docpad Plugins	
+	plugins:
 		sitemap:
 			cachetime: 600000
 			changefreq: 'weekly'
@@ -156,6 +259,21 @@ docpadConfig = {
 	# Here we can define handlers for events that DocPad fires
 	# You can find a full listing of events on the DocPad Wiki
 	events:
+		
+		# We add this event to load the translations from locale JSON files
+		renderBefore: (opts, next) ->
+			fs = require 'fs'
+
+			for lang of opts.templateData.translation_files
+				langJSON = fs.readFileSync opts.templateData.translation_files[lang]
+				try
+					opts.templateData.translations[lang] = JSON.parse(langJSON)
+				catch error
+					console.log "\n\nERROR: Language JSON fail: #{lang}: #{error}\n"
+					throw error
+
+			next()
+
 
 		# Server Extend
 		# Used to add our own custom routes to the server before the docpad routes are added
@@ -170,16 +288,41 @@ docpadConfig = {
 			latestConfig = docpad.getConfig()
 			oldUrls = latestConfig.templateData.site.oldUrls or []
 			newUrl = latestConfig.templateData.site.url
-
+			
+			
 			# Redirect any requests accessing one of our sites oldUrls to the new site url
 			server.use (req,res,next) ->
 				if req.headers.host in oldUrls
 					res.redirect(newUrl+req.url, 301)
 				else
 					next()
+					
+					
+			# We add this event to redirect visitor reaching root domain to their prefered language
+			# at the corresponding subdomain.
+			# We use the "Accept-Language" header for that. Require the "negociator" npm package
+			# If negociator fail to find any solution, default language is used
+			
+			# /!\ This will not work if the server is static ! 
+			# If static, use an index.html file with client side javascript detection to replace this.
+			# Example script in /src/documents/404.hml.eco
+			server.use (req,res,next) ->
+				if req.path == "/"
+					Negotiator = require('negotiator')
+					negotiator = new Negotiator(req)
+					available_languages = latestConfig.templateData.languages
+					if (!!negotiator.language(available_languages))
+						#console.log('redirect to /' + negotiator.language(availableLanguages))
+						res.redirect(negotiator.language(available_languages))
+					else
+						#console.log('redirect to default language')
+						res.redirect(latestConfig.templateData.default_lang)
+				else
+					next()		
 
 }
 
 
 # Export our DocPad Configuration
 module.exports = docpadConfig
+

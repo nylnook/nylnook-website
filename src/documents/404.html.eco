@@ -1,0 +1,70 @@
+---
+title: '404'
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Site Properities -->
+		<title><%= @getPreparedTitle() %></title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- DocPad Meta -->
+		<%- @getBlock('meta').toHTML() %>
+
+		<!-- DocPad Styles + Our Own -->
+		<%- @getBlock('styles').add(@getStyles()).toHTML() %>
+		
+		<!-- Favicons and Icons -->
+		<!-- Basic favicon, 32x32px -->
+        	<link rel="icon" href="/favicon.ico" />
+        	<!-- IE 10 Metro tile icon -->
+        	<meta name="msapplication-TileColor" content="#FFFFFF">
+		<meta name="msapplication-TileImage" content="/favicon-144.png">
+		<!-- Touch icon for iOS 2.0+ and Android 2.1+ -->
+        	<link rel="apple-touch-icon-precomposed" href="/favicon-152.png">
+        	<!-- Generic favicon for other cases, 64x64px -->
+        	<link rel="icon" type="image/png" href="/favicon-64.png" />
+        	
+		<script>
+		var defaultLanguage, supportedLanguages, language, redirectLanguage;
+
+		defaultLanguage = 'en';
+		supportedLanguages = <%- JSON.stringify @languages %>;
+		redirectLanguage = defaultLanguage;
+
+		try {
+			language = window.navigator.userLanguage || window.navigator.language || defaultLanguage;
+
+		// Some languages we support look like 'en' and some like 'en-US'. Some languages
+		// set in navigator.language look like 'en' and some like 'en-US'. So we'll
+		// check both combinations.
+
+			if (supportedLanguages.indexOf(language) >= 0) {
+				redirectLanguage = language;
+			}
+			else if (supportedLanguages.indexOf(language.substr(0, 2)) >= 0) {
+				redirectLanguage = language.substr(0, 2);
+			}
+		}
+		catch (e) {
+		// Really old Internet Explorer seems to throw an exception on the above code.
+		// We'll just catch and pass.
+		}
+
+		// Redirect to a language-specific index page
+		window.location.href = '/' + redirectLanguage + '/404.html';
+		</script>
+</head>
+
+<body>
+	<h1><%- @document.title %></h1>
+	<p>Not found !</p> If you are not redirected automatically, please follow <a href='/en/404.html'>this link</a>.
+	<!-- DocPad Scripts + Our Own -->
+	<%- @getBlock('scripts').add(@getDeferedScripts()).toHTML() %>
+</body>
+</html>
+
+

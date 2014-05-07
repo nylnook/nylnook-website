@@ -1,40 +1,41 @@
-<%- @partial('head') %>
 <%- @partial('header') %>
+
 	
 	<article class="warning">
 		<%- @content %>
 	</article>
 	
 	<section id="latest-img">
-	<% for img in @getCollection("images").toJSON().slice(0,1): %>
+	
+	<% for img in @getCollection("html").findAllLive({relativeOutDirPath: @document.lang+'/img'},[{date:-1}]).toJSON().slice(0,1): %>
 		<a href="<%- img.url %>">
 			<picture>
-				<source srcset="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-1100x1100.jpg 1x, <%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-2200x2200.jpg 2x" media="(min-width: 1581px)"></source>
-				<source srcset="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-700x700.jpg 1x, <%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-1400x1400.jpg 2x" media="(min-width: 981px)"></source>
-				<source srcset="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-550x550.jpg 1x, <%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-1100x1100.jpg 2x" media="(min-width: 481px)"></source>
-				<source srcset="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-350x350.jpg 1x, <%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-700x700.jpg 2x"></source>
-				<img srcset="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-700x700.jpg" alt="<%- img.title %> thumbnail">
+				<source srcset="/<%= @pathWithoutLang(img) %>/<%= img.relativeOutDirPath %>/<%=img.file %>/thumb-nylnook-<%=img.file %>-1100x1100.jpg 1x, <%= img.relativeOutDirPath %>/<%=img.file %>/thumb-nylnook-<%=img.file %>-2200x2200.jpg 2x" media="(min-width: 1581px)"></source>
+				<source srcset="/<%= @pathWithoutLang(img) %>/<%=img.file %>/thumb-nylnook-<%=img.file %>-700x700.jpg 1x, <%= img.relativeOutDirPath %>/<%=img.file %>/thumb-nylnook-<%=img.file %>-1400x1400.jpg 2x" media="(min-width: 981px)"></source>
+				<source srcset="/<%= @pathWithoutLang(img) %>/<%=img.file %>/thumb-nylnook-<%=img.file %>-550x550.jpg 1x, <%= img.relativeOutDirPath %>/<%=img.file %>/thumb-nylnook-<%=img.file %>-1100x1100.jpg 2x" media="(min-width: 481px)"></source>
+				<source srcset="/<%= @pathWithoutLang(img) %>/<%=img.file %>/thumb-nylnook-<%=img.file %>-350x350.jpg 1x, <%= img.relativeOutDirPath %>/<%=img.file %>/thumb-nylnook-<%=img.file %>-700x700.jpg 2x"></source>
+				<img srcset="/<%= @pathWithoutLang(img) %>/<%=img.file %>/thumb-nylnook-<%=img.file %>-700x700.jpg" alt="<%- img.title %> thumbnail">
 			</picture>
 		</a>
 		<div class="meta">
 			<h1><a href="<%= img.url %>"><%- img.title %></a></h2>
-			<time pubdate="<%- img.computerDate %>"><%- img.humanDate %></time>
+			<time pubdate="<%- @computerDate(img.date) %>"><%- @date(img.date, img.lang)  %></time>
 	    	</div>
 	<% end %>
 	</section>
 	
 	<section id="img-browser">
-	<% for img in @getCollection("images").toJSON().slice(1,19): %>
+	<% for img in @getCollection("html").findAllLive({relativeOutDirPath: @document.lang+'/img'},[{date:-1}]).toJSON().slice(1,19): %>
 	        <div class="thumb">
 			<a href="<%- img.url %>">
 				<picture>
-					<source srcset="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-350x350.jpg 1x, <%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-700x700.jpg 2x"></source>
-					<img srcset="<%= img.relativeOutDirPath %>/<%= img.basename %>/thumb-nylnook-<%= img.basename %>-350x350.jpg" alt="<%- img.title %> thumbnail">
+					<source srcset="/<%= @pathWithoutLang(img) %>/<%=img.file %>/thumb-nylnook-<%=img.file %>-350x350.jpg 1x, <%= img.relativeOutDirPath %>/<%=img.file %>/thumb-nylnook-<%=img.file %>-700x700.jpg 2x"></source>
+					<img srcset="/<%= @pathWithoutLang(img) %>/<%=img.file %>/thumb-nylnook-<%=img.file %>-350x350.jpg" alt="<%- img.title %> thumbnail">
 				</picture>
 			</a>
 			<div class="meta">
 				<h3><a href="<%= img.url %>"><%- img.title %></a></h2>
-				<time pubdate="<%- img.computerDate %>"><%- img.humanDate %></time>
+				<time pubdate="<%- @computerDate(img.date) %>"><%- @date(img.date, img.lang)  %></time>
 		    	</div>
 		</div>
 	<% end %>

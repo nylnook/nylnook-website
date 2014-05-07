@@ -1,7 +1,10 @@
----
-cacheable: true
----
-		<!-- Standard Meta -->
+<!DOCTYPE html>
+<html lang="<%= @document.lang %>">
+	<head>
+		<!-- Site Properities -->
+		<title><%= @getPreparedTitle() %></title>
+		<meta name="description" content="<%= @getPreparedDescription() %>" />
+		<meta name="keywords" content="<%= @getPreparedKeywords() %>" />		<!-- Standard Meta -->
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -39,15 +42,19 @@ cacheable: true
 				<h1 class="visuallyhidden"><%- @site.title %></h1>
 			</div>
 			<nav id="language-selector">
-				<a href="/" class="current-lang">en</a>
-				<a href="">fr</a>
+				<a href="#" class="current-lang"><%- @document.lang %></a>
+				<% for lang in @languages : %>
+					<% if lang isnt @document.lang : %>
+						<a href="/<%- lang %>" ><%- lang %></a>
+					<% end %>
+				<% end %>
 			</nav>
 			<nav id="top-nav">
 				<ul>
-					<li><a href="/">Wallpapers<img src="/website-img/icon-wallpapers.svg"  alt="Wallapers icon" /></a></li>
-					<li><a href="">Shop & Gifts<img src="/website-img/icon-gifts.svg"  alt="Gifts icon" /></a></li>
-					<li><a href="/blog">Blog<img src="/website-img/icon-blog.svg"  alt="Blog icon" /></a></li>
+					<li><a href="/<%- @document.lang %>/"><%= @_ 'wallpapers' %><img src="/website-img/icon-wallpapers.svg"  alt="Wallapers icon" /></a></li>
+					<li><a href=""><%= @_ 'shop' %><img src="/website-img/icon-gifts.svg"  alt="Gifts icon" /></a></li>
+					<li><a href="/<%- @document.lang %>/<%= @_ 'blog-filename' %>"><%= @_ 'blog' %><img src="/website-img/icon-blog.svg"  alt="Blog icon" /></a></li>
 				</ul>
 			</nav>
-			<h2 id="site-baseline"><%= @getPreparedBaseline() %></h2>
+			<h2 id="site-baseline"><%= @_ 'baseline' %></h2>
 		</header>

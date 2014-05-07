@@ -1,4 +1,3 @@
-<%- @partial('head') %>
 <%- @partial('header') %>
 
 	<section id="intro">
@@ -6,10 +5,10 @@
 		<%- @content %>
 	</section>
 	
-	<% for post in @getCollection("posts").toJSON(): %>
+	<% for post in @getCollection("html").findAllLive({relativeOutDirPath: @document.lang+'/blog'},[{date:-1}]).toJSON(): %>
 	        <article class="post">
 		    <h2><a href="<%= post.url %>"><%- post.title %></a></h2>
-		    <time pubdate="<%- @document.computerDate %>"><%- @document.humanDate %></time>		    
+		   <time pubdate="<%- @computerDate(post.date) %>"><%- @date(post.date, post.lang) %></time>
 		       <%- post.contentRenderedWithoutLayouts %>
 		</article>
 	<% end %>

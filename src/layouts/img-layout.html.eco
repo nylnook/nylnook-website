@@ -1,34 +1,35 @@
-<%- @partial('head') %>
 <%- @partial('header') %>
 	
-<article class="img-page" about="<%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-700x700.jpg">
+<article class="img-page" about="../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-700x700.jpg">
 	<picture>
-		<source srcset="<%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-1100x1100.jpg 1x, <%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-2200x2200.jpg 2x" media="(min-width: 1581px)"></source>
-		<source srcset="<%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-700x700.jpg 1x, <%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-1400x1400.jpg 2x" media="(min-width: 981px)"></source>
-		<source srcset="<%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-550x550.jpg 1x, <%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-1100x1100.jpg 2x" media="(min-width: 481px)"></source>
-		<source srcset="<%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-350x350.jpg 1x, <%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-700x700.jpg 2x"></source>
-		<img srcset="<%- @document.basename %>/thumb-nylnook-<%- @document.basename %>-700x700.jpg" alt="<%- @document.title %>" />
+		<source srcset="../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-1100x1100.jpg 1x, ../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-2200x2200.jpg 2x" media="(min-width: 1581px)"></source>
+		<source srcset="../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-700x700.jpg 1x, ../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-1400x1400.jpg 2x" media="(min-width: 981px)"></source>
+		<source srcset="../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-550x550.jpg 1x, ../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-1100x1100.jpg 2x" media="(min-width: 481px)"></source>
+		<source srcset="../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-350x350.jpg 1x, ../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-700x700.jpg 2x"></source>
+		<img srcset="../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-700x700.jpg" alt="<%- @document.title %>" />
 	</picture>
 	<section>
 		<h1><%- @document.title %></h1>
-		<time pubdate="<%- @document.computerDate %>"><%- @document.humanDate %></time>
-		<p>by <a href="/about" rel="author">Camille Bissuel</a></p>
+		<time pubdate="<%- @computerDate() %>"><%- @date() %></time>
+		<p><%= @_ 'by' %> <a href="/<%- @document.lang %>/<%= @_ 'about-filename' %>" rel="author"><%- @site.author %></a></p>
 		<%- @content %>
 	</section>
 	<section>
-		<h2>Download for your screen size</h2>
-		<p>Note : definition is given "width x height"</p>
+		<h2><%= @_ 'download' %></h2>
+		<p><%= @_ 'download-note' %></p>
 				
 		<% deflist = "" %>
-		<% toolongname = "nylnook-"+@document.basename+"-" %>
-		<% for file in @getDocument().getAssociatedFiles().toJSON(): %>
+		<% toolongname = "nylnook-"+@document.file+"-" %>
+		
+		
+		<% for file in @getFilesAtPath('../../img/'+@document.file).toJSON(): %>
 			<% if !(/thumb/.test(file.basename)) : %>
 				<% definition = file.basename.replace(toolongname, ''); %>
 				<% deflist += definition + ", " %>
 			<% end %>
 		<% end %>
 		
-		<% downloadpath = @document.basename+"/files/nylnook-"+@document.basename+"-" %>
+		<% downloadpath = "../../img/"+@document.file+"/files/nylnook-"+@document.file+"-" %>
 		<% extpath = ".jpg" %>
 		<% unit = "px" %>
 		
@@ -43,7 +44,7 @@
 			 <% end %>
 		<% end %>
 		
-		<h3>Mobile and Tablets</h3>
+		<h3><%= @_ 'mobiles-and-tablets' %></h3>
 			
 			<%- img('240x320') %>
 			<%- img('320x240') %>
@@ -65,7 +66,7 @@
 			<%- img('1920x1200', 'WUXGA') %>
 			<%- img('2048x2048', 'WUXGA') %>
 			
-		<h3>Desktop</h3>
+		<h3><%= @_ 'desktop' %></h3>
 		
 			<%- img('768x1024') %>
 			<%- img('800x600', 'SVGA') %>
@@ -93,7 +94,7 @@
 			<%- img('2560x1600', 'WQXGA') %>
 			<%- img('2880x1800', 'Retina') %>
 
-		<h3>Big pictures or multiples monitors</h3>
+		<h3><%= @_ 'multi-monitors' %></h3>
 			<%- img('1920x1080', 'Full HD') %>
 			<%- img('1920x1200', 'WUXGA') %>
 			<%- img('2048x1152', 'QWXGA') %>
@@ -105,31 +106,31 @@
 			<%- img('8192x8192', '8K Fulldome') %>
 			
 		
-		<h3>Square sizes for texturing</h3>
+		<h3><%= @_ 'square' %></h3>
 			<%- img('512x512') %>
 			<%- img('1024x1024', '1K') %>
 			<%- img('2048x2048', '2K') %>
 			<%- img('4096x4096', '4K') %>
 			<%- img('8192x8192', '8K') %>
 			
-		<h3>Get sources</h3>
-			<a href="../nylnook-src/nylnook-<%- @document.basename %>.zip" download>Source for <%- @document.title %></a>
+		<h3><%= @_ 'sources' %></h3>
+			<a href="../../nylnook-src/nylnook-<%- @document.file %>.zip" download><%= @_ 'sources-for' %> <%- @document.title %></a>
 			
 	</section>
 	<section>
-		<h2>License</h2>
+		<h2><%= @_ 'license' %></h2>
 		<%- @partial('license') %>
 	</section>
 	<section id="share">
-		<h2>Share</h2>
+		<h2><%= @_ 'share' %></h2>
 		<%- @getServiceButtons() %>
 	</section>
 	<section id="support">
-		<h2>Support</h2>
+		<h2><%= @_ 'support' %></h2>
 		<script id='fbngrtt'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=nylnook&url='+encodeURIComponent(document.URL);f.title='Flattr';f.height=62;f.width=56;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fbngrtt');</script>
 	</section>
 	<section id="comments">
-		<h2>Comment</h2>
+		<h2><%= @_ 'comments' %></h2>
 		<%- @getDisqus() %>
 	</section>
 	
