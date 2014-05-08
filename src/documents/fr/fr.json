@@ -24,5 +24,6 @@
 	"license": "Licence",
 	"share": "Partager",
 	"comments": "Commentaires",
-	"not-found": "Page non trouvée :("
+	"not-found": "Page non trouvée :(",
+	"noscript-message" : "⚠<p>Je suis désolé, mais ce site web requière JavaScript pour l'affichage de ses images. Et vous allez probablement devoir l'activer pour les voir.</p><ul><li>Si vous ne savez pas ce que ça veut dire, veuillez suivre les instructions sur {Enable} et revenir pour recharger cette page.</li><li>Si vous savez ce que ça veut dire, et que vous avez choisit de désactiver JavaScript, je peux vous promettre qu'il n'y a pas de code malicieux dans mes scripts : vous pouvez vérifier mon code source sur {Github}</li></ul>"
 }

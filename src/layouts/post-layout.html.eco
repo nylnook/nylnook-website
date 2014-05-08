@@ -1,9 +1,9 @@
 <%- @partial('header') %>
 	
-	<article class="single-post">
+	<article class="post single-post">
 		<h1><%- @document.title %></h1>
 		<time pubdate="<%- @computerDate() %>"><%- @date() %></time>
-		<p>by <a href="/about" rel="author">Camille Bissuel</a></p>
+		<p class="author">by <a href="/about" rel="author">Camille Bissuel</a></p>
 		
 		<%- @content %>
 		<section id="share">

@@ -48,7 +48,7 @@ docpadConfig = {
 			en: 'src/documents/en/en.json'
 			fr: 'src/documents/fr/fr.json'
 			
-		# Translations will be loaded into this object. Requiered.
+		# Translations will be loaded into this object. Required.
 		translations: {}
 		
 		
@@ -89,19 +89,31 @@ docpadConfig = {
 		# -----------------------------
 		# Internationalization functions
 		
-		# Allow to obtain current language from URL if @document.lang isn't available
-		# Using @document.lang is prefered for performance
-		langFromPath: (document) ->
-			if not document
-				document = @document
-			return document.relativeDirPath.split('/').slice(0,1)
-			
-		# Get a path without current language. Maybe useful in templates to get a file path
-		# Example : <%= @pathWithoutLang(post) %>
-		pathWithoutLang: (document) ->
-			if not document
-				document = @document
-			return document.relativeOutDirPath.split('/').slice(1)
+		# Translate the given key into the language of the current document.
+		# Fallback to default language if the key if not found or fallback again to unstranslated string.	
+		# You can use simple variables: @_ 'The answer is', num: 42   
+		_: (key, translations_with_parameters=null) ->
+			translations_with_parameters ?= []
+			if @translations[@document.lang][key]?
+				message = @translations[@document.lang][key]
+			else if @translations[@default_lang][key]?
+				message = @translations[@default_lang][key]
+			else
+				message = key
+			message.replace /\{([^\}]+)\}/g, (translation, param) ->
+				translations_with_parameters[param] or translation
+				
+		# Plural form for translations
+		# Fallback to default language if the key if not found or fallback again to unstranslated string.	
+		# Simple example : @plural(3, 'dog|dogs')
+		# Example in context : @_ '{num} {posts}', num: documents.length, posts: @plural(documents.length, 'post|posts')
+		plural: (n, key) ->
+			if @translations[@document.lang][key]?
+				return ((@_ key).split '|')[@plural_types[@document.lang](n)]
+			else if @translations[@default_lang][key]?
+				return ((@_ key).split '|')[@plural_types[@default_lang](n)]
+			else
+				return ((@_ key).split '|').slice(0,1)
 		
 		# Returns a human readable formatted date. Require Moment.js
 		# Example : @date()
@@ -125,31 +137,6 @@ docpadConfig = {
 			moment = require 'moment'
 			return moment(date).format('YYYY-MM-DD');
 			
-		# Translate the given key into the language of the current document.
-		# Fallback to default language if the key if not found or fallback again to unstranslated string.	
-		# You can use simple templates: @_ 'The answer is {num}', num: 42	        
-		_: (key, translations_with_parameters=null) ->
-			translations_with_parameters ?= []
-			if @translations[@document.lang][key]?
-				message = @translations[@document.lang][key]
-			else if @translations[@default_lang][key]?
-				message = @translations[@default_lang][key]
-			else
-				message = key
-			message.replace /\{([^\}]+)\}/g, (translation, param) ->
-				translations_with_parameters[param] or translation
-				
-		# Plural form for translations
-		# Fallback to default language if the key if not found or fallback again to unstranslated string.	
-		# Simple example : @plural(3, 'dog|dogs')
-		# Example in context : @_ '{num} {posts}', num: documents.length, posts: @plural(documents.length, 'post|posts')
-		plural: (n, key) ->
-			if @translations[@document.lang][key]?
-				return ((@_ key).split '|')[@plural_types[@document.lang](n)]
-			else if @translations[@default_lang][key]?
-				return ((@_ key).split '|')[@plural_types[@default_lang](n)]
-			else
-				return ((@_ key).split '|').slice(0,1)
 				
 		# -----------------------------
 		# Generic functions
@@ -180,7 +167,7 @@ docpadConfig = {
 			
 
 		getStyles: ->
-			(["/styles/styles.css"])
+			(["/styles/styles.css", "/vendor/hljs-github.css"])
 				
 
 		getDeferedScripts: ->
@@ -248,6 +235,7 @@ docpadConfig = {
 	# =================================
 	# Docpad Plugins	
 	plugins:
+	
 		sitemap:
 			cachetime: 600000
 			changefreq: 'weekly'

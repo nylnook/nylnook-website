@@ -11,7 +11,7 @@
 	"support": "Support a gnome",
 	"about": "About",
 	"about-filename": "about",
-	"footer-message": "© Camille Bissuel - Images are licensed under various {CC} licences, see each image for details   /   This website is {MIT} licensed and based on {Docpad} - Fork it on {Github}   /   Find us on {Gplus}   /   {Cantarell} Font by Dave Crossland, GPLv3 licence",
+	"footer-message": "© Camille Bissuel - Images are licensed under various {CC} licences, see each image for details   /   This website is {MIT} licensed and based on {Docpad} - Fork it on {Github}   /   Find us on {Gplus}   /  {Cantarell} Font by Dave Crossland, GPLv3 licence",
 	"by": "by",
 	"download": "Download for your screen size",
 	"download-note": "Note : definition is given \"width x height\"",
@@ -24,5 +24,6 @@
 	"license": "License",
 	"share": "Share",
 	"comments": "Comments",
-	"not-found": "Page Not Found :("
+	"not-found": "Page Not Found :(",
+	"noscript-message" : "⚠<p>I'm sorry, but for this site requires JavaScript for it's pictures display. And you will probably have to activate it to see them.</p><ul><li>If you don't know what this mean, please follow instructions on {Enable} and come back to reload this page.</li><li>If you know what this mean and choosed to disable JavaScript, I can swear there is no malicous code in my scripts, and you can check for my source code on {Github}</li></ul>"
 }
