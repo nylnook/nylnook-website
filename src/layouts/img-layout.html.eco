@@ -121,6 +121,14 @@
 		<h2><%= @_ 'license' %></h2>
 		<%- @partial('license') %>
 	</section>
+	<section id="tags">
+		<h2><%= @_ 'tags' %></h2>
+		<%- @document.tags %>
+	</section>
+	<section id="made-with">
+		<h2><%= @_ 'made-with' %></h2>
+		<%- @document.madewith %>
+	</section>
 	<section id="share">
 		<h2><%= @_ 'share' %></h2>
 		<%- @getServiceButtons() %>

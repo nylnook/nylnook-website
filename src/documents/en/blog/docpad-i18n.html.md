@@ -36,7 +36,7 @@ No, sorry, I'm afraid there is no shortways.
 
 ### <a name="thanks-first"></a>Thanks first
 I'm a designer, not a real coder, and my solution is heavily inspired by 3 already existing projets.   
-Without their code available, I wouldn't have acheived this work: many thanks for being open !
+Without their code available, I wouldn't have achieved this work: many thanks for being open !
 
 In chronological order :
 - Zeno Rocha's [Browser Diet](https://github.com/zenorocha/browser-diet) website
@@ -451,7 +451,7 @@ in french.
 
 We may use the same filename in every language, and just change the lang path :
 ``` xml
-documents/<% @document.lang %>/about.html
+documents/<%- @document.lang %>/about.html
 ```
 But remember we want to be SEO friendly, so path name should be similar to titles names in the corresponding language.
 
@@ -463,6 +463,7 @@ in en.json
 	"about": "About",
 	"about-filename": "about"
 }
+```
 
 in fr.json
 ``` json
@@ -593,7 +594,7 @@ So, if a visitor hit the root domain, he is redirected to the best language we c
 #### <a name="client-side-redirection"></a>Client side 
 
 If you can't do server-side redirection because your server is static or you render static files, client side redirection is required.
-Create an ```index.html`` file at the ```documents``` root, with this script (by Adam Pritchard) :
+Create an ```index.html``` file at the ```documents``` root, with this script (by Adam Pritchard) :
 
 ``` javascript
 <script>
