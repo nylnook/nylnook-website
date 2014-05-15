@@ -8,7 +8,8 @@ tags:
   - animals
   - green
 made:
-  - krita
+  - Krita
 ---
 
-Quelques lignes d'explication
+La loi de la jungle... !   
+Inspiré par le caméléon [Nadzikambia](http://fr.wikipedia.org/wiki/Nadzikambia)

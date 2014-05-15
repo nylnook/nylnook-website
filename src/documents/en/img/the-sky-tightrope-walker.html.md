@@ -13,8 +13,8 @@ tags:
   - white
   - yellow
 made:
-  - krita
-  - gmic
+  - Krita
+  - G'mic
 ---
 
 Walking on a tightrop in the sky...   

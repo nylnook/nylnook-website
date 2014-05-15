@@ -11,8 +11,9 @@ tags:
   - blue
   - green
 made:
-  - krita
-  - gmic
+  - Krita
+  - G'mic
 ---
 
-Few lines of explanations
+What if, in a near futur, or even today, gardens become part of citys ?  
+Testing brush effects on a 3D rendering of cubes, which gave me the perspective ;)

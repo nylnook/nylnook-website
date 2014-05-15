@@ -1,6 +1,6 @@
 ---
 file: 'nylnook-in-the-snow'
-title: 'Nylnook in the snow'
+title: 'Nylnook in the Snow'
 date: 2014-02-26
 license: 'by-nc-nd'
 tags:
@@ -10,7 +10,7 @@ tags:
   - fantasy
   - white
 made:
-  - blender
+  - Blender
 ---
 
 The first time someone took a picture of Nylnook with a telephoto lens, in the middle of north pole... Thoses gnomes are hard to find !

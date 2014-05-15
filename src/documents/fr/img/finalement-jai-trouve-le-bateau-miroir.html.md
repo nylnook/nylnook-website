@@ -8,8 +8,10 @@ tags:
   - abstract
   - green
 made:
-  - mandelbulber
-  - gmic
+  - Mandelbulber
+  - G'micgmic
 ---
 
-Quelques explications
+À quelques encablures du système soliare, au delà de la forêt de cristal, finalement j'ai trouvé le bateau-miroir...   
+Ou autre chose selon votre imagination !  
+Mon premier travail d'exploration de rendu de [fractale](http://fr.wikipedia.org/wiki/Fractale) en 3D.

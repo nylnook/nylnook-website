@@ -127,7 +127,7 @@
 	</section>
 	<section id="made-with">
 		<h2><%= @_ 'made-with' %></h2>
-		<%- @document.madewith %>
+		<%- @document.made %>
 	</section>
 	<section id="share">
 		<h2><%= @_ 'share' %></h2>

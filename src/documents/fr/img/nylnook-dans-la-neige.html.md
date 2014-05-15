@@ -10,7 +10,7 @@ tags:
   - fantasy
   - white
 made:
-  - blender
+  - Blender
 ---
 
 La première fois que l'on a aperçu Nylnook au téléobjectif, en plein pôle nord... Ces lutins sont difficiles à voir !

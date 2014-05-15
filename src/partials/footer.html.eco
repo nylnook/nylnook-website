@@ -1,6 +1,3 @@
----
-cacheable: true
----
 		<nav id="bottom-nav">
 			<ul>
 				<li><a href=""><%= @_ 'follow' %><img src="/website-img/icon-follow.svg"  alt="Follow icon" /></a></li>

@@ -11,8 +11,9 @@ tags:
   - blue
   - green
 made:
-  - krita
-  - gmic
+  - Krita
+  - G'mic
 ---
 
-Quelques lignes d'explication
+Et si, dans un futur pas trop éloigné, ou même aujoud'hui, les jardins s'invitaient dans les villes ?   
+Essai de brosses à effet sur un rendu de cubes en 3D, qui m'on donné la perspective ;)   

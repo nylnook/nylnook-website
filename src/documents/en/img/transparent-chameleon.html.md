@@ -8,7 +8,8 @@ tags:
   - animals
   - green
 made:
-  - krita
+  - Krita
 ---
 
-Few lines of explanations
+The jungle law... !   
+Insipred by the [Nadzikambia](http://en.wikipedia.org/wiki/Nadzikambia) Chameleon

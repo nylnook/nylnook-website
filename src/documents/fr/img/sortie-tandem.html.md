@@ -9,7 +9,8 @@ tags:
   - blue
   - green
 made:
-  - blender
+  - Blender
 ---
 
-Quelques explications
+D'après une commande pour un projet de réinsertion sociale par le vélo...  
+Ce qui m'a permis de tester les rendus [low poly](http://en.wikipedia.org/wiki/Low_poly) en 3D.
