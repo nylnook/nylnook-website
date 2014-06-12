@@ -1,6 +1,25 @@
 <%- @partial('header') %>
+
+<script>
+	var vRatio = window.devicePixelRatio;
+	var vWidth = window.screen.width;
+	var vHeight = window.screen.height;
+	var ua = navigator.userAgent.toLowerCase();
 	
+	var isAndroid = ua.indexOf("android") > -1;
+	if(isAndroid) {
+		gWidth = Math.round(vWidth * vRatio * 2);
+	}else{
+		gWidth = Math.round(vWidth * vRatio);
+	}
+	var gHeight = Math.round(vHeight * vRatio);
+	var def = gWidth+"x"+gHeight;
+	
+	//console.log( def, vRatio );
+</script>
+
 <article class="img-page" about="../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-700x700.jpg">
+	<div id="picture-zone">
 	<picture>
 		<source srcset="../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-1100x1100.jpg 1x, ../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-2200x2200.jpg 2x" media="(min-width: 1581px)"></source>
 		<source srcset="../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-700x700.jpg 1x, ../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-1400x1400.jpg 2x" media="(min-width: 981px)"></source>
@@ -8,19 +27,14 @@
 		<source srcset="../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-350x350.jpg 1x, ../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-700x700.jpg 2x"></source>
 		<img srcset="../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-700x700.jpg" alt="<%- @document.title %>" />
 	</picture>
-	<section>
-		<h1><%- @document.title %></h1>
-		<time pubdate="<%- @computerDate() %>"><%- @date() %></time>
-		<p><%= @_ 'by' %> <a href="/<%- @document.lang %>/<%= @_ 'about-filename' %>" rel="author"><%- @site.author %></a></p>
-		<%- @content %>
-	</section>
-	<section>
-		<h2><%= @_ 'download' %></h2>
-		<p><%= @_ 'download-note' %></p>
-				
+	<span id="picture" class="target-fix"></span>
+	<span id="download" class="target-fix"></span>
+	<section id="download-list" >
+		<div class="inside">
+		<a href="#picture" class="close-button" aria-hidden="true"><img src="/website-img/icon-close.svg"  alt="<%= @_ 'close' %>" title="<%= @_ 'close' %>" /></a>
+		
 		<% deflist = "" %>
 		<% toolongname = "nylnook-"+@document.file+"-" %>
-		
 		
 		<% for file in @getFilesAtPath('../../img/'+@document.file).toJSON(): %>
 			<% if !(/thumb/.test(file.basename)) : %>
@@ -36,14 +50,15 @@
 		<% img = (def, note) -> %>
 			<% deftest = new RegExp(def) %>
 			<% if (deftest.test(deflist)) : %>
-				<% if (note?) : %>
-			 		<a href="<%- downloadpath %><%- def %><%- extpath %>" download><%- def %><%- unit %> (<%- note %>)</a>
-			 	<% else : %>
-			 		<a href="<%- downloadpath %><%- def %><%- extpath %>" download><%- def %><%- unit %></a>
-			 	<% end %>
+			 		<a href="<%- downloadpath %><%- def %><%- extpath %>" download><%- def %><%- unit %><% if (note?) : %> (<%- note %>)<% end %></a>
 			 <% end %>
 		<% end %>
 		
+		<div id="deflist" class="hidden"><%= deflist %></div>
+		
+		<p><%= @_ "your-resolution" %><strong><script>document.write(def);</script>px</strong></p>
+		<p><%= @_ "download-note" %></p>
+	
 		<h3><%= @_ 'mobiles-and-tablets' %></h3>
 			
 			<%- img('240x320') %>
@@ -112,30 +127,105 @@
 			<%- img('2048x2048', '2K') %>
 			<%- img('4096x4096', '4K') %>
 			<%- img('8192x8192', '8K') %>
+		</div>
+	</section>
+	</div>
+	
+	<section id="actions" class="small-blocks">
+	<div class="inside">
+		<script>
+			var defRgx = new RegExp(def);	
+			var defList = document.getElementById('deflist').innerHTML;
 			
-		<h3><%= @_ 'sources' %></h3>
-			<a href="../../nylnook-src/nylnook-<%- @document.file %>.zip" download><%= @_ 'sources-for' %> <%- @document.title %></a>
+			if (defRgx.test(defList) ) {
+				document.write('<a href="<%- downloadpath %>'+def+'<%- extpath %>" id="download-button" class="big-button" download><img src="/website-img/icon-wallpapers.svg"  alt="Wallapers icon" /><h2><%= @_ "download" %></h2><p><%= @_ "for-my-screen" %></p></a>');
+			} else {
+				document.write('<a href="#download" id="download-button" class="big-button"><img src="/website-img/icon-wallpapers.svg"  alt="Wallapers icon" /><h2>'+"<%= @_ 'download' %></h2><p><%- @_ 'cant-detect-res' %></p></a>");
+			}
+		</script>
+		
+		<a href="#download" class="small-button" aria-hidden="true"><%= @_ 'other-resolution' %></a>
 			
+		<% if (@getLicense() is ('by-nc-nd' or '©')): %>
+			<a href="" class="secondary-button" title="<%= @_ 'no-sources' %>"><%= @_ 'sources' %></a>
+		<% else: %>
+			<a href="../../nylnook-src/nylnook-<%- @document.file %>.zip" class="secondary-button" title="<%= @_ 'sources-for' %> <%- @document.title %>" download><%= @_ 'sources' %></a>
+		<% end %>
+
+	</div>
 	</section>
-	<section>
-		<h2><%= @_ 'license' %></h2>
-		<%- @partial('license') %>
+	
+	<section id="img-description">
+		<h1><%- @document.title %></h1>
+		<time pubdate="<%- @computerDate() %>"><%- @date() %></time>
+		<p class="author"><%= @_ 'by' %> <a href="/<%- @document.lang %>/<%= @_ 'about-filename' %>" rel="author"><%- @site.author %></a></p>
+		<%- @content %>
 	</section>
-	<section id="tags">
-		<h2><%= @_ 'tags' %></h2>
-		<%- @document.tags %>
+	
+	
+	<section id="licence" class="small-blocks">
+		<div class="inside">
+			<h2><%= @_ 'license' %></h2>
+			<%- @partial('license') %>
+		</div>
 	</section>
-	<section id="made-with">
-		<h2><%= @_ 'made-with' %></h2>
-		<%- @document.made %>
+	<section id="support" class="small-blocks">
+		<div class="inside">
+			<h2><%= @_ 'support' %></h2>
+			<!-- Flattr -->
+			<div class="support-block">
+				<script id='fbngrtt'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=nylnook&url='+encodeURIComponent(document.URL);f.title='Flattr';f.height=62;f.width=56;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fbngrtt');</script>
+			</div>
+			<!-- Gittip -->
+			<div class="support-block">
+				<script data-gittip-username="nylnook" src="//gttp.co/v1.js"></script>
+			</div>
+			<!-- Bitcoin -->
+			<div class="support-block">
+				<a id="bitcoin" href="/website-img/bitcoin-qrcode-nylnook-1KztgFzdoo1dkxLxtzsGe61hLV3K97PmBs.png"><img src="/website-img/icon-bitcoin.svg"  alt="Bitcoin icon" title="1KztgFzdoo1dkxLxtzsGe61hLV3K97PmBs" /></a>
+			</div>
+			<!-- Tipeee -->
+			<div class="support-block">
+				<iframe src="https://www.tipeee.com/embed/project/94852?emb=1&display=tipbox&lang=<% if @document.lang == 'fr' : %>fr<% else :%>en<% end %>" frameborder="0" width="240" height="90" allowfullscreen="true" allowtransparency="true"></iframe>
+			</div>
+			<!-- Paypal-->
+			<div class="support-block">
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+					<input type="hidden" name="cmd" value="_donations">
+					<input type="hidden" name="business" value="cbissuel@gmail.com">
+					<input type="hidden" name="lc" value="<% if @document.lang == 'fr' : %>FR<% else :%>US<% end %>">
+					<input type="hidden" name="item_name" value="nylnook">
+					<input type="hidden" name="item_number" value="<%- @document.file %>">
+					<input type="hidden" name="currency_code" value="EUR">
+					<input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHosted">
+				<% if @document.lang == 'fr' : %>
+					<input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !">
+					<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+				<% else :%>
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+					<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+				<% end %>
+				</form>
+			</div>
+		</div>
 	</section>
-	<section id="share">
-		<h2><%= @_ 'share' %></h2>
-		<%- @getServiceButtons() %>
+	<section id="share" class="small-blocks">
+		<div class="inside">
+			<h2><%= @_ 'share' %></h2>
+			<%- @getServiceButtons() %>
+		</div>
 	</section>
-	<section id="support">
-		<h2><%= @_ 'support' %></h2>
-		<script id='fbngrtt'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=nylnook&url='+encodeURIComponent(document.URL);f.title='Flattr';f.height=62;f.width=56;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fbngrtt');</script>
+	<section id="tags" class="small-blocks">
+		<div class="inside">
+			<h2><%= @_ 'tags' %></h2>
+			<%- @document.tags %>
+		</div>
+	</section>
+	<section id="made-with" class="small-blocks">
+		<div class="inside">
+			<h2><%= @_ 'made-with' %></h2>
+			<%- @document.made %>
+		</div>
 	</section>
 	<section id="comments">
 		<h2><%= @_ 'comments' %></h2>

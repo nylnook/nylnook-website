@@ -6,10 +6,12 @@
 	</section>
 	
 	<% for post in @getCollection("html").findAllLive({relativeOutDirPath: @document.lang+'/blog'},[{date:-1}]).toJSON(): %>
-	        <article class="post">
+	        <article class="post small-blocks">
+	        <div class="inside">
 		    <h2><a href="<%= post.url %>"><%- post.title %></a></h2>
 		   <time pubdate="<%- @computerDate(post.date) %>"><%- @date(post.date, post.lang) %></time>
-		       <%- post.contentRenderedWithoutLayouts %>
+		       <%- post.content.slice(0,150) %> <a href="<%= post.url %>">[...]</a>
+		 </div>
 		</article>
 	<% end %>
 	

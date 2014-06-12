@@ -10,15 +10,16 @@
 site-width = 90%
 site-margin = ((100% - site-width) / 2)
 
-mobile-wide = "screen and (min-width: 470px)"
+mobile-wide = "screen and (min-width: 481px)"
 tablet = "screen and (min-width: 641px)"
-desktop = "screen and (min-width: 1000px)"
-desktop-wide = "screen and (min-width: 1220px)"
-desktop-extra-wide = "screen and (min-width: 1580px)"
+desktop = "screen and (min-width: 981px)"
+desktop-wide = "screen and (min-width: 1221px)"
+desktop-extra-wide = "screen and (min-width: 1581px)"
 
 
 darkbluenyl = rgba(58,69,71,1)
 lightbluenyl = rgba(128,153,158,1)
+electricbluenyl = rgba(196,235,243,1)
 greennyl = rgba(128,158,133,1)
 yellownyl = rgba(193,193,141,1)
 greynyl = rgba(153,153,153,1)
@@ -498,6 +499,7 @@ body
 	margin-right: site-margin
 	text-align: center
 	background: url(../website-img/paper-tilt-rotate.png) repeat, darkbluenyl repeat
+	word-wrap: break-word
 	
 // Navigation
 	
@@ -607,12 +609,14 @@ nav-in-list()
 #bottom-nav 
 	background: yellownyl repeat
 	margin-top: 2rem
+	width: 98%
 	li
 		display: inline-block
 		padding: 0.5rem 1rem
 
 @media tablet
 	#bottom-nav
+		width: auto
 		nav-in-list()
 		bottom: 0
 		text-align: right
@@ -662,6 +666,9 @@ footer > p
 img
 	max-width: 100%
 	height: auto
+	
+picture > img
+	width: 100%
 
 picture, source
 	margin:0
@@ -742,9 +749,6 @@ img-base()
 	float: left
 	img-base()
 	
-	img
-		width: 100%
-	
 	width: 98%
 	@media tablet
 		margin: 1% 1.5% 0 1.5%
@@ -762,9 +766,6 @@ img-base()
 .thumb
 	display: inline-block
 	img-base()
-	
-	img
-		width: 100%
 		
 	width: 98%		
 	@media mobile-wide
@@ -813,9 +814,213 @@ img-base()
 	height: 5rem
 
 
+.img-page
+	background: none
+	padding: 0
+	
+.target-fix
+	display: block
+	left: 0
+	position: fixed
+	top: 0
 
 
+#picture-zone
+	position: relative
+	overflow: hidden
+	height: auto
+	float: left
+	width: 98%
+	margin: 1%
+	@media tablet
+		margin: 1% 1.5% 1.5%
+		width: 63.6%
+	@media desktop
+		width: 64%
+	@media desktop-wide
+		width: 47.2%
+	@media desktop-extra-wide
+		width: 57.1%
 
+#picture-zone > picture
+	position: relative
+	border: 2px solid rgba(0, 0, 0, 0.3)
+	padding: 0
+	height: auto
+	
+#download-list
+	width: 0
+	position: absolute
+	right: 0
+	top: 0
+	bottom: 0
+	overflow: auto
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.9)
+	text-align: left
+	transition: width 0.5s ease-in-out 0s
+	color: white
+	font-size: 0.85rem
+	a, a:visited
+		font-size: 0.8rem
+		color: lightbluenyl
+	
+#download-list > .inside
+	padding: 5%
+
+#download:target + #download-list
+	width: 100%
+
+#picture:target + #download-list
+	width: 0
+	
+		
+#img-description
+	position: relative
+	background: url(../website-img/paper-tilt.png) repeat, white repeat
+	float: left
+	clear: left
+	padding: 2%
+	border: 2px solid rgba(0, 0, 0, 0.9)
+	margin: 1%
+	width: 98%
+	@media tablet
+		margin: 1% 1.5% 0 1.5%
+		width: 63.6%
+	@media desktop
+		width: 64%
+	@media desktop-wide
+		width: 98%
+		
+.small-blocks
+	position: relative
+	overflow: hidden
+	margin: 1%
+	padding: 1%
+	height: auto
+	border: 2px solid rgba(0, 0, 0, 0.8)
+	display: inline-block
+	vertical-align: top
+	width: 98%
+	@media mobile-wide
+		width: 47.3%
+	@media tablet
+		width: 30.8%
+	@media desktop
+		width: 31%
+	@media desktop-wide
+		width: 22.7%
+	@media desktop-extra-wide
+		width: 17.7%
+		
+// Trick to have an apect ratio of 1:1 on small blocks
+.small-blocks:before
+	content: ""
+	display: block
+	padding-top: 100%
+	
+.small-blocks > .inside
+	position:  absolute
+	top: 5%
+	left: 5%
+	bottom: 5%
+	right: 5%
+	
+.small-blocks h2
+	color: rgba(0, 0, 0, 0.8)
+	font-size: 1rem
+	font-variant: small-caps
+	
+	
+	
+#actions
+	background: url(../website-img/paper-tilt-rotate.png) repeat, lightbluenyl repeat
+	
+	h2, p
+		margin: 0
+		padding: 0
+	
+	h2
+		font-variant: normal
+		font-size: 1.8rem
+		font-weight: normal
+		
+	p
+		font-size: 0.8rem
+		
+	a, a:visited
+		display: block
+		border-radius: 0.7rem
+		margin: 5% 0
+		
+	a:hover, a:focus, a:active
+		text-decoration: none
+		
+.big-button, .small-button
+	background-color: yellownyl
+	color: black !important
+	
+.big-button:hover, .big-button:focus, .big-button:active,
+.small-button:hover, .small-button:focus, .small-button:active
+	background-color: rgba(193,193,141,0.7)
+
+.big-button
+	text-align: left
+	padding: 8% 1%
+
+.small-button
+	text-align: center
+	padding: 1%
+
+.secondary-button
+	background-color: darkbluenyl
+	color: white
+	padding: 8% 1%
+	text-align: center
+
+.secondary-button:hover, .secondary-button:focus, .secondary-button:active
+	background-color: rgba(58,69,71,0.7)
+	
+.big-button > img
+	float: left
+	height: 3rem
+	margin: 2%
+
+.close-button
+	position: relative
+	float: right
+
+#licence
+	background: url(../website-img/paper-tilt-rotate.png) repeat, electricbluenyl repeat
+
+#support
+	background: url(../website-img/paper-tilt-rotate.png) repeat, greennyl repeat
+		
+.support-block
+	display: inline-block
+	vertical-align: top
+
+.img-page #share
+	background: url(../website-img/paper-tilt-rotate.png) repeat, pinknyl repeat
+
+#tags
+	background: url(../website-img/paper-tilt-rotate.png) repeat, greynyl repeat
+
+#made-with
+	background: url(../website-img/paper-tilt-rotate.png) repeat, yellownyl repeat
+	
+.img-page #comments
+	background: url(../website-img/paper-tilt-rotate.png) repeat, white repeat
+	width: 98%
+	padding: 2%
+	display: inline-block
+	margin: 1% 1.5% 0
+	border: 2px solid rgba(0, 0, 0, 0.9)
+
+.service-buttons div
+	display: block
+
+.service-buttons iframe
+	max-width: 100%
 
 
 // ==================================== 

@@ -75,7 +75,7 @@ docpadConfig = {
 			services:
 				hackerNewsSubmitButton: false
 				
-				flattrButton: '2878350/nylnook'
+				#flattrButton: '2878350/nylnook'
 				githubFollowButton: 'nylnook'
 				githubStarButton: 'nylnook/nylnook-website'
 
@@ -171,7 +171,7 @@ docpadConfig = {
 				
 
 		getDeferedScripts: ->
-			(["/scripts/scripts.js"])
+			([])
 		
 			
 				

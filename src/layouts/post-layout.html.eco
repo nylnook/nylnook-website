@@ -3,15 +3,15 @@
 	<article class="post single-post">
 		<h1><%- @document.title %></h1>
 		<time pubdate="<%- @computerDate() %>"><%- @date() %></time>
-		<p class="author">by <a href="/about" rel="author">Camille Bissuel</a></p>
+		<p class="author"><%= @_ 'by' %> <a href="/about" rel="author">Camille Bissuel</a></p>
 		
 		<%- @content %>
 		<section id="share">
-			    <h2>Share</h2>
+			    <h2><%= @_ 'share' %></h2>
 			    <%- @getServiceButtons() %>
 		</section>
 		<section id="comments">
-			<h2>Comment</h2>
+			<h2><%= @_ 'comments' %></h2>
 			<%- @getDisqus() %>
 		</section>
 	</article>

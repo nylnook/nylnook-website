@@ -13,7 +13,8 @@
 	"about-filename": "about",
 	"footer-message": "© Camille Bissuel - Images are licensed under various {CC} licences, see each image for details   /   This website is {MIT} licensed and based on {Docpad} - Fork it on {Github}   /   Find us on {Gplus}   /  {Cantarell} Font by Dave Crossland, GPLv3 licence",
 	"by": "by",
-	"download": "Download for your screen size",
+	"download": "Download",
+	"for-my-screen": "for my screen size",
 	"download-note": "Note : definition is given \"width x height\"",
 	"mobiles-and-tablets": "Mobiles and Tablets",
 	"desktop": "Desktop",
@@ -27,5 +28,16 @@
 	"not-found": "Page Not Found :(",
 	"noscript-message" : "⚠<p>I'm sorry, but for this site requires JavaScript for it's pictures display. And you will probably have to activate it to see them.</p><ul><li>If you don't know what this mean, please follow instructions on {Enable} and come back to reload this page.</li><li>If you know what this mean and choosed to disable JavaScript, I can swear there is no malicous code in my scripts, and you can check for my source code on {Github}</li></ul>",
 	"tags" : "Tags",
-	"made-with" : "Made with"
+	"made-with" : "Made with",
+	"cant-detect-res" : "Sorry, I can't detect an matching picture for your screen... Try to choose one in the list, or customize one !",
+	"licence-by-nc-nd": "{CC1}en{CC2}This work is licensed under a {CC3}en{CC4}Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License{CC5}",
+	"licence-by-nc-sa": "{CC1}en{CC2}This work is licensed under a {CC3}en{CC4}Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License{CC5}",
+	"licence-by-sa": "{CC1}en{CC2}This work is licensed under a {CC3}en{CC4}Creative Commons Attribution-ShareAlike 4.0 International License{CC5}",
+	"licence-by": "{CC1}en{CC2}This work is licensed under a {CC3}en{CC4}Creative Commons Attribution 4.0 International License{CC5}",
+	"licence-zero": "{CC1}en{CC2}To the extent possible under law, {CC3} has waived all copyright and related or neighboring rights to this work. This work is published from: {CC4}",
+	"licence-copyright": "Sorry, exceptionaly this work is not free, and ©",
+	"licence-error": "Error with this license, it is unknown ! In the meantime to fix it, consider this work ©",
+	"other-resolution": "in another or better resolution",
+	"your-resolution": "Your detected screen resolution is: ",
+	"close": "close"
 }

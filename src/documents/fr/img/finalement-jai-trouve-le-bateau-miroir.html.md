@@ -9,7 +9,7 @@ tags:
   - green
 made:
   - Mandelbulber
-  - G'micgmic
+  - G'mic
 ---
 
 À quelques encablures du système soliare, au delà de la forêt de cristal, finalement j'ai trouvé le bateau-miroir...   
