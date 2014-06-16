@@ -147,7 +147,7 @@
 		<a href="#download" class="small-button" aria-hidden="true"><%= @_ 'other-resolution' %></a>
 			
 		<% if (@getLicense() is ('by-nc-nd' or '©')): %>
-			<a href="" class="secondary-button" title="<%= @_ 'no-sources' %>"><%= @_ 'sources' %></a>
+			<a href="" class="secondary-button"><%= @_ 'no-sources' %></a>
 		<% else: %>
 			<a href="../../nylnook-src/nylnook-<%- @document.file %>.zip" class="secondary-button" title="<%= @_ 'sources-for' %> <%- @document.title %>" download><%= @_ 'sources' %></a>
 		<% end %>
@@ -229,7 +229,18 @@
 	</section>
 	<section id="comments">
 		<h2><%= @_ 'comments' %></h2>
-		<%- @getDisqus() %>
+			<!-- Disqus -->
+			<div id="disqus_thread"></div>
+			<script type="text/javascript">
+			var disqus_shortname = 'nylnook';
+			(function() {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 	</section>
 	
 </article>
