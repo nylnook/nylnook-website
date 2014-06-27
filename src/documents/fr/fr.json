@@ -11,7 +11,7 @@
 	"support": "Encourager",
 	"about": "À propos",
 	"about-filename": "a-propos",
-	"footer-message": "© Camille Bissuel - Les images sont sous différentes licences {CC},  voir chaque image pour les détails   /   Ce site web est sous licence {MIT} et basé sur {Docpad} - Forkez-le sur {Github}   /   Retrouvez-nous sur {Gplus}   /   Police {Cantarell} par Dave Crossland, licence GPLv3",
+	"footer-message": "© <a href=\"/fr/a-propos\" rel=\"author\">Camille Bissuel</a> - Les images sont sous différentes licences {CC},  voir chaque image pour les détails   /   Ce site web est sous licence {MIT} et basé sur {Docpad} - Forkez-le sur {Github}   /   Retrouvez-nous sur {Gplus}   /   Police {Cantarell} par Dave Crossland, licence GPLv3",
 	"by": "par",
 	"download": "Télécharger",
 	"for-my-screen": "pour la taille de mon écran",

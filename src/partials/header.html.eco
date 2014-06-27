@@ -57,5 +57,4 @@
 				</ul>
 			</nav>
 			<h2 id="site-baseline"><%= @_ 'baseline' %></h2>
-			<link href="https://plus.google.com/+Nylnook-art/" rel="publisher" />
 		</header>

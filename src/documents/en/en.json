@@ -11,7 +11,7 @@
 	"support": "Support a gnome",
 	"about": "About",
 	"about-filename": "about",
-	"footer-message": "© Camille Bissuel - Images are licensed under various {CC} licences, see each image for details   /   This website is {MIT} licensed and based on {Docpad} - Fork it on {Github}   /   Find us on {Gplus}   /  {Cantarell} Font by Dave Crossland, GPLv3 licence",
+	"footer-message": "© <a href=\"/en/about\" rel=\"author\">Camille Bissuel</a> - Images are licensed under various {CC} licences, see each image for details   /   This website is {MIT} licensed and based on {Docpad} - Fork it on {Github}   /   Find us on {Gplus}   /  {Cantarell} Font by Dave Crossland, GPLv3 licence",
 	"by": "by",
 	"download": "Download",
 	"for-my-screen": "for my screen size",
