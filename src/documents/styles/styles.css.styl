@@ -871,6 +871,16 @@ img-base()
 #picture:target + #download-list
 	width: 0
 	
+#fullscreen-toogle, #picture-target
+	cursor: pointer
+
+	
+#picture-target:fullscreen,
+#picture-target:-moz-full-screen,
+#picture-target:-webkit-full-screen,
+#picture-target:-ms-fullscreen
+	width: 100%  /*needed to center contents in IE */
+	
 		
 #img-description
 	position: relative

@@ -21,7 +21,7 @@
 
 <article class="img-page" about="../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-700x700.jpg">
 	<div id="picture-zone">
-	<picture>
+	<picture id="fullscreen-toogle">
 		<source srcset="../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-1100x1100.jpg 1x, ../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-2200x2200.jpg 2x" media="(min-width: 1581px)"></source>
 		<source srcset="../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-700x700.jpg 1x, ../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-1400x1400.jpg 2x" media="(min-width: 981px)"></source>
 		<source srcset="../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-550x550.jpg 1x, ../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-1100x1100.jpg 2x" media="(min-width: 481px)"></source>
@@ -133,16 +133,22 @@
 			<%- img('4096x4096', '4K') %>
 			<%- img('8192x8192', '8K') %>
 		</div>
+		<script>
+		var defRgx = new RegExp(def);	
+		var defList = document.getElementById('deflist').innerHTML;
+		if (defRgx.test(defList) ) {
+			document.write('<img id="picture-target" class="visuallyhidden" src="../../img/<%- @document.file %>/files/nylnook-<%- @document.file %>-'+def+'.jpg" />');
+		} else {
+				document.write('<img id="picture-target" class="visuallyhidden" src="../../img/<%- @document.file %>/files/nylnook-<%- @document.file %>-1024x1024.jpg" />');
+		}
+		</script>
 	</section>
 	</div>
 	
+	
 	<section id="actions" class="small-blocks">
-	<!-- <button id="button">View fullscreen image</button> -->
 	<div class="inside">
 		<script>
-			var defRgx = new RegExp(def);	
-			var defList = document.getElementById('deflist').innerHTML;
-			
 			if (defRgx.test(defList) ) {
 				document.write('<a href="<%- downloadpath %>'+def+'<%- extpath %>" id="download-button" class="big-button" download><img src="/website-img/icon-wallpapers.svg"  alt="Wallapers icon" /><h2><%= @_ "download" %></h2><p><%= @_ "for-my-screen" %></p></a>');
 			} else {
@@ -249,16 +255,27 @@
 			<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 	</section>
 	
-	<!-- Fullscreen scripts
+	<!-- Fullscreen scripts -->
 	<script src="/vendor/screenfull.js"></script>
 	<script>
 		var picture = document.getElementById("picture-target");
-		document.getElementById('button').addEventListener('click', function () {
+		document.getElementById('fullscreen-toogle').addEventListener('click', function () {
 			if (screenfull.enabled) {
-				screenfull.toggle(picture);
+				picture.className = "";
+				screenfull.request(picture);
 			}
 		});
-	</script> -->
+		picture.addEventListener('click', function () {
+			screenfull.exit();
+			//picture.className = "visuallyhidden";
+		});
+		document.addEventListener(screenfull.raw.fullscreenchange, function () {
+			//console.log('Am I fullscreen? ' + (screenfull.isFullscreen ? 'Yes' : 'No'));
+			if (screenfull.isFullscreen == false) {
+				picture.className = "visuallyhidden";
+			}
+		});
+	</script>
 	
 </article>
 	
