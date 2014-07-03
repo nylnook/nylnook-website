@@ -3,11 +3,11 @@ title: 'Exercer le métier de graphiste avec des logiciels libres'
 date: 2014-06-12 11:00
 ---
 
-Les [Éditions D-BookeR](http://www.d-booker.fr/), en la personne de Patricia Moncorgé, m'a interviewé sur mon travail !
+Les [Éditions D-BookeR](http://www.d-booker.fr/), en la personne de Patricia Moncorgé, m'ont interviewé sur mon travail !
 
-Je vous invites à [lire l'interview si ça vous tente](http://www.d-booker.fr/content/62-exercer-le-metier-de-graphiste-avec-des-logiciels-libres).
+Je vous invite à [lire l'interview si ça vous tente](http://www.d-booker.fr/content/62-exercer-le-metier-de-graphiste-avec-des-logiciels-libres).
 
-En *pitch*, les questions auquels j'ai répondu :
+En *pitch*, les questions auxquelles j'ai répondu :
 
 *Vous travaillez sous Linux avec des logiciels libres : est-ce que ça a toujours été le cas ? Qu'est-ce qui vous a motivé à passer en Libre ?*
 

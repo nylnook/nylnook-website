@@ -40,5 +40,6 @@
 	"licence-error": "Error with this license, it is unknown ! In the meantime to fix it, consider this work ©",
 	"other-resolution": "in another or better resolution",
 	"your-resolution": "Your detected screen resolution is: ",
-	"close": "close"
+	"close": "close",
+	"thumbnail": "thumbnail"
 }

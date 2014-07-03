@@ -40,5 +40,6 @@
 	"licence-error": "Il y a une erreur avec cette licence, elle est inconnue ! En attendant de la réparer, considérez cette œuvre comme ©",
 	"other-resolution": "dans une autre résolution",
 	"your-resolution": "Votre résolution d'écran détectée est : ",
-	"close": "fermer"
+	"close": "fermer",
+	"thumbnail": "aperçu"
 }

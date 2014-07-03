@@ -18,10 +18,8 @@ Other included things such as vendor libraries are likely already licensed by th
 ## To do
 this code is really young, website is under construction !
 
-- Multilingual with Transifex
 - RSS
 - Search engine
-- Creative common metas
 - Camanjs integration
 - optimisation and reintroduce grunting
 - ...

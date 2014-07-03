@@ -16,6 +16,7 @@
 	var def = gWidth+"x"+gHeight;
 	
 	//console.log( def, vRatio );
+	
 </script>
 
 <article class="img-page" about="../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-700x700.jpg">
@@ -136,6 +137,7 @@
 	</div>
 	
 	<section id="actions" class="small-blocks">
+	<!-- <button id="button">View fullscreen image</button> -->
 	<div class="inside">
 		<script>
 			var defRgx = new RegExp(def);	
@@ -246,6 +248,17 @@
 			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 			<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 	</section>
+	
+	<!-- Fullscreen scripts
+	<script src="/vendor/screenfull.js"></script>
+	<script>
+		var picture = document.getElementById("picture-target");
+		document.getElementById('button').addEventListener('click', function () {
+			if (screenfull.enabled) {
+				screenfull.toggle(picture);
+			}
+		});
+	</script> -->
 	
 </article>
 	

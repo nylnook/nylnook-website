@@ -19,7 +19,7 @@
 				<source srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-700x700.jpg 1x, /img/<%=img.file %>/thumb-nylnook-<%=img.file %>-1400x1400.jpg 2x" media="(min-width: 981px)"></source>
 				<source srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-550x550.jpg 1x, /img/<%=img.file %>/thumb-nylnook-<%=img.file %>-1100x1100.jpg 2x" media="(min-width: 481px)"></source>
 				<source srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-350x350.jpg 1x, /img/<%=img.file %>/thumb-nylnook-<%=img.file %>-700x700.jpg 2x"></source>
-				<img srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-700x700.jpg" alt="<%- img.title %> thumbnail">
+				<img srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-700x700.jpg" alt="<%- img.title %> <%- @_ 'thumbnail' %>">
 			</picture>
 		</a>
 		<div class="meta">
@@ -35,7 +35,7 @@
 			<a href="<%- img.url %>">
 				<picture>
 					<source srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-350x350.jpg 1x, /img/<%=img.file %>/thumb-nylnook-<%=img.file %>-700x700.jpg 2x"></source>
-					<img srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-350x350.jpg" alt="<%- img.title %> thumbnail">
+					<img srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-350x350.jpg" alt="<%- img.title %> <%- @_ 'thumbnail' %>">
 				</picture>
 			</a>
 			<div class="meta">
