@@ -1,12 +1,12 @@
 ---
 layout: 'welcome-layout'
-title: 'Free illustrations and creative wallpapers'
+title: 'Free illustrations & wallpapers'
 isPage: true
 changfreq: 'daily'
 priority: 1
 ---
 
 ## ⚠ Website under construction
-Thanks for your patience / Status : alpha release
+Thanks for your patience / Status : beta release
 
 

@@ -522,7 +522,7 @@ And if a correspondance is absolutely needed somewhere, use the menu trick menti
 #### <a name="server-side-redirection"></a>Server side
 
 So, we want visitors to land in the best language according to their preference.   
-If possible, we want to do that server side to avoid the"no-script" user case.  
+If possible, we want to do that server side to avoid the "no-script" user case.  
 
 Good news once again, if we have a dynamic server, it's possible ! Furthermore, it's my case.  
 The main idea is to use the ```req.headers["accept-language"] ``` Express.js function to detect our vistor HTTP header.

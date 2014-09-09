@@ -1,6 +1,6 @@
 		<nav id="bottom-nav">
 			<ul>
-				<li><a href=""><%= @_ 'follow' %><img src="/website-img/icon-follow.svg"  alt="Follow icon" /></a></li>
+				<li><a href="/<%- @document.lang %>/<%= @_ 'follow-filename' %>"><%= @_ 'follow' %><img src="/website-img/icon-follow.svg"  alt="Follow icon" /></a></li>
 				<li><a href=""><%= @_ 'support' %><img src="/website-img/icon-support.svg"  alt="Support a gnome icon" /></a></li>
 				<li><a href="/<%- @document.lang %>/<%= @_ 'about-filename' %>"><%= @_ 'about' %><img src="/website-img/icon-contact.svg"  alt="Contact icon" /></a></li>
 			</ul>

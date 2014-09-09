@@ -66,6 +66,9 @@ docpadConfig = {
 			# The default title of our website
 			title: "nylnook"
 
+			# Description for RSS feeds
+			description: "Free illustrations & wallpapers, from creation to funding !"
+
 			# The website author
 			author: "Camille Bissuel"
 			
@@ -231,6 +234,25 @@ docpadConfig = {
 					model.setMetaDefaults { layout:"img-layout" }
 					true
 					
+		# Collections for RSS feeds	
+		all_en: ->
+			@getCollection("html").findAllLive($or: {relativeOutDirPath:'en/img', relativeOutDirPath:'en/blog'},[{date:-1}])
+			
+		all_fr: ->
+			@getCollection("html").findAllLive($or: {relativeOutDirPath:'fr/img', relativeOutDirPath:'fr/blog'},[{date:-1}])
+				
+		img_en: ->
+			@getCollection("html").findAllLive({relativeOutDirPath:'en/img'},[{date:-1}])
+		
+		img_fr: ->
+			@getCollection("html").findAllLive({relativeOutDirPath:'fr/img'},[{date:-1}])
+		
+		blog_en: ->
+			@getCollection("html").findAllLive({relativeOutDirPath:'en/blog'},[{date:-1}])
+		
+		blog_fr: ->
+			@getCollection("html").findAllLive({relativeOutDirPath:'fr/blog'},[{date:-1}])
+					
 					
 	# =================================
 	# Docpad Plugins	
@@ -240,6 +262,26 @@ docpadConfig = {
 			cachetime: 600000
 			changefreq: 'weekly'
 			priority: 0.5
+			
+		rss:
+			default:
+				collection: 'all_en'
+				url: '/en-rss.xml'
+			all_fr:
+				collection: 'all_fr'
+				url: '/fr-rss.xml'
+			img_en:
+				collection: 'img_en'
+				url: '/wallpaper-en-rss.xml'
+			img_fr:
+				collection: 'img_fr'
+				url: '/wallpaper-fr-rss.xml'
+			blog_en:
+				collection: 'blog_en'
+				url: '/blog-en-rss.xml'
+			blog_fr:
+				collection: 'blog_fr'
+				url: '/blog-fr-rss.xml'
 			
 	# =================================
 	# DocPad Events
