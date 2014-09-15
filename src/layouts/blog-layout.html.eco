@@ -10,7 +10,7 @@
 	        <div class="inside">
 		    <h2><a href="<%= post.url %>"><%- post.title %></a></h2>
 		   <time pubdate="<%- @computerDate(post.date) %>"><%- @date(post.date, post.lang) %></time>
-		       <%- post.content.slice(0,150) %> <a href="<%= post.url %>">[...]</a>
+		       <%- post.contentRenderedWithoutLayouts %> <a href="<%= post.url %>">[...]</a>
 		 </div>
 		</article>
 	<% end %>

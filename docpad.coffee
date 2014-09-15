@@ -236,10 +236,10 @@ docpadConfig = {
 					
 		# Collections for RSS feeds	
 		all_en: ->
-			@getCollection("html").findAllLive($or: {relativeOutDirPath:'en/img', relativeOutDirPath:'en/blog'},[{date:-1}])
+			@getCollection("html").findAllLive($or: [{relativeOutDirPath:'en/img', relativeOutDirPath:'en/blog'}],[{date:-1}])
 			
 		all_fr: ->
-			@getCollection("html").findAllLive($or: {relativeOutDirPath:'fr/img', relativeOutDirPath:'fr/blog'},[{date:-1}])
+			@getCollection("html").findAllLive($or: [{relativeOutDirPath:'fr/img', relativeOutDirPath:'fr/blog'}],[{date:-1}])
 				
 		img_en: ->
 			@getCollection("html").findAllLive({relativeOutDirPath:'en/img'},[{date:-1}])
