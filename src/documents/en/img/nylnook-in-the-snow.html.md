@@ -6,7 +6,7 @@ license: 'by-nc-nd'
 tags:
   - 3D
   - landscape
-  - character
+  - characters
   - fantasy
   - white
 made:

@@ -5,10 +5,10 @@ date: 2014-02-26
 license: 'by-nc-nd'
 tags:
   - 3D
-  - landscape
-  - character
-  - fantasy
-  - white
+  - paysage
+  - personnages
+  - fantastique
+  - blanc
 made:
   - Blender
 ---

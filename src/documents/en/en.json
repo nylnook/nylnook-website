@@ -30,6 +30,9 @@
 	"not-found": "Page Not Found :(",
 	"noscript-message" : "⚠<p>I'm sorry, but for this site requires JavaScript for it's pictures display. And you will probably have to activate it to see them.</p><ul><li>If you don't know what this mean, please follow instructions on {Enable} and come back to reload this page.</li><li>If you know what this mean and choosed to disable JavaScript, I can swear there is no malicous code in my scripts, and you can check for my source code on {Github}</li></ul>",
 	"tags" : "Tags",
+	"tags-technique" : "Filter by technique",
+	"tags-theme" : "Filter by theme",
+	"tags-color" : "Filter by color",
 	"made-with" : "Made with",
 	"cant-detect-res" : "Sorry, I can't detect an matching picture for your screen... Try to choose one in the list, or customize one !",
 	"licence-by-nc-nd": "{CC1}en{CC2}This work is licensed under a {CC3}en{CC4}Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License{CC5}",
@@ -42,5 +45,6 @@
 	"other-resolution": "in another or better resolution",
 	"your-resolution": "Your detected screen resolution is: ",
 	"close": "close",
-	"thumbnail": "thumbnail"
+	"thumbnail": "thumbnail",
+	"pictures-with-tag": "Pictures with tag:"
 }

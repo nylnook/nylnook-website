@@ -232,7 +232,11 @@
 	<section id="tags" class="small-blocks">
 		<div class="inside">
 			<h2><%= @_ 'tags' %></h2>
-			<%- @document.tags %>
+
+			<% for tag in @document.tags: %>
+				<% tagurl = tag.toLowerCase().replace(/é/g, 'e').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') %>
+	 			<a href="../tag/<%- tagurl %>" class="tag" ><%- tag %></a>
+			<% end %>
 		</div>
 	</section>
 	<!-- Made with -->

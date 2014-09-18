@@ -282,6 +282,7 @@ docpadConfig = {
 			blog_fr:
 				collection: 'blog_fr'
 				url: '/blog-fr-rss.xml'
+
 			
 	# =================================
 	# DocPad Events

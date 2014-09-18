@@ -5,7 +5,7 @@ date: 2014-09-12
 license: 'by-nc-sa'
 tags:
   - digital painting
-  - character
+  - characters
   - green
 made:
   - Krita

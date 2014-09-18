@@ -5,11 +5,11 @@ date: 2014-01-22
 license: 'by-nc-sa'
 tags:
   - 3D
-  - digital painting
-  - landscape
-  - political
-  - blue
-  - green
+  - peinture numérique
+  - paysage
+  - politique
+  - bleu
+  - vert
 made:
   - Krita
   - G'mic

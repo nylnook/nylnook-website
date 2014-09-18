@@ -1,0 +1,54 @@
+<%- @partial('header') %>
+	
+	<section id="intro">
+		<h1 class="page-title"><%- @_ 'pictures-with-tag' %> <%= @document.title %></h1>
+		<%- @content %>
+	</section>
+
+	<section id="img-browser">
+	<% for img in @getFiles($and: [{tags: $has: @document.tag}, {lang: $has: @document.lang}], [{date:-1}]).toJSON(): %>
+	        <div class="thumb">
+			<a href="<%- img.url %>">
+				<picture>
+					<source srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-350x350.jpg 1x, /img/<%=img.file %>/thumb-nylnook-<%=img.file %>-700x700.jpg 2x"></source>
+					<img srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-350x350.jpg" alt="<%- img.title %> <%- @_ 'thumbnail' %>">
+				</picture>
+			</a>
+			<div class="meta">
+				<h3><a href="<%= img.url %>"><%- img.title %></a></h2>
+				<time pubdate="<%- @computerDate(img.date) %>"><%- @date(img.date, img.lang)  %></time>
+		    	</div>
+		</div>
+	<% end %>
+	</section>
+
+<div class="page-bottom">
+	<section class="light-block">
+		<h2><%= @_ 'tags-technique' %></h2>
+
+		<% for tag in @getFiles($and: [{tagcat: $has: 'technique'}, {lang: $has: @document.lang}], [{tag:1}]).toJSON(): %>
+			<% tagurl = tag.tag.toLowerCase().replace(/é/g, 'e').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') %>
+			<a href="../tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
+		<% end %>
+	</section>
+
+	<section class="light-block">
+		<h2><%= @_ 'tags-theme' %></h2>
+
+		<% for tag in @getFiles($and: [{tagcat: $has: 'theme'}, {lang: $has: @document.lang}], [{tag:1}]).toJSON(): %>
+			<% tagurl = tag.tag.toLowerCase().replace(/é/g, 'e').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') %>
+			<a href="../tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
+		<% end %>
+	</section>
+
+	<section class="light-block">
+		<h2><%= @_ 'tags-color' %></h2>
+
+		<% for tag in @getFiles($and: [{tagcat: $has: 'color'}, {lang: $has: @document.lang}], [{tag:1}]).toJSON(): %>
+			<% tagurl = tag.tag.toLowerCase().replace(/é/g, 'e').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') %>
+			<a href="../tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
+		<% end %>
+	</section>
+</div>
+	
+<%- @partial('footer') %>

@@ -4,7 +4,7 @@
 		<h1><%- @document.title %></h1>
 		
 		<%- @content %>
-		<br />
+		<div class="page-bottom">
 		<section id="comments">
 			<h2><%= @_ 'comments' %></h2>
 			<!-- Disqus -->
@@ -20,6 +20,7 @@
 			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 			<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 		</section>
+		</div>
 	</article>
 	
 <%- @partial('footer') %>

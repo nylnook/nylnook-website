@@ -5,9 +5,9 @@ date: 2014-03-24
 license: 'by'
 tags:
   - 3D
-  - landscape
-  - blue
-  - green
+  - paysage
+  - bleu
+  - vert
 made:
   - Blender
 ---

@@ -4,9 +4,9 @@ title: 'Peuples des arbres'
 date: 2014-09-12
 license: 'by-nc-sa'
 tags:
-  - digital painting
-  - character
-  - green
+  - peinture numérique
+  - personnages
+  - vert
 made:
   - Krita
 ---

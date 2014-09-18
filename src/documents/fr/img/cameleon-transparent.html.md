@@ -4,9 +4,9 @@ title: 'Caméléon transparent'
 date: 2014-01-27
 license: 'by-sa'
 tags:
-  - digital painting
-  - animals
-  - green
+  - peinture numérique
+  - animaux
+  - vert
 made:
   - Krita
 ---

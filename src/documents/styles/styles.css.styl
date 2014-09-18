@@ -740,11 +740,12 @@ img-base()
 	margin: 1%
 	padding: 0
 	height: auto
-	//box-shadow: 0 0 0.3rem 0.1rem black
+	box-shadow: 0.2rem 0.2rem 1rem 0px rgba(0, 0, 0, 0.5)
 	
 	
 #latest-img
 	float: left
+	
 	img-base()
 	
 	width: 98%
@@ -788,7 +789,7 @@ img-base()
 	height: 0
 	transition: height 0.15s ease-in-out 0s
 	padding: 0 1rem
-	line-height: 1.4rem
+	line-height: 1.2rem
 	
 	a
 		color: white
@@ -811,6 +812,23 @@ img-base()
 .thumb:active > .meta, .thumb:hover > .meta, .thumb:focus > .meta
 	height: 5rem
 
+.light-block
+	border: 0.15rem solid white
+	border-radius: 5rem
+	margin: 1rem 0 2rem 1rem
+	padding: 0.4rem 0.4rem 0.4rem 1rem
+	text-align: left
+
+	h2
+		font-size: 1.1rem
+		font-weight: normal
+		margin: -1.2rem 0 0 2rem
+		padding: 0 1rem
+		background: url(../website-img/paper-tilt-rotate.png) repeat, darkbluenyl repeat
+		position: absolute
+
+.page-bottom
+	margin-top: 3rem
 
 .img-page
 	background: none
@@ -830,6 +848,7 @@ img-base()
 	float: left
 	width: 98%
 	margin: 1%
+	box-shadow: 0.2rem 0.2rem 1rem 0px rgba(0, 0, 0, 0.5)
 	@media tablet
 		margin: 1% 1.5% 1.5%
 		width: 63.6%
@@ -888,7 +907,7 @@ img-base()
 	float: left
 	clear: left
 	padding: 2%
-	border: 2px solid rgba(0, 0, 0, 0.9)
+	box-shadow: 0.2rem 0.2rem 1rem 0px rgba(0, 0, 0, 0.5) inset
 	margin: 1%
 	width: 98%
 	@media tablet
@@ -909,6 +928,7 @@ img-base()
 	display: inline-block
 	vertical-align: top
 	width: 98%
+	box-shadow: 0.2rem 0.2rem 1rem 0px rgba(0, 0, 0, 0.3)
 	@media mobile-wide
 		width: 47.3%
 	@media tablet
@@ -966,10 +986,12 @@ img-base()
 .big-button, .small-button
 	background-color: yellownyl
 	color: black !important
+	box-shadow: 0.2rem 0.2rem 0.2rem 0 rgba(50, 50, 50, 0.75);
 	
 .big-button:hover, .big-button:focus, .big-button:active,
 .small-button:hover, .small-button:focus, .small-button:active
 	background-color: rgba(193,193,141,0.7)
+	box-shadow: 0.1rem 0.1rem 0.1rem 0 rgba(50, 50, 50, 0.5);
 
 .big-button
 	text-align: left
@@ -978,15 +1000,18 @@ img-base()
 .small-button
 	text-align: center
 	padding: 1%
+	font-size: 0.9rem
 
 .secondary-button
 	background-color: darkbluenyl
 	padding: 8% 1%
 	text-align: center
 	color: white !important
+	box-shadow: 0.2rem 0.2rem 0.2rem 0 rgba(50, 50, 50, 0.75);
 
 .secondary-button:hover, .secondary-button:focus, .secondary-button:active
 	background-color: rgba(58,69,71,0.7)
+	box-shadow: 0.1rem 0.1rem 0.1rem 0 rgba(50, 50, 50, 0.5);
 	
 .big-button > img
 	float: left
@@ -1012,6 +1037,23 @@ img-base()
 
 #tags
 	background: url(../website-img/paper-tilt-rotate.png) repeat, greynyl repeat
+	text-align: center
+	h2
+		text-align: left
+
+.tag
+	background-color: darkbluenyl
+	border-radius: 0.5rem
+	padding: 0.2rem 0.3rem
+	margin: 0.2rem 0.1rem
+	display: inline-block
+	color: rgba(255, 255, 255, 0.9) !important
+	text-decoration: none !important
+	box-shadow: 0.2rem 0.2rem 0.2rem 0 rgba(50, 50, 50, 0.75);
+
+.tag:hover, .tag:focus, .tag:active
+	background-color: rgba(0, 0, 0, 0.7)
+	box-shadow: 0.1rem 0.1rem 0.1rem 0 rgba(50, 50, 50, 0.5);
 
 #made-with
 	background: url(../website-img/paper-tilt-rotate.png) repeat, yellownyl repeat
@@ -1023,6 +1065,7 @@ img-base()
 	display: inline-block
 	margin: 1% 1.5% 0
 	border: 2px solid rgba(0, 0, 0, 0.9)
+	box-shadow: 0.2rem 0.2rem 1rem 0px rgba(0, 0, 0, 0.3)
 
 .service-buttons div
 	display: block

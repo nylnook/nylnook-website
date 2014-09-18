@@ -4,9 +4,9 @@ title: 'Lutin dans une pomme de pin'
 date: 2014-06-26
 license: 'by-sa'
 tags:
-  - digital painting
-  - fantasy
-  - mixed colors
+  - peinture numérique
+  - fantastique
+  - couleurs mélangées
 made:
   - Krita
   - Gimp
