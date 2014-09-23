@@ -1,3 +1,5 @@
+![Welcome screen](https://github.com/nylnook/nylnook-website/blob/master/src/files/img/nylnook-in-the-snow/thumb-nylnook-nylnook-in-the-snow-700x700.jpg)
+
 Nylnook website
 ===============
 

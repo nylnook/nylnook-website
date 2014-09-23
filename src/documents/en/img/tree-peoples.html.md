@@ -11,5 +11,5 @@ made:
   - Krita
 ---
 
-[Korowai](http://en.wikipedia.org/wiki/Korowai_people), [Huaorani](http://en.wikipedia.org/wiki/Huaorani_people), [Mbuti](http://en.wikipedia.org/wiki/Mbuti_people) linked to trees by culture...  
+[Korowai](http://en.wikipedia.org/wiki/Korowai_people), [Huaorani](http://en.wikipedia.org/wiki/Huaorani_people) and [Mbuti](http://en.wikipedia.org/wiki/Mbuti_people) peoples are linked to trees by culture...  
 Drawn for a project of a trail game for my township.
