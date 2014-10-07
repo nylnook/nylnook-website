@@ -124,6 +124,8 @@ abbr[title]
 b,
 strong
 	font-weight: bold
+	color: lightbluenyl
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7)
 
 
 // Address styling not present in Safari and Chrome.
@@ -489,7 +491,6 @@ a[href='']
 	text-decoration: line-through
 
 
-
 body
 	font-family: Cantarell, Ubuntu, Verdana, sans-serif;
 	color: white
@@ -721,6 +722,50 @@ blockquote
 .post
 	margin: 1%
 	padding: 0.5rem 2%
+
+	a, a:visited
+		color: white	
+
+	h1,h2,h3,h4,h5,h6
+		clear: both
+		padding-top: 1rem
+
+		a, a:visited
+			color: darkbluenyl
+
+	img
+		margin: 1%
+
+	ul 
+		overflow: hidden
+		padding-left: 0
+		margin-left: 0
+
+		li
+			list-style: none 
+			position: relative
+			float: left
+			clear: left
+			padding: 5px 0 0 30px
+
+		li::before
+			display:inline-block
+			content:"»"
+			height:0.2em
+			width:30px
+			margin-left:-30px
+			text-align:center
+			font-size:1.3em
+			color:darkbluenyl
+			line-height:0
+			vertical-align:middle
+			-webkit-transition-duration:0.12s
+			-moz-transition-duration:0.12s
+			transition-duration:0.12s
+
+		li:hover::before
+			font-size:4em
+			font-size:2.2em \0/
 	
 .single-post
 	max-width: 45rem
