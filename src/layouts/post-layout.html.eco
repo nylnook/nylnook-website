@@ -3,7 +3,7 @@
 	<article class="post single-post">
 		<h1><%- @document.title %></h1>
 		<time pubdate="<%- @computerDate() %>"><%- @date() %></time>
-		<p class="author"><%= @_ 'by' %> <a href="/about" rel="author">Camille Bissuel</a></p>
+		<p class="author"><%= @_ 'by' %> <a href="/<%- @document.lang %>/<%= @_ 'about-filename' %>"><%- @site.author %></a></p>
 		
 		<%- @content %>
 		<section id="share">

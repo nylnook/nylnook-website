@@ -1,5 +1,5 @@
 ---
-title: 'Stage de formation « Création graphique libre » à Gap du 8 au 12 décembre 2014'
+title: 'Stage de formation « Création graphique libre » à Gap du 8 au 12 décembre 2014'
 date: 2014-10-07 14:00
 ---
 
