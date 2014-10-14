@@ -5,5 +5,5 @@ layout: post-layout
 ---
 
 Salut tout le monde !   
-Je constuis doucement ce site web.... C'est le printemps ;)
+Je construis doucement ce site web.... C'est le printemps ;)
 
