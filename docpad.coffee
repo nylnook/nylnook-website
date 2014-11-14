@@ -260,12 +260,16 @@ docpadConfig = {
 	# =================================
 	# Docpad Plugins	
 	plugins:
-	
+
+		ghpages:
+			deployRemote: 'target'
+			deployBranch: 'master'
+
 		sitemap:
 			cachetime: 600000
 			changefreq: 'weekly'
 			priority: 0.5
-			
+		
 		rss:
 			default:
 				collection: 'all_en'
@@ -340,6 +344,7 @@ docpadConfig = {
 			# /!\ This will not work if the server is static ! 
 			# If static, use an index.html file with client side javascript detection to replace this.
 			# Example script in /src/documents/404.hml.eco
+			###
 			server.use (req,res,next) ->
 				if req.path == "/"
 					Negotiator = require('negotiator')
@@ -352,7 +357,8 @@ docpadConfig = {
 						#console.log('redirect to default language')
 						res.redirect(latestConfig.templateData.default_lang)
 				else
-					next()		
+					next()	
+			###	
 
 }
 

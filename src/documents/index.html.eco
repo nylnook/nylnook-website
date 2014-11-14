@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Site Properities -->
+		<title>Free illustrations &amp; wallpapers ❄ nylnook</title>
+		<meta name="description" content="Free illustrations &amp; wallpapers, from creation to funding !" />
+		<meta name="keywords" content="wallpaper, HD, FHD, 4K, 8K, illustration, free, open source, creative commons, creative" />		<!-- Standard Meta -->
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- DocPad Meta -->
+		<meta name="generator" content="DocPad v6.69.1" />
+
+		<!-- DocPad Styles + Our Own -->
+		<link  rel="stylesheet" href="/styles/styles.css" />
+		<link  rel="stylesheet" href="/vendor/hljs-github.css" />
+		
+		<!-- Scripts that must not be defered -->
+		<script src="/vendor/picturefill.js"></script>
+
+		<!-- Favicons and Icons -->
+		<!-- Basic favicon, 32x32px -->
+        	<link rel="icon" href="/favicon.ico" />
+        	<!-- IE 10 Metro tile icon -->
+        	<meta name="msapplication-TileColor" content="#FFFFFF">
+		<meta name="msapplication-TileImage" content="/favicon-144.png">
+		<!-- Touch icon for iOS 2.0+ and Android 2.1+ -->
+        	<link rel="apple-touch-icon-precomposed" href="/favicon-152.png">
+        	<!-- Generic favicon for other cases, 64x64px -->
+        	<link rel="icon" type="image/png" href="/favicon-64.png" />
+
+	</head>
+	<body>
+	    <!--[if lt IE 10]>
+	        <p class="browsehappy">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+	    <![endif]-->
+		<header>
+			<div id="logo">
+				<a href="/" >
+					<img src="/website-img/logo-nylnook-invert.svg"  alt="Nylnook logo" />
+				</a>
+				<h1 class="visuallyhidden">nylnook</h1>
+			</div>
+			<nav id="language-selector">
+				<a href="#" class="current-lang">en</a>
+				
+					
+				
+					
+						<a href="/fr" >fr</a>
+					
+				
+			</nav>
+			<nav id="top-nav">
+				<ul>
+					<li><a href="/en/">Wallpapers<img src="/website-img/icon-wallpapers.svg"  alt="Wallapers icon" /></a></li>
+					<li><a href="">Shop &amp; Gifts<img src="/website-img/icon-gifts.svg"  alt="Gifts icon" /></a></li>
+					<li><a href="/en/blog">Blog<img src="/website-img/icon-blog.svg"  alt="Blog icon" /></a></li>
+				</ul>
+			</nav>
+			<h2 id="site-baseline">Free illustrations &amp; wallpapers, from creation to funding !</h2>
+		</header>
+
+		<noscript>
+		<div id="noscript-message">
+			⚠<p>I'm sorry, but for this site requires JavaScript for it's pictures display. And you will probably have to activate it to see them.</p><ul><li>If you don't know what this mean, please follow instructions on <a href="http://www.enable-javascript.com" target="_blank">enable-javascript.com</a> and come back to reload this page.</li><li>If you know what this mean and choosed to disable JavaScript, I can swear there is no malicous code in my scripts, and you can check for my source code on <a href="http://github.com/nylnook/nylnook-website">Github</a></li></ul>
+		</div>
+		</noscript>
+
+		<script>
+		    var defaultLanguage, supportedLanguages, language, redirectLanguage;
+
+		    defaultLanguage = 'en';
+		    supportedLanguages = <%- JSON.stringify @languages %>;
+		    redirectLanguage = defaultLanguage;
+
+		    try {
+			language = window.navigator.userLanguage || window.navigator.language || defaultLanguage;
+
+		    // Some languages we support look like 'en' and some like 'en-US'. Some languages
+		    // set in navigator.language look like 'en' and some like 'en-US'. So we'll
+		    // check both combinations.
+
+			if (supportedLanguages.indexOf(language) >= 0) {
+			    redirectLanguage = language;
+			}
+			else if (supportedLanguages.indexOf(language.substr(0, 2)) >= 0) {
+			    redirectLanguage = language.substr(0, 2);
+			}
+		    }
+		    catch (e) {
+		    // Really old Internet Explorer seems to throw an exception on the above code.
+		    // We'll just catch and pass.
+		    }
+
+		    // Redirect to a language-specific index page
+		    window.location.href = '/' + redirectLanguage + '/';
+		</script>
+
+		<nav id="bottom-nav">
+			<ul>
+				<li><a href="/en/follow">Follow<img src="/website-img/icon-follow.svg"  alt="Follow icon" /></a></li>
+				<li><a href="">Support a gnome<img src="/website-img/icon-support.svg"  alt="Support a gnome icon" /></a></li>
+				<li><a href="/en/about">About<img src="/website-img/icon-contact.svg"  alt="Contact icon" /></a></li>
+			</ul>
+		</nav>
+
+		<footer>
+			<p>© <a href="/en/about" rel="author">Camille Bissuel</a> - Images are licensed under various <a href="http://creativecommons.org/">Creative commons</a> licences, see each image for details   /   This website is <a href="http://github.com/nylnook/nylnook-website/blob/master/LICENSE">MIT</a> licensed and based on <a href="http://docpad.org/">Docpad</a> - Fork it on <a href="http://github.com/nylnook/nylnook-website">Github</a>   /   Find us on <a href="https://plus.google.com/+Nylnook-art" rel="publisher">Google+</a>   /  <a href="http://abattis.org/cantarell/">Cantarell</a> Font by Dave Crossland, GPLv3 licence<p>
+		</footer>
+	</body>
+</html>
