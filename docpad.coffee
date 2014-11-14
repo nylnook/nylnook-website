@@ -127,7 +127,7 @@ docpadConfig = {
 			if not lang
 				lang = @document.lang
 			moment = require 'moment'
-			moment.locale(lang)
+			moment.lang(lang)
 			return moment(date).format('LL');
 		
 		# Returns a computer readable formatted date. Require Moment.js
