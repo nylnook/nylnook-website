@@ -1,7 +1,7 @@
 ---
-tag: 'dessin vectoriel'
-tagcat: 'technique'
-title: 'Dessin vectoriel'
+tag: 'Inkscape'
+tagcat: 'software'
+title: 'Inkscape'
 layout: 'tag-layout'
 ---
 

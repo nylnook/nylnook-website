@@ -1,13 +1,23 @@
 <%- @partial('header') %>
-	
+
 	<section id="intro">
-		<h1 class="page-title"><%- @_ 'pictures-with-tag' %> <%= @document.title %></h1>
+		<h1 class="page-title">
+		<% if @document.tagcat in ['theme','color','technique']: %>
+			<%- @_ 'pictures-with-tag' %>
+		<% else if @document.tagcat is 'license': %>
+			<%- @_ 'pictures-under-license' %>
+		<% else if @document.tagcat is 'software': %>
+			<%- @_ 'pictures-made-with' %>
+		<% end %>
+		<%= @document.title %>
+		</h1>
 		<%- @content %>
 	</section>
 
 	<section id="img-browser">
-	<% for img in @getFiles($and: [{tags: $has: @document.tag}, {lang: $has: @document.lang}], [{date:-1}]).toJSON(): %>
-	        <div class="thumb">
+	<% if @document.tagcat in ['theme','color','technique']: %>
+		<% for img in @getFiles($and: [{tags: $has: @document.tag}, {lang: $has: @document.lang}], [{date:-1}]).toJSON(): %>
+		<div class="thumb">
 			<a href="<%- img.url %>">
 				<picture>
 					<source srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-350x350.jpg 1x, /img/<%=img.file %>/thumb-nylnook-<%=img.file %>-700x700.jpg 2x"></source>
@@ -19,7 +29,44 @@
 				<time pubdate="<%- @computerDate(img.date) %>"><%- @date(img.date, img.lang)  %></time>
 		    	</div>
 		</div>
+		<% end %>
+	<% else if @document.tagcat is 'license': %>
+		<section class="small-blocks">
+			<div class="inside">
+				<%- @partial('license') %>
+			</div>
+		</section>
+		<% for img in @getFiles($and: [{license: $has: @document.tag}, {lang: $has: @document.lang}], [{date:-1}]).toJSON(): %>
+		<div class="thumb">
+			<a href="<%- img.url %>">
+				<picture>
+					<source srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-350x350.jpg 1x, /img/<%=img.file %>/thumb-nylnook-<%=img.file %>-700x700.jpg 2x"></source>
+					<img srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-350x350.jpg" alt="<%- img.title %> <%- @_ 'thumbnail' %>">
+				</picture>
+			</a>
+			<div class="meta">
+				<h3><a href="<%= img.url %>"><%- img.title %></a></h2>
+				<time pubdate="<%- @computerDate(img.date) %>"><%- @date(img.date, img.lang)  %></time>
+		    	</div>
+		</div>
+		<% end %>
+	<% else if @document.tagcat is 'software': %>
+		<% for img in @getFiles($and: [{made: $has: @document.tag}, {lang: $has: @document.lang}], [{date:-1}]).toJSON(): %>
+		<div class="thumb">
+			<a href="<%- img.url %>">
+				<picture>
+					<source srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-350x350.jpg 1x, /img/<%=img.file %>/thumb-nylnook-<%=img.file %>-700x700.jpg 2x"></source>
+					<img srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-350x350.jpg" alt="<%- img.title %> <%- @_ 'thumbnail' %>">
+				</picture>
+			</a>
+			<div class="meta">
+				<h3><a href="<%= img.url %>"><%- img.title %></a></h2>
+				<time pubdate="<%- @computerDate(img.date) %>"><%- @date(img.date, img.lang)  %></time>
+		    	</div>
+		</div>
+		<% end %>
 	<% end %>
+	
 	</section>
 
 <div class="page-bottom">
@@ -45,6 +92,24 @@
 		<h2><%= @_ 'tags-color' %></h2>
 
 		<% for tag in @getFiles($and: [{tagcat: $has: 'color'}, {lang: $has: @document.lang}], [{tag:1}]).toJSON(): %>
+			<% tagurl = tag.tag.toLowerCase().replace(/é/g, 'e').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') %>
+			<a href="../tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
+		<% end %>
+	</section>
+
+	<section class="light-block">
+		<h2><%= @_ 'tags-license' %></h2>
+
+		<% for tag in @getFiles($and: [{tagcat: $has: 'license'}, {lang: $has: @document.lang}], [{tagorder:1}]).toJSON(): %>
+			<% tagurl = tag.tag.toLowerCase().replace(/é/g, 'e').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') %>
+			<a href="../tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
+		<% end %>
+	</section>
+
+	<section class="light-block">
+		<h2><%= @_ 'tags-software' %></h2>
+
+		<% for tag in @getFiles($and: [{tagcat: $has: 'software'}, {lang: $has: @document.lang}], [{tag:1}]).toJSON(): %>
 			<% tagurl = tag.tag.toLowerCase().replace(/é/g, 'e').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') %>
 			<a href="../tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
 		<% end %>

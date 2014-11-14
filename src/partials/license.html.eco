@@ -1,15 +1,15 @@
 <% if (@getLicense() == 'by-nc-nd') : %>
-	<%- @_ 'licence-by-nc-nd', CC1: '<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.', CC2: '"><img alt="Creative Commons License" src="/website-img/cc-by-nc-nd.svg" /></a><br />', CC3: '<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.', CC4: '">', CC5:'</a>.' %>
+	<%- @_ 'license-by-nc-nd', CC1: '<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.', CC2: '"><img alt="Creative Commons License" src="/website-img/cc-by-nc-nd.svg" /></a><br />', CC3: '<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.', CC4: '">', CC5:'</a>.' %>
 <% else if (@getLicense() == 'by-nc-sa') : %>
-	<%- @_ 'licence-by-nc-sa', CC1: '<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.', CC2: '"><img alt="Creative Commons License" src="/website-img/cc-by-nc-sa.svg" /></a><br />', CC3: '<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.', CC4: '">', CC5:'</a>.' %>
+	<%- @_ 'license-by-nc-sa', CC1: '<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.', CC2: '"><img alt="Creative Commons License" src="/website-img/cc-by-nc-sa.svg" /></a><br />', CC3: '<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.', CC4: '">', CC5:'</a>.' %>
 <% else if (@getLicense() == 'by-sa') : %>
-	<%- @_ 'licence-by-sa', CC1: '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.', CC2: '"><img alt="Creative Commons License" src="/website-img/cc-by-sa.svg" /></a><br />', CC3: '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.', CC4: '">', CC5:'</a>.' %>
+	<%- @_ 'license-by-sa', CC1: '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.', CC2: '"><img alt="Creative Commons License" src="/website-img/cc-by-sa.svg" /></a><br />', CC3: '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.', CC4: '">', CC5:'</a>.' %>
 <% else if (@getLicense() == 'by') : %>
-	<%- @_ 'licence-by', CC1: '<a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.', CC2: '"><img alt="Creative Commons License" src="/website-img/cc-by.svg" /></a><br />', CC3: '<a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.', CC4: '">', CC5:'</a>.' %>
+	<%- @_ 'license-by', CC1: '<a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.', CC2: '"><img alt="Creative Commons License" src="/website-img/cc-by.svg" /></a><br />', CC3: '<a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.', CC4: '">', CC5:'</a>.' %>
 <% else if (@getLicense() == 'zero') : %>
-	<%- @_ 'licence-zero', CC1: '<p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"><a rel="license" href="http://creativecommons.org/publicdomain/zero/1.0/deed.', CC2: '"><img src="/website-img/cc-zero.svg" alt="CC0" /></a><br />', CC3:'<a rel="dct:publisher" href="http://nylnook.com"><span property="dct:title">Camille Bissuel</span></a>', CC4: '<span property="vcard:Country" datatype="dct:ISO3166" content="FR" about="http://nylnook.com"> France</span>.</p>' %>
+	<%- @_ 'license-zero', CC1: '<p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"><a rel="license" href="http://creativecommons.org/publicdomain/zero/1.0/deed.', CC2: '"><img src="/website-img/cc-zero.svg" alt="CC0" /></a><br />', CC3:'<a rel="dct:publisher" href="http://nylnook.com"><span property="dct:title">Camille Bissuel</span></a>', CC4: '<span property="vcard:Country" datatype="dct:ISO3166" content="FR" about="http://nylnook.com"> France</span>.</p>' %>
 <% else if (@getLicense() == '©') : %>
-	<%- @_ 'licence-copyright' %><%= @site.author %>, <%= @site.title %>
+	<%- @_ 'license-copyright' %><%= @site.author %>, <%= @site.title %>
 <% else : %>
-	<%- @_ 'licence-error' %> <%= @site.author %>, <%= @site.title %>
+	<%- @_ 'license-error' %> <%= @site.author %>, <%= @site.title %>
 <% end %>

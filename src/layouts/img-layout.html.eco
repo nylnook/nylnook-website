@@ -243,21 +243,7 @@
 	<section id="made-with" class="small-blocks">
 		<div class="inside">
 			<h2><%= @_ 'made-with' %></h2>
-			<% for software in @document.made : %>
-				<% if software == "Blender" : %>
-				<a href="http://www.blender.org/" target="_blank"><img src="/website-img/icon-blender.svg" alt="<%- software %>" title="<%- software %>"/></a>
-				<% else if software == "Gimp" : %>
-				<a href="http://www.gimp.org/" target="_blank"><img src="/website-img/icon-gimp.svg" alt="<%- software %>" title="<%- software %>" /></a>
-				<% else if software == "Krita" : %>
-				<a href="https://krita.org/" target="_blank"><img src="/website-img/icon-krita.svg" alt="<%- software %>" title="<%- software %>" /></a>
-				<% else if software == "G'mic" : %>
-				<a href="http://gmic.sourceforge.net/" target="_blank"><img src="/website-img/icon-gmic.svg" alt="<%- software %>" title="<%- software %>" /></a>
-				<% else if software == "Inkscape" : %>
-				<a href="http://www.inkscape.org/" target="_blank"><img src="/website-img/icon-inkscape.svg" alt="<%- software %>" title="<%- software %>" /></a>
-				<% else if software == "Mandelbulber" : %>
-				<a href="http://www.mandelbulber.com/" target="_blank"><img src="/website-img/icon-mandelbulber.svg" alt="<%- software %>" title="<%- software %>" /></a>
-				<% end %>
-			<% end %>
+			<%- @partial('software') %>
 		</div>
 	</section>
 	

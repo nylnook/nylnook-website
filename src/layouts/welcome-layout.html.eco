@@ -73,6 +73,24 @@
 			<a href="<%- @document.lang %>/tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
 		<% end %>
 	</section>
+
+	<section class="light-block">
+		<h2><%= @_ 'tags-license' %></h2>
+
+		<% for tag in @getFiles($and: [{tagcat: $has: 'license'}, {lang: $has: @document.lang}], [{tagorder:1}]).toJSON(): %>
+			<% tagurl = tag.tag.toLowerCase().replace(/é/g, 'e').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') %>
+			<a href="<%- @document.lang %>/tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
+		<% end %>
+	</section>
+
+	<section class="light-block">
+		<h2><%= @_ 'tags-software' %></h2>
+
+		<% for tag in @getFiles($and: [{tagcat: $has: 'software'}, {lang: $has: @document.lang}], [{tag:1}]).toJSON(): %>
+			<% tagurl = tag.tag.toLowerCase().replace(/é/g, 'e').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') %>
+			<a href="<%- @document.lang %>/tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
+		<% end %>
+	</section>
 </div>
 	
 <%- @partial('footer') %>
