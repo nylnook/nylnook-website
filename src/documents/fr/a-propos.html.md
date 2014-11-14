@@ -9,6 +9,7 @@ title: 'À propos'
 - [Pourquoi des logiciels libres ?](#logiciels-libres)
 - [Des formations sur les logiciels libres d'infographie](#formation)
 - [Les fonds d'écrans sous licence Creative Commons](#fond-d-ecrans)
+- [Coordonnées](#coordonnees)
 
 ##<a name="nylnook"></a>Un nylnook, qu'est ce que c'est ?
 <img style="float:left; max-width:50%" src="/website-img/nylnook-mood-2.png" alt="Encourager nylnook">
@@ -65,3 +66,12 @@ Leur but est de fournir un outil juridique qui garantit à la fois la protection
 Ainsi, vous pouvez toujours télécharger et copier les fonds d'écrans que je vous propose en toute liberté et gratuité, et dans de nombreux cas en faire un usage commercial, souvent à la simple condition de citer l'auteur, votre serviteur.
 
 Je crois que proposer mes illustrations sous forme de fond d'écran permettra à tous ceux à qui elles plaisent de les voir aussi longtemps qu'elle le souhaite sur leur écran préféré... qui est aussi le tableau que l'on regarde le plus souvent aujourd'hui. Et rien n'empêche bien sûr de les imprimer !
+
+
+##<a name="coordonnees"></a>Coordonnées
+Nylnook / Camille Bissuel  
+1480 route de Corréo  
+05400 La Roche-des-Arnauds  
+France  
+04 88 03 57 51  
+welcome *at* nylnook *point* com

@@ -9,6 +9,7 @@ title: 'About'
 - [Why free (as in freedom) software ?](#free-software)
 - [Training on computer graphics free software](#training)
 - [Wallpapers under Creative Commons licences](#wallpapers)
+- [Contact details](#contact-details)
 
 ##<a name="nylnook"></a>What is a nylnook ?
 <img style="float:left; max-width:50%" src="/website-img/nylnook-mood-2.png" alt="Encouraging nylnook" />
@@ -62,3 +63,11 @@ They aim at providing a legal tool to ensures both the protection of author's ri
 So you can always download and copy the wallpapers I offer freely and free of charge, and in many cases even for commercial use, often on the simple condition to quote the author, yours truly.
 
 I hope to offer my illustrations as wallpapers will allow to all those who like them to see them as long as they like on their favourite display... which is also the tableau that we look most often today. And of course nothing prevents to print it!
+
+##<a name="contact-details"></a>Contact details
+Nylnook / Camille Bissuel  
+1480 route de Corréo  
+05400 La Roche-des-Arnauds  
+France  
+00 33 4 88 03 57 51  
+welcome *at* nylnook *point* com
