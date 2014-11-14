@@ -42,7 +42,7 @@
     "docpad-plugin-sitemap": "~2.2.0",
     "docpad-plugin-stylus": "~2.7.0",
     "express": "3.x",
-    "moment": "^2.6.0",
+    "moment": "^2.8.3",
     "negotiator": "^0.4.3",
     "nib": "~1.x"
   },
