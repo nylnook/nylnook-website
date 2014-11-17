@@ -34,7 +34,6 @@
     "docpad-plugin-cleanurls": "~2.7.0",
     "docpad-plugin-coffeescript": "~2.4.0",
     "docpad-plugin-eco": "~2.0.3",
-    "docpad-plugin-ghpages": "~2.4.3",
     "docpad-plugin-highlightjs": "~2.2.2",
     "docpad-plugin-marked": "~2.2.1",
     "docpad-plugin-partials": "~2.9.1",
