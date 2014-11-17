@@ -139,8 +139,8 @@ docpadConfig = {
 				date = @document.date
 			moment = require 'moment'
 			return moment(date).format('YYYY-MM-DD');
-			
 				
+
 		# -----------------------------
 		# Generic functions
 

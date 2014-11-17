@@ -19,14 +19,14 @@
 	
 </script>
 
-<article class="img-page" about="../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-700x700.jpg">
+<article class="img-page" about="/../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-700x700.jpg">
 	<div id="picture-zone">
 	<picture id="fullscreen-toogle">
-		<source srcset="../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-1100x1100.jpg 1x, ../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-2200x2200.jpg 2x" media="(min-width: 1581px)"></source>
-		<source srcset="../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-700x700.jpg 1x, ../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-1400x1400.jpg 2x" media="(min-width: 981px)"></source>
-		<source srcset="../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-550x550.jpg 1x, ../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-1100x1100.jpg 2x" media="(min-width: 481px)"></source>
-		<source srcset="../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-350x350.jpg 1x, ../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-700x700.jpg 2x"></source>
-		<img srcset="../../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-700x700.jpg" alt="<%- @document.title %>" />
+		<source srcset="/../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-1100x1100.jpg 1x, /../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-2200x2200.jpg 2x" media="(min-width: 1581px)"></source>
+		<source srcset="/../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-700x700.jpg 1x, /../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-1400x1400.jpg 2x" media="(min-width: 981px)"></source>
+		<source srcset="/../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-550x550.jpg 1x, /../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-1100x1100.jpg 2x" media="(min-width: 481px)"></source>
+		<source srcset="/../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-350x350.jpg 1x, /../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-700x700.jpg 2x"></source>
+		<img srcset="/../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-700x700.jpg" alt="<%- @document.title %>" />
 	</picture>
 	<span id="picture" class="target-fix"></span>
 	<span id="download" class="target-fix"></span>
@@ -37,6 +37,7 @@
 		<% deflist = "" %>
 		<% toolongname = "nylnook-"+@document.file+"-" %>
 		
+		
 		<% for file in @getFilesAtPath('../../img/'+@document.file).toJSON(): %>
 			<% if !(/thumb/.test(file.basename)) : %>
 				<% definition = file.basename.replace(toolongname, ''); %>
@@ -44,7 +45,7 @@
 			<% end %>
 		<% end %>
 		
-		<% downloadpath = "../../img/"+@document.file+"/files/nylnook-"+@document.file+"-" %>
+		<% downloadpath = "/../img/"+@document.file+"/files/nylnook-"+@document.file+"-" %>
 		<% extpath = ".jpg" %>
 		<% unit = "px" %>
 		
@@ -137,9 +138,9 @@
 		var defRgx = new RegExp(def);	
 		var defList = document.getElementById('deflist').innerHTML;
 		if (defRgx.test(defList) ) {
-			document.write('<img id="picture-target" class="visuallyhidden" src="../../img/<%- @document.file %>/files/nylnook-<%- @document.file %>-'+def+'.jpg" />');
+			document.write('<img id="picture-target" class="visuallyhidden" src="/../img/<%- @document.file %>/files/nylnook-<%- @document.file %>-'+def+'.jpg" />');
 		} else {
-			document.write('<img id="picture-target" class="visuallyhidden" src="../../img/<%- @document.file %>/files/nylnook-<%- @document.file %>-1024x1024.jpg" />');
+			document.write('<img id="picture-target" class="visuallyhidden" src="/../img/<%- @document.file %>/files/nylnook-<%- @document.file %>-1024x1024.jpg" />');
 		}
 		</script>
 	</section>
@@ -158,11 +159,11 @@
 		
 		<a href="#download" class="small-button" aria-hidden="true"><%= @_ 'other-resolution' %></a>
 			
-		<% if (@getLicense() is ('by-nc-nd' or '©')): %>
-			<a href="" class="secondary-button"><%= @_ 'no-sources' %></a>
-		<% else: %>
-			<a href="../../nylnook-src/nylnook-<%- @document.file %>.zip" class="secondary-button" title="<%= @_ 'sources-for' %> <%- @document.title %>" download><%= @_ 'sources' %></a>
-		<% end %>
+		<% # if (@getLicense() is ('by-nc-nd' or '©')): %>
+			<!-- <a href="" class="secondary-button"><%= @_ 'no-sources' %></a> -->
+		<% # else: %>
+			<!-- <a href="../../nylnook-src/nylnook-<%- @document.file %>.zip" class="secondary-button" title="<%= @_ 'sources-for' %> <%- @document.title %>" download><%= @_ 'sources' %></a> -->
+		<% # end %>
 
 	</div>
 	</section>
