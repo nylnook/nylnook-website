@@ -265,7 +265,7 @@
 	</section>
 	
 	<!-- Fullscreen scripts -->
-	<script src="/vendor/screenfull.js"></script>
+	<script src="/vendor/screenfull.min.js"></script>
 	<script>
 		var picture = document.getElementById("picture-target");
 		document.getElementById('fullscreen-toogle').addEventListener('click', function () {

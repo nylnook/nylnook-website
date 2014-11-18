@@ -173,7 +173,7 @@ docpadConfig = {
 			
 
 		getStyles: ->
-			(["/styles/styles.css", "/vendor/hljs-github.css"])
+			(["/styles/styles.css"])
 				
 
 		getDeferedScripts: ->

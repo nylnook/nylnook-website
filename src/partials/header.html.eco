@@ -16,7 +16,7 @@
 		<%- @getBlock('styles').add(@getStyles()).toHTML() %>
 		
 		<!-- Scripts that must not be defered -->
-		<script src="/vendor/picturefill.js"></script>
+		<script src="/vendor/picturefill.min.js"></script>
 
 		<!-- Favicons and Icons -->
 		<!-- Basic favicon, 32x32px -->
