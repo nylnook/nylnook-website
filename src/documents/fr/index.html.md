@@ -6,7 +6,4 @@ changfreq: 'daily'
 priority: 1
 ---
 
-## ⚠ Site web en construction
-Merci pour votre patience / Statut : version beta
-
 

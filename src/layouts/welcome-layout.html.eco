@@ -1,14 +1,19 @@
 <%- @partial('header') %>
 
 	
-	<article class="warning">
-		<%- @content %>
-		<noscript>
+	<noscript>
+	<article class="warning">		
 		<div id="noscript-message">
 			<%- @_ 'noscript-message', Enable: '<a href="http://www.enable-javascript.com" target="_blank">enable-javascript.com</a>', Github: '<a href="http://github.com/nylnook/nylnook-website">Github</a>' %>
 		</div>
-		</noscript>
 	</article>
+	</noscript>
+	
+	<% if !!@content : %>
+	<article class="warning">		
+		<%- @content %>
+	</article>
+	<% end %>
 	
 	<section id="latest-img">
 	
