@@ -6,8 +6,8 @@ isPage: true
 
 ![Icône RSS](/website-img/icon-follow.svg)
 Pour suivre les dernières actualité sur ce site web, vous pouvez vous abonnez à mes flux RSS :
-- [Les fonds d'écran](../wallpaper-fr-rss.xml)
-- [Le blog](../blog-fr-rss.xml)
+- [Les fonds d'écran](../../wallpaper-fr-rss.xml)
+- [Le blog](../../blog-fr-rss.xml)
 
 ![Twitter icon](/website-img/icon-twitter.svg)
 ou suivre **[@nylnook](https://twitter.com/nylnook)** sur [Twitter](https://twitter.com/nylnook)

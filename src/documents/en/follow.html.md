@@ -6,8 +6,8 @@ isPage: true
 
 ![RSS icon](/website-img/icon-follow.svg)
 To follow latest news on this website, you can subscribe to my RSS feeds :
-- [Wallpapers](../wallpaper-en-rss.xml)
-- [Blog posts](../blog-en-rss.xml)
+- [Wallpapers](../../wallpaper-en-rss.xml)
+- [Blog posts](../../blog-en-rss.xml)
 
 ![Twitter icon](/website-img/icon-twitter.svg)
 or follow **[@nylnook](https://twitter.com/nylnook)** on [Twitter](https://twitter.com/nylnook)
