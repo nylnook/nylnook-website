@@ -1,0 +1,15 @@
+---
+file: 'charlie-hedbo-c-est-de-la-merde'
+title: "Charlie Hebdo it's bullshit"
+date: 2015-01-07
+license: 'by-sa'
+tags:
+  - digital painting
+  - characters
+  - tribute
+  - red
+made:
+  - Krita
+---
+
+It doesn't stop idiots #JeSuisCharlie
