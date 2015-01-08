@@ -12,4 +12,4 @@ made:
   - Krita
 ---
 
-Sans commentaires #JeSuisCharlie
+Ça n'arrête pas les cons #JeSuisCharlie
