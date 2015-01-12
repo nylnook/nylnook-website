@@ -7,10 +7,11 @@ tags:
   - 3D
   - paysage
   - personnages
+  - nylnook
   - fantastique
   - blanc
 made:
   - Blender
 ---
 
-La première fois que l'on a aperçu Nylnook au téléobjectif, en plein pôle nord... Ces lutins sont difficiles à voir !
+La première fois que l'on a aperçu un Nylnook au téléobjectif, en plein pôle nord... Ces lutins sont difficiles à voir !

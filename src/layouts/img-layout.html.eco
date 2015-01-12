@@ -197,9 +197,13 @@
 			<div class="support-block">
 				<a id="bitcoin" href="/website-img/bitcoin-qrcode-nylnook-1KztgFzdoo1dkxLxtzsGe61hLV3K97PmBs.png"><img src="/website-img/icon-bitcoin.svg"  alt="Bitcoin icon" title="1KztgFzdoo1dkxLxtzsGe61hLV3K97PmBs" /></a>
 			</div>
+			<!-- Tip.me/ChangeTip -->
+			<div class="support-block">
+				<div id="changetip_tipme_button" data-bid="XguyK6cDbaSMhi6JfA26TY" data-uid="Tr7qYrcgRvP2X3TZL6Mz86"></div><script>(function(document,script,id){var js,r=document.getElementsByTagName(script)[0],protocol=/^http:/.test(document.location)?'http':'https';if(!document.getElementById(id)){js=document.createElement(script);js.id=id;js.src=protocol+'://widgets.changetip.com/public/js/widgets.js';r.parentNode.insertBefore(js,r)}}(document,'script','changetip_w_0'));</script>
+			</div>
 			<!-- Tipeee -->
 			<div class="support-block">
-				<iframe src="https://www.tipeee.com/embed/project/94852?emb=1&display=tipbox&lang=<% if @document.lang == 'fr' : %>fr<% else :%>en<% end %>" frameborder="0" width="240" height="90" allowfullscreen="true" allowtransparency="true"></iframe>
+				<iframe src="//www.tipeee.com/embed/project/94852?display=tipbutton" allowtransparency="true" width="200" height="30" frameborder="0" scrolling="no" ></iframe>
 			</div>
 			<!-- Paypal-->
 			<div class="support-block">
