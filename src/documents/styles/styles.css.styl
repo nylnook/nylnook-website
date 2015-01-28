@@ -944,6 +944,43 @@ img-base()
 #picture-target:-webkit-full-screen,
 #picture-target:-ms-fullscreen
 	width: 100%  /*needed to center contents in IE */
+
+
+.modalDialog
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	background: rgba(0,0,0,0.8)
+	z-index: 99999
+	opacity:0
+	transition: opacity 400ms ease-in
+	pointer-events: none
+
+.modalDialog:target
+	opacity: 1
+	pointer-events: auto
+
+.modalDialog > div
+	width: 80%
+	position: relative
+	margin: 5% auto
+	padding: 3%
+	border-radius: 1rem
+	background: url(../website-img/paper-tilt-rotate.png) repeat, darkbluenyl repeat
+	color: white !important
+	box-shadow: 0.2rem 0.2rem 1rem 0px rgba(0, 0, 0, 0.3)
+	p > a
+		color: white
+	@media tablet
+		width: 66%
+	@media desktop
+		width: 50%
+	@media desktop-wide
+		width: 40%
+	@media desktop-extra-wide
+		width: 33%
 	
 		
 #img-description
@@ -1005,7 +1042,7 @@ img-base()
 	
 	
 	
-#actions
+#actions, .modal-button
 	background: url(../website-img/paper-tilt-rotate.png) repeat, lightbluenyl repeat
 	
 	h2, p
@@ -1028,13 +1065,14 @@ img-base()
 	a:hover, a:focus, a:active
 		text-decoration: none
 		
-.big-button, .small-button
+.big-button, .small-button, .modal-button
 	background-color: yellownyl
 	color: black !important
 	box-shadow: 0.2rem 0.2rem 0.2rem 0 rgba(50, 50, 50, 0.75);
 	
 .big-button:hover, .big-button:focus, .big-button:active,
-.small-button:hover, .small-button:focus, .small-button:active
+.small-button:hover, .small-button:focus, .small-button:active,
+.modal-button:hover, .modal-button:focus, .modal-button:active
 	background-color: rgba(193,193,141,0.7)
 	box-shadow: 0.1rem 0.1rem 0.1rem 0 rgba(50, 50, 50, 0.5);
 
@@ -1057,8 +1095,18 @@ img-base()
 .secondary-button:hover, .secondary-button:focus, .secondary-button:active
 	background-color: rgba(58,69,71,0.7)
 	box-shadow: 0.1rem 0.1rem 0.1rem 0 rgba(50, 50, 50, 0.5);
+
+.modal-button
+	text-align: left
+	padding: 1% 2%
+	width: 70%
+	border-radius: 0.7rem
+	background-image: none
+
+	a, a:visited
+		color: black
 	
-.big-button > img
+.big-button > img, .modal-button img
 	float: left
 	height: 3rem
 	margin: 2%
@@ -1075,7 +1123,12 @@ img-base()
 		
 .support-block
 	display: inline-block
-	vertical-align: top
+	vertical-align: middle
+	margin: 3% 1%
+	min-width: 10%
+
+.support-fix
+	width: 93px
 
 .img-page #share
 	background: url(../website-img/paper-tilt-rotate.png) repeat, pinknyl repeat

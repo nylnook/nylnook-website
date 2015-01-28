@@ -15,7 +15,7 @@ title: 'À propos'
 <img style="float:left; max-width:50%" src="/website-img/nylnook-mood-2.png" alt="Encourager nylnook">
 Le Nylnook est un **lutin du pôle nord**, qui vis principalement dans le territoire Nuna, des inuits. Il protège les expéditions scientifiques humaines en vivant caché dans les igloos ou les moyens de transports, et en provoquant de petits incidents souvent drôles qui montre aux humains comment échapper aux dangers de l'Arctique.  
 Quand une expédition est terminée, il voyage longtemps à travers son pôle à pied et à dos d'animaux pour trouver de nouveaux humains à aider. Il arrive qu'il sabote des expéditions humaines si il découvre que ceux ci on pour but de détruire son territoire, comme les expéditions d'exploration pétrolières.  
-Vous découvrirez des aperçus de ses aventures dans les images de ce site web !  
+Vous découvrirez des aperçus de ses aventures dans [les images de ce site web](/fr/tag/nylnook/) !  
 
 ##<a name="auteur"></a>L'auteur
 
@@ -63,7 +63,7 @@ Mais ce projet est aussi une tentative de **vivre de mon art**, et de **contribu
 
 Les licences [Creative Commons](http://creativecommons.fr/) sont des alternatives au droit d'auteur actuellement établi. Elles ont été créées en prenant en compte le fait que la propriété intellectuelle est fondamentalement différente de la propriété physique, et en constatant que le copyright tel qu'il existe aujourd'hui est un frein à la diffusion de la culture.
 Leur but est de fournir un outil juridique qui garantit à la fois la protection des droits de l'auteur d'une œuvre artistique et la libre circulation de cette œuvre, ceci afin de permettre aux auteurs de contribuer à un patrimoine d'œuvres accessible à tous.
-Ainsi, **vous pouvez toujours télécharger et copier les fonds d'écrans que je vous propose en toute liberté et gratuité**, et dans de nombreux cas en faire un usage commercial, souvent à la simple condition de citer l'auteur, votre serviteur.
+Ainsi, **vous pouvez toujours télécharger et copier les fonds d'écrans que je vous propose en toute liberté**, et dans de nombreux cas en faire un usage commercial, souvent à la simple condition de citer l'auteur, votre serviteur.
 
 Je crois que proposer mes illustrations sous forme de **fond d'écran** permettra à tous ceux à qui elles plaisent de les voir aussi longtemps qu'elle le souhaite sur leur écran préféré... qui est aussi le tableau que l'on regarde le plus souvent aujourd'hui. Et rien n'empêche bien sûr de les imprimer !
 

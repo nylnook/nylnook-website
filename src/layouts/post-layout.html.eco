@@ -7,8 +7,48 @@
 		
 		<%- @content %>
 		<section id="share">
-			    <h2><%= @_ 'share' %></h2>
-			    <%- @getServiceButtons() %>
+			<h2><%= @_ 'share' %></h2>
+			<!-- Twitter -->
+			<div class="service-button">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="nylnook">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			</div>
+			<!-- Google+ -->
+			<div class="service-button">
+			<script src="https://apis.google.com/js/platform.js" async defer>
+			  {lang: '<%- @document.lang %>'}
+			</script>
+			<div class="g-plusone" data-size="medium"></div>
+			</div>
+			<!-- Facebook -->
+			<div class="service-button">
+			<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.0";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+			<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+			</div>
+			<!-- Pinterest -->
+			<div class="service-button">
+			<a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"  data-pin-color="red"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_20.png" /></a>
+			<!-- Please call pinit.js only once per page -->
+			<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+			</div>
+			<!-- Stumbleupon -->
+			<div class="service-button">
+			<su:badge layout="2"></su:badge>
+			<script type="text/javascript">
+			  (function() {
+			    var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true;
+			    li.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + '//platform.stumbleupon.com/1/widgets.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(li, s);
+			  })();
+			</script>
+			</div>
 		</section>
 		<section id="comments">
 			<h2><%= @_ 'comments' %></h2>

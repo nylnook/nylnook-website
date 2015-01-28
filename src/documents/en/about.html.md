@@ -16,7 +16,7 @@ title: 'About'
 A nylnook is a **gnome coming from the north pole**. He lives in the Inuits's Nuna territory. He protects scientific expeditions living hidden in igloos or transports. He regularly provokes small funny incidents to show humans how to avoid Arctic's dangers.  
 When an expedition end, he travels for a long time trough the pole, by foots and on animals backs, to find new humans to help.  
 Times to times, he sabotage some human expedition if he discover they want to destroy his territory, for example petroleum exploration expeditions.  
-You will discover sneak peeks of his adventures in the pictures of this website !
+You will discover sneak peeks of his adventures in [the pictures of this website](/en/tag/nylnook/) !
 
 ##<a name="author"></a>The author
 <img style="float:right; max-width:50%" src="/website-img/camille-bissuel.jpg" alt="Camille Bissuel">
@@ -60,7 +60,7 @@ But this project is also an attempt to **live from my artwork**, and **contribut
 
 [Creative Commons](http://creativecommons.com/) licenses are alternatives to copyright as it is currently set. They were created taking into account the fact that intellectual property is fundamentally different from physical property, and noting that copyright as it exists today is an obstacle to the spread of culture.
 They aim at providing a legal tool to ensures both the protection of author's rights on an artistic work and the free flow of this work, In order to allow authors to contribute to a heritage accessible to everyone.
-So **you can always download and copy the wallpapers I offer freely and free of charge**, and in many cases even for commercial use, often on the simple condition to quote the author, yours truly.
+So **you can always download and copy the wallpapers I offer freely**, and in many cases even for commercial use, often on the simple condition to quote the author, yours truly.
 
 I hope to offer my illustrations as **wallpapers** will allow to all those who like them to see them as long as they like on their favourite display... which is also the tableau that we look most often today. And of course nothing prevents to print it!
 

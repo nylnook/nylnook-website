@@ -35,10 +35,10 @@
     "docpad-plugin-coffeescript": "~2.4.0",
     "docpad-plugin-eco": "~2.1.0",
     "docpad-plugin-highlightjs": "~2.3.0",
+    "docpad-plugin-livereload": "~2.6.0",
     "docpad-plugin-marked": "~2.2.1",
     "docpad-plugin-partials": "~2.9.1",
     "docpad-plugin-rss": "~2.1.4",
-    "docpad-plugin-services": "~2.6.0",
     "docpad-plugin-sitemap": "~2.2.0",
     "docpad-plugin-stylus": "~2.8.0",
     "express": "3.x",
@@ -47,7 +47,6 @@
     "nib": "~1.x"
   },
   "devDependencies": {
-    "docpad-plugin-livereload": "~2.6.0",
     "grunt": "^0.4.4",
     "grunt-css": "^0.5.4"
   },

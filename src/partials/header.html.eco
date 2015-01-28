@@ -51,9 +51,9 @@
 			</nav>
 			<nav id="top-nav">
 				<ul>
-					<li><a href="/<%- @document.lang %>/"><%= @_ 'wallpapers' %><img src="/website-img/icon-wallpapers.svg"  alt="Wallapers icon" /></a></li>
-					<li><a href=""><%= @_ 'shop' %><img src="/website-img/icon-gifts.svg"  alt="Gifts icon" /></a></li>
-					<li><a href="/<%- @document.lang %>/<%= @_ 'blog-filename' %>"><%= @_ 'blog' %><img src="/website-img/icon-blog.svg"  alt="Blog icon" /></a></li>
+					<li><a href="/<%- @document.lang %>/"><%= @_ 'wallpapers' %><img src="/website-img/icon-wallpapers.svg"  alt="<%= @_ 'wallpapers' %>" /></a></li>
+					<li><a href="http://nylnook.deviantart.com/prints/" target="_blanck"><%= @_ 'shop' %><img src="/website-img/icon-gifts.svg"  alt="<%= @_ 'shop' %>" /></a></li>
+					<li><a href="/<%- @document.lang %>/<%= @_ 'blog-filename' %>"><%= @_ 'blog' %><img src="/website-img/icon-blog.svg"  alt="<%= @_ 'blog' %>" /></a></li>
 				</ul>
 			</nav>
 			<h2 id="site-baseline"><%= @_ 'baseline' %></h2>

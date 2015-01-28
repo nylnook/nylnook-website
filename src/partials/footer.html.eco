@@ -1,8 +1,8 @@
 		<nav id="bottom-nav">
 			<ul>
-				<li><a href="/<%- @document.lang %>/<%= @_ 'follow-filename' %>"><%= @_ 'follow' %><img src="/website-img/icon-follow.svg"  alt="Follow icon" /></a></li>
-				<li><a href=""><%= @_ 'support' %><img src="/website-img/icon-support.svg"  alt="Support a gnome icon" /></a></li>
-				<li><a href="/<%- @document.lang %>/<%= @_ 'about-filename' %>"><%= @_ 'about' %><img src="/website-img/icon-contact.svg"  alt="Contact icon" /></a></li>
+				<li><a href="/<%- @document.lang %>/<%= @_ 'follow-filename' %>"><%= @_ 'follow' %><img src="/website-img/icon-follow.svg"  alt="<%= @_ 'follow' %>" /></a></li>
+				<li><a href="/<%- @document.lang %>/<%= @_ 'support-filename' %>"><%= @_ 'support' %><img src="/website-img/icon-support.svg"  alt="<%= @_ 'support' %>" /></a></li>
+				<li><a href="/<%- @document.lang %>/<%= @_ 'about-filename' %>"><%= @_ 'about' %><img src="/website-img/icon-contact.svg"  alt="<%= @_ 'about' %>" /></a></li>
 			</ul>
 		</nav>
 		<footer>
@@ -10,5 +10,16 @@
 		</footer>
 		<!-- DocPad Scripts + Our Own -->
 		<%- @getBlock('scripts').toHTML() %>
+		<!-- Google Analytics -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-50089163-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
 	</body>
 </html>
