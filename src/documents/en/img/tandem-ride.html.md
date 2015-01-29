@@ -12,8 +12,5 @@ made:
   - Blender
 ---
 
-D'après une commande pour un projet de réinsertion sociale par le vélo...  
-Ce qui m'a permis de tester les rendus [low poly](http://en.wikipedia.org/wiki/Low_poly) en 3D.
-
 From a command for a project of social reintegration by bike...  
 So, I tested [low poly](http://en.wikipedia.org/wiki/Low_poly) rendering in 3D.

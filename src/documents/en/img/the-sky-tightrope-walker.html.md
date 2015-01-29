@@ -2,7 +2,7 @@
 file: 'the-sky-tightrope-walker'
 title: 'The Sky Tightrope Walker'
 date: 2014-05-14
-license: 'by-nc-sa'
+license: 'by-sa'
 tags:
   - digital painting
   - photo editing

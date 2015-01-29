@@ -7,6 +7,7 @@ tags:
   - 3D
   - paysage
   - personnages
+  - animaux
   - nylnook
   - fantastique
   - hommage

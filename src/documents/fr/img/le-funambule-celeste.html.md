@@ -2,7 +2,7 @@
 file: 'the-sky-tightrope-walker'
 title: 'Le funambule céleste'
 date: 2014-05-14
-license: 'by-nc-sa'
+license: 'by-sa'
 tags:
   - peinture numérique
   - retouche photo

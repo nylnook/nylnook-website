@@ -7,6 +7,7 @@ tags:
   - 3D
   - landscape
   - characters
+  - animals
   - nylnook
   - fantasy
   - tribute
