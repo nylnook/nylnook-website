@@ -9,7 +9,7 @@ We have spoken about [Blender](http://www.blender.org/), its video editor, its n
 
 It was a very intense experience for me, in a country, a continent and a culture that I discovering, not to mention that it was also the first time I trained trainers and not "beginners".
 
-![The facade of Kër Thiossane](../../img/blog/facade-ker-thiossane.jpg)
+![The facade of Kër Thiossane](/img/blog/facade-ker-thiossane.jpg)
 *An sight of the magnificent facade in the courtyard of Kër Thiossane*
 
 I had three additional days to visit a little the town and its islands (Gorée, Ngor) and meet the locals (in the broad sense) at [Kër Thiossane](http://ker-thiossane.org/), a home for multimedia, arts and culture ... with his [Fablab](http://ker-thiossane.org/spip.php?article137) at two blocks.  

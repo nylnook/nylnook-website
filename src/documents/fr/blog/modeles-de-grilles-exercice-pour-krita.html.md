@@ -9,7 +9,7 @@ Et s'entraîner régulièrement est la meilleur façon de devenir meilleur en de
 
 Mais récemment, j'ai trouvé un moyen ! Inspiré par cette [vidéo](http://www.ctrlpaint.com/videos/quick-pose-gesture-sketching) de Matt Kohr (en anglais), et avec la géniale ressource que j'ai trouvé ici : http://artists.pixelovely.com/ (en anglais aussi), je peux maintenant prendre une demi-heure chaque jour pour m'entraîner !
 
-![Exercice de poses](../../img/blog/poses-exercise.jpg)
+![Exercice de poses](/img/blog/poses-exercise.jpg)
 
 Mais puisque je travaille en numérique (avec le génial logiciel [Krita](https://krita.org/) ), une dernière chose manquait : un fichier modèle pour démarrer rapidement l'exercice le matin.
 

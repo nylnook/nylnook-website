@@ -9,7 +9,7 @@ And practising regularly is the best way I know to get better at drawing ;)
 
 But I recently finally find a way ! Inspired by this [video](http://www.ctrlpaint.com/videos/quick-pose-gesture-sketching) by Matt Kohr, and with the great resource I finally find here : http://artists.pixelovely.com/, I can know take half an hour daily to train myself !
 
-![Poses exercise](../../img/blog/poses-exercise.jpg)
+![Poses exercise](/img/blog/poses-exercise.jpg)
 
 But because I work digitally (with the great [Krita](https://krita.org/) software), one last thing was missing : a template file to quickly get started on the morning.
 

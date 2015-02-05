@@ -9,7 +9,7 @@ Nous avons parlés de [Blender](http://www.blender.org/), de son éditeur vidéo
 
 C'était une expérience très intense et nouvelle pour moi, dans un pays, un continent et une culture que je découvrais, sans compter que c'était aussi la première fois que je formais des formateurs et non pas des "débutants".
 
-![La façade de Kër Thiossane](../../img/blog/facade-ker-thiossane.jpg)
+![La façade de Kër Thiossane](/img/blog/facade-ker-thiossane.jpg)
 *Un aperçu de la magnifique façade dans la cour de Kër Thiossane*
 
 J'ai eu trois jours de plus pour visiter un peu la ville et ses îles (Gorée, Ngor) et rencontrer les habitants (au sens large) de [Kër Thiossane](http://ker-thiossane.org/), maison des arts du multimédia et de la culture... avec son [Fablab](http://ker-thiossane.org/spip.php?article137) à deux rues.  
