@@ -46,7 +46,7 @@
 		<% img = (def, note) -> %>
 			<% deftest = new RegExp(def) %>
 			<% if (deftest.test(deflist)) : %>
-			 		<a href="#downloadMe" data-def="<%- def %>" onclick="changeDef(this);" download><%- def %><%- unit %><% if (note?) : %> (<%- note %>)<% end %></a>
+			 		<a href="#downloadMe" data-def="<%- def %>" onclick="changeDef(this);" ><%- def %><%- unit %><% if (note?) : %> (<%- note %>)<% end %></a>
 			 <% end %>
 		<% end %>
 		
@@ -199,7 +199,7 @@
 	<div class="inside">
 		<script>
 			if (defRgx.test(defList) ) {
-				document.write('<a href="#downloadMe" id="download-button" class="big-button" data-def="'+def+'" onclick="changeDef(this);"><img src="/website-img/icon-wallpapers.svg"  alt="Wallapers icon" /><h2><%= @_ "download" %></h2><p><%= @_ "for-my-screen" %></p></a>');
+				document.write('<a href="#downloadMe" id="download-button" class="big-button" data-def="'+def+'" onclick="changeDef(this);"><img src="/website-img/icon-wallpapers.svg"  alt="Wallpapers icon" /><h2><%= @_ "download" %></h2><p><%= @_ "for-my-screen" %></p></a>');
 			} else {
 				document.write('<a href="#download" id="download-button" class="big-button"><img src="/website-img/icon-wallpapers.svg"  alt="Wallapers icon" /><h2>'+"<%= @_ 'download' %></h2><p><%- @_ 'cant-detect-res' %></p></a>");
 			}
