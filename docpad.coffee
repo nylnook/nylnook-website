@@ -237,7 +237,7 @@ docpadConfig = {
 					model.setMetaDefaults { layout:"img-layout" }
 					true
 					
-		# Collections for RSS feeds	
+		# Collections for RSS feeds and next/previous links
 		all_en: ->
 			@getCollection("html").findAllLive($or: [{relativeOutDirPath:'en/img', relativeOutDirPath:'en/blog'}],[{date:-1}])
 			

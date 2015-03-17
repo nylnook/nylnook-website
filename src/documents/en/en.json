@@ -54,5 +54,7 @@
 	"thumbnail": "thumbnail",
 	"pictures-with-tag": "Pictures with tag:",
 	"pictures-under-license": "Pictures under license:",
-	"pictures-made-with": "Pictures created with:"
+	"pictures-made-with": "Pictures created with:",
+	"previous": "Previous",
+	"next": "Next"
 }

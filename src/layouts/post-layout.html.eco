@@ -1,4 +1,27 @@
 <%- @partial('header') %>
+
+<nav class="prevnextnav">
+<!-- Previous or Next links-->
+<!-- Get the right collection name from language -->
+<% collbloglang = 'blog_' + @document.lang %>
+<!-- Get the next and previous document from the current document -->
+<% for document,documentIndex in @getCollection(collbloglang).toJSON(): %>
+	<!-- Get the current document, from there, we will be able to get the next and previous -->
+	<% if @document.id is document.id: %>
+		<!-- We have the current document, do the next and previous buttons -->
+		<!-- Check if we have a previous page -->
+		<% if documentIndex >= 1: %>
+		<a href="<%= @getCollection(collbloglang).toJSON()[documentIndex-1].url %>" class="previous"><img src="/website-img/icon-previous.svg" alt="" /><%= @_ 'previous' %></a>
+		<% end %>
+		❄
+		<!-- Check if we have a next page -->
+		<% if documentIndex < @getCollection(collbloglang).length - 1: %>
+		<a href="<%= @getCollection(collbloglang).toJSON()[documentIndex+1].url %>" class="next"><%= @_ 'next' %><img src="/website-img/icon-next.svg" alt="" /></a>
+		<% end %>
+	 
+	<% end %>
+<% end %> 
+</nav>
 	
 	<article class="post single-post">
 		<h1><%- @document.title %></h1>
