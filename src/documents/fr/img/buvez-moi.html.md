@@ -1,6 +1,6 @@
 ---
 file: 'drink-me'
-title: "Buvez moi"
+title: "Buvez-moi"
 date: 2015-03-17
 license: 'by-sa'
 tags:
