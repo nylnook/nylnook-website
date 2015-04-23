@@ -8,6 +8,7 @@ tags:
   - digital painting
   - vector
   - characters
+  - tribute
   - mixed colors
 made:
   - Blender

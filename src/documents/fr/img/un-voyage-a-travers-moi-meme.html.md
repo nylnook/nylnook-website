@@ -8,6 +8,7 @@ tags:
   - peinture numérique
   - dessin vectoriel
   - personnages
+  - hommage
   - couleurs mélangées
 made:
   - Blender
