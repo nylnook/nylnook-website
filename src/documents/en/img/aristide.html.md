@@ -17,7 +17,7 @@ made:
   - G'mic
 ---
 
-A childlike illustration for a not yet published stroy by [Lionel Dricot (aka ploum)](http://ploum.net/) : "The Adventures of Aristide, cosmonaut rabbit".
+A childlike illustration for a not yet published story by [Lionel Dricot (aka ploum)](http://ploum.net/) : "The Adventures of Aristide, cosmonaut rabbit".
 
 I took the opportunity to test a new workflow : sketch, then 3D modeling and first rendering, then drawing the characters and many changes in Krita, and ultimately final treatment and filtering with G'Mic :
 
