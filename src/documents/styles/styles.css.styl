@@ -1003,12 +1003,14 @@ img-base()
 	margin: 1%
 	width: 98%
 	@media tablet
-		margin: 1% 1.5% 0 1.5%
+		margin: 1% 1.5%
 		width: 63.6%
 	@media desktop
 		width: 64%
 	@media desktop-wide
-		width: 98%
+		width: 47%
+	@media desktop-extra-wide
+		width: 57.1%
 		
 .small-blocks
 	position: relative
@@ -1174,6 +1176,10 @@ img-base()
 	margin: 1% 1.5% 0
 	border: 2px solid rgba(0, 0, 0, 0.9)
 	box-shadow: 0.2rem 0.2rem 1rem 0px rgba(0, 0, 0, 0.3)
+	@media desktop-extra-wide
+		width: 37.7%
+		padding: 0 1% 1%
+		margin: 1.5% 1% 1% 1%
 
 .service-buttons div
 	display: block

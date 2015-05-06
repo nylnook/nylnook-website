@@ -6,6 +6,7 @@ license: 'by-sa'
 tags:
   - digital painting
   - characters
+  - cartoon
   - political
   - tribute
   - red

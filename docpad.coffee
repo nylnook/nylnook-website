@@ -67,7 +67,7 @@ docpadConfig = {
 			title: "nylnook"
 
 			# Description for RSS feeds
-			description: "Free illustrations & wallpapers, from creation to funding !"
+			description: "Free illustrations & wallpapers"
 
 			# The website author
 			author: "Camille Bissuel"

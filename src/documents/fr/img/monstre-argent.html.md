@@ -7,6 +7,7 @@ tags:
   - peinture numérique
   - surréaliste
   - personnages
+  - caricature
   - politique
   - sexy
   - noir

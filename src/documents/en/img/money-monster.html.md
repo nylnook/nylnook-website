@@ -7,6 +7,7 @@ tags:
   - digital painting
   - surreal
   - characters
+  - cartoon
   - political
   - sexy
   - black

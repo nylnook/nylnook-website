@@ -6,6 +6,7 @@ license: 'by-sa'
 tags:
   - peinture numérique
   - personnages
+  - caricature
   - politique
   - hommage
   - rouge
