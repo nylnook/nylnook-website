@@ -13,5 +13,5 @@ made:
   - Krita
 ---
 
-I just started to read [The Collapse of western civilization](http://www.abc.net.au/radionational/programs/scienceshow/the-collapse-of-western-civilization/5673714), by Naomi Oreskes and Erik M.Conway, and I'm already becoming wild !
+I just started to read [The Collapse of western civilization](http://www.collapseofwesternciv.org/), by Naomi Oreskes and Erik M.Conway, and I'm already becoming wild !
 Of course, this question is for all of us ...
