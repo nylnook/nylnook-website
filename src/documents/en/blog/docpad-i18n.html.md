@@ -3,6 +3,8 @@ title: 'Docpad Internationalized ?'
 date: 2014-04-07 17:00
 ---
 
+**EDIT : This method for translating DocPad [is currently developped as a plugin](https://bitbucket.org/bgschaid/docpad-plugin-multilanguage) by Bernhard F.W. Gschaider ! Many thanks to him !**
+
 In my way building this website, one the major technical point to solve was internationalization and multilingual support. I want to publish in English and French, and maybe more languages when times comes.   
 But for now (v6.64), [Docpad](http://docpad.org/), the publishing system I choosed for this website, [do not have any official localization abilities](https://github.com/bevry/docpad/issues/17).  
 So here is a full description the solution I finally implemented today (took much more time than expected !).  
@@ -468,7 +470,7 @@ in en.json
 in fr.json
 ``` json
 {
-	"about": "About",
+	"about": "À propos",
 	"about-filename": "a-propos"
 }
 ```
