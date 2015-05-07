@@ -1,7 +1,9 @@
 ---
 layout: 'welcome-layout'
 title: "Illustrations & fonds d'écran libres"
-isPage: true
+isPaged: true
+pagedCollection: 'img_fr'
+pageSize: 12
 changfreq: 'daily'
 priority: 1
 ---

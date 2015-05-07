@@ -56,5 +56,7 @@
 	"pictures-under-license": "Pictures under license:",
 	"pictures-made-with": "Pictures created with:",
 	"previous": "Previous",
-	"next": "Next"
+	"next": "Next",
+	"older": "Older pictures",
+	"newer": "Newer pictures"
 }

@@ -63,7 +63,7 @@ title: '404'
 	<h1><%- @document.title %></h1>
 	<p>Not found !</p> If you are not redirected automatically, please follow <a href='/en/404.html'>this link</a>.
 	<!-- DocPad Scripts + Our Own -->
-	<%- @getBlock('scripts').add(@getDeferedScripts()).toHTML() %>
+	<%- @getBlock('scripts').toHTML() %>
 </body>
 </html>
 

@@ -14,44 +14,79 @@
 		<%- @content %>
 	</article>
 	<% end %>
+
+	<% if @document.page.number is 0: %>
+		<section id="latest-img">
 	
-	<section id="latest-img">
-	
-	<% for img in @getCollection("html").findAllLive({relativeOutDirPath: @document.lang+'/img'},[{date:-1}]).toJSON().slice(0,1): %>
-		<a href="<%- img.url %>">
-			<picture>
-				<source srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-1100x1100.jpg 1x, /img/<%=img.file %>/thumb-nylnook-<%=img.file %>-2200x2200.jpg 2x" media="(min-width: 1581px)"></source>
-				<source srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-700x700.jpg 1x, /img/<%=img.file %>/thumb-nylnook-<%=img.file %>-1400x1400.jpg 2x" media="(min-width: 981px)"></source>
-				<source srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-550x550.jpg 1x, /img/<%=img.file %>/thumb-nylnook-<%=img.file %>-1100x1100.jpg 2x" media="(min-width: 481px)"></source>
-				<source srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-350x350.jpg 1x, /img/<%=img.file %>/thumb-nylnook-<%=img.file %>-700x700.jpg 2x"></source>
-				<img srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-700x700.jpg" alt="<%- img.title %> <%- @_ 'thumbnail' %>">
-			</picture>
-		</a>
-		<div class="meta">
-			<h1><a href="<%= img.url %>"><%- img.title %></a></h2>
-			<time pubdate="<%- @computerDate(img.date) %>"><%- @date(img.date, img.lang)  %></time>
-	    	</div>
-	<% end %>
-	</section>
-	
-	<section id="img-browser">
-	<% for img in @getCollection("html").findAllLive({relativeOutDirPath: @document.lang+'/img'},[{date:-1}]).toJSON().slice(1,19): %>
-	        <div class="thumb">
+		<% for img in @getCollection('img_'+ @document.lang).toJSON().slice(0,1): %>
 			<a href="<%- img.url %>">
 				<picture>
+					<source srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-1100x1100.jpg 1x, /img/<%=img.file %>/thumb-nylnook-<%=img.file %>-2200x2200.jpg 2x" media="(min-width: 1581px)"></source>
+					<source srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-700x700.jpg 1x, /img/<%=img.file %>/thumb-nylnook-<%=img.file %>-1400x1400.jpg 2x" media="(min-width: 981px)"></source>
+					<source srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-550x550.jpg 1x, /img/<%=img.file %>/thumb-nylnook-<%=img.file %>-1100x1100.jpg 2x" media="(min-width: 481px)"></source>
 					<source srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-350x350.jpg 1x, /img/<%=img.file %>/thumb-nylnook-<%=img.file %>-700x700.jpg 2x"></source>
-					<img srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-350x350.jpg" alt="<%- img.title %> <%- @_ 'thumbnail' %>">
+					<img srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-700x700.jpg" alt="<%- img.title %> <%- @_ 'thumbnail' %>">
 				</picture>
 			</a>
 			<div class="meta">
-				<h3><a href="<%= img.url %>"><%- img.title %></a></h2>
+				<h1><a href="<%= img.url %>"><%- img.title %></a></h2>
 				<time pubdate="<%- @computerDate(img.date) %>"><%- @date(img.date, img.lang)  %></time>
 		    	</div>
-		</div>
+		<% end %>
+		</section>
+	
+		<section id="img-browser">
+		<% for img in @getPageCollection('img_'+ @document.lang).toJSON().slice(1,99): %>
+			<div class="thumb">
+				<a href="<%- img.url %>">
+					<picture>
+						<source srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-350x350.jpg 1x, /img/<%=img.file %>/thumb-nylnook-<%=img.file %>-700x700.jpg 2x"></source>
+						<img srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-350x350.jpg" alt="<%- img.title %> <%- @_ 'thumbnail' %>">
+					</picture>
+				</a>
+				<div class="meta">
+					<h3><a href="<%= img.url %>"><%- img.title %></a></h2>
+					<time pubdate="<%- @computerDate(img.date) %>"><%- @date(img.date, img.lang)  %></time>
+			    	</div>
+			</div>
+		<% end %>
+		</section>
+
+	<% else: %>
+
+		<section id="img-browser">
+		<% for img in @getPageCollection('img_'+ @document.lang).toJSON(): %>
+			<div class="thumb">
+				<a href="<%- img.url %>">
+					<picture>
+						<source srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-350x350.jpg 1x, /img/<%=img.file %>/thumb-nylnook-<%=img.file %>-700x700.jpg 2x"></source>
+						<img srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-350x350.jpg" alt="<%- img.title %> <%- @_ 'thumbnail' %>">
+					</picture>
+				</a>
+				<div class="meta">
+					<h3><a href="<%= img.url %>"><%- img.title %></a></h2>
+					<time pubdate="<%- @computerDate(img.date) %>"><%- @date(img.date, img.lang)  %></time>
+			    	</div>
+			</div>
+		<% end %>
+		</section>
 	<% end %>
-	</section>
 
 <div class="page-bottom">
+	<!-- Page Listing -->
+	<% if @document.page: %>
+	<nav class="prevnextnav">
+		<% if @hasPrevPage(): %>
+		    <a class="previous" href="<%= @getPrevPage() %>"><img src="/website-img/icon-previous.svg" alt="" /><%= @_ 'newer' %></a>
+		<% end %>
+		❄
+		<% if @hasNextPage(): %>
+		    <a class="next" href="<%= @getNextPage() %>"><%= @_ 'older' %><img src="/website-img/icon-next.svg" alt="" /></a>
+		<% end %>
+	</nav>
+	<% end %>
+	
+
 	<section class="light-block">
 		<h2><%= @_ 'tags-technique' %></h2>
 

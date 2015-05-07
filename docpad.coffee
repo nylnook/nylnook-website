@@ -174,10 +174,6 @@ docpadConfig = {
 
 		getStyles: ->
 			(["/styles/styles.css"])
-				
-
-		getDeferedScripts: ->
-			([])
 		
 			
 				
@@ -237,7 +233,7 @@ docpadConfig = {
 					model.setMetaDefaults { layout:"img-layout" }
 					true
 					
-		# Collections for RSS feeds and next/previous links
+		# Collections for RSS feeds, next/previous links and pagging
 		all_en: ->
 			@getCollection("html").findAllLive($or: [{relativeOutDirPath:'en/img', relativeOutDirPath:'en/blog'}],[{date:-1}])
 			

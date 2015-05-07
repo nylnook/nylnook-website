@@ -14,10 +14,9 @@
 
 		<!-- DocPad Styles + Our Own -->
 		<link  rel="stylesheet" href="/styles/styles.css" />
-		<link  rel="stylesheet" href="/vendor/hljs-github.css" />
 		
 		<!-- Scripts that must not be defered -->
-		<script src="/vendor/picturefill.js"></script>
+		<script src="/vendor/picturefill.min.js"></script>
 
 		<!-- Favicons and Icons -->
 		<!-- Basic favicon, 32x32px -->
