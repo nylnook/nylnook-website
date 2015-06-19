@@ -21,6 +21,7 @@
 		<% for img in @getCollection('img_'+ @document.lang).toJSON().slice(0,1): %>
 			<a href="<%- img.url %>">
 				<picture>
+					<source srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-2200x2200.jpg" media="(min-width: 1901px)"></source>
 					<source srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-1100x1100.jpg 1x, /img/<%=img.file %>/thumb-nylnook-<%=img.file %>-2200x2200.jpg 2x" media="(min-width: 1581px)"></source>
 					<source srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-700x700.jpg 1x, /img/<%=img.file %>/thumb-nylnook-<%=img.file %>-1400x1400.jpg 2x" media="(min-width: 981px)"></source>
 					<source srcset="/img/<%=img.file %>/thumb-nylnook-<%=img.file %>-550x550.jpg 1x, /img/<%=img.file %>/thumb-nylnook-<%=img.file %>-1100x1100.jpg 2x" media="(min-width: 481px)"></source>

@@ -15,6 +15,7 @@ tablet = "screen and (min-width: 641px)"
 desktop = "screen and (min-width: 981px)"
 desktop-wide = "screen and (min-width: 1221px)"
 desktop-extra-wide = "screen and (min-width: 1581px)"
+desktop-huge = "screen and (min-width: 1901px)"
 
 
 darkbluenyl = rgba(58,69,71,1)
@@ -600,6 +601,7 @@ nav-in-list()
 #top-nav
 	text-align: right
 	right: 0
+	letter-spacing: -0.02rem
 	
 #logo
 	text-align: left
@@ -608,6 +610,7 @@ nav-in-list()
 #bottom-nav 
 	background: yellownyl repeat
 	margin-top: 2rem
+	letter-spacing: -0.02rem
 	width: 98%
 	li
 		display: inline-block
@@ -647,6 +650,7 @@ nav
 	
 
 footer
+	clear: both
 	margin-top: 2rem
 	font-size: 0.7rem
 	
@@ -720,13 +724,14 @@ blockquote
 	text-align: left
 
 .prevnextnav
-	margin-right: 1rem;
-	margin-top: -1.5rem;
+	margin-right: 1rem
+	margin-top: -1.5rem
+	clear: both
 	a, a:visited
 		color: lightbluenyl
 		font-size: 0.9rem
 	@media desktop-wide
-		margin-right: 0;
+		margin-right: 0
 	
 .post
 	margin: 1%
@@ -775,6 +780,9 @@ blockquote
 		li:hover::before
 			font-size:4em
 			font-size:2.2em \0/
+
+.post.small-blocks
+	float: left
 	
 .single-post
 	max-width: 45rem
@@ -813,6 +821,8 @@ img-base()
 		width: 47.2%
 	@media desktop-extra-wide
 		width: 57.1%
+	@media desktop-huge
+		width: 54.3%
 	
 #img-browser
 	text-align: left
@@ -832,6 +842,8 @@ img-base()
 		width: 22.7%
 	@media desktop-extra-wide
 		width: 17.7%
+	@media desktop-huge
+		width: 12.07%
 
 .meta
 	position: absolute
@@ -882,6 +894,11 @@ img-base()
 		background: url(../website-img/paper-tilt-rotate.png) repeat, darkbluenyl repeat
 		position: absolute
 
+	@media desktop-huge
+		width: 49%
+		float: left
+		margin: 1rem 0px 1rem 1rem
+
 .page-bottom
 	margin-top: 3rem
 
@@ -913,6 +930,8 @@ img-base()
 		width: 47.2%
 	@media desktop-extra-wide
 		width: 57.1%
+	@media desktop-huge
+		width: 54.3%
 
 #picture-zone > picture
 	position: relative
@@ -1011,6 +1030,8 @@ img-base()
 		width: 47%
 	@media desktop-extra-wide
 		width: 57.1%
+	@media desktop-huge
+		width: 54.3%
 		
 .small-blocks
 	position: relative
@@ -1033,6 +1054,8 @@ img-base()
 		width: 22.7%
 	@media desktop-extra-wide
 		width: 17.7%
+	@media desktop-huge
+		width: 12.07%
 		
 // Trick to have an apect ratio of 1:1 on small blocks
 .small-blocks:before
@@ -1180,6 +1203,8 @@ img-base()
 		width: 37.7%
 		padding: 0 1% 1%
 		margin: 1.5% 1% 1% 1%
+	@media desktop-huge
+		width: 40.7%
 
 .service-buttons div
 	display: block

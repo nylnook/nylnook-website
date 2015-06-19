@@ -37,6 +37,7 @@
 <article class="img-page" about="/../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-700x700.jpg">
 	<div id="picture-zone">
 	<picture id="fullscreen-toogle">
+		<source srcset="/../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-2200x2200.jpg" media="(min-width: 1901px)"></source>
 		<source srcset="/../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-1100x1100.jpg 1x, /../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-2200x2200.jpg 2x" media="(min-width: 1581px)"></source>
 		<source srcset="/../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-700x700.jpg 1x, /../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-1400x1400.jpg 2x" media="(min-width: 981px)"></source>
 		<source srcset="/../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-550x550.jpg 1x, /../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-1100x1100.jpg 2x" media="(min-width: 481px)"></source>
