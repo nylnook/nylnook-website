@@ -1,4 +1,13 @@
 <%- @partial('header') %>
+<!-- Facebook SDK -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <nav class="prevnextnav">
 <!-- Previous or Next links-->
@@ -18,16 +27,16 @@
 		<% if documentIndex < @getCollection(collbloglang).length - 1: %>
 		<a href="<%= @getCollection(collbloglang).toJSON()[documentIndex+1].url %>" class="next"><%= @_ 'next' %><img src="/website-img/icon-next.svg" alt="" /></a>
 		<% end %>
-	 
+
 	<% end %>
-<% end %> 
+<% end %>
 </nav>
-	
+
 	<article class="post single-post">
 		<h1><%- @document.title %></h1>
 		<time pubdate="<%- @computerDate() %>"><%- @date() %></time>
 		<p class="author"><%= @_ 'by' %> <a href="/<%- @document.lang %>/<%= @_ 'about-filename' %>"><%- @site.author %></a></p>
-		
+
 		<%- @content %>
 		<section id="share">
 			<h2><%= @_ 'share' %></h2>
@@ -46,14 +55,8 @@
 			<!-- Facebook -->
 			<div class="service-button">
 			<div id="fb-root"></div>
-			<script>(function(d, s, id) {
-			  var js, fjs = d.getElementsByTagName(s)[0];
-			  if (d.getElementById(id)) return;
-			  js = d.createElement(s); js.id = id;
-			  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.0";
-			  fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));</script>
-			<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+				<div class="fb-like"></div><br/>
+				<div class="fb-share-button" data-href="<%- @document.url %>" data-layout="button_count"></div>
 			</div>
 			<!-- Pinterest -->
 			<div class="service-button">
@@ -89,5 +92,5 @@
 			<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 		</section>
 	</article>
-	
+
 <%- @partial('footer') %>

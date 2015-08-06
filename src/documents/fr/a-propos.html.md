@@ -32,7 +32,7 @@ Un **logiciel libre**, c'est un logiciel que l'on peut :
 - utiliser sans restrictions
 - copier et distribuer librement, et donc souvent gratuitement
 - étudier en lisant son code source, sa recette de cuisine
-- modifier pour l'améliorer 
+- modifier pour l'améliorer
 
 En plus du choix philosophique, il y a trois motivations derrière mon choix des logiciels libres, malgré ma formation initiale sur la suite Adobe et 3ds Max.
 - la **gratuité** des logiciels et de leurs mise à jour, ce qui ne m'empêche pas de les soutenir avec des dons.

@@ -1,6 +1,6 @@
 ---
 file: 'will-you-let-go'
-title: "Will you let go ?"
+title: "Will you let go ?"
 date: 2015-05-06
 license: 'by-sa'
 tags:

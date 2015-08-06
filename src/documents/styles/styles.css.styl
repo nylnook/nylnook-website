@@ -168,7 +168,7 @@ sub
 
 
 // ====================================
-// Embedded content 
+// Embedded content
 
 // Remove border when inside `a` element in IE 8/9/10.
 
@@ -192,7 +192,7 @@ figure
 
 // Address differences between Firefox and other browsers.
 
-hr 
+hr
 	-moz-box-sizing: content-box
 	box-sizing: content-box
 	height: 0
@@ -396,7 +396,7 @@ html
 ::-moz-selection
 	background: lightbluenyl
 	text-shadow: none
-	
+
 ::selection
 	background: lightbluenyl
 	text-shadow: none
@@ -429,12 +429,12 @@ fieldset
 // Allow only vertical resizing of textareas.
 textarea
 	resize: vertical;
-	
+
 // Include paddings inside our width for everything
 *
 	box-sizing border-box
 
-// ==================================== 
+// ====================================
 // Browse Happy prompt
 
 .browsehappy
@@ -447,9 +447,20 @@ textarea
 	width: 50%
 
 
-// ==================================== 
+// ====================================
 // Styles for Nylnook.com
-// ==================================== 
+// ====================================
+
+/*! Comili Font, Copyleft 2015 Camille Bissuel, SIL Open Font Licence */
+
+@font-face
+	font-family: "Comili";
+	font-weight: normal;
+	src url('../fonts/comili-book.woff') format('woff'),
+	url('../fonts/comili-book.ttf') format('opentype'),
+	url('../fonts/comili-book.ttf') format('truetype'),
+	url('../fonts/comili-book.svg#Comili-Book') format('svg');
+
 
 /*! Cantarell Font, Copyright (c) 2009 Dave Crossland, please see Licence */
 
@@ -459,7 +470,7 @@ textarea
 	src url('../fonts/cantarell-regular-webfont.woff') format('woff'),
 	url('../fonts/cantarell-regular-webfont.ttf') format('truetype'),
 	url('../fonts/cantarell-regular-webfont.svg#cantarellregular') format('svg');
-	
+
 
 @font-face
 	font-family: "Cantarell";
@@ -467,7 +478,7 @@ textarea
 	src url('../fonts/cantarell-bold-webfont.woff') format('woff'),
 	url('../fonts/cantarell-bold-webfont.ttf') format('truetype'),
 	url('../fonts/cantarell-bold-webfont.svg#cantarellbold') format('svg');
-	
+
 
 @font-face
 	font-family: "Cantarell";
@@ -479,6 +490,23 @@ textarea
 
 
 // generic properties
+
+h1, h2, h3, h4, h5, h6
+	font-family: Comili, Cantarell, Ubuntu, Verdana, sans-serif;
+	font-weight: normal
+
+	a:hover, a:focus, a:active
+		text-decoration: none
+
+h1
+	font-size: 2.5rem
+
+h2
+	font-size: 2.1rem
+
+h3
+	font-size: 1rem
+
 
 a, a:visited
 	color: yellownyl;
@@ -500,9 +528,9 @@ body
 	text-align: center
 	background: url(../website-img/paper-tilt-rotate.png) repeat, darkbluenyl repeat
 	word-wrap: break-word
-	
+
 // Navigation
-	
+
 header
 	margin-top: 9rem
 	@media mobile-wide
@@ -510,14 +538,15 @@ header
 
 
 #language-selector
-	font-size: 0.9rem
-	
+	font-size: 1.1rem
+	font-family: Comili, script
+
 	a, a:visited
 		color: white;
-	
+
 	a:not(.current-lang), a:visited:not(.current-lang)
 		color: greynyl
-		
+
 	@media mobile-wide
 		text-align: left
 		margin-left: 8.5rem
@@ -531,14 +560,14 @@ header
 .current-lang
 	font-weight: bold
 	background: url("../website-img/icon-talk.svg") no-repeat scroll 0.4rem 0.7rem rgba(0, 0, 0, 0)
-	padding: 1rem
+	padding: 1.1rem 1rem 1rem
 	margin: 0
-	
+
 	@media desktop-extra-wide
 		background-position: 0.5rem 0.9rem
 
 #site-baseline
-	font-size: 0.9rem
+	font-size: 1.2rem
 	font-weight: normal
 	margin: 1.5rem 0
 	@media mobile-wide
@@ -562,19 +591,19 @@ nav-before-list()
 
 #logo:before, #top-nav:before
 	top: -7rem
-	
+
 #logo:before
 	left: -8rem
 	//background: url(../website-img/paper-tilt.png) repeat, lightbluenyl repeat
 	background: darkbluenyl repeat
 	transform: rotate(65deg)
-	
+
 #top-nav:before
 	//background: url(../website-img/paper-tilt.png) repeat, greennyl repeat
 	background: greennyl repeat
 	transform: rotate(-65deg)
 	right: -8rem
-	
+
 @media tablet
 	#bottom-nav:before
 		nav-before-list()
@@ -583,8 +612,6 @@ nav-before-list()
 		//background: url(../website-img/paper-tilt.png) repeat, yellownyl repeat
 		background: yellownyl repeat
 		transform: rotate(65deg)
-		
-		
 
 nav-in-list()
 	z-index: 10
@@ -593,24 +620,27 @@ nav-in-list()
 	position: absolute
 	@media tablet
 		position: fixed
-	
+
 #logo, #top-nav
 	nav-in-list()
 	top: 0
-	
+
 #top-nav
 	text-align: right
 	right: 0
-	letter-spacing: -0.02rem
-	
+	letter-spacing: 0
+
+	:first-child a
+		letter-spacing: -0.05rem
+
 #logo
 	text-align: left
 	left: 0
 
-#bottom-nav 
+#bottom-nav
 	background: yellownyl repeat
 	margin-top: 2rem
-	letter-spacing: -0.02rem
+	letter-spacing: 0
 	width: 98%
 	li
 		display: inline-block
@@ -624,7 +654,7 @@ nav-in-list()
 		text-align: right
 		right: 0
 		background: none
-		
+
 	#bottom-nav li
 		display: block
 		padding: 0
@@ -639,7 +669,8 @@ nav
 		color: black
 	ul
 		list-style: none
-		font-size: 0.85rem
+		font-family: Comili, Cantarell, Ubuntu, Verdana, sans-serif;
+		font-size: 1.2rem
 		line-height: 2.5rem
 		padding: 0.2rem 1rem
 		margin:0
@@ -647,29 +678,30 @@ nav
 	img
 		width: 2rem
 		margin: 0.2rem
-	
+
 
 footer
 	clear: both
 	margin-top: 2rem
-	font-size: 0.7rem
-	
+	font-size: 1.1rem
+
 footer > p
+	font-family: Comili, Cantarell, Ubuntu, Verdana, sans-serif;
 	@media tablet
 		padding-right: 10rem
 	@media desktop-wide
 		padding-right: 5rem
 	@media desktop-extra-wide
 		padding-right: 0
-		
-	
+
+
 
 // Content
 
 img
 	max-width: 100%
 	height: auto
-	
+
 picture > img
 	width: 100%
 
@@ -677,7 +709,7 @@ picture, source
 	margin:0
 	padding:0
 	display: block
-	
+
 article
 	text-align: left
 	padding: 1%
@@ -685,7 +717,7 @@ article
 	color: black
 	a, a:visited
 		color: darkbluenyl
-		
+
 blockquote
 	background-color: white
 	font-style: italic
@@ -707,10 +739,9 @@ blockquote
 	z-index: 99
 	width: 60%
 	transform: rotate(-5deg)
-	
+
 	h2
 		font-weight: normal
-		font-variant: small-caps
 		margin: 0.2rem
 	p
 		margin: 0.2rem
@@ -719,26 +750,28 @@ blockquote
 	background-color: red
 	margin: 0.5rem
 	padding: 0.5rem
-		
+
 #intro
 	text-align: left
+	padding-left: 2rem
 
 .prevnextnav
+	font-family: Comili, Cantarell, Ubuntu, Verdana, sans-serif;
 	margin-right: 1rem
 	margin-top: -1.5rem
 	clear: both
 	a, a:visited
 		color: lightbluenyl
-		font-size: 0.9rem
+		font-size: 1.2rem
 	@media desktop-wide
 		margin-right: 0
-	
+
 .post
 	margin: 1%
 	padding: 0.5rem 2%
 
 	a, a:visited
-		color: white	
+		color: white
 
 	h1,h2,h3,h4,h5,h6
 		clear: both
@@ -750,13 +783,13 @@ blockquote
 	img
 		margin: 1% 0
 
-	ul 
+	ul
 		overflow: hidden
 		padding-left: 0
 		margin-left: 0
 
 		li
-			list-style: none 
+			list-style: none
 			position: relative
 			float: left
 			clear: left
@@ -783,7 +816,7 @@ blockquote
 
 .post.small-blocks
 	float: left
-	
+
 .single-post
 	max-width: 45rem
 	margin-left: auto
@@ -795,7 +828,7 @@ article time, article .author
 	margin: 0
 	display: block
 	text-align: right
-	
+
 
 img-base()
 	position: relative
@@ -804,13 +837,13 @@ img-base()
 	padding: 0
 	height: auto
 	box-shadow: 0.2rem 0.2rem 1rem 0px rgba(0, 0, 0, 0.5)
-	
-	
+
+
 #latest-img
 	float: left
-	
+
 	img-base()
-	
+
 	width: 98%
 	@media tablet
 		margin: 1% 1.5% 0 1.5%
@@ -823,15 +856,15 @@ img-base()
 		width: 57.1%
 	@media desktop-huge
 		width: 54.3%
-	
+
 #img-browser
 	text-align: left
-	
+
 .thumb
 	display: inline-block
 	img-base()
-		
-	width: 98%		
+
+	width: 98%
 	@media mobile-wide
 		width: 47.3%
 	@media tablet
@@ -856,28 +889,30 @@ img-base()
 	height: 0
 	transition: height 0.15s ease-in-out 0s
 	padding: 0 1rem
-	line-height: 1.2rem
-	
+	line-height: 1.3rem
+
 	a
 		color: white
-	
+
 	h1, h2, h3
-		font-size: 1rem
-		margin-bottom: 0.1rem
-	
+		font-size: 1.7rem
+		margin-bottom: 0.4rem
+
 	h1
 		@media tablet
-			font-size: 1.2rem
+			font-size: 2.5rem
+			line-height: 1.4rem
 		@media desktop
-			font-size: 1.5rem
-		
+			font-size: 2.8rem
+			line-height: 1.5rem
+
 	time
 		font-size: 0.8rem
-		
-		
+
+
 #latest-img:active > .meta, #latest-img:hover > .meta, #latest-img:focus > .meta,
 .thumb:active > .meta, .thumb:hover > .meta, .thumb:focus > .meta
-	height: 5rem
+	height: 7rem
 
 .light-block
 	border: 0.15rem solid white
@@ -905,7 +940,7 @@ img-base()
 .img-page
 	background: none
 	padding: 0
-	
+
 .target-fix
 	display: block
 	left: 0
@@ -938,7 +973,7 @@ img-base()
 	border: 2px solid rgba(0, 0, 0, 0.3)
 	padding: 0
 	height: auto
-	
+
 #download-list
 	width: 0
 	position: absolute
@@ -954,7 +989,7 @@ img-base()
 	a, a:visited
 		font-size: 0.8rem
 		color: lightbluenyl
-	
+
 #download-list > .inside
 	padding: 5%
 
@@ -963,11 +998,11 @@ img-base()
 
 #picture:target + #download-list
 	width: 0
-	
+
 #fullscreen-toogle, #picture-target
 	cursor: pointer
 
-	
+
 #picture-target:fullscreen,
 #picture-target:-moz-full-screen,
 #picture-target:-webkit-full-screen,
@@ -1010,9 +1045,11 @@ img-base()
 		width: 40%
 	@media desktop-extra-wide
 		width: 33%
-	
-		
+
+
 #img-description
+	font-family: Comili, Cantarell, Ubuntu, Verdana, sans-serif;
+	font-size: 1.5rem
 	position: relative
 	background: url(../website-img/paper-tilt.png) repeat, white repeat
 	float: left
@@ -1032,7 +1069,7 @@ img-base()
 		width: 57.1%
 	@media desktop-huge
 		width: 54.3%
-		
+
 .small-blocks
 	position: relative
 	overflow: hidden
@@ -1056,55 +1093,54 @@ img-base()
 		width: 17.7%
 	@media desktop-huge
 		width: 12.07%
-		
+
 // Trick to have an apect ratio of 1:1 on small blocks
 .small-blocks:before
 	content: ""
 	display: block
 	padding-top: 100%
-	
+
 .small-blocks > .inside
 	position:  absolute
 	top: 5%
 	left: 5%
 	bottom: 5%
 	right: 5%
-	
+
 .small-blocks h2
 	color: rgba(0, 0, 0, 0.8)
-	font-size: 1rem
-	font-variant: small-caps
-	
-	
-	
+	font-size: 1.7rem
+
+
+
 #actions, .modal-button
 	background: url(../website-img/paper-tilt-rotate.png) repeat, lightbluenyl repeat
-	
+
 	h2, p
 		margin: 0
 		padding: 0
-	
+
 	h2
 		font-variant: normal
 		font-size: 1.8rem
 		font-weight: normal
-		
+
 	p
 		font-size: 0.8rem
-		
+
 	a, a:visited
 		display: block
 		border-radius: 0.7rem
 		margin: 5% 0
-		
+
 	a:hover, a:focus, a:active
 		text-decoration: none
-		
+
 .big-button, .small-button, .modal-button
 	background-color: yellownyl
 	color: black !important
 	box-shadow: 0.2rem 0.2rem 0.2rem 0 rgba(50, 50, 50, 0.75);
-	
+
 .big-button:hover, .big-button:focus, .big-button:active,
 .small-button:hover, .small-button:focus, .small-button:active,
 .modal-button:hover, .modal-button:focus, .modal-button:active
@@ -1140,7 +1176,7 @@ img-base()
 
 	a, a:visited
 		color: black
-	
+
 .big-button > img, .modal-button img
 	float: left
 	height: 3rem
@@ -1155,7 +1191,7 @@ img-base()
 
 #support
 	background: url(../website-img/paper-tilt-rotate.png) repeat, greennyl repeat
-		
+
 .support-block
 	display: inline-block
 	vertical-align: middle
@@ -1190,7 +1226,7 @@ img-base()
 
 #made-with
 	background: url(../website-img/paper-tilt-rotate.png) repeat, yellownyl repeat
-	
+
 .img-page #comments
 	background: url(../website-img/paper-tilt-rotate.png) repeat, white repeat
 	width: 98%
@@ -1215,17 +1251,17 @@ img-base()
 #made-with
 	text-align: center
 	h2
-		text-align: left	
+		text-align: left
 	img
 		width: 30%
 		margin: 0.5rem
-	
 
 
-// ==================================== 
+
+// ====================================
 // Helper classes
 
-// ==================================== 
+// ====================================
 // Image replacement
 
 .ir
@@ -1239,14 +1275,14 @@ img-base()
 	width: 0
 	height: 150%
 
-// ==================================== 
+// ====================================
 // Hide from both screenreaders and browsers: h5bp.com/u
 
 .hidden
 	display: none !important
 	visibility: hidden
 
-// ==================================== 
+// ====================================
 // Hide only visually, but have it available for screenreaders: h5bp.com/v
 
 .visuallyhidden
@@ -1259,7 +1295,7 @@ img-base()
 	position: absolute
 	width: 1px
 
-// ==================================== 
+// ====================================
 //  Extends the .visuallyhidden class to allow the element to be focusable
 // when navigated to via the keyboard: h5bp.com/p
 
@@ -1271,7 +1307,7 @@ img-base()
 	position: static
 	width: auto
 
-// ==================================== 
+// ====================================
 // Hide visually and from screenreaders, but maintain layout
 
 
@@ -1406,7 +1442,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 }
 
 
-// ==================================== 
+// ====================================
 // Style adjustments for high resolution devices
 
 @media print,
@@ -1416,7 +1452,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     /* Style adjustments for high resolution devices */
 }
 
-// ==================================== 
+// ====================================
 // Print styles.
 // Inlined to avoid required HTTP connection: h5bp.com/r
 
@@ -1473,5 +1509,3 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 	h2
 	h3
 		page-break-after: avoid
-
-

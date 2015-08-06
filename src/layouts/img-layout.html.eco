@@ -1,16 +1,25 @@
 <%- @partial('header') %>
+<!-- Facebook SDK -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <script>
 	var vRatio = window.devicePixelRatio;
 	var vWidth = window.screen.width;
 	var vHeight = window.screen.height;
-	
+
 	var gWidth = Math.round(vWidth * vRatio);
 	var gHeight = Math.round(vHeight * vRatio);
 	var def = gWidth+"x"+gHeight;
-	
+
 	//console.log( def, vRatio );
-	
+
 </script>
 
 <nav class="prevnextnav">
@@ -29,9 +38,9 @@
 		<% if documentIndex < @getCollection('img_' + @document.lang).length - 1: %>
 		<a href="<%= @getCollection('img_' + @document.lang).toJSON()[documentIndex+1].url %>" class="next"><%= @_ 'next' %><img src="/website-img/icon-next.svg" alt="" /></a>
 		<% end %>
-	 
+
 	<% end %>
-<% end %> 
+<% end %>
 </nav>
 
 <article class="img-page" about="/../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-700x700.jpg">
@@ -39,9 +48,9 @@
 	<picture id="fullscreen-toogle">
 		<source srcset="/../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-2200x2200.jpg" media="(min-width: 1901px)"></source>
 		<source srcset="/../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-1100x1100.jpg 1x, /../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-2200x2200.jpg 2x" media="(min-width: 1581px)"></source>
-		<source srcset="/../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-700x700.jpg 1x, /../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-1400x1400.jpg 2x" media="(min-width: 981px)"></source>
-		<source srcset="/../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-550x550.jpg 1x, /../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-1100x1100.jpg 2x" media="(min-width: 481px)"></source>
-		<source srcset="/../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-350x350.jpg 1x, /../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-700x700.jpg 2x"></source>
+		<source srcset="/../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-1100x1100.jpg 1x, /../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-1400x1400.jpg 2x" media="(min-width: 981px)"></source>
+		<source srcset="/../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-700x700.jpg 1x, /../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-1100x1100.jpg 2x" media="(min-width: 481px)"></source>
+		<source srcset="/../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-550x550.jpg 1x, /../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-700x700.jpg 2x"></source>
 		<img srcset="/../img/<%- @document.file %>/thumb-nylnook-<%- @document.file %>-700x700.jpg" alt="<%- @document.title %>" />
 	</picture>
 	<span id="picture" class="target-fix"></span>
@@ -49,29 +58,29 @@
 	<section id="download-list" >
 		<div class="inside">
 		<a href="#picture" class="close-button" aria-hidden="true"><img src="/website-img/icon-close.svg"  alt="<%= @_ 'close' %>" title="<%= @_ 'close' %>" /></a>
-		
+
 		<% deflist = "" %>
 		<% toolongname = "nylnook-"+@document.file+"-" %>
-		
-		
+
+
 		<% for file in @getFilesAtPath('../../img/'+@document.file).toJSON(): %>
 			<% if !(/thumb/.test(file.basename)) : %>
 				<% definition = file.basename.replace(toolongname, ''); %>
 				<% deflist += definition + ", " %>
 			<% end %>
 		<% end %>
-		
+
 		<% downloadpath = "/../img/"+@document.file+"/files/nylnook-"+@document.file+"-" %>
 		<% extpath = ".jpg" %>
 		<% unit = "px" %>
-		
+
 		<% img = (def, note) -> %>
 			<% deftest = new RegExp(def) %>
 			<% if (deftest.test(deflist)) : %>
 			 		<a href="#downloadMe" data-def="<%- def %>" onclick="changeDef(this);" ><%- def %><%- unit %><% if (note?) : %> (<%- note %>)<% end %></a>
 			 <% end %>
 		<% end %>
-		
+
 		<div id="deflist" class="hidden"><%= deflist %></div>
 		<div id="choosenDef" class="hidden"></div>
 
@@ -81,13 +90,13 @@
 			document.getElementById('changeMe').innerHTML = '<a href="<%- downloadpath %>'+newdef+'<%- extpath %>"  download><img src="/website-img/icon-wallpapers.svg"  alt="Wallapers icon" /><h2><%= @_ "download" %></h2><p>'+newdef+' px</p></a>';
 		}
 		</script>
-		
-		
+
+
 		<p><%= @_ "your-resolution" %><em><script>document.write(def);</script>px</em></p>
 		<p><%= @_ "download-note" %></p>
-	
+
 		<h3><%= @_ 'mobiles-and-tablets' %></h3>
-			
+
 			<%- img('240x320') %>
 			<%- img('320x240') %>
 			<%- img('320x396') %>
@@ -111,9 +120,9 @@
 			<%- img('1920x1200', 'WUXGA') %>
 			<%- img('2048x1536', 'iPad 3&4') %>
 			<%- img('2048x2048', 'WUXGA') %>
-			
+
 		<h3><%= @_ 'desktop' %></h3>
-		
+
 			<%- img('768x1024') %>
 			<%- img('800x600', 'SVGA') %>
 			<%- img('1024x600', 'WSVGA') %>
@@ -150,8 +159,8 @@
 			<%- img('2880x1800', 'Retina') %>
 			<%- img('4096x4096', '4K Fulldome') %>
 			<%- img('8192x8192', '8K Fulldome') %>
-			
-		
+
+
 		<h3><%= @_ 'square' %></h3>
 			<%- img('512x512') %>
 			<%- img('1024x1024', '1K') %>
@@ -160,7 +169,7 @@
 			<%- img('8192x8192', '8K') %>
 		</div>
 		<script>
-		var defRgx = new RegExp(def);	
+		var defRgx = new RegExp(def);
 		var defList = document.getElementById('deflist').innerHTML;
 		if (defRgx.test(defList) ) {
 			document.write('<img id="picture-target" class="visuallyhidden" src="/../img/<%- @document.file %>/files/nylnook-<%- @document.file %>-'+def+'.jpg" />');
@@ -215,8 +224,8 @@
 		</div>
 	</div>
 	</div>
-	
-	
+
+
 	<section id="actions" class="small-blocks">
 	<div class="inside">
 		<script>
@@ -226,20 +235,20 @@
 				document.write('<a href="#download" id="download-button" class="big-button"><img src="/website-img/icon-wallpapers.svg"  alt="Wallapers icon" /><h2>'+"<%= @_ 'download' %></h2><p><%- @_ 'cant-detect-res' %></p></a>");
 			}
 		</script>
-		
+
 		<a href="#download" class="small-button" aria-hidden="true"><%= @_ 'other-resolution' %></a>
 
 	</div>
 	</section>
-	
+
 	<section id="img-description">
 		<h1><%- @document.title %></h1>
 		<time pubdate="<%- @computerDate() %>"><%- @date() %></time>
 		<p class="author"><%= @_ 'by' %> <a href="/<%- @document.lang %>/<%= @_ 'about-filename' %>" rel="author"><%- @site.author %></a></p>
 		<%- @content %>
 	</section>
-	
-	
+
+
 	<section id="licence" class="small-blocks">
 		<div class="inside">
 			<h2><%= @_ 'license' %></h2>
@@ -249,7 +258,7 @@
 	<section id="support" class="small-blocks">
 		<div class="inside">
 			<h2><%= @_ 'support' %></h2>
-			<a href="/<%- @document.lang %>/<%= @_ 'support-filename' %>"><img style="width:70%; margin: 1%" src="/website-img/icon-support.svg"  alt="<%= @_ 'support' %>" /></a>
+			<a href="/<%- @document.lang %>/<%= @_ 'support-filename' %>"><img style="width:50%; margin: 1%" src="/website-img/icon-support.svg"  alt="<%= @_ 'support' %>" /></a>
 		</div>
 	</section>
 	<!-- Share -->
@@ -270,15 +279,8 @@
 			</div>
 			<!-- Facebook -->
 			<div class="service-button">
-			<div id="fb-root"></div>
-			<script>(function(d, s, id) {
-			  var js, fjs = d.getElementsByTagName(s)[0];
-			  if (d.getElementById(id)) return;
-			  js = d.createElement(s); js.id = id;
-			  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.0";
-			  fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));</script>
-			<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+				<div class="fb-like"></div>
+				<div class="fb-share-button" data-href="<%- @document.url %>" data-layout="button_count"></div>
 			</div>
 			<!-- Pinterest -->
 			<div class="service-button">
@@ -317,7 +319,7 @@
 			<%- @partial('software') %>
 		</div>
 	</section>
-	
+
 	<section id="comments">
 		<h2><%= @_ 'comments' %></h2>
 			<!-- Disqus -->
@@ -333,7 +335,7 @@
 			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 			<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 	</section>
-	
+
 	<!-- Fullscreen scripts -->
 	<script src="/vendor/screenfull.min.js"></script>
 	<script>
@@ -355,7 +357,7 @@
 			}
 		});
 	</script>
-	
+
 </article>
-	
+
 <%- @partial('footer') %>

@@ -4,7 +4,7 @@
 		<h1 class="page-title"><%- @document.title %></h1>
 		<%- @content %>
 	</section>
-	
+
 	<% for post in @getPageCollection('blog_'+ @document.lang).toJSON(): %>
 	        <article class="post small-blocks">
 	        <div class="inside">
@@ -29,5 +29,5 @@
 	</nav>
 	<% end %>
 </div>
-	
+
 <%- @partial('footer') %>

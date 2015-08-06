@@ -1,6 +1,6 @@
 ---
 file: 'will-you-let-go'
-title: "Allez-vous lâcher ?"
+title: "Allez-vous lâcher ?"
 date: 2015-05-06
 license: 'by-sa'
 tags:
