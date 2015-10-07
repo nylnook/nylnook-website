@@ -14,7 +14,7 @@
 
 		<!-- DocPad Styles + Our Own -->
 		<%- @getBlock('styles').add(@getStyles()).toHTML() %>
-		
+
 		<!-- Scripts that must not be defered -->
 		<script src="/vendor/picturefill.min.js"></script>
 
@@ -51,8 +51,8 @@
 			</nav>
 			<nav id="top-nav">
 				<ul>
-					<li><a href="/<%- @document.lang %>/"><%= @_ 'wallpapers' %><img src="/website-img/icon-wallpapers.svg"  alt="<%= @_ 'wallpapers' %>" /></a></li>
-					<li><a href="http://nylnook.deviantart.com/prints/" target="_blanck"><%= @_ 'shop' %><img src="/website-img/icon-gifts.svg"  alt="<%= @_ 'shop' %>" /></a></li>
+					<li><a href="/<%- @document.lang %>/<%= @_ 'comics-filename' %>"><%= @_ 'comics' %><img src="/website-img/icon-book.svg"  alt="<%= @_ 'comic' %>" /></a></li>
+					<li><a href="/<%- @document.lang %>/<%= @_ 'wallpapers-filename' %>"><%= @_ 'wallpapers' %><img src="/website-img/icon-wallpapers.svg"  alt="<%= @_ 'wallpapers' %>" /></a></li>
 					<li><a href="/<%- @document.lang %>/<%= @_ 'blog-filename' %>"><%= @_ 'blog' %><img src="/website-img/icon-blog.svg"  alt="<%= @_ 'blog' %>" /></a></li>
 				</ul>
 			</nav>

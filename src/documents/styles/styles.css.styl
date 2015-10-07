@@ -630,9 +630,6 @@ nav-in-list()
 	right: 0
 	letter-spacing: 0
 
-	:first-child a
-		letter-spacing: -0.05rem
-
 #logo
 	text-align: left
 	left: 0
@@ -688,11 +685,7 @@ footer
 footer > p
 	font-family: Comili, Cantarell, Ubuntu, Verdana, sans-serif;
 	@media tablet
-		padding-right: 10rem
-	@media desktop-wide
-		padding-right: 5rem
-	@media desktop-extra-wide
-		padding-right: 0
+		margin: auto 20%
 
 
 
@@ -752,8 +745,7 @@ blockquote
 	padding: 0.5rem
 
 #intro
-	text-align: left
-	padding-left: 2rem
+	text-align: center
 
 .prevnextnav
 	font-family: Comili, Cantarell, Ubuntu, Verdana, sans-serif;
@@ -818,9 +810,10 @@ blockquote
 	float: left
 
 .single-post
-	max-width: 45rem
-	margin-left: auto
-	margin-right: 2rem
+	max-width: 100%
+	float: left
+	@media desktop
+		max-width: 45rem
 
 article time, article .author
 	font-size: 0.8rem
@@ -859,6 +852,19 @@ img-base()
 
 #img-browser
 	text-align: left
+
+#welcome-browser
+		text-align: center
+		form
+			margin: 1em 2% auto
+			@media tablet
+				margin: 1em 20% auto
+			@media desktop-wide
+				margin: 1em 27% auto
+			@media desktop-extra-wide
+				margin: 1em 32% auto
+			@media desktop-huge
+				margin: 1em 38% auto
 
 .thumb
 	display: inline-block
@@ -1450,6 +1456,71 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 (-webkit-min-device-pixel-ratio: 1.25),
 (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
+}
+
+// ====================================
+// Gumroad follow form styles
+
+.gumroad-follow-form-embed {
+	zoom: 1;
+}
+.gumroad-follow-form-embed:before, .gumroad-follow-form-embed:after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+.gumroad-follow-form-embed:after { clear: both; }
+.gumroad-follow-form-embed * {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box !important;
+	float: left !important;
+}
+.gumroad-follow-form-embed input {
+	border-radius: 4px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-right: 0;
+	color: #aaa;
+	padding: 10px;
+	box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.02);
+	background-position: top right;
+	background-repeat: no-repeat;
+	text-rendering: optimizeLegibility;
+	font-smoothing: antialiased;
+	-webkit-appearance: none;
+	-moz-appearance: caret;
+	width: 65% !important;
+	height: 40px !important;
+}
+.gumroad-follow-form-embed button {
+	border-radius: 4px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+	-webkit-transition: all .05s ease-in-out;
+	transition: all .05s ease-in-out;
+	display: inline-block;
+	padding: 11px 15px 12px;
+	cursor: pointer;
+	color: #fff;
+	font-size: 15px;
+	line-height: 100%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #80999e;
+	border: 1px solid #738a8e;
+	filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#a6bfc4, endColorstr=#768e92, GradientType=0)";
+	background: -webkit-linear-gradient(top, #a6bfc4, #768e92);
+	background: linear-gradient(to bottom, #a6bfc4, #768e92);
+	height: 40px !important;
+	width: 35% !important;
 }
 
 // ====================================

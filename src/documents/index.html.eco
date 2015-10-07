@@ -2,9 +2,9 @@
 <html lang="en">
 	<head>
 		<!-- Site Properities -->
-		<title>Free illustrations &amp; wallpapers ❄ nylnook</title>
-		<meta name="description" content="Free illustrations &amp; wallpapers, from creation to funding !" />
-		<meta name="keywords" content="wallpaper, HD, FHD, 4K, 8K, illustration, free, open source, creative commons, creative" />		<!-- Standard Meta -->
+		<title>Nylnook ❄ Free (as in Freedom) Comics &amp; Illustrations</title>
+		<meta name="description" content="Free (as in Freedom) Comics &amp; Illustrations<" />
+		<meta name="keywords" content="wallpaper, HD, FHD, 4K, 8K, illustration, free, open source, creative commons, comics" />		<!-- Standard Meta -->
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -53,12 +53,12 @@
 			</nav>
 			<nav id="top-nav">
 				<ul>
-					<li><a href="/en/">Illustrations<img src="/website-img/icon-wallpapers.svg"  alt="Wallapers icon" /></a></li>
-					<li><a href="">Get prints !<img src="/website-img/icon-gifts.svg"  alt="Gifts icon" /></a></li>
+					<li><a href="">Comics<img src="/website-img/icon-book.svg"  alt="Book icon" /></a></li>
+					<li><a href="/en/">Illustration<img src="/website-img/icon-wallpapers.svg"  alt="Wallapers icon" /></a></li>
 					<li><a href="/en/blog">Blog<img src="/website-img/icon-blog.svg"  alt="Blog icon" /></a></li>
 				</ul>
 			</nav>
-			<h2 id="site-baseline">Free illustrations &amp; wallpapers, from creation to funding !</h2>
+			<h2 id="site-baseline">Camille Bissuel ❄ Free (as in Freedom) Comics &amp; Illustrations</h2>
 		</header>
 
 		<noscript>

@@ -67,7 +67,7 @@ docpadConfig = {
 			title: "nylnook"
 
 			# Description for RSS feeds
-			description: "Free illustrations & wallpapers"
+			description: "Camille Bissuel ❄ Free (as in Freedom) Comics & Illustrations"
 
 			# The website author
 			author: "Camille Bissuel"
@@ -251,6 +251,12 @@ docpadConfig = {
 
 		blog_fr: ->
 			@getCollection("html").findAllLive({relativeOutDirPath:'fr/blog'},[{date:-1}])
+
+		comics_en: ->
+			@getCollection("html").findAllLive({relativeOutDirPath:'en/comics'},[{date:-1}])
+
+		comics_fr: ->
+			@getCollection("html").findAllLive({relativeOutDirPath:'fr/bd'},[{date:-1}])
 
 
 	# =================================

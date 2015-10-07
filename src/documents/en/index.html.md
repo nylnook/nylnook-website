@@ -1,11 +1,6 @@
 ---
 layout: 'welcome-layout'
-title: 'Free illustrations & wallpapers'
-isPaged: true
-pagedCollection: 'img_en'
-pageSize: 12
+title: "Camille Bissuel ❄ Free (as in Freedom) Comics & Illustrations"
 changfreq: 'daily'
 priority: 1
 ---
-
-

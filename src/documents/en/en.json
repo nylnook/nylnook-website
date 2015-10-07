@@ -1,10 +1,11 @@
 {
-	"keywords" : "wallpaper, HD, FHD, 4K, 8K, illustration, free, open source, creative commons, creative",
-	"site-description": "Free (as in freedom) illustrations & wallpapers",
-	"baseline": "Free illustrations & wallpapers",
+	"keywords" : "wallpaper, HD, FHD, 4K, 8K, illustration, free, open source, creative commons, Comics",
+	"site-description": "Free (as in Freedom) Comics & Illustrations",
+	"baseline": "Camille Bissuel ❄ Free (as in Freedom) Comics & Illustrations",
 	"wallpapers": "Illustrations",
-	"wallpapers-file": "",
-	"shop": "Get prints !",
+	"wallpapers-filename": "illustration",
+	"comics": "Comics",
+	"comics-filename": "comics",
 	"blog": "Blog",
 	"blog-filename": "blog",
 	"follow": "Follow",
@@ -16,6 +17,7 @@
 	"footer-message": "© <a href=\"/en/about\" rel=\"author\">Camille Bissuel</a> - Images are licensed under various {CC} licences, see each image for details   /   This website is {MIT} licensed and based on {Docpad} - Fork it on {Github}   /  Comili Font © Camille Bissuel, SIL Open Font License {Cantarell} Font by Dave Crossland, GPLv3 licence",
 	"by": "by",
 	"download": "Download",
+	"download-gumroad": "PWYW Download",
 	"for-my-screen": "for my screen size",
 	"download-note": "Note : definition is given \"width x height\"",
 	"download-title" : "This wallpaper is payable, but you are free to choose the price !",
@@ -58,5 +60,7 @@
 	"previous": "Previous",
 	"next": "Next",
 	"older": "Older pictures",
-	"newer": "Newer pictures"
+	"newer": "Newer pictures",
+	"read-online": "Read online",
+	"email-placeholder": "Your e-mail"
 }

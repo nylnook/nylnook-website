@@ -1,0 +1,104 @@
+<%- @partial('header') %>
+
+
+	<noscript>
+	<article class="warning">
+		<div id="noscript-message">
+			<%- @_ 'noscript-message', Enable: '<a href="http://www.enable-javascript.com" target="_blank">enable-javascript.com</a>', Github: '<a href="http://github.com/nylnook/nylnook-website">Github</a>' %>
+		</div>
+	</article>
+	</noscript>
+
+	<% if !!@content : %>
+	<article class="warning">
+		<%- @content %>
+	</article>
+	<% end %>
+
+<article class="img-page">
+<% for comic in @getPageCollection('comics_'+ @document.lang).toJSON(): %>
+ <div id="picture-zone">
+
+ 		<img src="/<%= @_ 'comics-filename' %>/<%=comic.dir %>/imgs/pages/page-1.jpg" alt="<%- comic.title %> <%- @_ 'thumbnail' %>">
+</div>
+<section id="actions" class="small-blocks">
+<div class="inside">
+	<script src="https://gumroad.com/js/gumroad.js"></script>
+	<a class="gumroad-button" href="<%= comic.productlink %>"><%= @_ 'download-gumroad' %></a>
+	<a id="download-button" class="big-button" href="/<%= @_ 'comics-filename' %>/<%=comic.dir %>/"><img src="/website-img/icon-book.svg"  alt="Book icon" /><h2><%= @_ 'read-online' %></h2></a>
+
+</div>
+</section>
+<section id="img-description">
+	<h1><%- comic.title %></h1>
+	<time pubdate="<%- @computerDate(comic.date) %>"><%- @date(comic.date, comic.lang)  %></time>
+	<%- comic.contentRenderedWithoutLayouts %>
+
+</section>
+<section id="licence" class="small-blocks">
+	<div class="inside">
+		<h2><%= @_ 'license' %></h2>
+		<%- @partial('license') %>
+	</div>
+</section>
+
+<!-- Share -->
+<section id="share" class="small-blocks">
+	<div class="inside">
+		<h2><%= @_ 'share' %></h2>
+		<!-- Twitter -->
+		<div class="service-button">
+		<a href="https://twitter.com/share" class="twitter-share-button" data-via="nylnook">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		</div>
+		<!-- Google+ -->
+		<div class="service-button">
+		<script src="https://apis.google.com/js/platform.js" async defer>
+			{lang: '<%- @document.lang %>'}
+		</script>
+		<div class="g-plusone" data-size="medium"></div>
+		</div>
+		<!-- Facebook -->
+		<div class="service-button">
+			<div class="fb-like"></div>
+			<div class="fb-share-button" data-href="<%- @document.url %>" data-layout="button_count"></div>
+		</div>
+		<!-- Pinterest -->
+		<div class="service-button">
+		<a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"  data-pin-color="red"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_20.png" /></a>
+		<!-- Please call pinit.js only once per page -->
+		<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+		</div>
+		<!-- Stumbleupon -->
+		<div class="service-button">
+		<su:badge layout="2"></su:badge>
+		<script type="text/javascript">
+			(function() {
+				var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true;
+				li.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + '//platform.stumbleupon.com/1/widgets.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(li, s);
+			})();
+		</script>
+		</div>
+	</div>
+</section>
+
+<section id="comments">
+	<h2><%= @_ 'comments' %></h2>
+		<!-- Disqus -->
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+		var disqus_shortname = 'nylnook';
+		(function() {
+			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+<% end %>
+</article>
+
+<%- @partial('footer') %>

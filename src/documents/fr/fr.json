@@ -1,10 +1,11 @@
 {
-	"keywords" : "fonds d'écrans, HD, FHD, 4K, 8K, illustration, libre, open source, creative commons, créatif",
-	"site-description": "Illustrations & fonds d'écran libres de la création au mode de financement !",
-	"baseline": "Illustrations & fonds d'écran libres",
-	"wallpapers": "Illustrations",
-	"wallpapers-filename": "",
-	"shop": "Sur papier !",
+	"keywords" : "fonds d'écrans, HD, FHD, 4K, 8K, illustration, libre, open source, creative commons, BD",
+	"site-description": "BD & illustrations libres",
+	"baseline": "Camille Bissuel ❄ BD & illustrations libres",
+	"wallpapers": "Illustration",
+	"wallpapers-filename": "illustration",
+	"comics": "BD",
+	"comics-filename": "bd",
 	"blog": "Blog",
 	"blog-filename": "blog",
 	"follow": "Suivre",
@@ -16,6 +17,7 @@
 	"footer-message": "© <a href=\"/fr/a-propos\" rel=\"author\">Camille Bissuel</a> - Les images sont sous différentes licences {CC},  voir chaque image pour les détails   /   Ce site web est sous licence {MIT} et basé sur {Docpad} - Forkez-le sur {Github}   /   Police Comili © Camille Bissuel, SIL Open Font License, et {Cantarell} par Dave Crossland, licence GPLv3",
 	"by": "par",
 	"download": "Télécharger",
+	"download-gumroad": "Télécharger à prix libre",
 	"for-my-screen": "pour la taille de mon écran",
 	"download-note": "Note : la définition est donnée en \"largeur x hauteur\"",
 	"download-title" : "Ce fond d'écran est payant, mais vous êtes libre d'en choisir le prix !",
@@ -58,5 +60,7 @@
 	"previous": "Précédent",
 	"next": "Suivant",
 	"older": "Images plus anciennes",
-	"newer": "Images plus récentes"
+	"newer": "Images plus récentes",
+	"read-online": "Lire en ligne",
+	"email-placeholder": "Votre adresse e-mail"
 }

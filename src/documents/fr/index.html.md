@@ -1,11 +1,6 @@
 ---
 layout: 'welcome-layout'
-title: "Illustrations & fonds d'écran libres"
-isPaged: true
-pagedCollection: 'img_fr'
-pageSize: 12
+title: "Camille Bissuel ❄ BD & Illustrations libres"
 changfreq: 'daily'
 priority: 1
 ---
-
-
