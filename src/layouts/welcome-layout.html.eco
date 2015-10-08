@@ -9,12 +9,6 @@
 	</article>
 	</noscript>
 
-	<% if !!@content : %>
-	<article class="warning">
-		<%- @content %>
-	</article>
-	<% end %>
-
 <section id="welcome-browser">
 
 	<div class="thumb">
@@ -66,8 +60,11 @@
 			<h3><a href="/<%- @document.lang %>/<%= @_ 'about-filename' %>"><%= @_ 'about' %></a></h2>
 		</div>
 	</div>
-
-	<form action="https://gumroad.com/follow_from_embed_form" class="form gumroad-follow-form-embed" method="post"> <input name="seller_id" value="3361448496300" type="hidden"> <input name="email" placeholder="<%= @_ 'email-placeholder' %>" type="email"> <button type="submit"><%= @_ 'follow' %></button> </form>
+	
+	<div id="welcome-text">
+		<%- @content %>
+		<form action="https://gumroad.com/follow_from_embed_form" class="form gumroad-follow-form-embed" method="post"> <input name="seller_id" value="3361448496300" type="hidden"> <input name="email" placeholder="<%= @_ 'email-placeholder' %>" type="email"> <button type="submit"><%= @_ 'follow' %></button> </form>
+	</div>
 
 </section>
 
