@@ -235,10 +235,24 @@ docpadConfig = {
 
 		# Collections for RSS feeds, next/previous links and pagging
 		all_en: ->
-			@getCollection("html").findAllLive($or: [{relativeOutDirPath:'en/img', relativeOutDirPath:'en/blog'}],[{date:-1}])
+			@getCollection("html").findAllLive(
+						$or: [
+							{relativeOutDirPath:'en/img'},
+							{relativeOutDirPath:'en/blog'},
+							{relativeOutDirPath:'en/comics'}
+						],
+						[date:-1]
+						)
 
 		all_fr: ->
-			@getCollection("html").findAllLive($or: [{relativeOutDirPath:'fr/img', relativeOutDirPath:'fr/blog'}],[{date:-1}])
+			@getCollection("html").findAllLive(
+						$or: [
+							{relativeOutDirPath:'fr/img'},
+							{relativeOutDirPath:'fr/blog'},
+							{relativeOutDirPath:'fr/bd'}
+						],
+						[date:-1]
+						)
 
 		img_en: ->
 			@getCollection("html").findAllLive({relativeOutDirPath:'en/img'},[{date:-1}])
@@ -257,6 +271,8 @@ docpadConfig = {
 
 		comics_fr: ->
 			@getCollection("html").findAllLive({relativeOutDirPath:'fr/bd'},[{date:-1}])
+
+
 
 
 	# =================================
@@ -291,6 +307,12 @@ docpadConfig = {
 			blog_fr:
 				collection: 'blog_fr'
 				url: '/blog-fr-rss.xml'
+			comics_en:
+				collection: 'comics_en'
+				url: '/comics-en-rss.xml'
+			comics_fr:
+				collection: 'comics_fr'
+				url: '/comics-fr-rss.xml'
 
 
 	# =================================
