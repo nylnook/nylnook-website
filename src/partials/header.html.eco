@@ -20,14 +20,28 @@
 
 		<!-- Favicons and Icons -->
 		<!-- Basic favicon, 32x32px -->
-        	<link rel="icon" href="/favicon.ico" />
-        	<!-- IE 10 Metro tile icon -->
-        	<meta name="msapplication-TileColor" content="#FFFFFF">
+  	<link rel="icon" href="/favicon.ico" />
+  	<!-- IE 10 Metro tile icon -->
+  	<meta name="msapplication-TileColor" content="#FFFFFF">
 		<meta name="msapplication-TileImage" content="/favicon-144.png">
 		<!-- Touch icon for iOS 2.0+ and Android 2.1+ -->
-        	<link rel="apple-touch-icon-precomposed" href="/favicon-152.png">
-        	<!-- Generic favicon for other cases, 64x64px -->
-        	<link rel="icon" type="image/png" href="/favicon-64.png" />
+  	<link rel="apple-touch-icon-precomposed" href="/favicon-152.png">
+  	<!-- Generic favicon for other cases, 64x64px -->
+  	<link rel="icon" type="image/png" href="/favicon-64.png" />
+
+		<!-- Open Graph Protocol -->
+		<meta property="og:locale" content="<%- @document.lang %>" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="<%- @document.title %>" />
+		<meta property="og:description" content="<%= @getPreparedDescription() %>" />
+		<meta property="og:url" content="<%- @site.url %><%- @document.url %>" />
+		<meta property="og:site_name" content="<%- @site.title %>" />
+		<meta property="og:image" content="<%- @site.url %>/img/<%=@document.file %>/thumb-nylnook-<%=@document.file %>-700x700.jpg" />
+		<meta property="og:image" content="<%- @site.url %>/website-img/avatar-nylnook-550x550.jpg" />
+		<meta property="fb:admins" content="967466606642723" />
+		<meta property="fb:app_id" content="185400865127376" />
+
+
 
 	</head>
 	<body>
