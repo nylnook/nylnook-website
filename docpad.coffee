@@ -234,6 +234,19 @@ docpadConfig = {
 					true
 
 		# Collections for RSS feeds, next/previous links and pagging
+		all: ->
+			@getCollection("html").findAllLive(
+						$or: [
+							{relativeOutDirPath:'en/img'},
+							{relativeOutDirPath:'en/blog'},
+							{relativeOutDirPath:'en/comics'},
+							{relativeOutDirPath:'fr/img'},
+							{relativeOutDirPath:'fr/blog'},
+							{relativeOutDirPath:'fr/bd'}
+						],
+						[date:-1]
+						)
+
 		all_en: ->
 			@getCollection("html").findAllLive(
 						$or: [
@@ -290,28 +303,40 @@ docpadConfig = {
 
 		rss:
 			default:
+				collection: 'all'
+				title: 'Multilingual RSS feed'
+				url: '/rss.xml'
+			all_en:
 				collection: 'all_en'
+				title: 'Every News'
 				url: '/en-rss.xml'
 			all_fr:
 				collection: 'all_fr'
+				title: 'Toutes les actualités'
 				url: '/fr-rss.xml'
 			img_en:
 				collection: 'img_en'
+				title: 'Wallpapers'
 				url: '/wallpaper-en-rss.xml'
 			img_fr:
 				collection: 'img_fr'
+				title: "Les fonds d'écran"
 				url: '/wallpaper-fr-rss.xml'
 			blog_en:
 				collection: 'blog_en'
+				title: 'The Blog'
 				url: '/blog-en-rss.xml'
 			blog_fr:
 				collection: 'blog_fr'
+				title: 'Le Blog'
 				url: '/blog-fr-rss.xml'
 			comics_en:
 				collection: 'comics_en'
+				title: 'The Comics'
 				url: '/comics-en-rss.xml'
 			comics_fr:
 				collection: 'comics_fr'
+				title: 'Les BDs'
 				url: '/comics-fr-rss.xml'
 
 
