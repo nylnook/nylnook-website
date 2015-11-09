@@ -30,7 +30,6 @@
   	<link rel="icon" type="image/png" href="/favicon-64.png" />
 
 		<!-- Open Graph Protocol -->
-		<meta property="og:locale" content="<%- @document.lang %>" />
 		<meta property="og:type" content="article" />
 		<meta property="og:title" content="<%- @document.title %>" />
 		<meta property="og:description" content="<%= @getPreparedDescription() %>" />
