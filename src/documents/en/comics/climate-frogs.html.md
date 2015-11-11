@@ -9,7 +9,7 @@ sourcelink: 'https://github.com/nylnook/climate-frogs-comic'
 
 **Everyone talks about it, but you don't really get the problem exactly, what is this famous climate change?**
 
-**Or, on the contrary, you understood everything, but you despair to make it clear to your friends, because they don't give a damn ?**
+**Or, on the contrary, you understood everything, but you despair to make it clear to your friends, because they don't give a damn?**
 
 Put yourself in the skin of a frog, dive into the pot, everything will become clearer ... and hotter!
 
