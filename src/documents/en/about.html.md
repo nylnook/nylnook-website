@@ -11,14 +11,16 @@ title: 'About'
 - [Wallpapers under Creative Commons licences](#wallpapers)
 - [Contact details](#contact-details)
 
-##<a name="nylnook"></a>What is a nylnook ?
+<a name="nylnook"></a>
+## What is a nylnook ?
 <img style="float:left; max-width:50%" src="/website-img/nylnook-mood-2.png" alt="Encouraging nylnook" />
 A nylnook is a **gnome coming from the north pole**. He lives in the Inuits's Nuna territory. He protects scientific expeditions living hidden in igloos or transports. He regularly provokes small funny incidents to show humans how to avoid Arctic's dangers.  
 When an expedition end, he travels for a long time trough the pole, by foots and on animals backs, to find new humans to help.  
 Times to times, he sabotage some human expedition if he discover they want to destroy his territory, for example petroleum exploration expeditions.  
 You will discover sneak peeks of his adventures in [the pictures of this website](/en/tag/nylnook/) !
 
-##<a name="author"></a>The author
+<a name="author"></a>
+## The author
 <img style="float:right; max-width:50%" src="/website-img/camille-bissuel.jpg" alt="Camille Bissuel">
 I'm <a href="https://plus.google.com/+CamilleBissuel/about" rel="author">Camille Bissuel</a>, a French **illustrator**. After some years as a computer graphics generalist, I specialize in **digital** illustration, for additional visual creativity!  
 I answer your picture needs, to present your identity, your projects, or events that are important to you heart on the media you want.  
@@ -27,7 +29,8 @@ I work as a freelance from home, hosted administratively by my [cooperative](htt
 
 If you are interested, you can download [my portfolio](/img/blog/book-nylnook-web.pdf) to discover more aspects of my work (layouts, diagrams, *etc.*).
 
-##<a name="free-software"></a>Why free (as in freedom) software ?
+<a name="free-software"></a>
+## Why free (as in freedom) software ?
 
 A **free (as in freedom) software** is a software you can :
 - use without restrictions
@@ -40,7 +43,8 @@ In addition to the philosophical choice, there are three reasons behind my choic
 - **Sustainability** of my data, thanks to open formats. In 20 years, I will have access to my files, so my creations, without having to seek permission from Adobe !
 - technical **stability** of Linux and theses softwares in general, which is a real working comfort.
 
-##<a name="training"></a>Training on computer graphics with free software
+<a name="training"></a>
+## Training on computer graphics with free software
 
 Alongside the creative aspects, I can offer **training on demand about my everyday tools or my techniques**. I am also co-author of two manuals on the subject with the [french Floss Manuals association](http://fr.flossmanuals.net/) ([Scribus](http://fr.flossmanuals.net/scribus/) which as been [translated in English](http://www.flossmanuals.net/scribus-2/) and [Blender pour le jeu vidéo](http://fr.flossmanuals.net/blender-pour-le-jeu-video/) on the Blender Game Engine).
 
@@ -55,7 +59,8 @@ Some examples of **customized training**:
 - Webdesign today, how to create or improve its website
 - Blender, Introduction to 3D images, with or without glasses.
 
-##<a name="wallpapers"></a>Wallpapers under Creative Commons licences
+<a name="wallpapers"></a>
+## Wallpapers under Creative Commons licences
 You guessed it, this website is primarily a **portfolio**.
 
 But this project is also an attempt to **live from my artwork**, and **contribute** back to the Free and open source world in my own way! I'm creating wallpapers for yours computers and mobile devices up to an 8K definition (8192x8192 pixels), under **Creative Commons licenses**.  
@@ -66,7 +71,8 @@ So **you can always download and copy the wallpapers I offer freely**, and in ma
 
 I hope to offer my illustrations as **wallpapers** will allow to all those who like them to see them as long as they like on their favourite display... which is also the tableau that we look most often today. And of course nothing prevents to print it!
 
-##<a name="contact-details"></a>Contact details
+<a name="contact-details"></a>
+## Contact details
 Nylnook / Camille Bissuel  
 1480 route de Corréo  
 05400 La Roche-des-Arnauds  

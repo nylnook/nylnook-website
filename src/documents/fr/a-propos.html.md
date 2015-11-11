@@ -11,13 +11,15 @@ title: 'À propos'
 - [Les fonds d'écrans sous licence Creative Commons](#fond-d-ecrans)
 - [Coordonnées](#coordonnees)
 
-##<a name="nylnook"></a>Un nylnook, qu'est ce que c'est ?
+<a name="nylnook"></a>
+## Un nylnook, qu'est ce que c'est ?
 <img style="float:left; max-width:50%" src="/website-img/nylnook-mood-2.png" alt="Encourager nylnook">
 Le Nylnook est un **lutin du pôle nord**, qui vis principalement dans le territoire Nuna, des inuits. Il protège les expéditions scientifiques humaines en vivant caché dans les igloos ou les moyens de transports, et en provoquant de petits incidents souvent drôles qui montre aux humains comment échapper aux dangers de l'Arctique.  
 Quand une expédition est terminée, il voyage longtemps à travers son pôle à pied et à dos d'animaux pour trouver de nouveaux humains à aider. Il arrive qu'il sabote des expéditions humaines si il découvre que ceux ci on pour but de détruire son territoire, comme les expéditions d'exploration pétrolières.  
 Vous découvrirez des aperçus de ses aventures dans [les images de ce site web](/fr/tag/nylnook/) !  
 
-##<a name="auteur"></a>L'auteur
+<a name="auteur"></a>
+## L'auteur
 
 <img style="float:right; max-width:50%" src="/website-img/camille-bissuel.jpg" alt="Camille Bissuel">
 Je suis <a href="https://plus.google.com/+CamilleBissuel/about" rel="author">Camille Bissuel</a>, un **illustrateur** français. Après une expérience de graphiste de quelques années, je me spécialise dans l’illustration **numérique**, pour plus de créativité visuelle !  
@@ -27,7 +29,8 @@ Côté statut, je suis « **entrepreneur-salarié** » : je fait partie de [Cood
 
 Si vous le souhaitez, vous pouvez télécharger [mon book](/img/blog/book-nylnook-web.pdf) pour découvrir plus de facettes de mon travail (mise en page, schémas, *etc.*).
 
-##<a name="logiciels-libres"></a>Pourquoi des logiciels libres ?
+<a name="logiciels-libres"></a>
+## Pourquoi des logiciels libres ?
 Un **logiciel libre**, c'est un logiciel que l'on peut :
 - utiliser sans restrictions
 - copier et distribuer librement, et donc souvent gratuitement
@@ -41,7 +44,8 @@ En plus du choix philosophique, il y a trois motivations derrière mon choix des
 
 Pour en savoir plus, je vous invite à lire [mon interview par les éditions D-Booker à ce sujet](http://www.d-booker.fr/content/62-exercer-le-metier-de-graphiste-avec-des-logiciels-libres).
 
-##<a name="formation"></a>Des formations sur les logiciels libres d'infographie
+<a name="formation"></a>
+## Des formations sur les logiciels libres d'infographie
 En parallèle des aspects créatifs, je peux donc vous proposer des **formations sur mes outils quotidiens ou mes techniques**, sur demande. Je suis également co-auteurs de deux manuels sur le sujet avec l'association [Floss manuals francophone](http://fr.flossmanuals.net/) ([Scribus](http://fr.flossmanuals.net/scribus/) et [Blender pour le jeu vidéo](http://fr.flossmanuals.net/blender-pour-le-jeu-video/)).
 
 Le contenu des formations est réfléchi avec les stagiaires au préalable. Les formations concilient théorie et pratique, en commençant par un peu de théorie et en donnant une vue d’ensemble avant d’attaquer en détail. La pratique consiste à la fois à faire des exercices et à mettre en place des projets personnalisés, selon le temps dont nous disposons.
@@ -57,8 +61,8 @@ Quelques exemples de **formations sur mesure** :
 - Webdesign aujourd’hui, comment créer ou améliorer son site Web
 - Blender, Initiation aux images 3D, avec ou sans lunettes.
 
-
-##<a name="fond-d-ecrans"></a>Les fonds d'écrans sous licence Creative Commons
+<a name="fond-d-ecrans"></a>
+## Les fonds d'écrans sous licence Creative Commons
 Vous l'avez compris, ce site web est d'abord un **portfolio**.
 
 Mais ce projet est aussi une tentative de **vivre de mon art**, et de **contribuer** à ma façon au monde du libre et de l'open source ! Je créé des fonds d'écrans pour votre ordinateur et vos appareils mobiles jusqu'à une définition de  8K (8192x8192 pixels), sous des **licences Creative Commons**.  
@@ -69,8 +73,8 @@ Ainsi, **vous pouvez toujours télécharger et copier les fonds d'écrans que je
 
 Je crois que proposer mes illustrations sous forme de **fond d'écran** permettra à tous ceux à qui elles plaisent de les voir aussi longtemps qu'elle le souhaite sur leur écran préféré... qui est aussi le tableau que l'on regarde le plus souvent aujourd'hui. Et rien n'empêche bien sûr de les imprimer !
 
-
-##<a name="coordonnees"></a>Coordonnées
+<a name="coordonnees"></a>
+## Coordonnées
 Nylnook / Camille Bissuel  
 1480 route de Corréo  
 05400 La Roche-des-Arnauds  
