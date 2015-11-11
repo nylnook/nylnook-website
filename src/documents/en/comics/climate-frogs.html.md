@@ -4,6 +4,7 @@ title: "Climate Change Explained to Frogs..."
 date: 2015-10-08
 license: 'by-sa'
 productlink: 'https://gumroad.com/l/ClimateFrogs'
+sourcelink: 'https://github.com/nylnook/climate-frogs-comic'
 ---
 
 **Everyone talks about it, but you don't really get the problem exactly, what is this famous climate change?**

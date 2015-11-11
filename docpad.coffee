@@ -304,39 +304,39 @@ docpadConfig = {
 		rss:
 			default:
 				collection: 'all'
-				title: 'Multilingual RSS feed'
+				title: 'Multilingual RSS feed ❄ nylnook'
 				url: '/rss.xml'
 			all_en:
 				collection: 'all_en'
-				title: 'Every News'
+				title: 'Every News ❄ nylnook'
 				url: '/en-rss.xml'
 			all_fr:
 				collection: 'all_fr'
-				title: 'Toutes les actualités'
+				title: 'Toutes les actualités ❄ nylnook'
 				url: '/fr-rss.xml'
 			img_en:
 				collection: 'img_en'
-				title: 'Wallpapers'
+				title: 'Wallpapers ❄ nylnook'
 				url: '/wallpaper-en-rss.xml'
 			img_fr:
 				collection: 'img_fr'
-				title: "Les fonds d'écran"
+				title: "Les fonds d'écran ❄ nylnook"
 				url: '/wallpaper-fr-rss.xml'
 			blog_en:
 				collection: 'blog_en'
-				title: 'The Blog'
+				title: 'The Blog ❄ nylnook'
 				url: '/blog-en-rss.xml'
 			blog_fr:
 				collection: 'blog_fr'
-				title: 'Le Blog'
+				title: 'Le Blog ❄ nylnook'
 				url: '/blog-fr-rss.xml'
 			comics_en:
 				collection: 'comics_en'
-				title: 'The Comics'
+				title: 'The Comics ❄ nylnook'
 				url: '/comics-en-rss.xml'
 			comics_fr:
 				collection: 'comics_fr'
-				title: 'Les BDs'
+				title: 'Les BDs ❄ nylnook'
 				url: '/comics-fr-rss.xml'
 
 

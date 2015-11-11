@@ -5,7 +5,7 @@ var PULP_SETTINGS = {
 		"files": {
 			"js": [] // A list of paths for any other javascript files to include. Example configuation `["header.js"]`. Path starts at the `whitelabel` folder
 		},
-		"logo": "<a href='http://nylnook.com'><img src='../../website-img/logo-nylnook-comic.png' alt='nylnook logo'/></a>" // HTML for a logo. Example configuration `"<img src='imgs/assets/logo.png'/>"`. Path starts at the project root folder
+		"logo": "<a href='../../en/comics' title='Back to presentation'><img src='../../website-img/logo-nylnook-comic.png' alt='nylnook logo'/></a>" // HTML for a logo. Example configuration `"<img src='imgs/assets/logo.png'/>"`. Path starts at the project root folder
 	},
 	"startOnFirstPage": true,
 	"lazyLoadExtent": 6,

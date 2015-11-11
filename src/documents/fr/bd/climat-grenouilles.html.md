@@ -4,6 +4,7 @@ title: "Le changement climatique expliqué aux grenouilles..."
 date: 2015-10-08
 license: 'by-sa'
 productlink: 'https://gumroad.com/l/ClimatGrenouilles'
+sourcelink: 'https://github.com/nylnook/climate-frogs-comic'
 ---
 
 **Tout le monde en parle, mais vous n'avez pas vraiment compris le problème : au juste, qu'est-ce que c'est que ce fameux changement climatique ?**

@@ -18,14 +18,23 @@
 <article class="img-page">
 <% for comic in @getPageCollection('comics_'+ @document.lang).toJSON(): %>
  <div id="picture-zone">
-
- 		<img src="/<%= @_ 'comics-filename' %>/<%=comic.dir %>/imgs/pages/page-1.jpg" alt="<%- comic.title %> <%- @_ 'thumbnail' %>">
+	 <picture>
+		 <source srcset="/<%= @_ 'comics-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover.jpg" media="(min-width: 981px)"></source>
+		 <source srcset="/<%= @_ 'comics-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover-700.jpg 1x, /<%= @_ 'comics-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover.jpg 2x" media="(min-width: 481px)"></source>
+		 <source srcset="/<%= @_ 'comics-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover-550.jpg 1x, /<%= @_ 'comics-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover-700.jpg 2x"></source>
+		 <img src="/<%= @_ 'comics-filename' %>/<%= comic.dir %>/<%= comic.dir %>-cover-700.jpg" alt="<%- comic.title %> <%- @_ 'thumbnail' %>">
+	 </picture>
 </div>
 <section id="actions" class="small-blocks">
 <div class="inside">
 	<script src="https://gumroad.com/js/gumroad.js"></script>
-	<a class="gumroad-button" href="<%= comic.productlink %>"><%= @_ 'download-gumroad' %></a>
-	<a id="download-button" class="big-button" href="/<%= @_ 'comics-filename' %>/<%=comic.dir %>/"><img src="/website-img/icon-book.svg"  alt="Book icon" /><h2><%= @_ 'read-online' %></h2></a>
+	<% if comic.productlink? : %>
+		<a class="gumroad-button" href="<%= comic.productlink %>"><%= @_ 'download-gumroad' %></a>
+	<% end %>
+	<a class="big-button" href="/<%= @_ 'comics-filename' %>/<%=comic.dir %>/"><img src="/website-img/icon-book.svg"  alt="Book icon" /><h2><%= @_ 'read-online' %></h2></a>
+	<% if comic.sourcelink? : %>
+		<a class="secondary-button" href="<%= comic.sourcelink %>" target="_blank"><img src="/website-img/icon-search.svg"  alt="Search icon" /><%= @_ 'study-sources' %></a>
+	<% end %>
 
 </div>
 </section>
