@@ -22,7 +22,7 @@ Si on invente pas ces nouvelles histoires, elles n'auront pas lieu !
 
 Je ne crois pas qu'une solution sur le changement climatique viendra « d'en haut »... et je ne crois pas non plus qu'il y ait une solution pour tout le monde dans toutes les situations. Mais il y a quand même un petit espoir que de bonnes décisions aient lieu pendant la COP21... Et il faudra pousser les politiques à prendre ces décisions, qui doivent nous obliger à changer de monde. Il est très probable qu'il n'y ait qu'un accord *a minima*, qui manque d'ambitions, qui ne soit pas à la hauteur de l'enjeu. Mais on a **besoin** d'ambition.
 
-C'est pour ça que je me rends à Place To B, mais que je participerais aussi à [la marche pour le climat](http://coalitionclimat21.org/fr/contenu/marchons-pour-le-climat) le 29 novembre, et à [l'action « lignes rouges »](http://coalitionclimat21.org/fr/contenu/rejoignez-la-plus-grande-action-de-masse) le 12 décembre.
+C'est pour ça que je me rends à Place To B, mais que je participerai aussi à [la marche pour le climat](http://coalitionclimat21.org/fr/contenu/marchons-pour-le-climat) le 29 novembre, et à [l'action « lignes rouges »](http://coalitionclimat21.org/fr/contenu/rejoignez-la-plus-grande-action-de-masse) le 12 décembre.
 
 Et pour finir en beauté, la vidéo de présentation, qui vous donnera sûrement envie de venir, car [il reste des places](http://www.placetob.org/fr/participer/) !
 <iframe width="675" height="380" src="https://www.youtube.com/embed/EzNYRb-p7v4?feature=oembed" frameborder="0" allowfullscreen></iframe>
