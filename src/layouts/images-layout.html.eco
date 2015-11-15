@@ -1,23 +1,23 @@
 <%- @partial('header') %>
 
-	
+
 	<noscript>
-	<article class="warning">		
+	<article class="warning">
 		<div id="noscript-message">
 			<%- @_ 'noscript-message', Enable: '<a href="http://www.enable-javascript.com" target="_blank">enable-javascript.com</a>', Github: '<a href="http://github.com/nylnook/nylnook-website">Github</a>' %>
 		</div>
 	</article>
 	</noscript>
-	
+
 	<% if !!@content : %>
-	<article class="warning">		
+	<article class="warning">
 		<%- @content %>
 	</article>
 	<% end %>
 
 	<% if @document.page.number is 0: %>
 		<section id="latest-img">
-	
+
 		<% for img in @getCollection('img_'+ @document.lang).toJSON().slice(0,1): %>
 			<a href="<%- img.url %>">
 				<picture>
@@ -35,7 +35,7 @@
 		    	</div>
 		<% end %>
 		</section>
-	
+
 		<section id="img-browser">
 		<% for img in @getPageCollection('img_'+ @document.lang).toJSON().slice(1,99): %>
 			<div class="thumb">
@@ -86,14 +86,14 @@
 		<% end %>
 	</nav>
 	<% end %>
-	
+
 
 	<section class="light-block">
 		<h2><%= @_ 'tags-technique' %></h2>
 
 		<% for tag in @getFiles($and: [{tagcat: $has: 'technique'}, {lang: $has: @document.lang}], [{tag:1}]).toJSON(): %>
 			<% tagurl = tag.tag.toLowerCase().replace(/é/g, 'e').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') %>
-			<a href="../<%- @document.lang %>/tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
+			<a href="/<%- @document.lang %>/tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
 		<% end %>
 	</section>
 
@@ -102,7 +102,7 @@
 
 		<% for tag in @getFiles($and: [{tagcat: $has: 'theme'}, {lang: $has: @document.lang}], [{tag:1}]).toJSON(): %>
 			<% tagurl = tag.tag.toLowerCase().replace(/é/g, 'e').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') %>
-			<a href="../<%- @document.lang %>/tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
+			<a href="/<%- @document.lang %>/tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
 		<% end %>
 	</section>
 
@@ -111,7 +111,7 @@
 
 		<% for tag in @getFiles($and: [{tagcat: $has: 'color'}, {lang: $has: @document.lang}], [{tag:1}]).toJSON(): %>
 			<% tagurl = tag.tag.toLowerCase().replace(/é/g, 'e').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') %>
-			<a href="../<%- @document.lang %>/tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
+			<a href="/<%- @document.lang %>/tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
 		<% end %>
 	</section>
 
@@ -120,7 +120,7 @@
 
 		<% for tag in @getFiles($and: [{tagcat: $has: 'license'}, {lang: $has: @document.lang}], [{tagorder:1}]).toJSON(): %>
 			<% tagurl = tag.tag.toLowerCase().replace(/é/g, 'e').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') %>
-			<a href="../<%- @document.lang %>/tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
+			<a href="/<%- @document.lang %>/tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
 		<% end %>
 	</section>
 
@@ -129,9 +129,9 @@
 
 		<% for tag in @getFiles($and: [{tagcat: $has: 'software'}, {lang: $has: @document.lang}], [{tag:1}]).toJSON(): %>
 			<% tagurl = tag.tag.toLowerCase().replace(/é/g, 'e').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') %>
-			<a href="../<%- @document.lang %>/tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
+			<a href="/<%- @document.lang %>/tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
 		<% end %>
 	</section>
 </div>
-	
+
 <%- @partial('footer') %>
