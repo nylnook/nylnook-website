@@ -265,6 +265,12 @@
 	<section id="share" class="small-blocks">
 		<div class="inside">
 			<h2><%= @_ 'share' %></h2>
+      <!-- Diaspora* -->
+      <div class="service-button diaspora">
+        <a href="javascript:;" onclick="window.open('http://sharetodiaspora.github.io/?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title),'das','location=no,links=no,scrollbars=no,toolbar=no,width=620,height=550'); return false;" rel="nofollow" target="_blank">
+        		<img src="http://sharetodiaspora.github.io/favicon.png" style="border: 0px solid;display: inline-block;vertical-align: top;" /> diaspora*
+        </a>
+      </div>
 			<!-- Twitter -->
 			<div class="service-button">
 			<a href="https://twitter.com/share" class="twitter-share-button" data-via="nylnook">Tweet</a>
@@ -279,7 +285,7 @@
 			</div>
 			<!-- Facebook -->
 			<div class="service-button">
-				<div class="fb-like"></div>
+				<div class="fb-like" data-layout="button_count"></div>
 				<div class="fb-share-button" data-href="<%- @document.url %>" data-layout="button_count"></div>
 			</div>
 			<!-- Pinterest -->
