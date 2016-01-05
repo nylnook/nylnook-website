@@ -18,7 +18,7 @@ Donc, je l'ai fait, et peut-être que vous êtes intéressés par la méthode et
 Ces modèles sont très simples : un fichier est une image de 8192x8192px, ce qui donne 64 cases de 1024x1024px pour dessiner (ou 64 poses de 1 minute), et l'autre est une image de 4096x4096px, ce qui donne 16 cases de 1024x1024px pour une session plus courte, ou pour travailler avec un ordinateur moins puissant.
 
 
-##Installation
+## Installation
 
 pour les installer, décompressez l'archive, et copiez le dossier ( *templates* ) dans le dossier des préférences utilisateurs de Krita (exemple sur Linux : ~/.kde4/share/apps/krita/ ).
 Vous pouvez aussi ouvrir le dossier des préférences depuis Krita : Édition > Ressources > Ouvrir le dossier des préférences.
