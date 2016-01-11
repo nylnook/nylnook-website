@@ -9,7 +9,7 @@ Après plusieurs mois de timidité, je suis heureux de vous présenter **25 bros
 
 Elles sont libres et gratuites, sous une [Licence Creative Commons Zero](http://creativecommons.org/publicdomain/zero/1.0/deed.fr) !
 
-[![Icône du Pack de brosses Nylnook pour Krita](/img/blog/icon-nylnook-brush-pack.png)](https://github.com/nylnook/nylnook-krita-brushes/releases/download/v1/Nylnook_Brushes_Presets_v1.bundle)
+[![Icône du Pack de brosses Nylnook pour Krita](/img/blog/icon-nylnook-brush-pack.png)](https://github.com/nylnook/nylnook-krita-brushes/releases/download/v1.1/Nylnook_Brushes_Presets_v1.1.bundle)
 
 ## Vidéo de présentation
 
@@ -21,7 +21,7 @@ C'est aussi ma première vidéo youtube... c'est le jour des premières !
 
 ## Installation
 
-[Téléchargez le pack](https://github.com/nylnook/nylnook-krita-brushes/releases/download/v1/Nylnook_Brushes_Presets_v1.bundle), puis dans Krita, allez dans *Paramètres > Gérer les ressources… > Importer un ensemble/une ressource*, et assurez-vous que l'ensemble (le pack) est dans la colonne « Ensembles activés » à gauche.
+[Téléchargez le pack](https://github.com/nylnook/nylnook-krita-brushes/releases/download/v1.1/Nylnook_Brushes_Presets_v1.1.bundle), puis dans Krita, allez dans *Paramètres > Gérer les ressources… > Importer un ensemble/une ressource*, et assurez-vous que l'ensemble (le pack) est dans la colonne « Ensembles activés » à gauche.
 
 ## Usage
 

@@ -1,5 +1,5 @@
 ---
-title: "Krita Brushes Preset Pack v1"
+title: "Krita Brushes Presets Pack v1"
 date: 2016-01-08 17:00
 ---
 
@@ -9,7 +9,7 @@ After several months of shyness, I'm happy to introduce **25 brushes**  presets 
 
 They are free to use, under a [Creative Commons Zero License](http://creativecommons.org/publicdomain/zero/1.0/deed) !
 
-[![Nylnook Brush pack icon](/img/blog/icon-nylnook-brush-pack.png)](https://github.com/nylnook/nylnook-krita-brushes/releases/download/v1/Nylnook_Brushes_Presets_v1.bundle)
+[![Nylnook Brush pack icon](/img/blog/icon-nylnook-brush-pack.png)](https://github.com/nylnook/nylnook-krita-brushes/releases/download/v1.1/Nylnook_Brushes_Presets_v1.1.bundle)
 
 ## Presentation Video
 
@@ -21,7 +21,7 @@ It's also my first youtube video... time for premieres !
 
 ## Installation
 
-[Download the bundle](https://github.com/nylnook/nylnook-krita-brushes/releases/download/v1/Nylnook_Brushes_Presets_v1.bundle), In Krita, go to *Settings > Manage Resources… > Import Bundle/Resource*, and make sure the bundle is in the *Active Bundles* column on the left.
+[Download the bundle](https://github.com/nylnook/nylnook-krita-brushes/releases/download/v1.1/Nylnook_Brushes_Presets_v1.1.bundle), In Krita, go to *Settings > Manage Resources… > Import Bundle/Resource*, and make sure the bundle is in the *Active Bundles* column on the left.
 
 ## Usage
 
