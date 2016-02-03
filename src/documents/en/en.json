@@ -61,7 +61,10 @@
 	"next": "Next",
 	"older": "Older pictures",
 	"newer": "Newer pictures",
+	"older-blog": "Older articles",
+	"newer-blog": "Newer articles",
 	"read-online": "Read online",
 	"email-placeholder": "Your e-mail",
-	"study-sources" : "Study sources files"
+	"study-sources" : "Study sources files",
+	"read-more" : "Read more…"
 }

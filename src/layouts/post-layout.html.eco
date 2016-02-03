@@ -33,11 +33,15 @@
 </nav>
 
 	<article class="post single-post">
-		<h1><%- @document.title %></h1>
-		<time pubdate="<%- @computerDate() %>"><%- @date() %></time>
-		<p class="author"><%= @_ 'by' %> <a href="/<%- @document.lang %>/<%= @_ 'about-filename' %>"><%- @site.author %></a></p>
+    <header class="blog-post-header">
+  		<h1><%- @document.title %></h1>
+      <% if @document.subtitle? : %><p class="subtitle"><%- @document.subtitle %></p><% end %>
+  		<time pubdate="<%- @computerDate() %>"><%- @date() %></time>
+  		<p class="author"><%= @_ 'by' %> <a href="/<%- @document.lang %>/<%= @_ 'about-filename' %>"><%- @site.author %></a></p>
+    </header>
 
 		<%- @content %>
+
 		<section id="share">
 			<h2><%= @_ 'share' %></h2>
       <!-- Diaspora* -->
@@ -100,13 +104,12 @@
 	</article>
 
   <% for post in @getPageCollection('blog_'+ @document.lang).toJSON(): %>
-	  <article class="post small-blocks">
-	  	<div class="inside">
-		    <h2><a href="<%= post.url %>"><%- post.title %></a></h2>
-		   <time pubdate="<%- @computerDate(post.date) %>"><%- @date(post.date, post.lang) %></time>
-		       <%- post.contentRenderedWithoutLayouts %> <a href="<%= post.url %>">[...]</a>
-		 </div>
-		</article>
+    <article class="post small-blocks" style="background:url(<%- post.thumb %>) repeat scroll center center, url(../../website-img/paper-tilt-rotate.png) repeat, white repeat">
+      <div class="meta-blog">
+        <h2><a href="<%= post.url %>"><%- post.title %></a></h2>
+       <time pubdate="<%- @computerDate(post.date) %>"><%- @date(post.date, post.lang) %></time>
+     </div>
+    </article>
 	<% end %>
 
 <%- @partial('footer') %>

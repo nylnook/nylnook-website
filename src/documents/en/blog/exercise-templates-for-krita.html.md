@@ -1,6 +1,7 @@
 ---
 title: 'Exercise grids templates for Krita'
 date: 2015-02-05 12:00
+thumb: '/img/blog/poses-exercise.jpg'
 ---
 
 Since years, I didn't have a good way to train my drawing skills on a daily basis, because I couldn't find a motivating exercise that suit my needs...

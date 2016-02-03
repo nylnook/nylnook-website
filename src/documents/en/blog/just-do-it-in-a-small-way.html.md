@@ -1,6 +1,7 @@
 ---
 title: "Just do it, in a small way"
 date: 2015-10-09 19:00
+thumb: '/img/blog/teaser-climate-frog-2.jpg'
 ---
 
 Like many artists and creators of all kinds, I'm not good at "selling" my work, to highlight it, and it's not how I pay my bills ...

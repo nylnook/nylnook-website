@@ -6,20 +6,25 @@
 	</section>
 
 	<% for post in @getPageCollection('blog_'+ @document.lang).toJSON().slice(0,1): %>
-	<article class="post single-post">
-		<h1><a href="<%= post.url %>"><%- post.title %></a></h1>
-		<time pubdate="<%- @computerDate(post.date) %>"><%- @date(post.date, post.lang) %></time>
-		<p class="author"><%= @_ 'by' %> <a href="/<%- @document.lang %>/<%= @_ 'about-filename' %>"><%- @site.author %></a></p>
-		<%- post.contentRenderedWithoutLayouts %> <a href="<%= post.url %>">[...]</a>
+	<article class="post single-post blog-teaser">
+		<header class="blog-post-header">
+			<h1><a href="<%= post.url %>"><%- post.title %></a></h1>
+			<% if post.subtitle? : %><p class="subtitle"><%- post.subtitle %></p><% end %>
+			<time pubdate="<%- @computerDate(post.date) %>"><%- @date(post.date, post.lang) %></time>
+			<p class="author"><%= @_ 'by' %> <a href="/<%- @document.lang %>/<%= @_ 'about-filename' %>"><%- @site.author %></a></p>
+		</header>
+		<%- post.contentRenderedWithoutLayouts %>
+	<div class="meta">
+			<h3><a href="<%= post.url %>"><%= @_ 'read-more' %></a></h3>
+	</div>
 	</article>
 	<% end %>
 
 	<% for post in @getPageCollection('blog_'+ @document.lang).toJSON().slice(1,99): %>
-	  <article class="post small-blocks">
-	  	<div class="inside">
+	  <article class="post small-blocks" style="background:url(<%- post.thumb %>) repeat scroll center center, url(../website-img/paper-tilt-rotate.png) repeat, white repeat">
+	  	<div class="meta-blog">
 		    <h2><a href="<%= post.url %>"><%- post.title %></a></h2>
 		   <time pubdate="<%- @computerDate(post.date) %>"><%- @date(post.date, post.lang) %></time>
-		       <%- post.contentRenderedWithoutLayouts %> <a href="<%= post.url %>">[...]</a>
 		 </div>
 		</article>
 	<% end %>
@@ -29,11 +34,11 @@
 	<% if @document.page: %>
 	<nav class="prevnextnav">
 		<% if @hasPrevPage(): %>
-		    <a class="previous" href="<%= @getPrevPage() %>"><img src="/website-img/icon-previous.svg" alt="" /><%= @_ 'newer' %></a>
+		    <a class="previous" href="<%= @getPrevPage() %>"><img src="/website-img/icon-previous.svg" alt="" /><%= @_ 'newer-blog' %></a>
 		<% end %>
 		❄
 		<% if @hasNextPage(): %>
-		    <a class="next" href="<%= @getNextPage() %>"><%= @_ 'older' %><img src="/website-img/icon-next.svg" alt="" /></a>
+		    <a class="next" href="<%= @getNextPage() %>"><%= @_ 'older-blog' %><img src="/website-img/icon-next.svg" alt="" /></a>
 		<% end %>
 	</nav>
 	<% end %>

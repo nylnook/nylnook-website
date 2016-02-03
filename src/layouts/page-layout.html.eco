@@ -1,8 +1,11 @@
 <%- @partial('header') %>
-	
+
 	<article class="post single-post">
-		<h1><%- @document.title %></h1>
-		
+		<header class="blog-post-header">
+			<h1><%- @document.title %></h1>
+			<% if @document.subtitle? : %><p class="subtitle"><%- @document.subtitle %></p><% end %>
+		</header>
+
 		<%- @content %>
 		<div class="page-bottom">
 		<section id="comments">
@@ -22,5 +25,5 @@
 		</section>
 		</div>
 	</article>
-	
+
 <%- @partial('footer') %>

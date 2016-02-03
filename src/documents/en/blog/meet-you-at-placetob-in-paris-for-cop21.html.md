@@ -26,4 +26,6 @@ I do not believe any solution about climate change will come from "the top"... a
 That's why I go to Place To B, but I would also participate in the [Global March for Climate](http://coalitionclimat21.org/en/global-march-climate) November 29, and [the "Red Lines" action](http://coalitionclimat21.org/en/join-largest-mass-action-climate-justice-ever) on December 12.
 
 And to finish big the presentation video, which will surely push you to come, because [there are places still available](http://www.placetob.org/apply/)!
+<div class="video-container">
 <iframe width="675" height="380" src="https://www.youtube.com/embed/EzNYRb-p7v4?feature=oembed" frameborder="0" allowfullscreen></iframe>
+</div>

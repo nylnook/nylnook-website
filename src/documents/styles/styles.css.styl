@@ -742,6 +742,9 @@ blockquote
 		padding: 2%
 		margin: 0
 
+	a
+		color: darkbluenyl !important
+
 .warning
 	text-align: center
 	//background: url(../website-img/courtcircuit.gif) no-repeat scroll 5% 50%
@@ -839,6 +842,14 @@ blockquote
 	@media desktop
 		max-width: 45rem
 
+.blog-teaser
+	max-height: 57.5em
+	overflow: hidden
+	position: relative
+
+	a
+		color: white !important
+
 article time, article .author
 	font-size: 0.8rem
 	font-family: monospace, monospace
@@ -918,7 +929,7 @@ img-base()
 	bottom: 0
 	overflow: hidden
 	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7)
-	text-align: left
+	text-align: center
 	height: 0
 	transition: height 0.15s ease-in-out 0s
 	padding: 0 1rem
@@ -941,6 +952,8 @@ img-base()
 
 	time
 		font-size: 0.8rem
+		float: right
+		color: lightbluenyl
 
 .meta-welcome
 	position: absolute
@@ -966,9 +979,57 @@ img-base()
 		@media desktop
 			font-size: 2.8rem
 
+.meta-blog
+	position: absolute
+	right: 0
+	left: 0
+	top: 1.2rem
+	overflow: hidden
+	background: none
+	text-align: center
+	padding: 0.7rem 0.2rem
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7)
+
+	h2
+		padding: 0
+
+	h2 a
+		color: white !important
+
+	time
+		color: lightbluenyl !important
+
+.blog-post-header
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7)
+	color: lightbluenyl
+	position: relative
+	padding: 2em
+	margin: 0 -5%
+	@media desktop-wide
+		margin: 0 -6%
+	@media desktop-extra-wide
+		margin: 0 -8%
+	@media desktop-huge
+		margin: 0 -10%
+
+	h1, h1 a
+		color: white !important
+		text-align: center
+
+	.author a
+		color: lightbluenyl
+
+.subtitle
+	font-family: Comili, Cantarell, Ubuntu, Verdana, sans-serif
+	font-size: 1.4rem
+	color: yellownyl
+	text-align: center
+
+
 
 #latest-img:active > .meta, #latest-img:hover > .meta, #latest-img:focus > .meta,
-.thumb:active > .meta, .thumb:hover > .meta, .thumb:focus > .meta
+.thumb:active > .meta, .thumb:hover > .meta, .thumb:focus > .meta,
+.blog-teaser:active > .meta, .blog-teaser:hover > .meta, .blog-teaser:focus > .meta
 	height: 7rem
 
 .light-block

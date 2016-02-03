@@ -1,6 +1,7 @@
 ---
 title: "Some frogs on paper"
 date: 2015-11-13 12:00
+thumb: '/img/blog/pub-grenouilles-print-700.jpg'
 ---
 
 ![Le changement climatique expliqué aux grenouilles imprimé](/img/blog/pub-grenouilles-print-700.jpg)

@@ -1,6 +1,7 @@
 ---
 title: "Faites-le, petitement"
 date: 2015-10-09 19:00
+thumb: '/img/blog/teaser-grenouilles-2.jpg'
 ---
 
 Comme beaucoup d'artistes et de créateurs en tout genre, je ne suis pas très fort pour « vendre » mon travail, pour le mettre en valeur de manière général, et ce n'est pas avec ça que je paye mes factures...

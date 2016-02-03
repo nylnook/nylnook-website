@@ -1,6 +1,7 @@
 ---
 title: 'Back from Dakar'
 date: 2014-11-13 14:00
+thumb: '/img/blog/facade-ker-thiossane.jpg'
 ---
 
 Since a week, I returned from Dakar where I was invited by the International Organization of [la Francophonie](http://www.francophonie.org/Welcome-to-the-International.html) to conduct training on **Blender and video post-production** during 5 days (from October 27 to 31) for 10 Senegalese audiovisual trainers ([see  the official announcement](http://www.francophonie.org/Senegal-et-Maroc-creation-d.html)).

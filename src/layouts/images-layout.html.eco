@@ -32,7 +32,7 @@
 			<div class="meta">
 				<h1><a href="<%= img.url %>"><%- img.title %></a></h1>
 				<time pubdate="<%- @computerDate(img.date) %>"><%- @date(img.date, img.lang)  %></time>
-		    	</div>
+		  </div>
 		<% end %>
 		</section>
 

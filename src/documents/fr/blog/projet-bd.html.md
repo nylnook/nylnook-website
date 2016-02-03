@@ -1,6 +1,7 @@
 ---
 title: "Ce fameux projet de BD …"
 date: 2015-10-02 17:00
+thumb: '/img/blog/vignette-de2choseslune.jpg'
 ---
 
 ![Vignette De deux choses lune, l'autre c'est le soleil](/img/blog/vignette-de2choseslune.jpg)

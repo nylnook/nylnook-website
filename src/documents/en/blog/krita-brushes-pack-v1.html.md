@@ -1,6 +1,7 @@
 ---
 title: "Krita Brushes Presets Pack v1"
 date: 2016-01-08 17:00
+thumb: '/img/blog/icon-nylnook-brush-pack.png'
 ---
 
 ![Krita icon](/website-img/icon-krita.svg)

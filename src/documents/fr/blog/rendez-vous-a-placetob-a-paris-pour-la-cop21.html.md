@@ -1,6 +1,7 @@
 ---
 title: "Rendez-vous à Place To B à Paris pour la COP21 !"
 date: 2015-11-11 17:00
+thumb: '/img/blog/asnovel1.jpg'
 ---
 
 ![Strip grenouilles PlaceToB](/img/blog/strip-placetob-grenouilles-web.png)
@@ -25,4 +26,6 @@ Je ne crois pas qu'une solution sur le changement climatique viendra « d'en ha
 C'est pour ça que je me rends à Place To B, mais que je participerai aussi à [la marche pour le climat](http://coalitionclimat21.org/fr/contenu/marchons-pour-le-climat) le 29 novembre, et à [l'action « lignes rouges »](http://coalitionclimat21.org/fr/contenu/rejoignez-la-plus-grande-action-de-masse) le 12 décembre.
 
 Et pour finir en beauté, la vidéo de présentation, qui vous donnera sûrement envie de venir, car [il reste des places](http://www.placetob.org/fr/participer/) !
+<div class="video-container">
 <iframe width="675" height="380" src="https://www.youtube.com/embed/EzNYRb-p7v4?feature=oembed" frameborder="0" allowfullscreen></iframe>
+</div>

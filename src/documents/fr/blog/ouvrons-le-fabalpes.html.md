@@ -1,6 +1,7 @@
 ---
 title: "Ouvrons le Fab'Alpes !"
 date: 2015-04-23 15:00
+thumb: '/img/blog/ouvrons-le-fabalpes.png'
 ---
 
 **Ouvrir un FabLab sur Gap ?** C’est possible ? [Avec votre soutien](http://fr.ulule.com/ouvrons-le-fabalpes/), c’est bien parti pour !
@@ -23,4 +24,3 @@ Mais bien sûr, même avec beaucoup de bénévolat pour ouvrir le local, puis po
 Tout cela pour ouvrir dès le **1er juin**, [avec votre soutien](http://fr.ulule.com/ouvrons-le-fabalpes/) !
 
 L’accès au FabLab sera gratuit (après adhésion à 5€), mais l’usage des machines sera payant sous forme d’heures d’utilisation. On pourra acheter des forfaits d’heures à 20€/heure, dégressif pour les plus gros forfaits jusqu’à 10€/heure. On pourra aussi convertir 3 heures d’utilisation des machines en 1 heure de formation. Les heures que vous pouvez [précommander sur Ulule](http://fr.ulule.com/ouvrons-le-fabalpes/) sont donc à des tarifs avantageux pour nos premiers utilisateurs !
-
