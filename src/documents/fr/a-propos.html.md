@@ -50,7 +50,7 @@ En parallèle des aspects créatifs, je peux donc vous proposer des **formations
 
 Le contenu des formations est réfléchi avec les stagiaires au préalable. Les formations concilient théorie et pratique, en commençant par un peu de théorie et en donnant une vue d’ensemble avant d’attaquer en détail. La pratique consiste à la fois à faire des exercices et à mettre en place des projets personnalisés, selon le temps dont nous disposons.
 
-Ces formations **peuvent être prise en charge** via votre Droit Individuel à la Formation (DIF), votre compte personnel de formation (CPF), ou par votre Organisme paritaire collecteur agréé (Opca). Renseignez-vous auprès de votre employeur ou de votre Opca.
+Ces formations **peuvent être prise en charge** par votre Organisme paritaire collecteur agréé (Opca). Renseignez-vous auprès de votre employeur ou de votre Opca.
 
 Quelques exemples de **formations sur mesure** :
 - Introduction à l’infographie libre
