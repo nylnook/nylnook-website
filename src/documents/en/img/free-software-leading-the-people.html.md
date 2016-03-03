@@ -20,7 +20,7 @@ made:
 
 On Saturday 26 March in Gap, the [Linux Alps](http://www.linux-alpes.org/) association is organizing jointly with the [Fab'Alpes](http://www.fabalpes.org/) the 15th edition of [Libre en fête](http://www.libre-en-fete.net/) (celebrating Freedom), coordinated nationally in France by the [April](http://www.april.org/).
 
-![Poster libre en fête 2016](../../img/blog/affiche-libre-en-fete-2016-web.jpg)
+![Poster libre en fête 2016](/img/blog/affiche-libre-en-fete-2016-web.jpg)
 **Translation: Saturday 26 March, Celebrating Freedom, No digital republic without free software, in Gap**
 
 We learn better from the old masters… I hope Eugène Delacroix will not turn in his grave for this copy of "Liberty Leading the People"!

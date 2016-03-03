@@ -20,7 +20,7 @@ made:
 
 Le samedi 26 mars prochain à Gap, l’association [Linux Alpes](http://www.linux-alpes.org/) organise conjointement avec le [Fab'Alpes](http://www.fabalpes.org/) la 15ème édition de [Libre en fête](http://www.libre-en-fete.net/), coordonnée au niveau national par l'[April](http://www.april.org/).
 
-![Affiche libre en fête 2016](../../img/blog/affiche-libre-en-fete-2016-web.jpg)
+![Affiche libre en fête 2016](/img/blog/affiche-libre-en-fete-2016-web.jpg)
 
 On apprend bien que des grands maîtres… J'espère que Eugène Delacroix ne se retournera pas dans sa tombe pour cette reprise de « La liberté guidant le peuple » !
 
