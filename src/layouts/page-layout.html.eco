@@ -26,4 +26,48 @@
 		</div>
 	</article>
 
+	<section id="welcome-browser">
+
+		<% for doc in @getPageCollection('all_'+ @document.lang).toJSON().slice(0,24): %>
+			<% if doc.relativeOutDirPath is @document.lang+'/img': %>
+			<div class="thumb">
+				<a href="<%- doc.url %>">
+					<picture>
+						<source srcset="/img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-350x350.jpg 1x, /img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-700x700.jpg 2x"></source>
+						<img srcset="/img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-350x350.jpg" alt="<%- doc.title %> <%- @_ 'thumbnail' %>">
+					</picture>
+				</a>
+				<div class="meta">
+					<h3><a href="<%= doc.url %>"><%- doc.title %></a></h3>
+					<time pubdate="<%- @computerDate(doc.date) %>"><%- @date(doc.date, doc.lang)  %></time>
+				</div>
+			</div>
+			<% end %>
+			<% if doc.relativeOutDirPath is @document.lang+'/comics' or doc.relativeOutDirPath is @document.lang+'/bd' : %>
+			<div class="thumb">
+				<a href="<%- doc.url %>">
+					<picture>
+						<source srcset="/<%= @_ 'comics-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-550x550.jpg 1x, /<%= @_ 'comics-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg 2x"></source>
+						<img srcset="/<%= @_ 'comics-filename' %>/<%= doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg" alt="<%- doc.title %> <%- @_ 'thumbnail' %>">
+					</picture>
+				</a>
+				<img class="thumb-overlay" src="/website-img/icon-book.svg" alt="Book icon" />
+				<div class="meta-comic">
+					<h3><a href="<%= doc.url %>"><%- doc.title %></a></h3>
+					<time pubdate="<%- @computerDate(doc.date) %>"><%- @date(doc.date, doc.lang)  %></time>
+				</div>
+			</div>
+			<% end %>
+			<% if doc.relativeOutDirPath is @document.lang+'/blog': %>
+				<article class="post small-blocks" style="background:url(<%- doc.thumb %>) repeat scroll center center, url(../website-img/paper-tilt-rotate.png) repeat, white repeat">
+			  	<div class="meta-blog">
+				    <h2><a href="<%= doc.url %>"><%- doc.title %></a></h2>
+				   <time pubdate="<%- @computerDate(doc.date) %>"><%- @date(doc.date, doc.lang) %></time>
+				 </div>
+				</article>
+			<% end %>
+		<% end %>
+
+	</section>
+
 <%- @partial('footer') %>

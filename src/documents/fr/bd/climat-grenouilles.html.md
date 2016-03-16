@@ -1,4 +1,5 @@
 ---
+layout: 'comic-layout'
 dir: 'climat-grenouilles'
 title: "Le changement climatique expliqué aux grenouilles..."
 date: 2015-10-08

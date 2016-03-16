@@ -1,4 +1,5 @@
 ---
+layout: 'comic-layout'
 dir: 'climate-frogs'
 title: "Climate Change Explained to Frogs..."
 date: 2015-10-08

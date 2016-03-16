@@ -4,6 +4,14 @@ title: 'Suivre'
 isPage: true
 ---
 
+## Par mail - Recevoir les newsletters
+
+Abonnez-vous pour devenir un de mes lecteurs ou une de mes lectrices et recevez une petite BD gratuitement !
+
+<form action="https://gumroad.com/follow_from_embed_form" class="form gumroad-follow-form-embed" method="post"> <input name="seller_id" value="3361448496300" type="hidden"> <input name="email" placeholder="Votre adresse e-mail" type="email"> <button type="submit">Suivre</button> </form>
+
+## Et aussi 
+
 ![Icône RSS](/website-img/icon-follow.svg)
 Pour suivre les dernières actualité sur ce site web, vous pouvez vous abonnez à mes flux RSS :
 - **[Toutes les actualités](../../fr-rss.xml)**
@@ -15,6 +23,3 @@ Pour suivre les dernières actualité sur ce site web, vous pouvez vous abonnez 
 ou suivre **[@nylnook](https://twitter.com/nylnook)** sur [Twitter](https://twitter.com/nylnook)
 
 Je pourrais donner des nouvelles sur [Diaspora*](https://framasphere.org/u/nylnook),  [Google+](https://plus.google.com/+Nylnook-art) et [Facebook](https://www.facebook.com//nylnook) de temps en temps également ;)
-
-## Par mail - Recevoir des newsletters
-<form action="https://gumroad.com/follow_from_embed_form" class="form gumroad-follow-form-embed" method="post"> <input name="seller_id" value="3361448496300" type="hidden"> <input name="email" placeholder="Votre adresse e-mail" type="email"> <button type="submit">Suivre</button> </form>

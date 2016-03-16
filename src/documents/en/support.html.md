@@ -13,7 +13,7 @@ You are free to support me or simply appreciate the scenery, **you can always do
 - [Or spread the word ... ](#share)
 - [The conditions](#conditions)
 
-##<a name="why"></a>Why free?
+## <a name="why"></a>Why free?
 
 1. Because drawing isn't so easy and takes a lot of time and material! Even gnomes need to eat.
 
@@ -23,7 +23,7 @@ You are free to support me or simply appreciate the scenery, **you can always do
 
 4. Because I'll be able to support other designers, artists and projects that I like with this money.
 
-##<a name="support"></a>How to support a gnome?
+## <a name="support"></a>How to support a gnome?
 
 1. By [Flattr](https://flattr.com/profile/nylnook) for illustrations that you enjoy and/or subscribing to this website flattr itself (by double clicking on the Flattr button). <small>Warning: 10% of the donation goes to Flattr. No refunds. [Discover how Flattr works](https://flattr.com/howflattrworks).</small>
 
@@ -46,13 +46,12 @@ You are free to support me or simply appreciate the scenery, **you can always do
 
 5. You can also offer me a payment in kind of your choice: sending a nice object, fun or useful, invitation... Unleash your imagination!
 
-##<a name="share"></a>Or spread the word ... 
+## <a name="share"></a>Or spread the word ...
 
 Thank you to follow me on [DeviantArt](http://nylnook.deviantart.com/), [Twitter](https://twitter.com/nylnook), [Google+](https://plus.google.com/+Nylnook-art) and share my contents on social networks in general. This gives me visibility, this allows your friends to find me and it doesn't cost you anything but a click. So feel free to share!
 
-##<a name="conditions"></a>The conditions
+## <a name="conditions"></a>The conditions
 
 Your payment is not tax deductible and will not entitle you to a counterparty. Sometimes I send bonuses or personalized messages to those who support me, but this is not guaranteed.
 
 You can request a refund for your payment within 15 days, if you ever change your mind.
-

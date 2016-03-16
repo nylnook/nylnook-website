@@ -11,53 +11,159 @@
 
 <section id="welcome-browser">
 
-	<div class="thumb">
-		<a href="/<%- @document.lang %>/<%= @_ 'wallpapers-filename' %>">
-			<picture>
-				<source srcset="/website-img/nylnook-illustration-350x350.jpg 1x, /website-img/nylnook-illustration-700x700.jpg 2x"></source>
-				<img srcset="/website-img/nylnook-illustration-350x350.jpg" alt="<%= @_ 'wallpapers' %>">
-			</picture>
-		</a>
-		<h1 class="meta-welcome"><a href="/<%- @document.lang %>/<%= @_ 'wallpapers-filename' %>"><%= @_ 'wallpapers' %></a></h1>
-	</div>
+	<% if @document.page.number is 0: %>
 
-	<div class="thumb">
-		<a href="/<%- @document.lang %>/<%= @_ 'comics-filename' %>">
-			<picture>
-				<source srcset="/website-img/nylnook-comics-350x350.jpg 1x, /website-img/nylnook-comics-700x700.jpg 2x"></source>
-				<img srcset="/website-img/nylnook-comics-350x350.jpg" alt="<%= @_ 'comics' %>">
-			</picture>
-		</a>
-		<h1 class="meta-welcome"><a href="/<%- @document.lang %>/<%= @_ 'comics-filename' %>"><%= @_ 'comics' %></a></h1>
-	</div>
+		<% for doc in @getPageCollection('all_'+ @document.lang).toJSON().slice(0,1): %>
+			<% if doc.relativeOutDirPath is @document.lang+'/img': %>
+			<section id="latest-img">
+				<a href="<%- doc.url %>">
+					<picture>
+						<source srcset="/img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-2200x2200.jpg" media="(min-width: 1901px)"></source>
+						<source srcset="/img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-1100x1100.jpg 1x, /img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-2200x2200.jpg 2x" media="(min-width: 1581px)"></source>
+						<source srcset="/img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-700x700.jpg 1x, /img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-1400x1400.jpg 2x" media="(min-width: 981px)"></source>
+						<source srcset="/img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-550x550.jpg 1x, /img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-1100x1100.jpg 2x" media="(min-width: 481px)"></source>
+						<source srcset="/img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-350x350.jpg 1x, /img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-700x700.jpg 2x"></source>
+						<img srcset="/img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-700x700.jpg" alt="<%- doc.title %> <%- @_ 'thumbnail' %>">
+					</picture>
+				</a>
+				<div class="meta">
+					<h1><a href="<%= doc.url %>"><%- doc.title %></a></h1>
+					<time pubdate="<%- @computerDate(doc.date) %>"><%- @date(doc.date, doc.lang)  %></time>
+				</div>
+			</section>
+			<% end %>
+			<% if doc.relativeOutDirPath is @document.lang+'/comics' or doc.relativeOutDirPath is @document.lang+'/bd' : %>
+			<div class="thumb">
+				<a href="<%- doc.url %>">
+					<picture>
+						<source srcset="/<%= @_ 'comics-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-550x550.jpg 1x, /<%= @_ 'comics-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg 2x"></source>
+						<img srcset="/<%= @_ 'comics-filename' %>/<%= doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg" alt="<%- doc.title %> <%- @_ 'thumbnail' %>">
+					</picture>
+				</a>
+				<img class="thumb-overlay" src="/website-img/icon-book.svg" alt="Book icon" />
+				<div class="meta-comic">
+					<h3><a href="<%= doc.url %>"><%- doc.title %></a></h3>
+					<time pubdate="<%- @computerDate(doc.date) %>"><%- @date(doc.date, doc.lang)  %></time>
+				</div>
+			</div>
+			<% end %>
+			<% if doc.relativeOutDirPath is @document.lang+'/blog': %>
+				<article class="post single-post blog-teaser">
+					<header class="blog-post-header">
+						<h1><a href="<%= doc.url %>"><%- doc.title %></a></h1>
+						<% if doc.subtitle? : %><p class="subtitle"><%- doc.subtitle %></p><% end %>
+						<time pubdate="<%- @computerDate(doc.date) %>"><%- @date(doc.date, doc.lang) %></time>
+						<p class="author"><%= @_ 'by' %> <a href="/<%- @document.lang %>/<%= @_ 'about-filename' %>"><%- @site.author %></a></p>
+					</header>
+					<%- doc.contentRenderedWithoutLayouts %>
+				<div class="meta">
+						<h3><a href="<%= doc.url %>"><%= @_ 'read-more' %></a></h3>
+				</div>
+				</article>
+			<% end %>
+		<% end %>
 
-	<br />
+		<div class="thumb">
+			<a href="/<%- @document.lang %>/<%= @_ 'wallpapers-filename' %>">
+				<picture>
+					<source srcset="/website-img/nylnook-illustration-350x350.jpg 1x, /website-img/nylnook-illustration-700x700.jpg 2x"></source>
+					<img srcset="/website-img/nylnook-illustration-350x350.jpg" alt="<%= @_ 'wallpapers' %>">
+				</picture>
+			</a>
+			<h1 class="meta-welcome"><a href="/<%- @document.lang %>/<%= @_ 'wallpapers-filename' %>"><%= @_ 'wallpapers' %></a></h1>
+		</div>
 
-	<div class="thumb">
-		<a href="/<%- @document.lang %>/<%= @_ 'blog-filename' %>">
-			<picture>
-				<source srcset="/website-img/nylnook-blog-350x350.jpg 1x, /website-img/nylnook-blog-700x700.jpg 2x"></source>
-				<img srcset="/website-img/nylnook-blog-350x350.jpg" alt="<%= @_ 'blog' %>">
-			</picture>
-		</a>
-		<h1 class="meta-welcome"><a href="/<%- @document.lang %>/<%= @_ 'blog-filename' %>"><%= @_ 'blog' %></a></h1>
-	</div>
+		<div class="thumb">
+			<a href="/<%- @document.lang %>/<%= @_ 'comics-filename' %>">
+				<picture>
+					<source srcset="/website-img/nylnook-comics-350x350.jpg 1x, /website-img/nylnook-comics-700x700.jpg 2x"></source>
+					<img srcset="/website-img/nylnook-comics-350x350.jpg" alt="<%= @_ 'comics' %>">
+				</picture>
+			</a>
+			<h1 class="meta-welcome"><a href="/<%- @document.lang %>/<%= @_ 'comics-filename' %>"><%= @_ 'comics' %></a></h1>
+		</div>
 
-	<div class="thumb">
-		<a href="/<%- @document.lang %>/<%= @_ 'about-filename' %>">
-			<picture>
-				<source srcset="/website-img/nylnook-about-350x350.jpg 1x, /website-img/nylnook-about-700x700.jpg 2x"></source>
-				<img srcset="/website-img/nylnook-about-350x350.jpg" alt="<%= @_ 'about' %>">
-			</picture>
-		</a>
-		<h1 class="meta-welcome"><a href="/<%- @document.lang %>/<%= @_ 'about-filename' %>"><%= @_ 'about' %></a></h1>
-	</div>
+		<div class="thumb">
+			<a href="/<%- @document.lang %>/<%= @_ 'blog-filename' %>">
+				<picture>
+					<source srcset="/website-img/nylnook-blog-350x350.jpg 1x, /website-img/nylnook-blog-700x700.jpg 2x"></source>
+					<img srcset="/website-img/nylnook-blog-350x350.jpg" alt="<%= @_ 'blog' %>">
+				</picture>
+			</a>
+			<h1 class="meta-welcome"><a href="/<%- @document.lang %>/<%= @_ 'blog-filename' %>"><%= @_ 'blog' %></a></h1>
+		</div>
 
-	<div id="welcome-text">
-		<%- @content %>
-		<form action="https://gumroad.com/follow_from_embed_form" class="form gumroad-follow-form-embed" method="post"> <input name="seller_id" value="3361448496300" type="hidden"> <input name="email" placeholder="<%= @_ 'email-placeholder' %>" type="email"> <button type="submit"><%= @_ 'follow' %></button> </form>
-	</div>
+		<div class="thumb">
+			<a href="/<%- @document.lang %>/<%= @_ 'about-filename' %>">
+				<picture>
+					<source srcset="/website-img/nylnook-about-350x350.jpg 1x, /website-img/nylnook-about-700x700.jpg 2x"></source>
+					<img srcset="/website-img/nylnook-about-350x350.jpg" alt="<%= @_ 'about' %>">
+				</picture>
+			</a>
+			<h1 class="meta-welcome"><a href="/<%- @document.lang %>/<%= @_ 'about-filename' %>"><%= @_ 'about' %></a></h1>
+		</div>
+	<% end %>
+
+	<% for doc in @getPageCollection('all_'+ @document.lang).toJSON().slice(1,99): %>
+		<% if doc.relativeOutDirPath is @document.lang+'/img': %>
+		<div class="thumb">
+			<a href="<%- doc.url %>">
+				<picture>
+					<source srcset="/img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-350x350.jpg 1x, /img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-700x700.jpg 2x"></source>
+					<img srcset="/img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-350x350.jpg" alt="<%- doc.title %> <%- @_ 'thumbnail' %>">
+				</picture>
+			</a>
+			<div class="meta">
+				<h3><a href="<%= doc.url %>"><%- doc.title %></a></h3>
+				<time pubdate="<%- @computerDate(doc.date) %>"><%- @date(doc.date, doc.lang)  %></time>
+			</div>
+		</div>
+		<% end %>
+		<% if doc.relativeOutDirPath is @document.lang+'/comics' or doc.relativeOutDirPath is @document.lang+'/bd' : %>
+		<div class="thumb">
+			<a href="<%- doc.url %>">
+				<picture>
+					<source srcset="/<%= @_ 'comics-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-550x550.jpg 1x, /<%= @_ 'comics-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg 2x"></source>
+					<img srcset="/<%= @_ 'comics-filename' %>/<%= doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg" alt="<%- doc.title %> <%- @_ 'thumbnail' %>">
+				</picture>
+			</a>
+			<img class="thumb-overlay" src="/website-img/icon-book.svg" alt="Book icon" />
+			<div class="meta-comic">
+				<h3><a href="<%= doc.url %>"><%- doc.title %></a></h3>
+				<time pubdate="<%- @computerDate(doc.date) %>"><%- @date(doc.date, doc.lang)  %></time>
+			</div>
+		</div>
+		<% end %>
+		<% if doc.relativeOutDirPath is @document.lang+'/blog': %>
+			<article class="post small-blocks" style="background:url(<%- doc.thumb %>) repeat scroll center center, url(../website-img/paper-tilt-rotate.png) repeat, white repeat">
+		  	<div class="meta-blog">
+			    <h2><a href="<%= doc.url %>"><%- doc.title %></a></h2>
+			   <time pubdate="<%- @computerDate(doc.date) %>"><%- @date(doc.date, doc.lang) %></time>
+			 </div>
+			</article>
+		<% end %>
+	<% end %>
 
 </section>
+
+<div class="page-bottom">
+	<!-- Page Listing -->
+	<% if @document.page: %>
+	<nav class="prevnextnav">
+		<% if @hasPrevPage(): %>
+		    <a class="previous" href="<%= @getPrevPage() %>"><img src="/website-img/icon-previous.svg" alt="" /><%= @_ 'newer-blog' %></a>
+		<% end %>
+		❄
+		<% if @hasNextPage(): %>
+		    <a class="next" href="<%= @getNextPage() %>"><%= @_ 'older-blog' %><img src="/website-img/icon-next.svg" alt="" /></a>
+		<% end %>
+	</nav>
+	<% end %>
+</div>
+
+<div id="welcome-text">
+	<%- @content %>
+	<form action="https://gumroad.com/follow_from_embed_form" class="form gumroad-follow-form-embed" method="post"> <input name="seller_id" value="3361448496300" type="hidden"> <input name="email" placeholder="<%= @_ 'email-placeholder' %>" type="email"> <button type="submit"><%= @_ 'follow' %></button> </form>
+</div>
 
 <%- @partial('footer') %>

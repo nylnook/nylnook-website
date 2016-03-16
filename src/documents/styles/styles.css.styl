@@ -834,7 +834,7 @@ blockquote
 			font-size:2.2em \0/
 
 .post.small-blocks
-	float: left
+	display: inline-block
 
 .single-post
 	max-width: 100%
@@ -846,6 +846,23 @@ blockquote
 	max-height: 57.5em
 	overflow: hidden
 	position: relative
+
+	width: 98%
+	@media tablet
+		margin: 1% 1.5% 0 1.5%
+		width: 63.6%
+		max-height: 53em
+	@media desktop
+		width: 64%
+	@media desktop-wide
+		width: 47.2%
+		max-height: 69.6em
+	@media desktop-extra-wide
+		width: 37.1%
+		max-height: 59.6em
+	@media desktop-huge
+		width: 39.3%
+		max-height: 57.5em
 
 	a
 		color: white !important
@@ -889,7 +906,7 @@ img-base()
 	text-align: left
 
 #welcome-browser
-		text-align: center
+		text-align: left
 		form
 			margin-top: 1em
 
@@ -965,6 +982,7 @@ img-base()
 	text-align: center
 	padding: 0.7rem 0 0
 	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7)
+	transition: bottom 0.15s ease-in-out 0s
 
 	a
 		color: white
@@ -981,7 +999,7 @@ img-base()
 
 .meta-blog
 	position: absolute
-	right: 0
+	right: -100%
 	left: 0
 	top: 1.2rem
 	overflow: hidden
@@ -989,6 +1007,7 @@ img-base()
 	text-align: center
 	padding: 0.7rem 0.2rem
 	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7)
+	transition: right 0.15s ease-in-out 0s
 
 	h2
 		padding: 0
@@ -998,6 +1017,60 @@ img-base()
 
 	time
 		color: lightbluenyl !important
+
+.meta-comic
+	position: absolute
+	right: 0
+	left: 0
+	top: 0
+	overflow: hidden
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7)
+	text-align: center
+	height: 0
+	transition: height 0.15s ease-in-out 0s
+	padding: 0 1rem
+	line-height: 1.3rem
+
+	a
+		color: white
+
+	h1, h2, h3
+		font-size: 1.7rem
+		margin-bottom: 0.4rem
+
+	h1
+		@media tablet
+			font-size: 2.5rem
+			line-height: 1.4rem
+		@media desktop
+			font-size: 2.8rem
+			line-height: 1.5rem
+
+	time
+		font-size: 0.8rem
+		float: right
+		color: lightbluenyl
+
+.thumb-overlay
+	position: absolute
+	left: 10%
+	top: 3%
+	opacity: 0.7
+	width: 80%
+
+#latest-img:active > .meta, #latest-img:hover > .meta, #latest-img:focus > .meta,
+.thumb:active > .meta, .thumb:hover > .meta, .thumb:focus > .meta,
+.blog-teaser:active > .meta, .blog-teaser:hover > .meta, .blog-teaser:focus > .meta
+	height: 7rem
+
+.thumb:active > .meta-comic, .thumb:hover > .meta-comic, .thumb:focus > .meta-comic
+	height: 10rem
+
+.thumb:active > .meta-welcome, .thumb:hover > .meta-welcome, .thumb:focus > .meta-welcome
+	bottom: 8rem
+
+.small-blocks:active > .meta-blog, .small-blocks:hover > .meta-blog, .small-blocks:focus > .meta-blog
+	right: 0
 
 .blog-post-header
 	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7)
@@ -1024,13 +1097,6 @@ img-base()
 	font-size: 1.4rem
 	color: yellownyl
 	text-align: center
-
-
-
-#latest-img:active > .meta, #latest-img:hover > .meta, #latest-img:focus > .meta,
-.thumb:active > .meta, .thumb:hover > .meta, .thumb:focus > .meta,
-.blog-teaser:active > .meta, .blog-teaser:hover > .meta, .blog-teaser:focus > .meta
-	height: 7rem
 
 .light-block
 	border: 0.15rem solid white

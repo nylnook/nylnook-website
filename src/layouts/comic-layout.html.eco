@@ -1,0 +1,121 @@
+<%- @partial('header') %>
+<!-- Facebook SDK -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+	<noscript>
+	<article class="warning">
+		<div id="noscript-message">
+			<%- @_ 'noscript-message', Enable: '<a href="http://www.enable-javascript.com" target="_blank">enable-javascript.com</a>', Github: '<a href="http://github.com/nylnook/nylnook-website">Github</a>' %>
+		</div>
+	</article>
+	</noscript>
+
+<article class="img-page">
+<% for comic in @getPageCollection('comics_'+ @document.lang).toJSON(): %>
+ <div id="picture-zone">
+	 <picture>
+		 <source srcset="/<%= @_ 'comics-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover.jpg" media="(min-width: 981px)"></source>
+		 <source srcset="/<%= @_ 'comics-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover-700.jpg 1x, /<%= @_ 'comics-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover.jpg 2x" media="(min-width: 481px)"></source>
+		 <source srcset="/<%= @_ 'comics-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover-550.jpg 1x, /<%= @_ 'comics-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover-700.jpg 2x"></source>
+		 <img src="/<%= @_ 'comics-filename' %>/<%= comic.dir %>/<%= comic.dir %>-cover-700.jpg" alt="<%- comic.title %> <%- @_ 'thumbnail' %>">
+	 </picture>
+</div>
+<section id="actions" class="small-blocks">
+<div class="inside">
+	<script src="https://gumroad.com/js/gumroad.js"></script>
+	<% if comic.productlink? : %>
+		<a class="gumroad-button" href="<%= comic.productlink %>"><%= @_ 'download-gumroad' %></a>
+	<% end %>
+	<a class="big-button" href="/<%= @_ 'comics-filename' %>/<%=comic.dir %>/"><img src="/website-img/icon-book.svg"  alt="Book icon" /><h2><%= @_ 'read-online' %></h2></a>
+	<% if comic.sourcelink? : %>
+		<a class="secondary-button" href="<%= comic.sourcelink %>" target="_blank"><img src="/website-img/icon-search.svg"  alt="Search icon" /><%= @_ 'study-sources' %></a>
+	<% end %>
+
+</div>
+</section>
+<section id="img-description">
+	<h1><%- comic.title %></h1>
+	<time pubdate="<%- @computerDate(comic.date) %>"><%- @date(comic.date, comic.lang)  %></time>
+	<%- comic.contentRenderedWithoutLayouts %>
+
+</section>
+<section id="licence" class="small-blocks">
+	<div class="inside">
+		<h2><%= @_ 'license' %></h2>
+		<%- @partial('license') %>
+	</div>
+</section>
+
+<!-- Share -->
+<section id="share" class="small-blocks">
+	<div class="inside">
+		<h2><%= @_ 'share' %></h2>
+    <!-- Diaspora* -->
+    <div class="service-button diaspora">
+      <a href="javascript:;" onclick="window.open('http://sharetodiaspora.github.io/?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title),'das','location=no,links=no,scrollbars=no,toolbar=no,width=620,height=550'); return false;" rel="nofollow" target="_blank">
+          <img src="http://sharetodiaspora.github.io/favicon.png" style="border: 0px solid;display: inline-block;vertical-align: top;" /> diaspora*
+      </a>
+    </div>
+		<!-- Twitter -->
+		<div class="service-button">
+		<a href="https://twitter.com/share" class="twitter-share-button" data-via="nylnook">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		</div>
+		<!-- Google+ -->
+		<div class="service-button">
+		<script src="https://apis.google.com/js/platform.js" async defer>
+			{lang: '<%- @document.lang %>'}
+		</script>
+		<div class="g-plusone" data-size="medium"></div>
+		</div>
+		<!-- Facebook -->
+		<div class="service-button">
+			<div class="fb-like" data-layout="button_count"></div>
+			<div class="fb-share-button" data-href="<%- @document.url %>" data-layout="button_count"></div>
+		</div>
+		<!-- Pinterest -->
+		<div class="service-button">
+		<a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"  data-pin-color="red"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_20.png" /></a>
+		<!-- Please call pinit.js only once per page -->
+		<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+		</div>
+		<!-- Stumbleupon -->
+		<div class="service-button">
+		<su:badge layout="2"></su:badge>
+		<script type="text/javascript">
+			(function() {
+				var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true;
+				li.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + '//platform.stumbleupon.com/1/widgets.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(li, s);
+			})();
+		</script>
+		</div>
+	</div>
+</section>
+
+<section id="comments">
+	<h2><%= @_ 'comments' %></h2>
+		<!-- Disqus -->
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+		var disqus_shortname = 'nylnook';
+		(function() {
+			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+<% end %>
+</article>
+
+<%- @partial('footer') %>

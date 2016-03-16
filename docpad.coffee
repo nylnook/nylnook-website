@@ -244,7 +244,7 @@ docpadConfig = {
 							{relativeOutDirPath:'fr/blog'},
 							{relativeOutDirPath:'fr/bd'}
 						],
-						[date:-1]
+						[{date:-1}]
 						)
 
 		all_en: ->
@@ -254,7 +254,7 @@ docpadConfig = {
 							{relativeOutDirPath:'en/blog'},
 							{relativeOutDirPath:'en/comics'}
 						],
-						[date:-1]
+						[{date:-1}]
 						)
 
 		all_fr: ->
@@ -264,7 +264,7 @@ docpadConfig = {
 							{relativeOutDirPath:'fr/blog'},
 							{relativeOutDirPath:'fr/bd'}
 						],
-						[date:-1]
+						[{date:-1}]
 						)
 
 		img_en: ->

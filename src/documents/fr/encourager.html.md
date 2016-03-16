@@ -13,7 +13,7 @@ Libre à vous de me soutenir ou de tout simplement apprecier le paysage, **vous 
 - [Ou faites passer le message... ](#share)
 - [Les conditions](#conditions)
 
-##<a name="why"></a>Pourquoi payant ?
+## <a name="why"></a>Pourquoi payant ?
 
 1. Parce que dessiner ce n'est pas si facile et que ça prends beaucoup de temps et de matériel ! Même les lutins ont besoin de manger pendant qu'ils dessinent.
 
@@ -23,7 +23,7 @@ Libre à vous de me soutenir ou de tout simplement apprecier le paysage, **vous 
 
 4. Parce que je pourrais utiliser cet argent à mon tour pour soutenir les autres créateurs, artistes et projets que j’aime.
 
-##<a name="support"></a>Comment soutenir un lutin ?
+## <a name="support"></a>Comment soutenir un lutin ?
 
 1. Par [Flattr](https://flattr.com/profile/nylnook), pour les illustrations qui vous plaisent et/ou en s’abonnant au flattr du site lui-même (en cliquant deux fois sur le bouton Flattr). <small>Attention: 10% du don va à Flattr. Pas de remboursement possible. [Découvrez le principe de Flattr](https://flattr.com/howflattrworks).</small>
 
@@ -48,13 +48,12 @@ Libre à vous de me soutenir ou de tout simplement apprecier le paysage, **vous 
 
 6. Vous pouvez également me proposer un paiement en nature de votre choix : envoi d’un objet sympa, amusant ou utile, invitation… Laissez libre cours à votre imagination !
 
-##<a name="share"></a>Ou faites passer le message... 
+## <a name="share"></a>Ou faites passer le message...
 
 Merci de me suivre sur [DeviantArt](http://nylnook.deviantart.com/), [Twitter](https://twitter.com/nylnook), [Google+](https://plus.google.com/+Nylnook-art) et de partager mes contenus sur les réseaux sociaux en général. Cela me donne de la visibilité, cela permet à vos amis de me découvrir et cela ne vous coûte qu’un clic. N’hésitez donc pas à partager !
 
-##<a name="conditions"></a>Les conditions
+## <a name="conditions"></a>Les conditions
 
 Votre paiement n’est pas déductible fiscalement et ne vous donne pas droit à une contrepartie. Il peut arriver que j’envoie des bonus ou des messages personnalisés à ceux qui me soutiennent mais cela n’est pas garanti.
 
 Vous pouvez demander remboursement de votre paiement dans les 15 jours, si jamais vous changez d’avis.
-
