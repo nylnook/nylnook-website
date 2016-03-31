@@ -6,6 +6,10 @@ thumb: '/img/blog/pub-grenouilles-print-700.jpg'
 
 ![Le changement climatique expliqué aux grenouilles imprimé](/img/blog/pub-grenouilles-print-700.jpg)
 
+<script src="https://gumroad.com/js/gumroad.js"></script>
+<a class="gumroad-button" href="https://gumroad.com/l/ClimatGrenouillesPapier">31 mars 2016 : Vous pouvez maintenant commander un exemplaire papier en ligne !</a>
+
+
 Après quelques demandes, voici un tout premier tirage très limité : voilà [mes grenouilles](../bd) sur papier !
 
 Imprimés localement à Gap ([à l'atelier](http://alateliergap.fr/)), 50 exemplaires en 8 pages au format A5, avec juste deux agrafes en reliure et du papier 170 grammes, et vendues 3€, c'est modeste mais c'est quand même historique puisque que c'est la toute première fois que j'imprime une BD !

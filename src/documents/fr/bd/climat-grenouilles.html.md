@@ -5,7 +5,14 @@ title: "Le changement climatique expliqué aux grenouilles..."
 date: 2015-10-08
 license: 'by-sa'
 productlink: 'https://gumroad.com/l/ClimatGrenouilles'
+productpaperlink: 'https://gumroad.com/l/ClimatGrenouillesPapier'
 sourcelink: 'https://github.com/nylnook/climate-frogs-comic'
+bookelislink: 'http://www.bookelis.com/bd/12644-Le-changement-climatique-explique-aux-grenouilles.html'
+amazonlink: 'http://www.amazon.fr/changement-climatique-expliqu%C3%A9-aux-grenouilles-ebook/dp/B01DMQ10VG/'
+nolimlink: 'https://ebook.nolim.fr/ebook/9791095663003/le-changement-climatique-explique-aux-grenouilles-nylnook'
+bookeenlink: 'https://www.bookeenstore.com/ebook/9791095663003/le-changement-climatique-explique-aux-grenouilles-nylnook'
+relaylink: 'https://livre.relay.com/ebook/9791095663003/le-changement-climatique-explique-aux-grenouilles-nylnook'
+dialogueslink: 'https://www.librairiedialogues.fr/livre/9169904-le-changement-climatique-explique-aux-grenouilles-nylnook-nylnook'
 ---
 
 **Tout le monde en parle, mais vous n'avez pas vraiment compris le problème : au juste, qu'est-ce que c'est que ce fameux changement climatique ?**

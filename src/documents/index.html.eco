@@ -4,7 +4,9 @@
 		<!-- Site Properities -->
 		<title>Nylnook ❄ Free (as in Freedom) Comics &amp; Illustrations</title>
 		<meta name="description" content="Free (as in Freedom) Comics &amp; Illustrations<" />
-		<meta name="keywords" content="wallpaper, HD, FHD, 4K, 8K, illustration, free, open source, creative commons, comics" />		<!-- Standard Meta -->
+		<meta name="keywords" content="wallpaper, HD, FHD, 4K, 8K, illustration, free, open source, creative commons, comics" />
+
+		<!-- Standard Meta -->
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -28,7 +30,8 @@
         	<link rel="apple-touch-icon-precomposed" href="/favicon-152.png">
         	<!-- Generic favicon for other cases, 64x64px -->
         	<link rel="icon" type="image/png" href="/favicon-64.png" />
-
+		<!-- Pinterest domain check -->
+		<meta name="p:domain_verify" content="46330c379a994f90ab58c638a283dd43"/>
 	</head>
 	<body>
 	    <!--[if lt IE 10]>

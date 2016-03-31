@@ -30,16 +30,39 @@
 <section id="actions" class="small-blocks">
 <div class="inside">
 	<script src="https://gumroad.com/js/gumroad.js"></script>
-	<% if comic.productlink? : %>
-		<a class="gumroad-button" href="<%= comic.productlink %>"><%= @_ 'download-gumroad' %></a>
-	<% end %>
-	<a class="big-button" href="/<%= @_ 'comics-filename' %>/<%=comic.dir %>/"><img src="/website-img/icon-book.svg"  alt="Book icon" /><h2><%= @_ 'read-online' %></h2></a>
-	<% if comic.sourcelink? : %>
-		<a class="secondary-button" href="<%= comic.sourcelink %>" target="_blank"><img src="/website-img/icon-search.svg"  alt="Search icon" /><%= @_ 'study-sources' %></a>
-	<% end %>
-
+	<a class="big-button" href="/<%= @_ 'comics-filename' %>/<%=comic.dir %>/"><img src="/website-img/icon-book.svg"  class="book-icon" alt="Book icon" /><h2><%= @_ 'read-online' %></h2></a>
+  <% if comic.productlink? : %>
+    <a class="gumroad-button" href="<%= comic.productlink %>"><%= @_ 'download-gumroad' %></a>
+  <% end %>
+  <% if comic.productpaperlink? : %>
+    <a class="gumroad-button" href="<%= comic.productpaperlink %>"><%= @_ 'buy-paper-gumroad' %></a>
+  <% end %>
 </div>
 </section>
+
+<section id="actions" class="small-blocks">
+<div class="inside">
+  <% if comic.bookelislink? : %>
+    <a class="secondary-button" href="<%= comic.bookelislink %>" target="_blank"><img src="/website-img/icon-play.svg"  alt="Play icon" /><%= @_ 'buy-ebook-at' %> Bookelis</a>
+  <% end %>
+  <% if comic.amazonlink? : %>
+    <a class="secondary-button" href="<%= comic.amazonlink %>" target="_blank"><img src="/website-img/icon-play.svg"  alt="Play icon" /><%= @_ 'buy-ebook-at' %> Amazon</a>
+  <% end %>
+  <% if comic.nolimlink? : %>
+    <a class="secondary-button" href="<%= comic.nolimlink %>" target="_blank"><img src="/website-img/icon-play.svg"  alt="Play icon" /><%= @_ 'buy-ebook-at' %> Nolim</a>
+  <% end %>
+  <% if comic.bookeenlink? : %>
+    <a class="secondary-button" href="<%= comic.bookeenlink %>" target="_blank"><img src="/website-img/icon-play.svg"  alt="Play icon" /><%= @_ 'buy-ebook-at' %> Bookeen</a>
+  <% end %>
+  <% if comic.relaylink? : %>
+    <a class="secondary-button" href="<%= comic.relaylink %>" target="_blank"><img src="/website-img/icon-play.svg"  alt="Play icon" /><%= @_ 'buy-ebook-at' %> Relay</a>
+  <% end %>
+  <% if comic.dialogueslink? : %>
+    <a class="secondary-button" href="<%= comic.dialogueslink %>" target="_blank"><img src="/website-img/icon-play.svg"  alt="Play icon" /><%= @_ 'buy-ebook-at' %> Dialogues</a>
+  <% end %>
+</div>
+</section>
+
 <section id="img-description">
 	<h1><%- comic.title %></h1>
 	<time pubdate="<%- @computerDate(comic.date) %>"><%- @date(comic.date, comic.lang)  %></time>
@@ -50,7 +73,10 @@
 	<div class="inside">
 		<h2><%= @_ 'license' %></h2>
 		<%- @partial('license') %>
-	</div>
+  <% if comic.sourcelink? : %>
+    <a class="secondary-button" href="<%= comic.sourcelink %>" target="_blank"><img src="/website-img/icon-search.svg"  alt="Search icon" /><%= @_ 'study-sources' %></a>
+  <% end %>
+  </div>
 </section>
 
 <!-- Share -->

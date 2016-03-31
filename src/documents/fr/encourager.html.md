@@ -8,10 +8,14 @@ Ce site et toutes ses illustrations sont disponibles à prix libre : [comme dira
 Libre à vous de me soutenir ou de tout simplement apprecier le paysage, **vous pourrez toujours télécharger et copier les fonds d'écrans que je vous propose en toute liberté** : c'est ce que vous garantie les licences [Creative Commons](http://creativecommons.fr/).
 
 #### Accès rapide
+- [Faites passer le message... ](#share)
 - [Pourquoi payant ?](#why)
 - [Comment soutenir un lutin ?](#support)
-- [Ou faites passer le message... ](#share)
 - [Les conditions](#conditions)
+
+## <a name="share"></a>Faites passer le message...
+
+Merci de me suivre sur [Diaspora*](https://framasphere.org/u/nylnook), [DeviantArt](http://nylnook.deviantart.com/), [Twitter](https://twitter.com/nylnook), [Facebook](https://www.facebook.com//nylnook), [Google+](https://plus.google.com/+Nylnook-art) et de partager mes contenus sur les réseaux sociaux en général. Cela me donne de la visibilité, cela permet à vos amis de me découvrir et cela ne vous coûte qu’un clic. N’hésitez donc pas à partager !
 
 ## <a name="why"></a>Pourquoi payant ?
 
@@ -47,10 +51,6 @@ Libre à vous de me soutenir ou de tout simplement apprecier le paysage, **vous 
 5. En commandant un poster ou une carte postale d'une de mes illustrations sur [Deviant Art](http://nylnook.deviantart.com/prints/).
 
 6. Vous pouvez également me proposer un paiement en nature de votre choix : envoi d’un objet sympa, amusant ou utile, invitation… Laissez libre cours à votre imagination !
-
-## <a name="share"></a>Ou faites passer le message...
-
-Merci de me suivre sur [DeviantArt](http://nylnook.deviantart.com/), [Twitter](https://twitter.com/nylnook), [Google+](https://plus.google.com/+Nylnook-art) et de partager mes contenus sur les réseaux sociaux en général. Cela me donne de la visibilité, cela permet à vos amis de me découvrir et cela ne vous coûte qu’un clic. N’hésitez donc pas à partager !
 
 ## <a name="conditions"></a>Les conditions
 

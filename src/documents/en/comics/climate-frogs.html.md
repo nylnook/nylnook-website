@@ -6,6 +6,12 @@ date: 2015-10-08
 license: 'by-sa'
 productlink: 'https://gumroad.com/l/ClimateFrogs'
 sourcelink: 'https://github.com/nylnook/climate-frogs-comic'
+bookelislink: 'http://www.bookelis.com/comics/12645-Climate-Change-Explained-to-Frogs.html'
+amazonlink: 'http://www.amazon.com/Climate-Change-Explained-Frogs-Nylnook-ebook/dp/B01BLKWZR8/'
+nolimlink: 'https://ebook.nolim.fr/ebook/9791095663010/climate-change-explained-to-frogs-nylnook'
+bookeenlink: 'https://www.bookeenstore.com/ebook/9791095663010/climate-change-explained-to-frogs-nylnook'
+relaylink: 'https://livre.relay.com/ebook/9791095663010/climate-change-explained-to-frogs-nylnook'
+dialogueslink: 'https://www.librairiedialogues.fr/livre/9173460-climate-change-explained-to-frogs-nylnook-nylnook'
 ---
 
 **Everyone talks about it, but you don't really get the problem exactly, what is this famous climate change?**

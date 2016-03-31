@@ -104,7 +104,7 @@
 	</article>
 
   <% for post in @getPageCollection('blog_'+ @document.lang).toJSON(): %>
-    <article class="post small-blocks" style="background:url(<%- post.thumb %>) repeat scroll center center, url(../../website-img/paper-tilt-rotate.png) repeat, white repeat">
+    <article class="post small-blocks" style="background:url(<%- post.thumb %>) repeat scroll center center, url(../../website-img/paper-tilt-rotate.png) repeat, url(../../website-img/paper-tilt-rotate.png) repeat, white repeat">
       <div class="meta-blog">
         <h2><a href="<%= post.url %>"><%- post.title %></a></h2>
        <time pubdate="<%- @computerDate(post.date) %>"><%- @date(post.date, post.lang) %></time>

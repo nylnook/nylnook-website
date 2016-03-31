@@ -8,12 +8,16 @@ This site and all its illustrations are available at a Pay What You Want price: 
 You are free to support me or simply appreciate the scenery, **you can always download and copy the wallpapers that I offer freely**: this is what guarantees [Creative Commons](http://creativecommons.fr/) licenses.
 
 #### Quick access
-- [Why free?](#why)
+- [Spread the word ... ](#share)
+- [Why paying?](#why)
 - [How to support a gnome?](#support)
-- [Or spread the word ... ](#share)
 - [The conditions](#conditions)
 
-## <a name="why"></a>Why free?
+## <a name="share"></a>Spread the word ...
+
+Thank you to follow me on [Diaspora*](https://framasphere.org/u/nylnook), [DeviantArt](http://nylnook.deviantart.com/), [Twitter](https://twitter.com/nylnook), [Facebook](https://www.facebook.com//nylnook), [Google+](https://plus.google.com/+Nylnook-art) and share my contents on social networks in general. This gives me visibility, this allows your friends to find me and it doesn't cost you anything but a click. So feel free to share!
+
+## <a name="why"></a>Why paying?
 
 1. Because drawing isn't so easy and takes a lot of time and material! Even gnomes need to eat.
 
@@ -45,10 +49,6 @@ You are free to support me or simply appreciate the scenery, **you can always do
 4. By ordering a poster or postcard of one of my illustrations on [Deviant Art](http://nylnook.deviantart.com/prints/).
 
 5. You can also offer me a payment in kind of your choice: sending a nice object, fun or useful, invitation... Unleash your imagination!
-
-## <a name="share"></a>Or spread the word ...
-
-Thank you to follow me on [DeviantArt](http://nylnook.deviantart.com/), [Twitter](https://twitter.com/nylnook), [Google+](https://plus.google.com/+Nylnook-art) and share my contents on social networks in general. This gives me visibility, this allows your friends to find me and it doesn't cost you anything but a click. So feel free to share!
 
 ## <a name="conditions"></a>The conditions
 
