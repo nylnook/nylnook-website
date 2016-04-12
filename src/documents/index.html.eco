@@ -30,8 +30,11 @@
         	<link rel="apple-touch-icon-precomposed" href="/favicon-152.png">
         	<!-- Generic favicon for other cases, 64x64px -->
         	<link rel="icon" type="image/png" href="/favicon-64.png" />
-		<!-- Pinterest domain check -->
+
+		<!-- Social media checks -->
 		<meta name="p:domain_verify" content="46330c379a994f90ab58c638a283dd43"/>
+		<a href=”https://plus.google.com/+Nylnook-art” rel=”publisher” />
+
 	</head>
 	<body>
 	    <!--[if lt IE 10]>
