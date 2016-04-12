@@ -3,7 +3,7 @@
 	<head>
 		<!-- Site Properities -->
 		<title>Nylnook ❄ Free (as in Freedom) Comics &amp; Illustrations</title>
-		<meta name="description" content="Free (as in Freedom) Comics &amp; Illustrations<" />
+		<meta name="description" content="I'm Camille Bissuel and I'm creating free (as in freedom) graphic novels and illustrations about climate change." />
 		<meta name="keywords" content="wallpaper, HD, FHD, 4K, 8K, illustration, free, open source, creative commons, comics" />
 
 		<!-- Standard Meta -->
@@ -25,15 +25,15 @@
         	<link rel="icon" href="/favicon.ico" />
         	<!-- IE 10 Metro tile icon -->
         	<meta name="msapplication-TileColor" content="#FFFFFF">
-		<meta name="msapplication-TileImage" content="/favicon-144.png">
-		<!-- Touch icon for iOS 2.0+ and Android 2.1+ -->
+					<meta name="msapplication-TileImage" content="/favicon-144.png">
+					<!-- Touch icon for iOS 2.0+ and Android 2.1+ -->
         	<link rel="apple-touch-icon-precomposed" href="/favicon-152.png">
         	<!-- Generic favicon for other cases, 64x64px -->
         	<link rel="icon" type="image/png" href="/favicon-64.png" />
 
 		<!-- Social media checks -->
 		<meta name="p:domain_verify" content="46330c379a994f90ab58c638a283dd43"/>
-		<a href=”https://plus.google.com/+Nylnook-art” rel=”publisher” />
+		<a href="https://plus.google.com/+Nylnook-art" rel=”publisher” />
 
 	</head>
 	<body>
