@@ -731,19 +731,46 @@ article
 	a, a:visited
 		color: darkbluenyl
 
+/* blockquote as a speech bubble */
 blockquote
+	position: relative
 	background-color: white
-	border-radius: 1rem
-	padding: 0.3rem 0.5rem
-	font-family: Comili, Cantarell, Ubuntu, Verdana, sans-serif;
-	font-size: 1.5rem
+	font-family: Comili, Cantarell, Ubuntu, Verdana, sans-serif
+	font-size: 1.4rem
+	width: 95%
+	padding: 0.1rem 3rem
+	margin: 2rem auto 4rem
+	text-align: center
+	border-radius: 13rem 12rem
 
-	p
-		padding: 2%
-		margin: 0
+/* creates part of the curve */
+blockquote:before
+	content: ""
+	position: absolute
+	z-index: 0
+	bottom: -2.8rem
+	left: 6rem
+	height: 3rem
+	border-right: 5rem solid white
+	background: white /* need this for webkit - bug in handling of border-radius */
+	border-bottom-right-radius: 8rem 5rem
+	/* using translate to avoid undesired appearance in CSS2.1-capabable but CSS3-incapable browsers */
+	transform: translate(0, -0.3rem)
 
-	a
-		color: darkbluenyl !important
+/* creates part of the curved pointy bit */
+blockquote:after
+	content: ""
+	position: absolute
+	z-index: 0
+	bottom: -3.3rem
+	left: 6rem
+	width: 6rem
+	height: 3rem
+	background: url(../website-img/paper-tilt-rotate.png) white repeat
+	border-bottom-right-radius: 4rem 5rem
+	/* using translate to avoid undesired appearance in CSS2.1-capabable but CSS3-incapable browsers */
+	transform: translate(-3rem, -0.3rem)
+
 
 .warning
 	text-align: center
@@ -1235,7 +1262,7 @@ img-base()
 	/* font-family: Comili, Cantarell, Ubuntu, Verdana, sans-serif; */
 	/* font-size: 1.5rem */
 	position: relative
-	background: url(../website-img/paper-tilt.png) repeat, white repeat
+	background: url(../website-img/paper-tilt-rotate.png) repeat, white repeat
 	float: left
 	clear: left
 	padding: 2%

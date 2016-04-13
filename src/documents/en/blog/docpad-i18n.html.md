@@ -9,10 +9,10 @@ In my way building this website, one the major technical point to solve was inte
 But for now (v6.64), [Docpad](http://docpad.org/), the publishing system I choosed for this website, [do not have any official localization abilities](https://github.com/bevry/docpad/issues/17).  
 So here is a full description the solution I finally implemented today (took much more time than expected !).  
 
-####TL; DR;
+### TL; DR;
 No, sorry, I'm afraid there is no shortways.
 
-####Table of content
+#### Table of content
 - [Thanks first](#thanks-first)
 - [How I like it to be](#how-i-like-it-to-be)
 - [The solution I ended up with](#the-solution)
@@ -46,7 +46,7 @@ In chronological order :
 - Artem Sapegin's [Blog](http://blog.sapegin.me/all/multilingual-docpad)
 
 I must also thanks [Benjamin Lupton](https://github.com/balupton) for his work on Docpad, the needed infrastructure work, and the initial idea behind this solution.
-	
+
 ### <a name="how-i-like-it-to-be"></a>How I like it to be
 As you may have noticed, I host many, many images, they will grow, and I can't aford to duplicate them, a major flaw IMHO in two of the previous mentionned already exiting solutions.   
 So no duplication, or a minimum : duplicate only text, which you can't avoid in a translation !   
@@ -58,7 +58,7 @@ My requierments were :
 4. localize dates
 5. Transparent visitor redirection, server side prefered
 6. SEO friendly (urls and titles in the correct language)
-7. do not mess too much with Docpad behavior, and let important plugins do their usual job (Clean URLs, tagging, partials...). 
+7. do not mess too much with Docpad behavior, and let important plugins do their usual job (Clean URLs, tagging, partials...).
 8. generate every language in one go, with a simple ```docpad run``` (no parameters like ```--lang-en```)
 9. Allow for translation services like [Transifex](https://www.transifex.com/) to be used partially or fully. So JSON format for translation files. Artem Sapegin's solution use YAMLjs instead.
 
@@ -109,31 +109,31 @@ So, open ```docpad.coffee``` or your docpad configuration file and start to decl
 
 ``` coffeescript
 templateData:
-	
+
 		# -----------------------------
 		# Language Definition
-		
+
 		# List all available languages here
-		# Must match with a corresponding directory in src/documents/ 
+		# Must match with a corresponding directory in src/documents/
 		languages: ['en', 'fr']
-		
+
 		# Define default language
 		default_lang: 'en'
-		
+
 		# Define plural for each language. A list is available here :
 		# https://github.com/airbnb/polyglot.js/blob/master/lib/polyglot.js
 		# (don't forget to convert to coffeescript !)
 		plural_types:
 			en: (n) -> (if n isnt 1 then 1 else 0)
 			fr: (n) -> (if n > 1 then 1 else 0)
-		
+
 		# Translation file location
 		# Depending on your translation system, you may want to change that
 		# remember this path start from the docpad directory
 		translation_files:
 			en: 'src/documents/en/en.json'
 			fr: 'src/documents/fr/fr.json'
-			
+
 		# Translations will be loaded into this object. Required.
 		translations: {}
 ```
@@ -171,10 +171,10 @@ Thanks again to Adam Pritchard, this is almost a copy-and-paste from his work :
 	collections:
 		# This is internationalized, and only to build automatic template data !!!
 		# If you try to use it in your files, you will obtain all results in every language
-		# In your templates, use for example 
+		# In your templates, use for example
 		# @getCollection("html").findAllLive({relativeOutDirPath: @document.lang+'/blog'},[{date:-1}])
 		# instead of thoses collections
-	
+
 		# This collection is absolutely required to make internationalization work !
 		# this wil add a "lang" metadata correponding to the same directory to each file in documents
 		setlangforalldocuments: (database) ->
@@ -192,7 +192,7 @@ Thanks again to Adam Pritchard, this is almost a copy-and-paste from his work :
 					model.setMetaDefaults { lang: lang }
 					true
 ```
-And you can continue with this technic to generate other metadatas, in this example a layout 
+And you can continue with this technic to generate other metadatas, in this example a layout
 ``` coffeescript
 		# Build template data for posts (only relative path and metadata change)
 		posts: (database) ->
@@ -218,7 +218,7 @@ But this mean you cannot use anymore in your templates nice calls like the one e
 <% for posts in @getCollection("posts").toJSON(): %>
 ```
 because this wil send you every post in every language.
-But instead you will have to use less nice ones like (note the ```relativeOutDirPath: @document.lang+'/blog'``` parameter) : 
+But instead you will have to use less nice ones like (note the ```relativeOutDirPath: @document.lang+'/blog'``` parameter) :
 
 ```
 <% for posts in @getCollection("html").findAllLive({relativeOutDirPath: @document.lang+'/blog'},[{date:-1}]).toJSON(): %>
@@ -229,7 +229,7 @@ That's ok, but I don't know what it does on the preformance side. For now, I did
 
 In our templates at least, we want to be able to translate any sentence in the correct language. We will do that by replacing text with a call to a translation function.
 
-So HTML 
+So HTML
 ```
 <p>I want to translate this sentence</p>
 ```
@@ -243,7 +243,7 @@ or shortly
 ```
 
 You can add variables into it
-``` 
+```
 <p><%- @_ 'The answer is', num: 42 %></p>
 ```
 
@@ -256,7 +256,7 @@ The translation is send to JSON, so characters you must escape with a ```\``` ar
 
 But until now there is no corresponding translation file to our calls, and our sentences will not be translated (they will appear as they are). So we must create the files we declared before.
 
-In my case ```documents/en/en.json``` 
+In my case ```documents/en/en.json```
 
 
 ``` json
@@ -265,7 +265,7 @@ In my case ```documents/en/en.json```
 	"The answer is": "The answer is {num}",
 	"post|posts" : "post|posts",
 	"posts-number" : "{num} {posts}"
-	
+
 }
 ```
 
@@ -277,7 +277,7 @@ and ```documents/fr/fr.json```
 	"The answer is": "La réponse est {num}",
 	"post|posts" : "article|articles",
 	"posts-number" : "{num} {posts}"
-	
+
 }
 ```
 
@@ -287,9 +287,9 @@ but as is Docpad will send you errors if we don't add the translations functions
 ``` coffeescript
 	templateData:
 		# ...
-		
+
 		# Translate the given key into the language of the current document.
-		# Fallback to default language if the key if not found or fallback again to unstranslated string.	
+		# Fallback to default language if the key if not found or fallback again to unstranslated string.
 		# You can use simple variables: @_ 'The answer is', num: 42   
 		_: (key, translations_with_parameters=null) ->
 			translations_with_parameters ?= []
@@ -301,9 +301,9 @@ but as is Docpad will send you errors if we don't add the translations functions
 				message = key
 			message.replace /\{([^\}]+)\}/g, (translation, param) ->
 				translations_with_parameters[param] or translation
-				
+
 		# Plural form for translations
-		# Fallback to default language if the key if not found or fallback again to unstranslated string.	
+		# Fallback to default language if the key if not found or fallback again to unstranslated string.
 		# Simple example : @plural(3, 'dog|dogs')
 		# Example in context : @_ '{num} {posts}', num: documents.length, posts: @plural(documents.length, 'post|posts')
 		plural: (n, key) ->
@@ -313,7 +313,7 @@ but as is Docpad will send you errors if we don't add the translations functions
 				return ((@_ key).split '|')[@plural_types[@default_lang](n)]
 			else
 				return ((@_ key).split '|').slice(0,1)
-		
+
 		# ...
 ```
 
@@ -328,7 +328,7 @@ So we add a dedicated event :
 	# Here we can define handlers for events that DocPad fires
 	# You can find a full listing of events on the DocPad Wiki
 	events:
-		
+
 		# We add this event to load the translations from locale JSON files
 		renderBefore: (opts, next) ->
 			fs = require 'fs'
@@ -361,7 +361,7 @@ And let's add 2 more functions in our ```docpad.coffee templateData``` :
 ``` coffeescript
 	templateData:
 		# ...
-		
+
 		# Returns a human readable formatted date. Require Moment.js
 		# Example : @date()
 		# Example with parameters : @date(post.date, post.lang)
@@ -373,7 +373,7 @@ And let's add 2 more functions in our ```docpad.coffee templateData``` :
 			moment = require 'moment'
 			moment.lang(lang)
 			return moment(date).format('LL');
-		
+
 		# Returns a computer readable formatted date. Require Moment.js
 		# Example : @computerDate()
 		# Example with parameters : @computerDate(post.date)
@@ -383,11 +383,11 @@ And let's add 2 more functions in our ```docpad.coffee templateData``` :
 				date = @document.date
 			moment = require 'moment'
 			return moment(date).format('YYYY-MM-DD');
-			
+
 		# ...
 ```
 
-in our templates, we will just put 
+in our templates, we will just put
 
 ```
 <time pubdate="<%- @computerDate() %>"><%- @date() %></time>
@@ -395,7 +395,7 @@ in our templates, we will just put
 
 To get a localized date. Please adjust the ```format``` as mentioned on [Moment.js website](http://momentjs.com/) to suit your needs.
 
-To use dates in a call for a collections, we will just add parameters 
+To use dates in a call for a collections, we will just add parameters
 ```
 <% for post in @getCollection("html").findAllLive({relativeOutDirPath: @document.lang+'/blog'},[{date:-1}]).toJSON(): %>
 	<article class="post">
@@ -429,7 +429,7 @@ If you absolutely need to parse url, here are 2 relatively useless functions for
 			if not document
 				document = @document
 			return document.relativeDirPath.split('/').slice(0,1)
-			
+
 		# Get a path without current language. Maybe useful in templates to get a file path
 		# Example : <%= @pathWithoutLang(post) %>
 		pathWithoutLang: (document) ->
@@ -439,13 +439,13 @@ If you absolutely need to parse url, here are 2 relatively useless functions for
 ```
 #### <a name="navigation-menus"></a>Navigation and menus
 
-The tricky part is when you want to link to a corresponding document in another language. For example, you have a navigation menu refering to 
+The tricky part is when you want to link to a corresponding document in another language. For example, you have a navigation menu refering to
 ``` xml
 documents/en/about.html
 ```
 in english
- 
-and to 
+
+and to
 ``` xml
 documents/fr/a-propos.html
 ```
@@ -489,7 +489,7 @@ As a side note to path management, the [associatedfiles Docpad plugin](https://g
 Replace it simply with this kind of templating (```@getFilesAtPath``` is a Docpad function) :
 ```
 <% for file in @getFilesAtPath('../../img/gallery').toJSON(): %>
-	
+
 <% end %>
 ```
 
@@ -540,7 +540,7 @@ and in the event section of ```docpad.coffee``` we will add a second part to the
 
 ``` coffeescript
 	events:
-		
+
 		#...
 
 
@@ -557,22 +557,22 @@ and in the event section of ```docpad.coffee``` we will add a second part to the
 			latestConfig = docpad.getConfig()
 			oldUrls = latestConfig.templateData.site.oldUrls or []
 			newUrl = latestConfig.templateData.site.url
-			
-			
+
+
 			# Redirect any requests accessing one of our sites oldUrls to the new site url
 			server.use (req,res,next) ->
 				if req.headers.host in oldUrls
 					res.redirect(newUrl+req.url, 301)
 				else
 					next()
-					
-					
+
+
 			# We add this event to redirect visitor reaching root domain to their prefered language
 			# at the corresponding subdomain.
 			# We use the "Accept-Language" header for that. Require the "negociator" npm package
 			# If negociator fail to find any solution, default language is used
-			
-			# /!\ This will not work if the server is static ! 
+
+			# /!\ This will not work if the server is static !
 			# If static, use an index.html file with client side javascript detection to replace this.
 			# Example script in /src/documents/404.hml.eco
 			server.use (req,res,next) ->
@@ -593,7 +593,7 @@ and in the event section of ```docpad.coffee``` we will add a second part to the
 So, if a visitor hit the root domain, he is redirected to the best language we can find for him, or to the default one.
 
 
-#### <a name="client-side-redirection"></a>Client side 
+#### <a name="client-side-redirection"></a>Client side
 
 If you can't do server-side redirection because your server is static or you render static files, client side redirection is required.
 Create an ```index.html``` file at the ```documents``` root, with this script (by Adam Pritchard) :
@@ -697,4 +697,3 @@ And I didn't test right-to-left or non-latin languages yet. So this code probabl
 With some abstration to manage the subdomain and other domains cases, all this may go into a Docpad plugin to simplify installation... But I'm afraid I'm not the good guy for that... Remember : I'm a designer, not really a coder !
 
 Let's dream : some bits of this code may even be part of Docpad one day. No modesty here ;p
-
