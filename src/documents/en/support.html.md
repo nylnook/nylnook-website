@@ -11,7 +11,6 @@ You are free to support me or simply appreciate the scenery, **you can always do
 - [Spread the word ... ](#share)
 - [Why paying?](#why)
 - [How to support a gnome?](#support)
-- [The conditions](#conditions)
 
 ## <a name="share"></a>Spread the word ...
 
@@ -29,29 +28,10 @@ Thank you to follow me on [Diaspora*](https://framasphere.org/u/nylnook), [Devia
 
 ## <a name="support"></a>How to support a gnome?
 
-1. By [Flattr](https://flattr.com/profile/nylnook) for illustrations that you enjoy and/or subscribing to this website flattr itself (by double clicking on the Flattr button). <small>Warning: 10% of the donation goes to Flattr. No refunds. [Discover how Flattr works](https://flattr.com/howflattrworks).</small>
+<!-- 1. By [Flattr](https://flattr.com/profile/nylnook) for illustrations that you enjoy and/or subscribing to this website flattr itself (by double clicking on the Flattr button). <small>Warning: 10% of the donation goes to Flattr. No refunds. [Discover how Flattr works](https://flattr.com/howflattrworks).</small> -->
 
-2. With Paypal by clicking the button below. <small>Warning: for small amounts, the cost can be prohibitive (0 to 30%). Refund possible as Paypal allows (1 month).</small>
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_donations">
-<input type="hidden" name="business" value="cbissuel@gmail.com">
-<input type="hidden" name="lc" value="US">
-<input type="hidden" name="item_name" value="nylnook">
-<input type="hidden" name="item_number" value="support">
-<input type="hidden" name="currency_code" value="EUR">
-<input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHosted">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal">
-<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
-</form>
+1. Order what you want on my [Gumroad shop](https://gumroad.com/nylnook), where many products are at free prices!
 
-3. <img style="float:right; max-width:50%" src="/website-img/bitcoin-qrcode-nylnook-1KztgFzdoo1dkxLxtzsGe61hLV3K97PmBs.png" alt="Bitcoin 1KztgFzdoo1dkxLxtzsGe61hLV3K97PmBs" title="1KztgFzdoo1dkxLxtzsGe61hLV3K97PmBs"> Par Bitcoin, via [Changetip](http://nylnook.tip.me) or directly to the address 1KztgFzdoo1dkxLxtzsGe61hLV3K97PmBs. Ideal and 100% charge free. <small>Do not forget to email me because I have no way to contact you to say thank you. Refund possible within 15 days if an email was sent before donation.</small>
+2. By ordering a poster or postcard of one of my illustrations on [Deviant Art](http://nylnook.deviantart.com/prints/).
 
-4. By ordering a poster or postcard of one of my illustrations on [Deviant Art](http://nylnook.deviantart.com/prints/).
-
-5. You can also offer me a payment in kind of your choice: sending a nice object, fun or useful, invitation... Unleash your imagination!
-
-## <a name="conditions"></a>The conditions
-
-Your payment is not tax deductible and will not entitle you to a counterparty. Sometimes I send bonuses or personalized messages to those who support me, but this is not guaranteed.
-
-You can request a refund for your payment within 15 days, if you ever change your mind.
+3. You can also offer me a payment in kind of your choice: sending a nice object, fun or useful, invitation... Unleash your imagination!

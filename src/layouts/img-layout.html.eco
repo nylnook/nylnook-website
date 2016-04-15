@@ -184,44 +184,12 @@
 	<div>
 		<a href="#picture" class="close-button" aria-hidden="true"><img src="/website-img/icon-close.svg"  alt="<%= @_ 'close' %>" title="<%= @_ 'close' %>" /></a>
 		<h3><%= @_ 'download-title' %></h3>
-		<p><%= @_ 'download-explanation' %></p>
 		<script>
 			document.getElementById('changeMe').innerHTML = '<a href="<%- downloadpath %>'+def+'<%- extpath %>"  download><img src="/website-img/icon-wallpapers.svg"  alt="Wallapers icon" /><h2><%= @_ "download" %></h2></a>';
 		</script>
-		<!-- Flattr -->
-		<div class="support-block">
-			<script id='fbngrtt'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=nylnook&url='+encodeURIComponent(document.URL);f.title='Flattr';f.height=62;f.width=56;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fbngrtt');</script>
-		</div>
-		<!-- Tip.me/ChangeTip -->
-		<div class="support-block support-fix">
-			<div id="changetip_tipme_button" data-bid="XguyK6cDbaSMhi6JfA26TY" data-uid="Tr7qYrcgRvP2X3TZL6Mz86"></div><script>(function(document,script,id){var js,r=document.getElementsByTagName(script)[0],protocol=/^http:/.test(document.location)?'http':'https';if(!document.getElementById(id)){js=document.createElement(script);js.id=id;js.src=protocol+'://widgets.changetip.com/public/js/widgets.js';r.parentNode.insertBefore(js,r)}}(document,'script','changetip_w_0'));</script>
-		</div>
-		<!-- Tipeee -->
-		<div class="support-block">
-			<iframe src="//www.tipeee.com/embed/project/94852?display=tipbutton" allowtransparency="true" width="92" height="25" frameborder="0" scrolling="no" ></iframe>
-		</div>
-		<!-- Paypal-->
-		<div class="support-block">
-			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-				<input type="hidden" name="cmd" value="_donations">
-				<input type="hidden" name="business" value="cbissuel@gmail.com">
-				<input type="hidden" name="lc" value="<% if @document.lang == 'fr' : %>FR<% else :%>US<% end %>">
-				<input type="hidden" name="item_name" value="nylnook">
-				<input type="hidden" name="item_number" value="<%- @document.file %>">
-				<input type="hidden" name="currency_code" value="EUR">
-				<input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHosted">
-			<% if @document.lang == 'fr' : %>
-				<input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal">
-				<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
-			<% else :%>
-				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal">
-				<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
-			<% end %>
-			</form>
-		</div>
-		<p><a href="/<%- @document.lang %>/<%= @_ 'support-filename' %>"><%= @_ 'download-know-more' %></a></p>
-		<div id="changeMe" class="modal-button">
-		</div>
+    <div id="changeMe" class="modal-button"></div>
+    <p><%= @_ 'download-explanation' %></p>
+		<form action="https://gumroad.com/follow_from_embed_form" class="form gumroad-follow-form-embed" method="post"> <input name="seller_id" value="3361448496300" type="hidden"> <input name="email" placeholder="<%= @_ 'email-placeholder' %>" type="email"> <button type="submit"><%= @_ 'follow' %></button> </form>
 	</div>
 	</div>
 
@@ -248,19 +216,13 @@
 		<%- @content %>
 	</section>
 
-
 	<section id="licence" class="small-blocks">
 		<div class="inside">
 			<h2><%= @_ 'license' %></h2>
 			<%- @partial('license') %>
 		</div>
 	</section>
-	<section id="support" class="small-blocks">
-		<div class="inside">
-			<h2><%= @_ 'support' %></h2>
-			<a href="/<%- @document.lang %>/<%= @_ 'support-filename' %>"><img style="width:50%; margin: 1%" src="/website-img/icon-support.svg"  alt="<%= @_ 'support' %>" /></a>
-		</div>
-	</section>
+
 	<!-- Share -->
 	<section id="share" class="small-blocks">
 		<div class="inside">

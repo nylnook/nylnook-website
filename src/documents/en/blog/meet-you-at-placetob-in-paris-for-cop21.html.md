@@ -1,6 +1,7 @@
 ---
 title: "Meet you at Place To B in Paris for COP21!"
 date: 2015-11-11 17:00
+thumb: '/img/blog/asnovel1.jpg'
 ---
 
 ![Strip frogs PlaceToB](/img/blog/strip-placetob-frogs-web.png)
