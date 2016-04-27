@@ -8,6 +8,7 @@ tags:
   - caricature
   - personnages
   - politique
+  - écologie
   - brun
 made:
   - Krita

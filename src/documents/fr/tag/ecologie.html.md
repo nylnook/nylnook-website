@@ -1,6 +1,6 @@
 ---
-tag: 'cartes'
+tag: 'écologie'
 tagcat: 'theme'
-title: 'Cartes'
+title: 'Écologie'
 layout: 'tag-layout'
 ---

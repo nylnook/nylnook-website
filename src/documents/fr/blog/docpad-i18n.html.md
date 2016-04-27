@@ -1,6 +1,10 @@
 ---
 title: 'Docpad Internationalizé ?'
 date: 2014-04-07 17:00
+thumb: '/img/blog/sustainable-city-drawing.jpg'
+tags:
+  - geek
+  - tutoriels
 ---
 
 Je viens d'écrire un très long article en anglais sur comment j'ai traduit le site web que vous êtes en train de consulter, qui est basé sur [Docpad](http://docpad.org/)...

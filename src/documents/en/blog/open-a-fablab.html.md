@@ -2,6 +2,11 @@
 title: "Open a FabLab !"
 date: 2015-04-23 15:00
 thumb: '/img/blog/ouvrons-le-fabalpes.png'
+tags:
+  - announcements
+  - geek
+  - misc
+  - freelance
 ---
 
 I take part of a project to open a FabLab in my nearest town, Gap, in southern Alps ...

@@ -1,6 +1,6 @@
 ---
-tag: 'maps'
+tag: 'ecology'
 tagcat: 'theme'
-title: 'Maps'
+title: 'Ecology'
 layout: 'tag-layout'
 ---

@@ -2,6 +2,11 @@
 title: "Ouvrons le Fab'Alpes !"
 date: 2015-04-23 15:00
 thumb: '/img/blog/ouvrons-le-fabalpes.png'
+tags:
+  - annonces
+  - geek
+  - divers
+  - freelance
 ---
 
 **Ouvrir un FabLab sur Gap ?** C’est possible ? [Avec votre soutien](http://fr.ulule.com/ouvrons-le-fabalpes/), c’est bien parti pour !

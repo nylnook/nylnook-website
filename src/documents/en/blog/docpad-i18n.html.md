@@ -1,6 +1,10 @@
 ---
 title: 'Docpad Internationalized ?'
 date: 2014-04-07 17:00
+thumb: '/img/blog/sustainable-city-drawing.jpg'
+tags:
+  - geek
+  - tutorials
 ---
 
 **EDIT : This method for translating DocPad [is currently developped as a plugin](https://bitbucket.org/bgschaid/docpad-plugin-multilanguage) by Bernhard F.W. Gschaider ! Many thanks to him !**

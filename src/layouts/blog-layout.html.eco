@@ -60,6 +60,15 @@
 		<% end %>
 	</nav>
 	<% end %>
+
+<div class="page-bottom">
+	<section class="light-block">
+		<h2><%= @_ 'tags-blog' %></h2>
+		<% for tag in @getFiles($and: [{tagcat: $has: 'blog'}, {lang: $has: @document.lang}], [{tag:1}]).toJSON(): %>
+			<% tagurl = tag.tag.toLowerCase().replace(/é/g, 'e').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') %>
+			<a href="/<%- @document.lang %>/tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
+		<% end %>
+	</section>
 </div>
 
 <%- @partial('footer') %>

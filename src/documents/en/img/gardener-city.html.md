@@ -8,6 +8,7 @@ tags:
   - digital painting
   - landscape
   - political
+  - ecology
   - blue
   - green
 made:

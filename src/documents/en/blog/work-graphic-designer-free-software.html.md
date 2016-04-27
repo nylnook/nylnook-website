@@ -1,6 +1,11 @@
 ---
 title: 'Work as a graphic designer with free software'
 date: 2014-06-12 11:00
+thumb: '/img/blog/sustainable-city-drawing.jpg'
+tags:
+  - geek
+  - making of
+  - freelance
 ---
 
 [D-BookeR Editions](http://www.d-booker.fr/), more specifically Patricia Moncorgé, interviewed me on my work !

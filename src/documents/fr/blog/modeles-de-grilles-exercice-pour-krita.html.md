@@ -2,6 +2,10 @@
 title: "Modèle de grilles d'exercice pour Krita"
 date: 2015-02-05 12:00
 thumb: '/img/blog/poses-exercise.jpg'
+tags:
+  - téléchargement
+  - tutoriels
+  - croquis
 ---
 
 Depuis des années, je n'avais pas de bon moyen de m'entraîner au dessin quotidiennement, car je n'avais pas trouvé un exercice qui correspondait à mes besoins...

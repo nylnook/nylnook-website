@@ -2,9 +2,14 @@
 title: "Faites-le, petitement"
 date: 2015-10-09 19:00
 thumb: '/img/blog/teaser-grenouilles-2.jpg'
+tags:
+  - tutoriels
+  - making of
+  - expériences
+  - bande dessinée
 ---
 
-Comme beaucoup d'artistes et de créateurs en tout genre, je ne suis pas très fort pour « vendre » mon travail, pour le mettre en valeur de manière général, et ce n'est pas avec ça que je paye mes factures...
+Comme beaucoup d'artistes et de créateurs en tout genre, je ne suis pas très fort pour «&nbsp;vendre&nbsp;» mon travail, pour le mettre en valeur de manière général, et ce n'est pas avec ça que je paye mes factures...
 Comme beaucoup d'autres, j'ai des tas de projets qui n'ont pas vu le jour dans mes cartons, même [si il y a un auquel je travaille depuis quelques mois et que je compte bien m'accrocher pour finir](../blog/projet-bd)...
 Comme beaucoup d'autres, je suis complètement inconnu...
 

@@ -7,6 +7,7 @@ tags:
   - peinture numérique
   - caricature
   - politique
+  - écologie
   - noir
   - blanc
   - vert

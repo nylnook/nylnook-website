@@ -1,6 +1,11 @@
 ---
 title: 'Exercer le métier de graphiste avec des logiciels libres'
 date: 2014-06-12 11:00
+thumb: '/img/blog/sustainable-city-drawing.jpg'
+tags:
+  - geek
+  - making of
+  - freelance
 ---
 
 Les [Éditions D-BookeR](http://www.d-booker.fr/), en la personne de Patricia Moncorgé, m'ont interviewé sur mon travail !

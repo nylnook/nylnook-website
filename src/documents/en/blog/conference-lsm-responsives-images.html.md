@@ -1,6 +1,11 @@
 ---
 title: 'How to create responsive pictures for every screen ? Meet me at LSM !'
 date: 2014-06-11 13:00
+thumb: '/img/blog/icon-presentation.png'
+tags:
+  - geek
+  - tutorials
+  - teaching
 ---
 
 I'm giving a conference, which will tell you more on how I'm creating this website on the picture side, at Libre Software Meeting in Montpellier, the 9th of July at 4.30pm, in the building n°6 of the second Montpellier's University.
@@ -29,4 +34,3 @@ But :
 - Not so usual, need some initial learning
 
 To explain the mechanics, I will use my concrete case : a responsive website with illustrations and wallpapers (nylnook.com)
-

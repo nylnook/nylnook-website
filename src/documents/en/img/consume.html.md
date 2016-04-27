@@ -7,6 +7,7 @@ tags:
   - digital painting
   - cartoon
   - political
+  - ecology
   - black
   - white
   - green

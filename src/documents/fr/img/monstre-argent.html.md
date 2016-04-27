@@ -9,6 +9,7 @@ tags:
   - personnages
   - caricature
   - politique
+  - écologie
   - sexy
   - noir
   - vert
@@ -16,4 +17,4 @@ made:
   - Krita
 ---
 
-Une étude pour deux personnages de ma future BD... 
+Une étude pour deux personnages de ma future BD...

@@ -8,6 +8,8 @@
 			<%- @_ 'pictures-under-license' %>
 		<% else if @document.tagcat is 'software': %>
 			<%- @_ 'pictures-made-with' %>
+		<% else if @document.tagcat is 'blog': %>
+			<%- @_ 'posts-with-tag' %>
 		<% end %>
 		<%= @document.title %>
 		</h1>
@@ -65,55 +67,75 @@
 		    	</div>
 		</div>
 		<% end %>
+	<% else if @document.tagcat is 'blog': %>
+		<% for post in @getFiles($and: [{tags: $has: @document.tag}, {lang: $has: @document.lang}], [{date:-1}]).toJSON(): %>
+			<article class="post small-blocks" style="background:url(<%- post.thumb %>) repeat scroll center center, url(../website-img/paper-tilt-rotate.png) repeat, white repeat">
+				<div class="meta-blog">
+					<h2><a href="<%= post.url %>"><%- post.title %></a></h2>
+				 <time pubdate="<%- @computerDate(post.date) %>"><%- @date(post.date, post.lang) %></time>
+			 </div>
+			</article>
+		<% end %>
 	<% end %>
-	
+
 	</section>
 
 <div class="page-bottom">
-	<section class="light-block">
-		<h2><%= @_ 'tags-technique' %></h2>
+	<% if @document.tagcat in ['theme','color','technique','license','software']: %>
+		<section class="light-block">
+			<h2><%= @_ 'tags-technique' %></h2>
 
-		<% for tag in @getFiles($and: [{tagcat: $has: 'technique'}, {lang: $has: @document.lang}], [{tag:1}]).toJSON(): %>
-			<% tagurl = tag.tag.toLowerCase().replace(/é/g, 'e').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') %>
-			<a href="/<%- @document.lang %>/tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
-		<% end %>
-	</section>
+			<% for tag in @getFiles($and: [{tagcat: $has: 'technique'}, {lang: $has: @document.lang}], [{tag:1}]).toJSON(): %>
+				<% tagurl = tag.tag.toLowerCase().replace(/é/g, 'e').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') %>
+				<a href="/<%- @document.lang %>/tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
+			<% end %>
+		</section>
 
-	<section class="light-block">
-		<h2><%= @_ 'tags-theme' %></h2>
+		<section class="light-block">
+			<h2><%= @_ 'tags-theme' %></h2>
 
-		<% for tag in @getFiles($and: [{tagcat: $has: 'theme'}, {lang: $has: @document.lang}], [{tag:1}]).toJSON(): %>
-			<% tagurl = tag.tag.toLowerCase().replace(/é/g, 'e').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') %>
-			<a href="/<%- @document.lang %>/tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
-		<% end %>
-	</section>
+			<% for tag in @getFiles($and: [{tagcat: $has: 'theme'}, {lang: $has: @document.lang}], [{tag:1}]).toJSON(): %>
+				<% tagurl = tag.tag.toLowerCase().replace(/é/g, 'e').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') %>
+				<a href="/<%- @document.lang %>/tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
+			<% end %>
+		</section>
 
-	<section class="light-block">
-		<h2><%= @_ 'tags-color' %></h2>
+		<section class="light-block">
+			<h2><%= @_ 'tags-color' %></h2>
 
-		<% for tag in @getFiles($and: [{tagcat: $has: 'color'}, {lang: $has: @document.lang}], [{tag:1}]).toJSON(): %>
-			<% tagurl = tag.tag.toLowerCase().replace(/é/g, 'e').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') %>
-			<a href="/<%- @document.lang %>/tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
-		<% end %>
-	</section>
+			<% for tag in @getFiles($and: [{tagcat: $has: 'color'}, {lang: $has: @document.lang}], [{tag:1}]).toJSON(): %>
+				<% tagurl = tag.tag.toLowerCase().replace(/é/g, 'e').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') %>
+				<a href="/<%- @document.lang %>/tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
+			<% end %>
+		</section>
 
-	<section class="light-block">
-		<h2><%= @_ 'tags-license' %></h2>
+		<section class="light-block">
+			<h2><%= @_ 'tags-license' %></h2>
 
-		<% for tag in @getFiles($and: [{tagcat: $has: 'license'}, {lang: $has: @document.lang}], [{tagorder:1}]).toJSON(): %>
-			<% tagurl = tag.tag.toLowerCase().replace(/é/g, 'e').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') %>
-			<a href="/<%- @document.lang %>/tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
-		<% end %>
-	</section>
+			<% for tag in @getFiles($and: [{tagcat: $has: 'license'}, {lang: $has: @document.lang}], [{tagorder:1}]).toJSON(): %>
+				<% tagurl = tag.tag.toLowerCase().replace(/é/g, 'e').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') %>
+				<a href="/<%- @document.lang %>/tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
+			<% end %>
+		</section>
 
-	<section class="light-block">
-		<h2><%= @_ 'tags-software' %></h2>
+		<section class="light-block">
+			<h2><%= @_ 'tags-software' %></h2>
 
-		<% for tag in @getFiles($and: [{tagcat: $has: 'software'}, {lang: $has: @document.lang}], [{tag:1}]).toJSON(): %>
-			<% tagurl = tag.tag.toLowerCase().replace(/é/g, 'e').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') %>
-			<a href="/<%- @document.lang %>/tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
-		<% end %>
-	</section>
+			<% for tag in @getFiles($and: [{tagcat: $has: 'software'}, {lang: $has: @document.lang}], [{tag:1}]).toJSON(): %>
+				<% tagurl = tag.tag.toLowerCase().replace(/é/g, 'e').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') %>
+				<a href="/<%- @document.lang %>/tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
+			<% end %>
+		</section>
+	<% else if @document.tagcat is 'blog': %>
+		<section class="light-block">
+			<h2><%= @_ 'tags-blog' %></h2>
+
+			<% for tag in @getFiles($and: [{tagcat: $has: 'blog'}, {lang: $has: @document.lang}], [{tag:1}]).toJSON(): %>
+				<% tagurl = tag.tag.toLowerCase().replace(/é/g, 'e').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') %>
+				<a href="/<%- @document.lang %>/tag/<%- tagurl %>" class="tag" ><%- tag.tag %></a>
+			<% end %>
+		</section>
+	<% end %>
 </div>
-	
+
 <%- @partial('footer') %>

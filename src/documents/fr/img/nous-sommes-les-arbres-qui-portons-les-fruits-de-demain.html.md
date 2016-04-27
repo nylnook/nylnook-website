@@ -7,6 +7,7 @@ tags:
   - peinture numérique
   - typographie
   - politique
+  - écologie
   - hommage
   - noir
   - blanc

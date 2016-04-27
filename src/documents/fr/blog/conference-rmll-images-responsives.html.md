@@ -1,6 +1,11 @@
 ---
 title: 'Comment créer des images adaptables à tous les écrans ? Retrouvez-moi aux RMLL !'
 date: 2014-06-11 13:00
+thumb: '/img/blog/icon-presentation.png'
+tags:
+  - geek
+  - tutoriels
+  - formation
 ---
 Je donne une conférence, qui vous en dira un peu plus sur comment j'ai créé ce site web, en particulier du côté des images, aux Rencontres Mondiales du Logiciel Libre à Montpellier le 9 juillet, à 16h30, dans le Bâtiment 6 de l'Université Montpellier II...
 

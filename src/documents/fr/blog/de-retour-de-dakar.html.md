@@ -2,6 +2,9 @@
 title: 'De retour de Dakar'
 date: 2014-11-13 14:00
 thumb: '/img/blog/facade-ker-thiossane.jpg'
+tags:
+  - expériences
+  - formation
 ---
 
 Depuis une semaine, je suis rentré de Dakar où j'ai été invité par l'Organisation Internationale de [la Francophonie](http://www.francophonie.org/) (OIF) à animer une formation sur **Blender et la post-production vidéo** sur 5 jours (du 27 au 31 octobre), à destination de 10 formateurs sénégalais en audiovisuels ([voir l'annonce officielle](http://www.francophonie.org/Senegal-et-Maroc-creation-d.html)).

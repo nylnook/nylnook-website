@@ -9,6 +9,7 @@ tags:
   - characters
   - cartoon
   - political
+  - ecology
   - sexy
   - black
   - green
@@ -16,4 +17,4 @@ made:
   - Krita
 ---
 
-A study for two characters of my future comic book... 
+A study for two characters of my future comic book...

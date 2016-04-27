@@ -6,7 +6,6 @@ license: 'by-nc-sa'
 tags:
   - peinture numérique
   - personnages
-  - immobile
   - hommage
   - brun
 made:

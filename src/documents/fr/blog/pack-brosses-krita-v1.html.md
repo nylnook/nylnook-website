@@ -2,6 +2,13 @@
 title: "Pack de brosses pour Krita v1"
 date: 2016-01-08 17:00
 thumb: '/img/blog/icon-nylnook-brush-pack.png'
+tags:
+  - téléchargement
+  - croquis
+  - bande dessinée
+  - making of
+  - tutoriels
+  - vidéo
 ---
 
 ![Krita icon](/website-img/icon-krita.svg)

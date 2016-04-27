@@ -1,6 +1,10 @@
 ---
 title: 'Stage de formation « Création graphique libre » à Gap du 8 au 12 décembre 2014'
 date: 2014-10-07 14:00
+thumb: '/img/blog/icon-presentation.png'
+tags:
+  - annonces
+  - formation
 ---
 
 ## Initiez-vous à :

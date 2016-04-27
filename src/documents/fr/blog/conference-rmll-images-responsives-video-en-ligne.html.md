@@ -1,6 +1,12 @@
 ---
 title: 'Comment créer des images adaptables à tous les écrans ? Vidéo en ligne'
 date: 2014-09-09 15:00
+thumb: '/img/blog/icon-presentation.png'
+tags:
+  - geek
+  - tutoriels
+  - formation
+  - vidéo
 ---
 
 [Comme je l'ai mentionné auparavant](../../fr/blog/conference-rmll-images-responsives), en juillet j'ai donné une conférence aux [Rencontres Mondiales du Logiciel Libre](https://2014.rmll.info/) à Montpellier.

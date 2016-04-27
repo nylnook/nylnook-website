@@ -9,6 +9,7 @@ tags:
   - paysage
   - personnages
   - politique
+  - écologie
   - surréaliste
   - bleu
   - vert

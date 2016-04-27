@@ -6,7 +6,6 @@ license: 'by-nc-sa'
 tags:
   - digital painting
   - characters
-  - still
   - tribute
   - brown
 made:

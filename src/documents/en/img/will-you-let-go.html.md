@@ -8,6 +8,7 @@ tags:
   - cartoon
   - characters
   - political
+  - ecology
   - brown
 made:
   - Krita

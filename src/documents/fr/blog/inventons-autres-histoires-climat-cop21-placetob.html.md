@@ -3,6 +3,13 @@ title: "Inventons d'autres histoires sur le climat !"
 subtitle: "Mon expérience de la COP21 et de PlaceToB, racontée un mois après"
 date: 2016-02-03 19:00
 thumb: '/img/blog/human-chain-paris-cop21-web.jpg'
+tags:
+  - expériences
+  - croquis
+  - autres illustrations
+  - bande dessinée
+  - making of
+  - vidéo
 ---
 
 ![Strip grenouilles Accord de Paris COP21](/img/blog/strip-accord-cop21-paris-web.jpg)

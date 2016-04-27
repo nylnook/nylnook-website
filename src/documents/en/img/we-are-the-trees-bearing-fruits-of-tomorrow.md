@@ -7,6 +7,7 @@ tags:
   - digital painting
   - typography
   - political
+  - ecology
   - tribute
   - black
   - white

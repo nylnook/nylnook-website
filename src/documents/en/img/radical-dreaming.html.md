@@ -9,6 +9,7 @@ tags:
   - landscape
   - characters
   - political
+  - ecology
   - surreal
   - blue
   - green

@@ -2,6 +2,9 @@
 title: "Des grenouilles sur papier"
 date: 2015-11-13 12:00
 thumb: '/img/blog/pub-grenouilles-print-700.jpg'
+tags:
+  - annonces
+  - bande dessinée
 ---
 
 ![Le changement climatique expliqué aux grenouilles imprimé](/img/blog/pub-grenouilles-print-700.jpg)
