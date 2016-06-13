@@ -20,5 +20,5 @@ D'après une photocopie d'un autre dessin, un excercice proposé par Lionel Sall
 
 [![Petite contribution au Dictionnaire Amoureux des Mots Passants](/img/blog/mots-passants-helene-12mai2016-thumb.jpg)](/img/blog/mots-passants-helene-12mai2016.jpg)
 
-La Librairie Au coin des Mots passants à Gap veut réalisé un Dictionaire Amoureux de sa libraire pour fêter ses 5 ans…
+La Librairie Au coin des Mots passants à Gap veut réalisé un Dictionnaire Amoureux de sa libraire pour fêter ses 5 ans…
 Croquis au crayon et posca sur place, puis scan, assemblage et encrage numérique avec Krita

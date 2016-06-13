@@ -20,5 +20,5 @@ From a copy of another drawing, an exercise proposed by Lionel Salliou ... Made 
 
 [![Small contribution to the "Mots Passants Loving Dictionary"](/img/blog/mots-passants-helene-12mai2016-thumb.jpg)](/img/blog/mots-passants-helene-12mai2016.jpg)
 
-The book store "Au coin des Mots passants" in Gap wants to make a "loving dictionary" of his bookshop to celebrate its 5 years…
+The book store "Au coin des Mots passants" in Gap wants to make a "loving dictionary" of its bookshop to celebrate its 5 years…
 Pencil sketches and posca on site, then scan, digital compositing and inking with Krita.
