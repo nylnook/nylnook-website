@@ -1,6 +1,6 @@
 ---
 file: 'earth-womb'
-title: "Uterus terrestre"
+title: "Utérus terrestre"
 date: 2016-07-04
 license: 'by-sa'
 tags:
