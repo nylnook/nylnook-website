@@ -22,7 +22,7 @@ La dernière fois qu'il y a eu autant de dioxyde de carbone (CO2) dans l'atmosph
 
 *Source : Gilles Ramstein, [Voyage à travers les climats de la terre](http://www.odilejacob.fr/catalogue/sciences/sciences-de-la-terre/voyage-a-travers-les-climats-de-la-terre_9782738128539.php), p.282.*
 
-C'est l'illustration d'ouverture pour [mon prochain project de BD "Mokatori"](../bd/) !
+C'est l'illustration d'ouverture pour [mon prochain projet de BD "Mokatori"](../bd/) !
 Je vous en dirais plus bientôt !
 
 Crédits pour les photos:
