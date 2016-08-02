@@ -20,7 +20,7 @@ made:
 
 The last time there was as much carbon dioxide (CO2) in the atmosphere ... it was 3 million years ago. Dinosaurs had not been born yet.
 
-*Source : Gilles Ramstein, [Voyage à travers les climats de la terre](http://www.odilejacob.fr/catalogue/sciences/sciences-de-la-terre/voyage-a-travers-les-climats-de-la-terre_9782738128539.php) (Litterally "Travel through the climates of the earth"), p.282.*
+*Source : Gilles Ramstein, [Voyage à travers les climats de la terre](http://www.odilejacob.fr/catalogue/sciences/sciences-de-la-terre/voyage-a-travers-les-climats-de-la-terre_9782738128539.php) (Literally "Travel through the climates of the earth"), p.282.*
 
 This is the opening illustration for [my next graphic novel project "Mokatori"](../comics/) !
 More to come !
