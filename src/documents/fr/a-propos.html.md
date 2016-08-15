@@ -13,7 +13,7 @@ title: 'À propos'
 
 <a name="nylnook"></a>
 ## Un nylnook, qu'est ce que c'est ?
-<img style="float:left; max-width:50%" src="/website-img/nylnook-mood-2.png" alt="Encourager nylnook">
+<img style="float:left; max-width:50%; margin-right:1rem;" src="/website-img/support/nylnook-bd-thumb.jpg" alt="Encourager nylnook">
 Le Nylnook est un **lutin du pôle nord**, qui vis principalement dans le territoire Nuna, des inuits. Il protège les expéditions scientifiques humaines en vivant caché dans les igloos ou les moyens de transports, et en provoquant de petits incidents souvent drôles qui montre aux humains comment échapper aux dangers de l'Arctique.  
 Quand une expédition est terminée, il voyage longtemps à travers son pôle à pied et à dos d'animaux pour trouver de nouveaux humains à aider. Il arrive qu'il sabote des expéditions humaines si il découvre que ceux ci on pour but de détruire son territoire, comme les expéditions d'exploration pétrolières.  
 Vous découvrirez des aperçus de ses aventures dans [les images de ce site web](/fr/tag/nylnook/) !  

@@ -13,7 +13,7 @@ title: 'About'
 
 <a name="nylnook"></a>
 ## What is a nylnook ?
-<img style="float:left; max-width:50%" src="/website-img/nylnook-mood-2.png" alt="Encouraging nylnook" />
+<img style="float:left; max-width:50%; margin-right:1rem;" src="/website-img/support/nylnook-bd-thumb.jpg" alt="Encouraging nylnook" />
 A nylnook is a **gnome coming from the north pole**. He lives in the Inuits's Nuna territory. He protects scientific expeditions living hidden in igloos or transports. He regularly provokes small funny incidents to show humans how to avoid Arctic's dangers.  
 When an expedition end, he travels for a long time trough the pole, by foots and on animals backs, to find new humans to help.  
 Times to times, he sabotage some human expedition if he discover they want to destroy his territory, for example petroleum exploration expeditions.  

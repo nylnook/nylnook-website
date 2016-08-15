@@ -40,6 +40,12 @@
 </div>
 </section>
 
+<section id="become-a-patron" class="small-blocks">
+<div class="inside">
+  <a href="https://www.tipeee.com/nylnook"><img src="/website-img/support/<%= @_ 'become-a-patron-img' %>.jpg" alt="<%= @_ 'become-a-patron' %>"/></a>
+</div>
+</section>
+
 <section id="actions" class="small-blocks">
 <div class="inside">
   <% if comic.bookelislink? : %>
