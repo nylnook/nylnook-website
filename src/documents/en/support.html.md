@@ -163,6 +163,6 @@ I'll post the same things in the newsletters and in the Tipeee news open to all,
 
 - **I prefer to support you with US dollars, is it possible ?**
 
-Yes, I've created a Patreon page if you prefer, even if the main one will be the [Tipeee](https://www.tipeee.com/nylnook/) one.
+Yes, I've created [a Patreon page](https://www.patreon.com/nylnook) if you prefer, even if the main one will be the [Tipeee](https://www.tipeee.com/nylnook/) one.
 
 ![Thank you and goobye](/website-img/support/thanks-thumb.jpg)

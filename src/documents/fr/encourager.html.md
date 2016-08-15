@@ -161,4 +161,8 @@ les épisodes ont des longueurs inégales, si je demandais des contreparties par
 
 Je posterai les mêmes choses sur la newsletters et les news ouvertes à tous de Tipeee, mais les croquis, scénario et choses inaboutis et que l'on peut encore modifier ne seront publiées que dans les news réservées au tipeurs.
 
+- **Je préfère t'encourager en dollars US, est-ce que c'est possible ?**
+
+Oui, j'ai créé [une page Patreon](https://www.patreon.com/nylnook) si tu préfères, même si la principale restera celle de [Tipeee](https://www.tipeee.com/nylnook/).
+
 ![Merci et salut](/website-img/support/merci-thumb.jpg)
