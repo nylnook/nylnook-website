@@ -39,7 +39,7 @@ Ep. 5 - "Living" - Kunduz, کندز, Afghanistan, April 3, 2072*
 
 In addition to the satisfaction of achieving my first comic book, and the assumed activist side, I hope this will allow me to give body and emotions to abstract scientific concepts that become too progressively our reality, and that we have difficulty to picture in tables of numbers, or in IPCC's scientific texts and graphics. It's not numbers which make us change, it's our feelings and emotions!
 
-The idea took shape late 2014, I started writing and storyboarding in 2015 and published [a small comic "aside" on the same topic](/en/comics/climate-frogs) in October 2015 before COP21, which allowed me to test the process of creation and publication of a comic from start to finish. Following my participation at the COP21 in Paris (at [Place To B](http://www.placetob.org) !), I completed the script in 2016, to publish this episode 0 digitally in September 2016. I'm drawing episode 1 and the others will follow in the coming months depending on my availability, also published on the web and as ebooks.
+The idea took shape late 2014, I started writing and story-boarding in 2015 and published [a small comic "aside" on the same topic](/en/comics/climate-frogs) in October 2015 before COP21, which allowed me to test the process of creation and publication of a comic from start to finish. Following my participation at the COP21 in Paris (at [Place To B](http://www.placetob.org) !), I completed the script in 2016, to publish this episode 0 digitally in September 2016. I'm drawing episode 1 and the others will follow in the coming months depending on my availability, also published on the web and as ebooks.
 I aim at the publication of all episodes for the end of 2017, and I hope to print the comic with all the episodes at that time.
 
 [![Want to read more of Mokatori ? Become a patron of Nylnook on Tipeee](/website-img/support/become-a-patron-of-nylnook-on-tipeee.jpg)](https://www.tipeee.com/nylnook)
@@ -70,7 +70,7 @@ Well, fan based patronage, it's almost the same, but it's not punctual, it's "su
 
 You, dear reader, you become a co-producer of Mokatori by becoming my patron on [Tipeee](https://www.tipeee.com/nylnook/). Each month, a small amount of your choice will help me to drive away the everyday worries to focus on the creation of this project. From small beginnings come great things, and €1 per month, that's already a lot!
 
-Gradually, Inshallah, I can dedicate more time to this project, and the following episodes will come out faster. You start when you want, you stop when you want. And you participate in the creation as co-producer: I will publish the state of my work behind the scenes (into Tipeee News), and you will be able to give me your opinion, or even modify or add sentences, panels, and even characters. Because I am convinced that you can enrich my work, and Mokatori wil become gradually a collective work!
+Gradually, Inshallah, I can dedicate more time to this project, and the following episodes will come out faster. You start when you want, you stop when you want. And you participate in the creation as co-producer: I will publish the state of my work behind the scenes (into Tipeee News), and you will be able to give me your opinion, or even modify or add sentences, panels, and even characters. Because I am convinced that you can enrich my work, and Mokatori will become gradually a collective work!
 
 ![Co-producer](/website-img/support/co-producer-thumb.jpg)
 
@@ -136,14 +136,14 @@ To be honest with you, there are many other reasons why I choose self-publishing
 
 <a name="funding"></a>
 # How Will the Funding Be Used?
-Your tips are primarily intended to give me time to write and draw. Today I make a living from my freelance contracts, and each tip move away from the obligation to seek and carry out contracts to give me more time on the comic. Additionaly it also allow me to make bonus illustrations, and share with you tools (brushes, textures, typeface, page templates…) and the "making ofs" that I hardly have time to realize otherwise.
+Your tips are primarily intended to give me time to write and draw. Today I make a living from my freelance contracts, and each tip move away from the obligation to seek and carry out contracts to give me more time on the comic. Additionally it also allow me to make bonus illustrations, and share with you tools (brushes, textures, typeface, page templates…) and the "making ofs" that I hardly have time to realize otherwise.
 A small part of the funding will also come from the sale of ebooks on large online bookstores (Amazon…) and another from the sale of printed comics.
 ![Mokatori Funding](/website-img/support/funding-graph-thumb.jpg)
 *Note: 8% of the amount of tips goes to Tipeee because they also need to eat ;)*
 
 <a name="about"></a>
 # About Me
-My name is Nylnook (aka Camille Bissuel), I'm an illustrator, grew up and live in the French Alps and I'm interested in the issue of climate change since I understood this incredible challenge by watching the snow melt, by self-constructing my bioclimatic house, and having two little boys. Since then, ecology has become a recurring theme in my drawings and my artistic projects.
+My name is Nylnook (aka Camille Bissuel), I'm an illustrator, grew up and live in the French Alps and I'm interested in the issue of climate change since I understood this incredible challenge by watching the snow melt, by self-constructing my bio-climatic house, and having two little boys. Since then, ecology has become a recurring theme in my drawings and my artistic projects.
 
 In 2008, after studying philosophy and graphics, I settle as a freelance graphic designer and select digital drawing and free software as tools. I work from my home, in team as soon as I get the chance, and specializes in illustration in 2013 under the name Nylnook, the name of a fictional character, a gnome from the North Pole, also touched by climate change.
 
@@ -155,7 +155,7 @@ I have already published [a small comic](/en/comics/climate-frogs) and [many fre
 # F.A.Q.
 - **Why per month, not per episode?**   
 
-the episodes are of unequal length, if I ask counterparties by episodes, it would force me to rush through the longest episodes, which I don't want to do.
+the episodes are of unequal length, if I ask for pledges by episodes, it would force me to rush through the longest episodes, which I don't want to do.
 
 - **What is the difference between signing up to the Newsletter and behind the scenes posts in the Tipeee News ?**   
 
