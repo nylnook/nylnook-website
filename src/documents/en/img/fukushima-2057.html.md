@@ -24,5 +24,5 @@ made:
 Fukushima, March 11, 2057
 Ceremony to celebrate the end of the nuclear power plant dismantling
 
-This is the opening illustration for [my next graphic novel project "Mokatori"](../comics/) !
+This is an interlude illustration for [my next graphic novel project "Mokatori"](../comics/) !
 Publication of episode 0, "The End", on September the 7th!
