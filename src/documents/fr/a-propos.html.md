@@ -21,7 +21,7 @@ Vous découvrirez des aperçus de ses aventures dans [les images de ce site web]
 <a name="auteur"></a>
 ## L'auteur
 
-<img style="float:right; max-width:50%" src="/website-img/camille-bissuel.jpg" alt="Camille Bissuel">
+<img style="float:right; max-width:70%; margin-left:1rem;" src="/website-img/camille-bissuel-thumb.jpg" alt="Camille Bissuel">
 Je suis <a href="https://plus.google.com/+CamilleBissuel/about" rel="author">Camille Bissuel</a>, un **illustrateur** français. Après une expérience de graphiste de quelques années, je me spécialise dans l’illustration **numérique**, pour plus de créativité visuelle !  
 Je réponds à vos besoins d’images pour présenter votre identité, vos projets, ou les événements qui vous tiennent à cœur sur les supports que vous souhaitez.  
 Les techniques et les styles que j’emploie sont variés : techniques traditionnelles, [peinture numérique sur tablette graphique](/fr/tag/peinture-numerique), [illustration vectorielle](/fr/tag/dessin-vectoriel), rendus photo-réalistes ou fantaisistes en [3D](/fr/tag/3d), et je n’utilise que des logiciels libres pour cela ([Krita](https://krita.org/), [Blender](http://www.blender.org/), [Inkscape](http://www.inkscape.org/), [Gimp](http://www.gimp.org/), [Scribus](http://www.scribus.net)...). depuis des années. Je travaille depuis chez moi, avec un ordinateur sous Linux et une tablette graphique Wacom.  

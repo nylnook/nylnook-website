@@ -21,7 +21,7 @@ You will discover sneak peeks of his adventures in [the pictures of this website
 
 <a name="author"></a>
 ## The author
-<img style="float:right; max-width:50%" src="/website-img/camille-bissuel.jpg" alt="Camille Bissuel">
+<img style="float:right; max-width:70%; margin-left:1rem;" src="/website-img/camille-bissuel-thumb.jpg" alt="Camille Bissuel">
 I'm <a href="https://plus.google.com/+CamilleBissuel/about" rel="author">Camille Bissuel</a>, a French **illustrator**. After some years as a computer graphics generalist, I specialize in **digital** illustration, for additional visual creativity!  
 I answer your picture needs, to present your identity, your projects, or events that are important to you heart on the media you want.  
 Techniques and styles I use are varied: traditional, [digital painting](/en/tag/digital-painting), [vector drawing](/en/tag/vector), photo realistic or fancy [3D renderings](/en/tag/3d). And I'm working only with free and open source software ([Krita](https://krita.org/), [Blender](http://www.blender.org/), [Inkscape](http://www.inkscape.org/), [Gimp](http://www.gimp.org/), [Scribus](http://www.scribus.net)...) since years.  
