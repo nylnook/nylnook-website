@@ -27,6 +27,8 @@ Je réponds à vos besoins d’images pour présenter votre identité, vos proje
 Les techniques et les styles que j’emploie sont variés : techniques traditionnelles, [peinture numérique sur tablette graphique](/fr/tag/peinture-numerique), [illustration vectorielle](/fr/tag/dessin-vectoriel), rendus photo-réalistes ou fantaisistes en [3D](/fr/tag/3d), et je n’utilise que des logiciels libres pour cela ([Krita](https://krita.org/), [Blender](http://www.blender.org/), [Inkscape](http://www.inkscape.org/), [Gimp](http://www.gimp.org/), [Scribus](http://www.scribus.net)...). depuis des années. Je travaille depuis chez moi, avec un ordinateur sous Linux et une tablette graphique Wacom.  
 Côté statut, je suis « **entrepreneur-salarié** » : je fait partie de [Coodyssée](http://www.coodyssee.fr/), coopérative d'activités et d'emploi (CAE) basée dans les Hautes-Alpes. Une coopérative d'activités propose à des créateurs et des créatrices d'accompagner le développement de leur entrepreunariat dans un cadre juridique sécurisant. Chacun et chacune développe son propre métier en toute indépendance mais tous participent au développement de la structure globale et partagent la même entreprise, sous statut de SCOP.
 
+*Photo par [Elisa de Castro Guerra](http://www.yemanjalisa.net/)*
+
 <a name="logiciels-libres"></a>
 ## Pourquoi des logiciels libres ?
 Un **logiciel libre**, c'est un logiciel que l'on peut :

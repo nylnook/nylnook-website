@@ -27,6 +27,8 @@ I answer your picture needs, to present your identity, your projects, or events 
 Techniques and styles I use are varied: traditional, [digital painting](/en/tag/digital-painting), [vector drawing](/en/tag/vector), photo realistic or fancy [3D renderings](/en/tag/3d). And I'm working only with free and open source software ([Krita](https://krita.org/), [Blender](http://www.blender.org/), [Inkscape](http://www.inkscape.org/), [Gimp](http://www.gimp.org/), [Scribus](http://www.scribus.net)...) since years.  
 I work as a freelance from home, hosted administratively by my [cooperative](http://www.coodyssee.fr/), with a computer running with Linux, and a Wacom tablet.
 
+*Photo by [Elisa de Castro Guerra](http://www.yemanjalisa.net/)*
+
 <a name="free-software"></a>
 ## Why free (as in freedom) software ?
 
