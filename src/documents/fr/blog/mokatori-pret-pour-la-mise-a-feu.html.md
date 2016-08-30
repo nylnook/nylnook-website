@@ -33,6 +33,6 @@ D'ici là la route est longue, et c'est pourquoi c'est aussi le jour d'un autre 
 
 Mais rassurez-vous, si vous souhaitez ne rien rater et être tenu au courant sans pour autant devenir coproducteur, [vous pouvez vous abonner à ma newsletter](https://gumroad.com/nylnook/follow).
 
-Et puis trois semaines, c'est encore long, alors pour vous faire patienter, voici en avant-première une autre illustration qui est un des intermèdes de la BD : [Fukushima 2057](../img/fukushima-2057).
+Et puis trois semaines, c'est encore long, alors pour vous faire patienter, voici en avant-première une autre illustration qui est un des intermèdes de la BD : [Fukushima 2057](../../img/fukushima-2057).
 
 N'hésitez pas à laisser vos commentaires, ça m'intéresse !

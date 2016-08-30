@@ -33,6 +33,6 @@ Until then is a long way, that's why it's also the day of another big launch, [m
 
 But don't worry, if you would not miss anything and want to be informed without becoming a co-producer, [you can subscribe to my newsletter](https://gumroad.com/nylnook/follow).
 
-And three weeks, it's still a long way! To make you wait, here is in preview another illustration which is one of interludes of the comic: [Fukushima 2057](../img/fukushima-2057).
+And three weeks, it's still a long way! To make you wait, here is in preview another illustration which is one of interludes of the comic: [Fukushima 2057](../../img/fukushima-2057).
 
 Feel free to leave your comments, I'm interested!
