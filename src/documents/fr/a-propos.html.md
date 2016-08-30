@@ -44,7 +44,7 @@ Pour en savoir plus, je vous invite à lire [mon interview par les éditions D-B
 
 <a name="formation"></a>
 ## Des formations sur les logiciels libres d'infographie
-En parallèle des aspects créatifs, je peux donc vous proposer des **formations sur mes outils quotidiens ou mes techniques**, sur demande. Je suis également co-auteurs de deux manuels sur le sujet avec l'association [Floss manuals francophone](http://fr.flossmanuals.net/) ([Scribus](http://fr.flossmanuals.net/scribus/) et [Blender pour le jeu vidéo](http://fr.flossmanuals.net/blender-pour-le-jeu-video/)).
+En parallèle des aspects créatifs, je peux donc vous proposer des **formations sur mes outils quotidiens ou mes techniques**, sur demande. Je suis également co-auteurs de trois manuels sur le sujet avec l'association [Floss manuals francophone](http://fr.flossmanuals.net/) ([Scribus](http://fr.flossmanuals.net/scribus/), [Blender pour le jeu vidéo](http://fr.flossmanuals.net/blender-pour-le-jeu-video/)), [Creating Point and Click Games with Escoria](https://fr.flossmanuals.net/creating-point-and-click-games-with-escoria/).
 
 Le contenu des formations est réfléchi avec les stagiaires au préalable. Les formations concilient théorie et pratique, en commençant par un peu de théorie et en donnant une vue d’ensemble avant d’attaquer en détail. La pratique consiste à la fois à faire des exercices et à mettre en place des projets personnalisés, selon le temps dont nous disposons.
 

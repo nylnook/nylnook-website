@@ -44,7 +44,7 @@ In addition to the philosophical choice, there are three reasons behind my choic
 <a name="training"></a>
 ## Training on computer graphics with free software
 
-Alongside the creative aspects, I can offer **training on demand about my everyday tools or my techniques**. I am also co-author of two manuals on the subject with the [french Floss Manuals association](http://fr.flossmanuals.net/) ([Scribus](http://fr.flossmanuals.net/scribus/) which as been [translated in English](http://www.flossmanuals.net/scribus-2/) and [Blender pour le jeu vidéo](http://fr.flossmanuals.net/blender-pour-le-jeu-video/) on the Blender Game Engine).
+Alongside the creative aspects, I can offer **training on demand about my everyday tools or my techniques**. I am also co-author of three manuals on the subject with the [french Floss Manuals association](http://fr.flossmanuals.net/) ([Scribus](http://fr.flossmanuals.net/scribus/) which as been [translated in English](http://www.flossmanuals.net/scribus-2/),[Blender pour le jeu vidéo](http://fr.flossmanuals.net/blender-pour-le-jeu-video/) on the Blender Game Engine) and [Creating Point and Click Games with Escoria](https://fr.flossmanuals.net/creating-point-and-click-games-with-escoria/).
 
 Training content is examined with students beforehand. Courses combine theory and practice, starting with some theory and giving an overview before details. The practice is both exercise and develop custom projects, depending on the time we have.
 
