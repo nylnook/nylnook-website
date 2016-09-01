@@ -3,7 +3,7 @@
   "pubDate": "8 Oct 2015",
   "imgFormat": "jpg",
   "whitelabel": {
-    "logo": "<a href='../../<%= @document.lang %>/<%= @_ "comics-filename" %>/<%= thiscomicdir %>' title='<%= @_ "pulp-back-to-website" %>' ><img src='../../website-img/logo-nylnook-comic.png' alt='nylnook logo'/></a>"
+    "logo": "<a href='/<%= @document.lang %>/<%= @_ "comics-filename" %>/<%= thiscomicdir %>' title='<%= @_ "pulp-back-to-website" %>' ><img src='/website-img/logo-nylnook-comic.png' alt='nylnook logo'/></a>"
   },
   "panelZoomMode": "desktop-hover",
   "desktopHoverZoomOptions": {
