@@ -30,6 +30,7 @@
   	<link rel="icon" type="image/png" href="/favicon-64.png" />
 
 		<!-- Open Graph Protocol -->
+		<!-- http://ogp.me/ -->
 		<meta property="og:type" content="article" />
 		<meta property="og:title" content="<%- @document.title %>" />
 		<meta property="og:description" content="<%= @document.contentRenderedWithoutLayouts %>" />
@@ -40,12 +41,29 @@
 		<% else if @document.layout is 'img-layout': %>
 			<meta property="og:image" content="<%- @site.url %>/img/<%=@document.file %>/thumb-nylnook-<%=@document.file %>-700x700.jpg" />
 		<% else if @document.layout is 'comic-layout': %>
-			<meta property="og:image" content="<%- @site.url %>/<%= @_ 'comics-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover-700.jpg" />
+			<meta property="og:image" content="<%- @site.url %>/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover-700.jpg" />
 		<% else: %>
 			<meta property="og:image" content="<%- @site.url %>/website-img/avatar-nylnook-550x550.jpg" />
 		<% end %>
 		<meta property="fb:admins" content="100009724127157" />
 		<meta property="fb:app_id" content="185400865127376" />
+
+		<!-- Twitter Tags -->
+    <!-- https://dev.twitter.com/cards/markup -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@nylnook">
+		<meta name="twitter:title" content="<%- @document.title %>">
+		<meta name="twitter:description" content="<%= @document.contentRenderedWithoutLayouts %>">
+		<meta name="twitter:creator" content="@nylnook">
+		<% if @document.layout is 'post-layout': %>
+			<meta name="twitter:image:src" content="<%= @document.thumb %>" />
+		<% else if @document.layout is 'img-layout': %>
+			<meta name="twitter:image:src" content="<%- @site.url %>/img/<%=@document.file %>/thumb-nylnook-<%=@document.file %>-700x700.jpg" />
+		<% else if @document.layout is 'comic-layout': %>
+			<meta name="twitter:image:src" content="<%- @site.url %>/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover-700.jpg" />
+		<% else: %>
+			<meta name="twitter:image:src" content="<%- @site.url %>/website-img/avatar-nylnook-550x550.jpg" /> <!-- at least 280px x 150px for Twitter (image must be < 1MB) -->
+		<% end %>
 
 		<!-- Social media checks -->
 		<a href="https://plus.google.com/+Nylnook-art" rel=”publisher” />

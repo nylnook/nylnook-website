@@ -9,10 +9,10 @@
     <% for comic in @getPageCollection('comics_'+ @document.lang).toJSON().slice(97,98): %>
      <div id="picture-zone">
     	 <picture>
-    		 <source srcset="/<%= @_ 'comics-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover.jpg" media="(min-width: 981px)"></source>
-    		 <source srcset="/<%= @_ 'comics-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover-700.jpg 1x, /<%= @_ 'comics-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover.jpg 2x" media="(min-width: 481px)"></source>
-    		 <source srcset="/<%= @_ 'comics-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover-550.jpg 1x, /<%= @_ 'comics-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover-700.jpg 2x"></source>
-    		 <img src="/<%= @_ 'comics-filename' %>/<%= comic.dir %>/<%= comic.dir %>-cover-700.jpg" alt="<%- comic.title %> <%- @_ 'thumbnail' %>">
+    		 <source srcset="<%= @_ 'comic-viewer-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover.jpg" media="(min-width: 981px)"></source>
+    		 <source srcset="<%= @_ 'comic-viewer-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover-700.jpg 1x, <%= @_ 'comic-viewer-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover.jpg 2x" media="(min-width: 481px)"></source>
+    		 <source srcset="<%= @_ 'comic-viewer-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover-550.jpg 1x, <%= @_ 'comic-viewer-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover-700.jpg 2x"></source>
+    		 <img src="<%= @_ 'comic-viewer-filename' %>/<%= comic.dir %>/<%= comic.dir %>-cover-700.jpg" alt="<%- comic.title %> <%- @_ 'thumbnail' %>">
     	 </picture>
        <div class="meta">
          <h1><a href="<%= comic.url %>"><%- comic.title %></a></h1>
@@ -27,8 +27,8 @@
       <div class="thumb">
         <a href="<%- comic.url %>">
           <picture>
-            <source srcset="/<%= @_ 'comics-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover-550.jpg 1x, /<%= @_ 'comics-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover-700.jpg 2x"></source>
-            <img srcset="/<%= @_ 'comics-filename' %>/<%= comic.dir %>/<%= comic.dir %>-cover-700.jpg" alt="<%- comic.title %> <%- @_ 'thumbnail' %>">
+            <source srcset="<%= @_ 'comic-viewer-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover-550.jpg 1x, <%= @_ 'comic-viewer-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover-700.jpg 2x"></source>
+            <img srcset="<%= @_ 'comic-viewer-filename' %>/<%= comic.dir %>/<%= comic.dir %>-cover-700.jpg" alt="<%- comic.title %> <%- @_ 'thumbnail' %>">
           </picture>
         </a>
         <div class="meta">

@@ -1,0 +1,31 @@
+<% thiscomicdir = @document.relativeOutDirPath.split('/').pop() %>
+{
+  "pubDate": "8 Oct 2015",
+  "imgFormat": "jpg",
+  "whitelabel": {
+    "logo": "<a href='../../<%= @document.lang %>/<%= @_ "comics-filename" %>/<%= thiscomicdir %>' title='<%= @_ "pulp-back-to-website" %>' ><img src='../../website-img/logo-nylnook-comic.png' alt='nylnook logo'/></a>"
+  },
+  "panelZoomMode": "desktop-hover",
+  "desktopHoverZoomOptions": {
+    "scale": 1.5,
+    "fit": 0.98,
+    "padding": 0.38,
+    "zoomInDelay": "200ms",
+    "zoomOutDelay": "1500ms",
+    "zoomInSpeed": "600ms",
+    "zoomOutSpeed": "500ms",
+    "mouseFollowSpeed": "350ms"
+  },
+  "lazyLoadExtent": 6,
+  "transitionDuration": "450ms",
+  "gutterWidth": "2px",
+  "drawerTransitionDuration": "500ms",
+  "social": {
+    "twitter_text": "<%= @_ "pulp-twitter-text" %>",
+    "twitter_account": "nylnook",
+    "fb_text": "<%= @_ "pulp-fb-text" %>",
+    "promo_img_url": "<%= @site.url %>/<%= @document.lang %>/<%= @_ "comic-viewer-filename" %>/<%= thiscomicdir %>/<%= thiscomicdir %>-cover-700.jpg",
+    "fb_app_id": "185400865127376"
+  },
+  "requireStartOnFirstPage": false
+}

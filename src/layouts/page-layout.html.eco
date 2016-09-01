@@ -28,7 +28,7 @@
 
 	<section id="welcome-browser">
 
-		<% for doc in @getPageCollection('all_'+ @document.lang).toJSON().slice(0,24): %>
+		<% for doc in @getPageCollection('all_'+ @document.lang).toJSON().slice(0,12): %>
 			<% if doc.relativeOutDirPath is @document.lang+'/img': %>
 			<div class="thumb">
 				<a href="<%- doc.url %>">
@@ -47,8 +47,8 @@
 			<div class="thumb">
 				<a href="<%- doc.url %>">
 					<picture>
-						<source srcset="/<%= @_ 'comics-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-550x550.jpg 1x, /<%= @_ 'comics-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg 2x"></source>
-						<img srcset="/<%= @_ 'comics-filename' %>/<%= doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg" alt="<%- doc.title %> <%- @_ 'thumbnail' %>">
+						<source srcset="<%= @_ 'comic-viewer-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-550x550.jpg 1x, <%= @_ 'comic-viewer-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg 2x"></source>
+						<img srcset="<%= @_ 'comic-viewer-filename' %>/<%= doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg" alt="<%- doc.title %> <%- @_ 'thumbnail' %>">
 					</picture>
 				</a>
 				<img class="thumb-overlay" src="/website-img/icon-book.svg" alt="Book icon" />

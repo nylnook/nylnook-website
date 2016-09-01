@@ -31,12 +31,12 @@
 		<!-- We have the current document, do the next and previous buttons -->
 		<!-- Check if we have a previous page -->
 		<% if documentIndex >= 1: %>
-		<a href="<%= @getCollection('img_' + @document.lang).toJSON()[documentIndex-1].url %>" class="previous"><img src="/website-img/icon-previous.svg" alt="" /><%= @_ 'previous' %></a>
+		<a href="<%= @getCollection('img_' + @document.lang).toJSON()[documentIndex-1].url %>" class="previous"><img src="/website-img/icon-previous.svg" alt="next" /><%= @_ 'next' %></a>
 		<% end %>
 		❄
 		<!-- Check if we have a next page -->
 		<% if documentIndex < @getCollection('img_' + @document.lang).length - 1: %>
-		<a href="<%= @getCollection('img_' + @document.lang).toJSON()[documentIndex+1].url %>" class="next"><%= @_ 'next' %><img src="/website-img/icon-next.svg" alt="" /></a>
+		<a href="<%= @getCollection('img_' + @document.lang).toJSON()[documentIndex+1].url %>" class="next"><%= @_ 'previous' %><img src="/website-img/icon-next.svg" alt="previous" /></a>
 		<% end %>
 
 	<% end %>

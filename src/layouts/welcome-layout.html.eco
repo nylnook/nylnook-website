@@ -2,11 +2,11 @@
 
 
 	<noscript>
-	<article class="warning">
+	<div class="warning">
 		<div id="noscript-message">
 			<%- @_ 'noscript-message', Enable: '<a href="http://www.enable-javascript.com" target="_blank">enable-javascript.com</a>', Github: '<a href="http://github.com/nylnook/nylnook-website">Github</a>' %>
 		</div>
-	</article>
+	</div>
 	</noscript>
 
 <section id="welcome-browser">
@@ -33,19 +33,13 @@
 			</section>
 			<% end %>
 			<% if doc.relativeOutDirPath is @document.lang+'/comics' or doc.relativeOutDirPath is @document.lang+'/bd' : %>
-			<div class="thumb">
-				<a href="<%- doc.url %>">
-					<picture>
-						<source srcset="/<%= @_ 'comics-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-550x550.jpg 1x, /<%= @_ 'comics-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg 2x"></source>
-						<img srcset="/<%= @_ 'comics-filename' %>/<%= doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg" alt="<%- doc.title %> <%- @_ 'thumbnail' %>">
-					</picture>
-				</a>
-				<img class="thumb-overlay" src="/website-img/icon-book.svg" alt="Book icon" />
-				<div class="meta-comic">
+			<section id="latest-img">
+				<iframe name="<%= doc.title %>" src="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%=doc.dir %>" frameborder="0" width="100%" height="818px" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+				<div class="meta">
 					<h3><a href="<%= doc.url %>"><%- doc.title %></a></h3>
 					<time pubdate="<%- @computerDate(doc.date) %>"><%- @date(doc.date, doc.lang)  %></time>
 				</div>
-			</div>
+			</section>
 			<% end %>
 			<% if doc.relativeOutDirPath is @document.lang+'/blog': %>
 				<article class="post single-post blog-teaser">
@@ -123,8 +117,8 @@
 		<div class="thumb">
 			<a href="<%- doc.url %>">
 				<picture>
-					<source srcset="/<%= @_ 'comics-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-550x550.jpg 1x, /<%= @_ 'comics-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg 2x"></source>
-					<img srcset="/<%= @_ 'comics-filename' %>/<%= doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg" alt="<%- doc.title %> <%- @_ 'thumbnail' %>">
+					<source srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-550x550.jpg 1x, /<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg 2x"></source>
+					<img srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg" alt="<%- doc.title %> <%- @_ 'thumbnail' %>">
 				</picture>
 			</a>
 			<img class="thumb-overlay" src="/website-img/icon-book.svg" alt="Book icon" />
