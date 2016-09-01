@@ -40,17 +40,17 @@
 
 <article class="img-page">
  <div id="picture-zone">
-	 <a href="../<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>" ><picture>
-		 <source srcset="../<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover.jpg" media="(min-width: 981px)"></source>
-		 <source srcset="../<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover-700.jpg 1x, ../<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover.jpg 2x" media="(min-width: 481px)"></source>
-		 <source srcset="../<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover-550.jpg 1x, ../<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover-700.jpg 2x"></source>
-		 <img src="../<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover-700.jpg" alt="<%- @document.title %> <%- @_ 'thumbnail' %>">
+	 <a href="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>" ><picture>
+		 <source srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover.jpg" media="(min-width: 981px)"></source>
+		 <source srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover-700.jpg 1x, /<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover.jpg 2x" media="(min-width: 481px)"></source>
+		 <source srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover-550.jpg 1x, /<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover-700.jpg 2x"></source>
+		 <img src="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover-700.jpg" alt="<%- @document.title %> <%- @_ 'thumbnail' %>">
 	 </picture></a>
 </div>
 <section id="actions" class="small-blocks">
 <div class="inside">
 	<script src="https://gumroad.com/js/gumroad.js"></script>
-	<a class="big-button" href="../<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>"><img src="/website-img/icon-book.svg"  class="book-icon" alt="Book icon" /><h2><%= @_ 'read-online' %></h2></a>
+	<a class="big-button" href="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>"><img src="/website-img/icon-book.svg"  class="book-icon" alt="Book icon" /><h2><%= @_ 'read-online' %></h2></a>
   <% if @document.productlink? : %>
     <a class="gumroad-button" href="<%= @document.productlink %>"><%= @_ 'download-gumroad' %></a>
   <% end %>

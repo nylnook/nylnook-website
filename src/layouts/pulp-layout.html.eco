@@ -200,7 +200,7 @@
 
     <!-- JavaScripts -->
 
-    <script src="../../vendor/pulp/js/main.pkgd.min.js"></script>
+    <script src="../../../vendor/pulp/js/main.pkgd.min.js"></script>
     <!-- <script src="whitelabel/js/header.js"></script> -->
     <!-- end javascripts -->
 
