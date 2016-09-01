@@ -13,9 +13,9 @@
 
 		<title><%= @document.title %></title>
 
-	 	<link rel="stylesheet" type="text/css" href="../../vendor/pulp/css/thirdparty/reset.css">
-	 	<link rel="stylesheet" type="text/css" href="../../vendor/pulp/css/thirdparty/pulp-icon.css">
-	 	<link rel="stylesheet" type="text/css" href="../../vendor/pulp/css/styles.css">
+	 	<link rel="stylesheet" type="text/css" href="../../../vendor/pulp/css/thirdparty/reset.css">
+	 	<link rel="stylesheet" type="text/css" href="../../../vendor/pulp/css/thirdparty/pulp-icon.css">
+	 	<link rel="stylesheet" type="text/css" href="../../../vendor/pulp/css/styles.css">
 
 	 	<!-- WHAT APPEARS FOR SEARCH ENGINES -->
     <meta name="robots" content="noodp">
