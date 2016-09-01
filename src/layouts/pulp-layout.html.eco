@@ -193,7 +193,8 @@
 
     <script>
     	var comicdir = "<%= @document.dir %>";
-      // console.log( comicdir );
+			var comicpath = '/<%= @document.lang %>/<%= @_ "comic-viewer-filename" %>/<%= @document.dir %>';
+      // console.log( comicpath );
     </script>
 
     <%- @partial('pulp-templates') %>
