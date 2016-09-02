@@ -2,7 +2,7 @@
 layout: 'pulp-layout'
 dir: 'mokatori-ep0-the-end'
 title: "Mokatori - Ep. 0 - The End"
-date: 2016-08-31
+date: 2016-09-07
 keywords: "comics, graphic novel, climate, climate change, creative commons, libre, free"
 productlink: 'https://gumroad.com/l/Mokatori-ep0-en'
 ---

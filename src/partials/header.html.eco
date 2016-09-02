@@ -29,11 +29,16 @@
   	<!-- Generic favicon for other cases, 64x64px -->
   	<link rel="icon" type="image/png" href="/favicon-64.png" />
 
+
+		<% if @document.rendered is true: %>
+			<% contentastext = @document.contentRenderedWithoutLayouts %>
+			<% contentastext = contentastext.replace(/<\/?[^>]+(>|$)/g, "") %>
+		<% end %>
 		<!-- Open Graph Protocol -->
 		<!-- http://ogp.me/ -->
 		<meta property="og:type" content="article" />
 		<meta property="og:title" content="<%- @document.title %>" />
-		<meta property="og:description" content="<%= @document.contentRenderedWithoutLayouts.replace(/<(?:.|\n)*?>/gm, '') %>" />
+		<meta property="og:description" content="<%= contentastext %>" />
 		<meta property="og:url" content="<%- @site.url %><%- @document.url %>/" />
 		<meta property="og:site_name" content="<%- @site.title %>" />
 		<% if @document.layout is 'post-layout': %>
@@ -53,7 +58,7 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@nylnook">
 		<meta name="twitter:title" content="<%- @document.title %>">
-		<meta name="twitter:description" content="<%= @document.contentRenderedWithoutLayouts.replace(/<(?:.|\n)*?>/gm, '') %>">
+		<meta name="twitter:description" content="<%= contentastext %>">
 		<meta name="twitter:creator" content="@nylnook">
 		<% if @document.layout is 'post-layout': %>
 			<meta name="twitter:image:src" content="<%= @document.thumb %>" />
