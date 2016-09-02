@@ -20,7 +20,7 @@
 	 	<!-- WHAT APPEARS FOR SEARCH ENGINES -->
     <meta name="robots" content="noodp">
     <meta name="keywords"  content="<%= @document.keywords %>" />
-    <meta name="description" content="<%= @document.contentRenderedWithoutLayouts %>"/>
+    <meta name="description" content="<%= @document.contentRenderedWithoutLayouts.replace(/<(?:.|\n)*?>/gm, '') %>"/>
 
 	 	<!-- DON'T FORGET TO FILL OUT OpenGraph FIELDS -->
 	 	<!-- http://ogp.me/ -->
@@ -29,7 +29,7 @@
 		<meta property="og:url" content="<%- @site.url %><%= @document.url %>/">
 		<meta property="og:image" content="<%- @site.url %>/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover-700.jpg">
 		<meta property="og:site_name" content="<%- @site.title %>">
-		<meta property="og:description" content="<%= @document.contentRenderedWithoutLayouts %>">
+		<meta property="og:description" content="<%= @document.contentRenderedWithoutLayouts.replace(/<(?:.|\n)*?>/gm, '') %>">
 
     <meta property="fb:admins" content="100009724127157" />
 		<meta property="fb:app_id" content="185400865127376" />
@@ -39,7 +39,7 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@nylnook">
 		<meta name="twitter:title" content="<%= @document.title %>">
-		<meta name="twitter:description" content="<%= @document.contentRenderedWithoutLayouts %>">
+		<meta name="twitter:description" content="<%= @document.contentRenderedWithoutLayouts.replace(/<(?:.|\n)*?>/gm, '') %>">
 		<meta name="twitter:creator" content="@nylnook">
 
 		<meta name="twitter:image:src" content="<%- @site.url %>/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover-700.jpg"> <!-- at least 280px x 150px for Twitter (image must be < 1MB) -->

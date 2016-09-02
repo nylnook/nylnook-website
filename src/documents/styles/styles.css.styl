@@ -930,6 +930,16 @@ img-base()
 	@media desktop-huge
 		width: 54.3%
 
+#latest-comic
+	float: left
+
+	img-base()
+
+	width: 98%
+	@media tablet
+		margin: 1% 1.5% 0 1.5%
+		width: 97.5%
+
 #img-browser
 	text-align: left
 
@@ -1087,6 +1097,7 @@ img-base()
 	width: 80%
 
 #latest-img:active > .meta, #latest-img:hover > .meta, #latest-img:focus > .meta,
+#latest-comic:active > .meta, #latest-comic:hover > .meta, #latest-comic:focus > .meta,
 .thumb:active > .meta, .thumb:hover > .meta, .thumb:focus > .meta,
 .blog-teaser:active > .meta, .blog-teaser:hover > .meta, .blog-teaser:focus > .meta
 	height: 7rem
