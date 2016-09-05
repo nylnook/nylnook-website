@@ -47,8 +47,8 @@
 			<div class="thumb">
 				<a href="<%- doc.url %>">
 					<picture>
-						<source srcset="<%= @_ 'comic-viewer-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-550x550.jpg 1x, <%= @_ 'comic-viewer-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg 2x"></source>
-						<img srcset="<%= @_ 'comic-viewer-filename' %>/<%= doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg" alt="<%- doc.title %> <%- @_ 'thumbnail' %>">
+						<source srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-550x550.jpg 1x, /<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg 2x"></source>
+						<img srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg" alt="<%- doc.title %> <%- @_ 'thumbnail' %>">
 					</picture>
 				</a>
 				<img class="thumb-overlay" src="/website-img/icon-book.svg" alt="Book icon" />

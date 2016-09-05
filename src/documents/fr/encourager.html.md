@@ -24,7 +24,7 @@ Tout ça, c'est long, c'est fastidieux, mais c'est aussi un plaisir quand on aim
 <a name="mokatori"></a>
 # Le projet
 
-![Titre Mokatori](/website-img/support/titre-mokatori-1-thumb.jpg)
+[![Couverture Mokatori Ép. 0](/fr/lecteur-bd/mokatori-ep0-la-fin/mokatori-ep0-la-fin-cover.jpg)](/fr/bd/mokatori-ep0-la-fin/)
 
 Mokatori, c'est mon premier projet d'album de BD, un récit d'anticipation sur le thème du changement climatique :
 

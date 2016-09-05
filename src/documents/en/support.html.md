@@ -24,7 +24,7 @@ All this, it's long, it's tedious, but it's also a pleasure when you enjoy to dr
 <a name="mokatori"></a>
 # The Project
 
-![Mokatori Title](/website-img/support/titre-mokatori-1-thumb.jpg)
+[![Mokatori Ep.0 Cover](/en/comic-viewer/mokatori-ep0-the-end/mokatori-ep0-the-end-cover.jpg)](/en/comics/mokatori-ep0-the-end/)
 
 Mokatori is my first comic book project, a (not so far in future) science fiction story on the theme of climate change:
 
