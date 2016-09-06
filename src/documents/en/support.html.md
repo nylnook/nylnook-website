@@ -147,7 +147,7 @@ My name is Nylnook (aka Camille Bissuel), I'm an illustrator, grew up and live i
 
 In 2008, after studying philosophy and graphics, I settle as a freelance graphic designer and select digital drawing and free software as tools. I work from my home, in team as soon as I get the chance, and specializes in illustration in 2013 under the name Nylnook, the name of a fictional character, a gnome from the North Pole, also touched by climate change.
 
-I have already published [a small comic](/en/comics/climate-frogs) and [many freely licensed illustrations](/en/illustration) to download as wallpaper on my website, and I participated in writing three textbooks on my everyday tools ([Scribus](http://en.flossmanuals.net/scribus-2/), [Blender pour le jeu vidéo](http://www.flossmanualsfr.net/blender-pour-le-jeu-video/), [Creating Point and Click Games with Escoria](https://fr.flossmanuals.net/creating-point-and-click-games-with-escoria/).
+I have already published [a small comic](/en/comics/climate-frogs) and [many freely licensed illustrations](/en/illustration) to download as wallpaper on my website, and I participated in writing three textbooks on my everyday tools ([Scribus](http://en.flossmanuals.net/scribus-2/), [Blender pour le jeu vidéo](http://www.flossmanualsfr.net/blender-pour-le-jeu-video/), [Creating Point and Click Games with Escoria](https://fr.flossmanuals.net/creating-point-and-click-games-with-escoria/)).
 
 [![Want to read more of Mokatori ? Become a patron of Nylnook on Tipeee](/website-img/support/become-a-patron-of-nylnook-on-tipeee.jpg)](https://www.tipeee.com/nylnook)
 
