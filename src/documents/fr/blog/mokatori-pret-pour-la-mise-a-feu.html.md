@@ -11,7 +11,7 @@ tags:
 ![Mokatori, teaser épisode 0](/img/blog/mokatori-teaser-ep0-1-thumb.jpg)
 
 Enfin, ça y est, après des mois de travail, des tonnes de corrections du scénario, trois versions de la couverture, le premier épisode de mon premier album long de BD est sur le point de sortir de l'ombre…
-**Il est prêt à décoller, je publie l'épisode 0, l'introduction, le 7 septembre prochain !**
+**Il est prêt à décoller, [je publie l'épisode 0, l'introduction, le 7 septembre prochain !](/fr/bd/mokatori-ep0-la-fin/)**
 
 ## Mokatori
 Et si les habitants de l'avenir nous envoyait des lettres ?  

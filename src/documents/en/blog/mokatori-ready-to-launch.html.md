@@ -11,7 +11,7 @@ tags:
 ![Mokatori, episode 0 teaser](/img/blog/mokatori-teaser-ep0-1-thumb.jpg)
 
 Finally, this is it, after months of work, tons of corrections to the scenario, three cover versions, the first episode of my first long comic album is about to get out of the dark…
-**It's ready to take off, I publish episode 0, the introduction, on September the 7th!**
+**It's ready to take off, [I publish episode 0, the introduction, on September the 7th!](/en/comics/mokatori-ep0-the-end/)**
 
 ## Mokatori
 And if the inhabitants of tomorrow sent us letters?  
