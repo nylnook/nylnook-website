@@ -79,7 +79,7 @@
 				</div>
         <div class="drawer-section-container" data-section="pub-date">
           <div class="section-subtitle"><%= @_ 'pulp-published' %><span class="pub-date-js"></span></div>
-					<a href="../../<%= @document.lang %>/<%= @_ "comics-filename" %>/<%= @document.dir %>"><li><%= @_ 'pulp-back-to-website' %></li></a>
+					<a href="/<%= @document.lang %>/<%= @_ "comics-filename" %>/<%= @document.dir %>"><li><%= @_ 'pulp-back-to-website' %></li></a>
         </div>
 				<div class="drawer-section-container" data-section="downloads">
 					<div class="section-title"><%= @_ 'pulp-download-1' %></div>
@@ -91,7 +91,7 @@
 				<div class="drawer-section-container">
 					<div class="section-title"><%= @_ 'pulp-comment-1' %></div>
 					<ul>
-						<a href="../../<%= @document.lang %>/<%= @_ "comics-filename" %>/<%= @document.dir %>"><li><%= @_ 'pulp-comment-2' %></li></a>
+						<a href="/<%= @document.lang %>/<%= @_ "comics-filename" %>/<%= @document.dir %>"><li><%= @_ 'pulp-comment-2' %></li></a>
 					</ul>
 				</div>
 				<div class="drawer-section-container">

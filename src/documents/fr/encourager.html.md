@@ -147,7 +147,7 @@ Je m'appelle Nylnook (aka Camille Bissuel), je suis illustrateur, j'ai grandi et
 
 En 2008, après des études de philosophie puis de graphisme, je m'installe comme graphiste indépendant et choisis le dessin numérique et les logiciels libres comme outils. Je travaille chez moi, en équipe dès que j'en ai l'occasion, et pour faire ce que j'aime le plus je me spécialise dans l'illustration en 2013 sous le nom de Nylnook, le nom d'un personnage imaginaire, un lutin du Pôle Nord, touché lui aussi par le changement climatique.
 
-J'ai déjà publié [une petite BD](/fr/bd/climat-grenouilles) et [de nombreuses illustrations](/fr/illustration) sous licence libre téléchargeables comme fond d'écran, sur mon site web,  et j'ai participé à l'écriture de trois manuels sur mes outils quotidiens ([Scribus](http://www.flossmanualsfr.net/scribus/), [Blender pour le jeu vidéo](http://www.flossmanualsfr.net/blender-pour-le-jeu-video/)), [Creating Point and Click Games with Escoria](https://fr.flossmanuals.net/creating-point-and-click-games-with-escoria/)).
+J'ai déjà publié [une petite BD](/fr/bd/climat-grenouilles) et [de nombreuses illustrations](/fr/illustration) sous licence libre téléchargeables comme fond d'écran, sur mon site web,  et j'ai participé à l'écriture de trois manuels sur mes outils quotidiens ([Scribus](http://www.flossmanualsfr.net/scribus/), [Blender pour le jeu vidéo](http://www.flossmanualsfr.net/blender-pour-le-jeu-video/), [Creating Point and Click Games with Escoria](https://fr.flossmanuals.net/creating-point-and-click-games-with-escoria/)).
 
 [![Envie de lire la suite de Mokatori ? Devenez mécène de Nylnook sur Tipeee](/website-img/support/devenez-mecene-de-nylnook-sur-tipeee.jpg)](https://www.tipeee.com/nylnook)
 
