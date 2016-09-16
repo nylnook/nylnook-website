@@ -11,6 +11,8 @@ tags:
   - video
 ---
 
+> **EDIT : I have now updated the pack [to version 2](krita-brushes-pack-v2) !**
+
 ![Krita icon](/website-img/icon-krita.svg)
 
 After several months of shyness, I'm happy to introduce **25 brushes**  presets for digital painting I crafted for and with **[Krita 2.9](https://krita.org/)** , used for [my comics](http://nylnook.com/en/comics/)... This is version 1 !

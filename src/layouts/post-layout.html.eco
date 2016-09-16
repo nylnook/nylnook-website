@@ -110,14 +110,31 @@
 		</section>
 	</article>
 
-  <% for post in @getPageCollection('blog_'+ @document.lang).toJSON(): %>
-    <article class="post small-blocks" style="background:url(<%- post.thumb %>) repeat scroll center center, url(../../website-img/paper-tilt-rotate.png) repeat, url(../../website-img/paper-tilt-rotate.png) repeat, white repeat">
-      <div class="meta-blog">
-        <h2><a href="<%= post.url %>"><%- post.title %></a></h2>
-       <time pubdate="<%- @computerDate(post.date) %>"><%- @date(post.date, post.lang) %></time>
-     </div>
-    </article>
-	<% end %>
+  <% for doc in @getPageCollection('all_'+ @document.lang).toJSON().slice(0,12): %>
+    <% if doc.relativeOutDirPath is @document.lang+'/comics' or doc.relativeOutDirPath is @document.lang+'/bd' : %>
+    <div class="thumb">
+      <a href="<%- doc.url %>">
+        <picture>
+          <source srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-550x550.jpg 1x, /<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg 2x"></source>
+          <img srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg" alt="<%- doc.title %> <%- @_ 'thumbnail' %>">
+        </picture>
+      </a>
+      <img class="thumb-overlay" src="/website-img/icon-book.svg" alt="Book icon" />
+      <div class="meta-comic">
+        <h3><a href="<%= doc.url %>"><%- doc.title %></a></h3>
+        <time pubdate="<%- @computerDate(doc.date) %>"><%- @date(doc.date, doc.lang)  %></time>
+      </div>
+    </div>
+    <% end %>
+    <% if doc.relativeOutDirPath is @document.lang+'/blog': %>
+      <article class="post small-blocks" style="background:url(<%- doc.thumb %>) repeat scroll center center, url(../website-img/paper-tilt-rotate.png) repeat, white repeat">
+        <div class="meta-blog">
+          <h2><a href="<%= doc.url %>"><%- doc.title %></a></h2>
+         <time pubdate="<%- @computerDate(doc.date) %>"><%- @date(doc.date, doc.lang) %></time>
+       </div>
+      </article>
+    <% end %>
+  <% end %>
 
 <div class="page-bottom">
   <section class="light-block">

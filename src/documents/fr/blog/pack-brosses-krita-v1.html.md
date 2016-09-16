@@ -11,6 +11,8 @@ tags:
   - vidéo
 ---
 
+> **EDIT : J'ai  maintenant mis à jour le pack [vers la version 2](pack-brosses-krita-v2) !**
+
 ![Krita icon](/website-img/icon-krita.svg)
 
 Après plusieurs mois de timidité, je suis heureux de vous présenter **25 brosses** préréglées pour la peinture numérique que j'ai créer pour et avec **[Krita 2.9](https://krita.org/)**, que j'ai utilisé pour [ma BD](http://nylnook.com/fr/bd/)... C'est la version 1 !
@@ -52,7 +54,7 @@ Comme le système d'étiquetage de Krita est parfois capricieux, chaque prérég
 - **Pencil** (pour **Crayon**) : un simple crayon pour les croquis, très proche de la brosse Pencil 2B installée par défaut.
 - **Poska** : des brosses de petits marqueurs inspirés par les fameux [Posca](http://www.posca.com)s
 
-### Peites Icônes
+### Petites Icônes
 
 ![Icône de rotation de Nylnook](/img/blog/icon-rotation-crop.png) Les brosses avec une icône de rotation sont faites pour être utilisées avec un stylus **supportant la rotation** comme le [Wacom Art Pen](http://fr.shop.wacom.eu/accessoires/cintiq-21ux-dtk-2100//333) (le meilleur stylus que je connaisse si vous voulez mon avis). Cela permet de faire des pleins et des déliés, qui sont essentiels pour l'encrage. Ces brosses peuvent être utilisées avec un stylus ne supportant pas la rotation, mais elles seront moins intéressantes.
 
