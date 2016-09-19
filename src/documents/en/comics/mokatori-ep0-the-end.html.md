@@ -11,6 +11,7 @@ amazonlink: 'https://www.amazon.com/MOKATORI-EP-0-END-French-ebook/dp/B01LB360TY
 nolimlink: 'https://ebook.nolim.fr/ebook/9791095663041/mokatori-ep-0-the-end-nylnook'
 bookeenlink: 'https://www.bookeenstore.com/ebook/9791095663041/mokatori-ep-0-the-end-nylnook'
 relaylink: 'https://livre.relay.com/ebook/9791095663041/mokatori-ep-0-the-end-nylnook'
+dialogueslink: 'https://www.librairiedialogues.fr/livre/10697194-mokatori-ep-0-the-end-nylnook-nylnook'
 
 ---
 
