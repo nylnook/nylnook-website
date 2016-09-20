@@ -42,7 +42,7 @@
 		<meta property="og:url" content="<%- @site.url %><%- @document.url %>/" />
 		<meta property="og:site_name" content="<%- @site.title %>" />
 		<% if @document.layout is 'post-layout': %>
-			<meta property="og:image" content="<%= @document.thumb %>" />
+			<meta property="og:image" content="<%- @site.url %><%= @document.thumb %>" />
 		<% else if @document.layout is 'img-layout': %>
 			<meta property="og:image" content="<%- @site.url %>/img/<%=@document.file %>/thumb-nylnook-<%=@document.file %>-700x700.jpg" />
 		<% else if @document.layout is 'comic-layout': %>
@@ -61,7 +61,7 @@
 		<meta name="twitter:description" content="<%= contentastext %>">
 		<meta name="twitter:creator" content="@nylnook">
 		<% if @document.layout is 'post-layout': %>
-			<meta name="twitter:image:src" content="<%= @document.thumb %>" />
+			<meta name="twitter:image:src" content="<%- @site.url %><%= @document.thumb %>" />
 		<% else if @document.layout is 'img-layout': %>
 			<meta name="twitter:image:src" content="<%- @site.url %>/img/<%=@document.file %>/thumb-nylnook-<%=@document.file %>-700x700.jpg" />
 		<% else if @document.layout is 'comic-layout': %>
