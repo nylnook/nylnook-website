@@ -6,7 +6,7 @@ date: 2015-10-08
 license: 'by-sa'
 productlink: 'https://gumroad.com/l/ClimatGrenouilles'
 productpaperlink: 'https://gumroad.com/l/ClimatGrenouillesPapier'
-sourcelink: 'https://github.com/nylnook/climate-frogs-comic'
+sourcelink: 'https://framagit.org/nylnook/climate-frogs-comic'
 bookelislink: 'http://www.bookelis.com/bd/12644-Le-changement-climatique-explique-aux-grenouilles.html'
 amazonlink: 'http://www.amazon.fr/changement-climatique-expliqu%C3%A9-aux-grenouilles-ebook/dp/B01DMQ10VG/'
 nolimlink: 'https://ebook.nolim.fr/ebook/9791095663003/le-changement-climatique-explique-aux-grenouilles-nylnook'

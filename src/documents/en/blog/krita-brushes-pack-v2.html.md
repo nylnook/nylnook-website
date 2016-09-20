@@ -11,7 +11,7 @@ tags:
 
 ![Krita icon](/website-img/icon-krita.svg)
 
-Time for update ! I'm happy to introduce **36 brushes**  presets for digital painting I crafted for and with **[Krita 3.0.1](https://krita.org/)** , used for [my latest comic](http://nylnook.com/en/comics/mokatori-ep0-the-end/)... This is version 2.
+Time for update ! I'm happy to introduce **36 brushes**  presets for digital painting I crafted for and with **[Krita 3.0.1](https://krita.org/)** , used for [my latest comic](/en/comics/mokatori-ep0-the-end/)... This is version 2.
 
 They are free to use, under a [Creative Commons Zero License](http://creativecommons.org/publicdomain/zero/1.0/deed) !
 

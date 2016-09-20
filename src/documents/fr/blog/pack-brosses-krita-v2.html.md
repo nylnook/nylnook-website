@@ -11,7 +11,7 @@ tags:
 
 ![Krita icon](/website-img/icon-krita.svg)
 
-C'est le moment pour une mise à jour ! Je suis heureux de vous présenter **36 brosses** préréglées pour la peinture numérique que j'ai créer pour et avec **[Krita 3.0.1](https://krita.org/)**, que j'ai utilisé pour [ma dernière BD](http://nylnook.com/fr/bd/mokatori-ep0-la-fin)... C'est la version 2.
+C'est le moment pour une mise à jour ! Je suis heureux de vous présenter **36 brosses** préréglées pour la peinture numérique que j'ai créer pour et avec **[Krita 3.0.1](https://krita.org/)**, que j'ai utilisé pour [ma dernière BD](/fr/bd/mokatori-ep0-la-fin)... C'est la version 2.
 
 Elles sont libres et gratuites, sous une [Licence Creative Commons Zero](http://creativecommons.org/publicdomain/zero/1.0/deed.fr) !
 
@@ -108,7 +108,7 @@ Compatible avec Krita **3.0.1** (pas 3.0), et les versions suivies d'un autre ch
 
 **24 avril 2015** : 12 brosses que je crée depuis Krita 2.8, et finalisées avec Krita 2.9... Elles marchent, mais il y a encore du travail ! C'est une version beta.
 
-## License
+## Licence libre
 
 CC-0 / Public Domain. Créditez *Camille Bissuel* si besoin.
 

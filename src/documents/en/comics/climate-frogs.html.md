@@ -5,7 +5,7 @@ title: "Climate Change Explained to Frogs..."
 date: 2015-10-08
 license: 'by-sa'
 productlink: 'https://gumroad.com/l/ClimateFrogs'
-sourcelink: 'https://github.com/nylnook/climate-frogs-comic'
+sourcelink: 'https://framagit.org/nylnook/climate-frogs-comic'
 bookelislink: 'http://www.bookelis.com/comics/12645-Climate-Change-Explained-to-Frogs.html'
 amazonlink: 'http://www.amazon.com/Climate-Change-Explained-Frogs-Nylnook-ebook/dp/B01BLKWZR8/'
 nolimlink: 'https://ebook.nolim.fr/ebook/9791095663010/climate-change-explained-to-frogs-nylnook'

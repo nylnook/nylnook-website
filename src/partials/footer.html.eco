@@ -6,7 +6,7 @@
 			</ul>
 		</nav>
 		<footer>
-			<p><%- @_ 'footer-message', CC: '<a href="http://creativecommons.org/">Creative commons</a>', MIT: '<a href="http://github.com/nylnook/nylnook-website/blob/master/LICENSE">MIT</a>', Docpad: '<a href="http://docpad.org/">Docpad</a>', Github: '<a href="http://github.com/nylnook/nylnook-website">Github</a>', Gplus: '<a href="https://plus.google.com/+Nylnook-art" rel="publisher">Google+</a>', Cantarell: '<a href="https://github.com/GNOME/cantarell-fonts">Cantarell</a>' %><p>
+			<p><%- @_ 'footer-message', CC: '<a href="http://creativecommons.org/">Creative commons</a>', MIT: '<a href="http://github.com/nylnook/nylnook-website/blob/master/LICENSE">MIT</a>', Docpad: '<a href="http://docpad.org/">Docpad</a>', Github: '<a href="http://github.com/nylnook/nylnook-website">Github</a>', Gplus: '<a href="https://plus.google.com/+Nylnook-art" rel="publisher">Google+</a>', Comili: '<a href="https://framagit.org/nylnook/comili">Comili</a>', Cantarell: '<a href="https://github.com/GNOME/cantarell-fonts">Cantarell</a>' %><p>
 		</footer>
 		<!-- DocPad Scripts + Our Own -->
 		<%- @getBlock('scripts').toHTML() %>
