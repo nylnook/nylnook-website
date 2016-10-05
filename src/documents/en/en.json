@@ -15,7 +15,7 @@
 	"support-filename": "support",
 	"about": "About",
 	"about-filename": "about",
-	"footer-message": "© <a href=\"/en/about\" rel=\"author\">Camille Bissuel</a> - Images are licensed under various {CC} licences, see each image for details   /   This website is {MIT} licensed and based on {Docpad} - Fork it on {Github}   /  {Comili} Font © Camille Bissuel, SIL Open Font License {Cantarell} Font by Dave Crossland, GPLv3 licence",
+	"footer-message": "© <a href=\"/en/about\" rel=\"author\">Camille Bissuel</a> - Images are licensed under various {CC} licences, see each image for details   /   This website is {MIT} licensed and based on {Docpad} - Fork it on {Framagit}   /  {Comili} Font © Camille Bissuel, SIL Open Font License {Cantarell} Font by Dave Crossland, GPLv3 licence",
 	"by": "by",
 	"download": "Download",
 	"download-gumroad": "Download at free price",
