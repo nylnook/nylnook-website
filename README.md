@@ -1,4 +1,4 @@
-![Welcome screen](https://github.com/nylnook/nylnook-website/blob/master/src/files/img/nylnook-in-the-snow/thumb-nylnook-nylnook-in-the-snow-700x700.jpg)
+![Welcome screen](src/files/website-img/support/nylnook-bd-thumb.jpg)
 
 Nylnook website
 ===============
@@ -16,11 +16,3 @@ Images are licensed under various [Creative Commons](http://creativecommons.org/
 The nylnook logo is © [Camille Bissuel](http://nylnook.com). All rights reserved.   
 
 Other included things such as vendor libraries are likely already licensed by their own invidual licenses, so be sure to respect their licenses too.
-
-## To do
-this code is really young, website is under construction !
-
-- Search engine
-- Camanjs integration
-- optimisation and reintroduce grunting
-- ...
