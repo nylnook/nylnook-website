@@ -99,6 +99,19 @@
 	<div class="inside">
 		<h2><%= @_ 'license' %></h2>
 		<%- @partial('license') %>
+  </div>
+</section>
+
+</section>
+<section id="adapt" class="small-blocks">
+	<div class="inside">
+  	<a class="big-button"
+    <% if @document.lang is 'fr' : %>
+    href="/fr/blog/comment-traduire-mokatori-ou-grenouilles"
+    <% else: %>
+    href="/en/blog/how-to-translate-mokatori-or-frogs"
+    <% end %>
+    ><img src="/website-img/icon-contact.svg"  class="pen-icon" alt="Pen icon" /><h2><%= @_ 'translate-adapt' %></h2></a>
   <% if @document.sourcelink : %>
     <a class="secondary-button" href="<%= @document.sourcelink %>" target="_blank"><img src="/website-img/icon-search.svg"  alt="Search icon" /><%= @_ 'study-sources' %></a>
   <% end %>
