@@ -1,13 +1,4 @@
 <%- @partial('header') %>
-<!-- Facebook SDK -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.4";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
 <nav class="prevnextnav">
 <!-- Previous or Next links-->
@@ -15,7 +6,6 @@
 <% collbloglang = 'blog_' + @document.lang %>
 <!-- Get the next and previous document from the current document -->
 <% for document,documentIndex in @getCollection(collbloglang).toJSON(): %>
-	<!-- Get the current document, from there, we will be able to get the next and previous -->
 	<% if @document.id is document.id: %>
 		<!-- We have the current document, do the next and previous buttons -->
 		<!-- Check if we have a previous page -->
@@ -51,47 +41,22 @@
 
 		<section id="share">
 			<h2><%= @_ 'share' %></h2>
-      <!-- Diaspora* -->
-      <div class="service-button diaspora">
-        <a href="javascript:;" onclick="window.open('http://sharetodiaspora.github.io/?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title),'das','location=no,links=no,scrollbars=no,toolbar=no,width=620,height=550'); return false;" rel="nofollow" target="_blank">
-        		<img src="http://sharetodiaspora.github.io/favicon.png" style="border: 0px solid;display: inline-block;vertical-align: top;" /> diaspora*
-        </a>
+      <!-- Twitter -->
+			<div class="service-button">
+        <a href="https://twitter.com/nylnook"><img src="/website-img/icon-twitter.svg" alt="Twitter" title="Twitter" /></a>
+			</div>
+      <!-- Facebook -->
+      <div class="service-button">
+        <a href="https://www.facebook.com/nylnook/"><img src="/website-img/icon-facebook.svg" alt="Facebook" title="Facebook" /></a>
       </div>
-			<!-- Twitter -->
+			<!-- Diaspora* -->
 			<div class="service-button">
-			<a href="https://twitter.com/share" class="twitter-share-button" data-via="nylnook">Tweet</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        <a href="https://framasphere.org/u/nylnook"><img src="/website-img/icon-diaspora.svg" alt="Diaspora*" title="Diaspora*" /></a>
 			</div>
-			<!-- Google+ -->
-			<div class="service-button">
-			<script src="https://apis.google.com/js/platform.js" async defer>
-			  {lang: '<%- @document.lang %>'}
-			</script>
-			<div class="g-plusone" data-size="medium"></div>
-			</div>
-			<!-- Facebook -->
-			<div class="service-button">
-			<div id="fb-root"></div>
-				<div class="fb-like" data-layout="button_count"></div><br/>
-				<div class="fb-share-button" data-href="<%- @document.url %>" data-layout="button_count"></div>
-			</div>
-			<!-- Pinterest -->
-			<div class="service-button">
-			<a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"  data-pin-color="red"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_20.png" /></a>
-			<!-- Please call pinit.js only once per page -->
-			<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
-			</div>
-			<!-- Stumbleupon -->
-			<div class="service-button">
-			<su:badge layout="2"></su:badge>
-			<script type="text/javascript">
-			  (function() {
-			    var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true;
-			    li.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + '//platform.stumbleupon.com/1/widgets.js';
-			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(li, s);
-			  })();
-			</script>
-			</div>
+      <!-- Tipeee -->
+      <div class="service-button">
+        <a href="https://www.tipeee.com/nylnook"><img src="/website-img/icon-tipeee.svg" alt="Tipeee" title="Tipeee" /></a>
+      </div>
 		</section>
 		<section id="comments">
 			<h2><%= @_ 'comments' %></h2>

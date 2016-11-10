@@ -28,6 +28,8 @@
 
 	 	<!-- DON'T FORGET TO FILL OUT OpenGraph FIELDS -->
 	 	<!-- http://ogp.me/ -->
+		<meta property="fb:admins" content="100009724127157" />
+		<meta property="fb:app_id" content="185400865127376" />
 		<meta property="og:title" content="<%= @document.title %>">
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="<%- @site.url %><%= @document.url %>/">
@@ -35,18 +37,15 @@
 		<meta property="og:site_name" content="<%- @site.title %>">
 		<meta property="og:description" content="<%= contentastext %>">
 
-    <meta property="fb:admins" content="100009724127157" />
-		<meta property="fb:app_id" content="185400865127376" />
-
     <!-- TWITTER TAGS -->
     <!-- https://dev.twitter.com/cards/markup -->
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@nylnook">
 		<meta name="twitter:title" content="<%= @document.title %>">
-		<meta name="twitter:description" content="<%= contentastext %>">
 		<meta name="twitter:creator" content="@nylnook">
-
-		<meta name="twitter:image:src" content="<%- @site.url %>/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover-700.jpg"> <!-- at least 280px x 150px for Twitter (image must be < 1MB) -->
+		<meta name="twitter:image:src" content="<%- @site.url %>/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover-700.jpg">
+		<!-- at least 280px x 150px for Twitter (image must be < 1MB) -->
+		<meta name="twitter:description" content="<%= contentastext %>">
 
 	</head>
 	<body>
@@ -55,19 +54,8 @@
     <![endif]-->
 
     <noscript>
-        <%- @_ 'noscript-message', Enable: '<a href="http://www.enable-javascript.com" target="_blank">enable-javascript.com</a>', Github: '<a href="http://github.com/nylnook/nylnook-website">Github</a>' %>
+			<%- @_ 'noscript-message', Enable: '<a href="http://www.enable-javascript.com" target="_blank">enable-javascript.com</a>', Framagit: '<a href="https://framagit.org/nylnook/nylnook-website/">Framagit</a>' %>
     </noscript>
-
-    <!-- Facebook SDK
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.4";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-  -->
 
 
 		<div id="side-drawer-container" class="mobile-scrollable">
@@ -134,8 +122,6 @@
 						<ul class="btn-dropdown" data-which="share">
 							<li class="pulp-icon-twitter social-btn" data-which="twitter"></li>
 							<li class="pulp-icon-facebook social-btn" data-which="facebook"></li>
-							<li class="pulp-icon-gplus social-btn" data-which="gplus"></li>
-							<li class="pulp-icon-reddit social-btn" data-which="reddit"></li>
 						</ul>
 					</li>
 				</ul>
@@ -207,27 +193,6 @@
 
     <script src="../../../vendor/pulp/js/main.pkgd.min.js"></script>
     <!-- <script src="whitelabel/js/header.js"></script> -->
-
-		<!-- Start Open Web Analytics Tracker -->
-		<script type="text/javascript">
-		//<![CDATA[
-		var owa_baseUrl = 'http://nylnook.com/owa/';
-		var owa_cmds = owa_cmds || [];
-		owa_cmds.push(['setSiteId', 'ab0e55c72357dfff415380d5694d38bd']);
-		owa_cmds.push(['trackPageView']);
-		owa_cmds.push(['trackClicks']);
-		owa_cmds.push(['trackDomStream']);
-
-		(function() {
-			var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
-			owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
-			_owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
-			var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
-		}());
-		//]]>
-		</script>
-		<!-- End Open Web Analytics Code -->
-    <!-- end javascripts -->
 
  	</body>
 </html>

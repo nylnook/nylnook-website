@@ -36,9 +36,10 @@
 		<% end %>
 		<!-- Open Graph Protocol -->
 		<!-- http://ogp.me/ -->
+		<meta property="fb:admins" content="100009724127157" />
+		<meta property="fb:app_id" content="185400865127376" />
 		<meta property="og:type" content="article" />
 		<meta property="og:title" content="<%- @document.title %>" />
-		<meta property="og:description" content="<%= contentastext %>" />
 		<meta property="og:url" content="<%- @site.url %><%- @document.url %>/" />
 		<meta property="og:site_name" content="<%- @site.title %>" />
 		<% if @document.layout is 'post-layout': %>
@@ -50,15 +51,13 @@
 		<% else: %>
 			<meta property="og:image" content="<%- @site.url %>/website-img/avatar-nylnook-550x550.jpg" />
 		<% end %>
-		<meta property="fb:admins" content="100009724127157" />
-		<meta property="fb:app_id" content="185400865127376" />
+		<meta property="og:description" content="<%= contentastext %>" />
 
 		<!-- Twitter Tags -->
     <!-- https://dev.twitter.com/cards/markup -->
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@nylnook">
 		<meta name="twitter:title" content="<%- @document.title %>">
-		<meta name="twitter:description" content="<%= contentastext %>">
 		<meta name="twitter:creator" content="@nylnook">
 		<% if @document.layout is 'post-layout': %>
 			<meta name="twitter:image:src" content="<%- @site.url %><%= @document.thumb %>" />
@@ -69,6 +68,7 @@
 		<% else: %>
 			<meta name="twitter:image:src" content="<%- @site.url %>/website-img/avatar-nylnook-550x550.jpg" /> <!-- at least 280px x 150px for Twitter (image must be < 1MB) -->
 		<% end %>
+		<meta name="twitter:description" content="<%= contentastext %>">
 
 		<!-- Social media checks -->
 		<a href="https://plus.google.com/+Nylnook-art" rel=”publisher” />

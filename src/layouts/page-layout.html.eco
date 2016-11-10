@@ -8,6 +8,25 @@
 
 		<%- @content %>
 		<div class="page-bottom">
+		<section id="share">
+			<h2><%= @_ 'share' %></h2>
+			<!-- Twitter -->
+			<div class="service-button">
+				<a href="https://twitter.com/nylnook"><img src="/website-img/icon-twitter.svg" alt="Twitter" title="Twitter" /></a>
+			</div>
+			<!-- Facebook -->
+			<div class="service-button">
+				<a href="https://www.facebook.com/nylnook/"><img src="/website-img/icon-facebook.svg" alt="Facebook" title="Facebook" /></a>
+			</div>
+			<!-- Diaspora* -->
+			<div class="service-button">
+				<a href="https://framasphere.org/u/nylnook"><img src="/website-img/icon-diaspora.svg" alt="Diaspora*" title="Diaspora*" /></a>
+			</div>
+			<!-- Tipeee -->
+			<div class="service-button">
+				<a href="https://www.tipeee.com/nylnook"><img src="/website-img/icon-tipeee.svg" alt="Tipeee" title="Tipeee" /></a>
+			</div>
+		</section>
 		<section id="comments">
 			<h2><%= @_ 'comments' %></h2>
 			<!-- Disqus -->

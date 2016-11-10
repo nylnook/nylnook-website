@@ -22,7 +22,7 @@ Pour suivre les dernières actualité sur ce site web, vous pouvez vous abonnez 
 ![Twitter icon](/website-img/icon-twitter.svg)
 ou suivre **[@nylnook](https://twitter.com/nylnook)** sur [Twitter](https://twitter.com/nylnook)
 
-Je pourrais donner des nouvelles sur [Diaspora*](https://framasphere.org/u/nylnook),  [Google+](https://plus.google.com/+Nylnook-art) et [Facebook](https://www.facebook.com//nylnook) de temps en temps également ;)
+Je pourrais donner des nouvelles sur ![Diaspora icon](/website-img/icon-diaspora.svg) [Diaspora*](https://framasphere.org/u/nylnook), et ![Facebook icon](/website-img/icon-facebook.svg) [Facebook](https://www.facebook.com//nylnook) de temps en temps également ;)
 
 ## Ou même
 

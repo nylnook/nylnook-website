@@ -22,7 +22,7 @@ To follow latest news on this website, you can subscribe to my RSS feeds :
 ![Twitter icon](/website-img/icon-twitter.svg)
 or follow **[@nylnook](https://twitter.com/nylnook)** on [Twitter](https://twitter.com/nylnook)
 
-I may occasionally give news on [Diaspora*](https://framasphere.org/u/nylnook),  [Google+](https://plus.google.com/+Nylnook-art) and [Facebook](https://www.facebook.com/nylnook) too ;)
+I may occasionally give news on ![Diaspora icon](/website-img/icon-diaspora.svg) [Diaspora*](https://framasphere.org/u/nylnook) and [Facebook icon](/website-img/icon-facebook.svg) [Facebook](https://www.facebook.com/nylnook) too ;)
 
 ## Or Even
 

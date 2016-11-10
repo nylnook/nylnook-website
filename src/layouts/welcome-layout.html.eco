@@ -4,7 +4,7 @@
 	<noscript>
 	<div class="warning">
 		<div id="noscript-message">
-			<%- @_ 'noscript-message', Enable: '<a href="http://www.enable-javascript.com" target="_blank">enable-javascript.com</a>', Github: '<a href="http://github.com/nylnook/nylnook-website">Github</a>' %>
+			<%- @_ 'noscript-message', Enable: '<a href="http://www.enable-javascript.com" target="_blank">enable-javascript.com</a>', Framagit: '<a href="https://framagit.org/nylnook/nylnook-website/">Framagit</a>' %>
 		</div>
 	</div>
 	</noscript>
