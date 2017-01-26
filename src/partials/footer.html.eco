@@ -6,6 +6,23 @@
 			</ul>
 		</nav>
 		<footer>
+			<section class="light-block" id="search-bar">
+				<% if @document.lang is "en" : %>
+				<form method="get" id="search" action="http://duckduckgo.com/" autocomplete="off">
+					<input type="hidden" name="sites" value="nylnook.com/en/"/>
+					<input type="hidden" name="kae" value="d"/>
+					<input type="text" name="q" maxlength="255" placeholder="<%= @_ 'search-placeholder' %>"/>
+					<input type="image" src="/website-img/icon-search.svg" alt="<%= @_ 'search-alt-submit' %>" />
+				</form>
+				<% else if @document.lang is "fr" : %>
+					<form method="get" id="search" action="http://duckduckgo.com/" autocomplete="off">
+						<input type="hidden" name="sites" value="nylnook.com/fr/"/>
+						<input type="hidden" name="kae" value="d"/>
+						<input type="text" name="q" maxlength="255" placeholder="<%= @_ 'search-placeholder' %>"/>
+						<input type="image" src="/website-img/icon-search.svg" alt="<%= @_ 'search-alt-submit' %>" />
+					</form>
+				<% end %>
+			</section>
 			<p><%- @_ 'footer-message', CC: '<a href="http://creativecommons.org/">Creative commons</a>', MIT: '<a href="https://framagit.org/nylnook/nylnook-website/blob/master/LICENSE">MIT</a>', Docpad: '<a href="http://docpad.org/">Docpad</a>', Framagit: '<a href="https://framagit.org/nylnook/nylnook-website">Framagit</a>', Gplus: '<a href="https://plus.google.com/+Nylnook-art" rel="publisher">Google+</a>', Comili: '<a href="https://framagit.org/nylnook/comili">Comili</a>', Cantarell: '<a href="https://github.com/GNOME/cantarell-fonts">Cantarell</a>', Legal: '<a href="/fr/mentions-legales">Mentions légales</a>' %><p>
 		</footer>
 		<!-- DocPad Scripts + Our Own -->

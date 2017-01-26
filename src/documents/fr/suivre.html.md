@@ -8,7 +8,13 @@ isPage: true
 
 Abonnez-vous pour devenir un de mes lecteurs ou une de mes lectrices et recevez une petite BD gratuitement !
 
-<form action="https://gumroad.com/follow_from_embed_form" class="form gumroad-follow-form-embed" method="post"> <input name="seller_id" value="3361448496300" type="hidden"> <input name="email" placeholder="Votre adresse e-mail" type="email"> <button type="submit">Suivre</button> </form>
+<section class="light-block" id="follow-bar">
+  <form action="https://gumroad.com/follow_from_embed_form" method="post">
+    <input name="seller_id" value="3361448496300" type="hidden">
+    <input name="email" placeholder="Votre adresse e-mail" type="email">
+    <button type="submit">Suivre</button>
+  </form>
+</section>
 
 ## Et aussi
 

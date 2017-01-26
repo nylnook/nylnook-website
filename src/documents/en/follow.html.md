@@ -8,7 +8,13 @@ isPage: true
 
 Sign-up to become one of my readers and receive a free (as in free beer) short comic !
 
-<form action="https://gumroad.com/follow_from_embed_form" class="form gumroad-follow-form-embed" method="post"> <input name="seller_id" value="3361448496300" type="hidden"> <input name="email" placeholder="Your e-mail" type="email"> <button type="submit">Follow</button> </form>
+<section class="light-block" id="follow-bar">
+  <form action="https://gumroad.com/follow_from_embed_form" method="post">
+    <input name="seller_id" value="3361448496300" type="hidden">
+    <input name="email" placeholder="Your e-mail" type="email">
+    <button type="submit">Follow</button>
+  </form>
+</section>
 
 ## And Also
 

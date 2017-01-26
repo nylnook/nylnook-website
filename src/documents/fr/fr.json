@@ -91,5 +91,7 @@
 	"pulp-notes" : "Notes",
 	"pulp-close" : "Fermer",
 	"pulp-published" : "Publié le ",
-	"translate-adapt" : "Traduire, adapter…"
+	"translate-adapt" : "Traduire, adapter…",
+	"search-placeholder" : "Rechercher sur ce site web avec DuckDuckGo",
+	"search-alt-submit" : "Recherche DuckDuckGo"
 }
