@@ -11,5 +11,6 @@ tags:
 [![Red Nude](/img/blog/nue-rouge-thumb.jpg)](/img/blog/nue-rouge.jpg)
 
 From a live model, pencil, enhanced with charcoal, and some reflections in white pencil on a beautiful red paper. One hour pose.
+*Thanks to Catherine for the pose!*
 
 *You can click on the pictures to see it fully*

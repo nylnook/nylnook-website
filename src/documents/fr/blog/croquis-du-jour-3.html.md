@@ -12,5 +12,6 @@ tags:
 *Vous pouvez cliquer sur les images pour les voir en grand*
 
 D'après modèle vivant, au crayon aquarellable. Pose d'une heure, nue d'abord, puis le drapé rajoutté après et dessiné par dessus.
+*Merci à Catherine pour la pose !*
 
 Bon ce n'est pas tout à fait un croquis du jour puisque ça date de mercredi dernier, mais vous ne m'en voudrez pas ;)

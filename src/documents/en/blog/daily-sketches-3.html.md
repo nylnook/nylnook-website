@@ -12,5 +12,6 @@ tags:
 *You can click on the pictures to see it fully*
 
 From a live model, watercolor pencil. One hour pose, nude first, then drape added and drawn on top.
+*Thanks to Catherine for the pose!*
 
 Not exactly a daily sketch because it's from last wednesday, but you won't mind me ;)

@@ -96,45 +96,87 @@
 			</a>
 			<h1 class="meta-welcome"><a href="/<%- @document.lang %>/<%= @_ 'about-filename' %>"><%= @_ 'about' %></a></h1>
 		</div>
-	<% end %>
 
-	<% for doc in @getPageCollection('all_'+ @document.lang).toJSON().slice(1,99): %>
-		<% if doc.relativeOutDirPath is @document.lang+'/img': %>
-		<div class="thumb">
-			<a href="<%- doc.url %>">
-				<picture>
-					<source srcset="/img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-350x350.jpg 1x, /img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-700x700.jpg 2x"></source>
-					<img srcset="/img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-350x350.jpg" alt="<%- doc.title %> <%- @_ 'thumbnail' %>">
-				</picture>
-			</a>
-			<div class="meta">
-				<h3><a href="<%= doc.url %>"><%- doc.title %></a></h3>
-				<time pubdate="<%- @computerDate(doc.date) %>"><%- @date(doc.date, doc.lang)  %></time>
+		<% for doc in @getPageCollection('all_'+ @document.lang).toJSON().slice(1,13): %>
+			<% if doc.relativeOutDirPath is @document.lang+'/img': %>
+			<div class="thumb">
+				<a href="<%- doc.url %>">
+					<picture>
+						<source srcset="/img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-350x350.jpg 1x, /img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-700x700.jpg 2x"></source>
+						<img srcset="/img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-350x350.jpg" alt="<%- doc.title %> <%- @_ 'thumbnail' %>">
+					</picture>
+				</a>
+				<div class="meta">
+					<h3><a href="<%= doc.url %>"><%- doc.title %></a></h3>
+					<time pubdate="<%- @computerDate(doc.date) %>"><%- @date(doc.date, doc.lang)  %></time>
+				</div>
 			</div>
-		</div>
-		<% end %>
-		<% if doc.relativeOutDirPath is @document.lang+'/comics' or doc.relativeOutDirPath is @document.lang+'/bd' : %>
-		<div class="thumb">
-			<a href="<%- doc.url %>">
-				<picture>
-					<source srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-550x550.jpg 1x, /<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg 2x"></source>
-					<img srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg" alt="<%- doc.title %> <%- @_ 'thumbnail' %>">
-				</picture>
-			</a>
-			<img class="thumb-overlay" src="/website-img/icon-book.svg" alt="Book icon" />
-			<div class="meta-comic">
-				<h3><a href="<%= doc.url %>"><%- doc.title %></a></h3>
-				<time pubdate="<%- @computerDate(doc.date) %>"><%- @date(doc.date, doc.lang)  %></time>
+			<% end %>
+			<% if doc.relativeOutDirPath is @document.lang+'/comics' or doc.relativeOutDirPath is @document.lang+'/bd' : %>
+			<div class="thumb">
+				<a href="<%- doc.url %>">
+					<picture>
+						<source srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-550x550.jpg 1x, /<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg 2x"></source>
+						<img srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg" alt="<%- doc.title %> <%- @_ 'thumbnail' %>">
+					</picture>
+				</a>
+				<img class="thumb-overlay" src="/website-img/icon-book.svg" alt="Book icon" />
+				<div class="meta-comic">
+					<h3><a href="<%= doc.url %>"><%- doc.title %></a></h3>
+					<time pubdate="<%- @computerDate(doc.date) %>"><%- @date(doc.date, doc.lang)  %></time>
+				</div>
 			</div>
-		</div>
+			<% end %>
+			<% if doc.relativeOutDirPath is @document.lang+'/blog': %>
+				<article class="post small-blocks" style="background:url(<%- doc.thumb %>) repeat scroll center center, url(../website-img/paper-tilt-rotate.png) repeat, white repeat">
+			  	<div class="meta-blog">
+				    <h2><a href="<%= doc.url %>"><%- doc.title %></a></h2>
+				   <time pubdate="<%- @computerDate(doc.date) %>"><%- @date(doc.date, doc.lang) %></time>
+				 </div>
+				</article>
+			<% end %>
 		<% end %>
-		<% if doc.relativeOutDirPath is @document.lang+'/blog': %>
-			<article class="post small-blocks" style="background:url(<%- doc.thumb %>) repeat scroll center center, url(../website-img/paper-tilt-rotate.png) repeat, white repeat">
-		  	<div class="meta-blog">
-			    <h2><a href="<%= doc.url %>"><%- doc.title %></a></h2>
-			   <time pubdate="<%- @computerDate(doc.date) %>"><%- @date(doc.date, doc.lang) %></time>
-			 </div>
-			</article>
+
+	<% else if @document.page.number > 0: %>
+
+		<% for doc in @getPageCollection('all_'+ @document.lang).toJSON(): %>
+			<% if doc.relativeOutDirPath is @document.lang+'/img': %>
+			<div class="thumb">
+				<a href="<%- doc.url %>">
+					<picture>
+						<source srcset="/img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-350x350.jpg 1x, /img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-700x700.jpg 2x"></source>
+						<img srcset="/img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-350x350.jpg" alt="<%- doc.title %> <%- @_ 'thumbnail' %>">
+					</picture>
+				</a>
+				<div class="meta">
+					<h3><a href="<%= doc.url %>"><%- doc.title %></a></h3>
+					<time pubdate="<%- @computerDate(doc.date) %>"><%- @date(doc.date, doc.lang)  %></time>
+				</div>
+			</div>
+			<% end %>
+			<% if doc.relativeOutDirPath is @document.lang+'/comics' or doc.relativeOutDirPath is @document.lang+'/bd' : %>
+			<div class="thumb">
+				<a href="<%- doc.url %>">
+					<picture>
+						<source srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-550x550.jpg 1x, /<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%=doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg 2x"></source>
+						<img srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= doc.dir %>/<%= doc.dir %>-thumb-700x700.jpg" alt="<%- doc.title %> <%- @_ 'thumbnail' %>">
+					</picture>
+				</a>
+				<img class="thumb-overlay" src="/website-img/icon-book.svg" alt="Book icon" />
+				<div class="meta-comic">
+					<h3><a href="<%= doc.url %>"><%- doc.title %></a></h3>
+					<time pubdate="<%- @computerDate(doc.date) %>"><%- @date(doc.date, doc.lang)  %></time>
+				</div>
+			</div>
+			<% end %>
+			<% if doc.relativeOutDirPath is @document.lang+'/blog': %>
+				<article class="post small-blocks" style="background:url(<%- doc.thumb %>) repeat scroll center center, url(../website-img/paper-tilt-rotate.png) repeat, white repeat">
+			  	<div class="meta-blog">
+				    <h2><a href="<%= doc.url %>"><%- doc.title %></a></h2>
+				   <time pubdate="<%- @computerDate(doc.date) %>"><%- @date(doc.date, doc.lang) %></time>
+				 </div>
+				</article>
+			<% end %>
 		<% end %>
 	<% end %>
 
