@@ -228,8 +228,14 @@
 			<div class="service-button">
         <a href="https://framasphere.org/people/8ebf41e030f5013219742a0000053625"><img src="/website-img/icon-diaspora.svg" alt="Diaspora*" title="Diaspora*" /></a>
 			</div>
-      <!-- Tipeee -->
-      <div class="service-button">
+			<!-- Liberapay & Tipeee -->
+			<div class="service-button">
+				<a <% if @document.lang is "fr": %>
+						href="https://fr.liberapay.com/nylnook/"
+					<% else : %>
+						href="https://liberapay.com/nylnook/"
+					<% end %>
+				><img src="/website-img/icon-liberapay.svg" alt="Liberapay" title="Liberapay" /></a>
         <a href="https://www.tipeee.com/nylnook"><img src="/website-img/icon-tipeee.svg" alt="Tipeee" title="Tipeee" /></a>
       </div>
 		</div>

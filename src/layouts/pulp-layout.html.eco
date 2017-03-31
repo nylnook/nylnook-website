@@ -99,6 +99,16 @@
 					</li>
 				</ul>
 				<ul class="header-group desktop">
+					<li class="header-item-container tooltipped" data-btn="endnotes" data-action="drawer" aria-label="<%= @_ 'pulp-notes' %>">
+						<div class="header-item header-btn">
+							<div class="pulp-icon-dot-3 header-btn-icon"></div>
+						</div>
+					</li>
+					<li class="header-item-container tooltipped" data-btn="tipeee" aria-label="<%= @_ 'become-a-patron' %>">
+						<div class="header-item header-btn">
+							<a href="https://www.tipeee.com/nylnook"><img src="/website-img/icon-tipeee-black.svg" alt="Tipeee" title="Tipeee" /></a>
+						</div>
+					</li>
 					<li class="header-item-container dropdowned" data-btn="export">
 						<div class="header-item header-btn">
 							<span class="pulp-icon-download-cloud header-btn-icon"></span>
@@ -107,22 +117,21 @@
 							<script src="https://gumroad.com/js/gumroad.js"></script>
 							<a class="gumroad-button" href="<%= @document.productlink %>"><%= @_ 'pulp-download-2' %></a>
 						</ul>
-					</li><li class="header-item-container tooltipped" data-btn="endnotes" data-action="drawer" aria-label="<%= @_ 'pulp-notes' %>">
-						<div class="header-item header-btn">
-							<div class="pulp-icon-dot-3 header-btn-icon"></div>
-						</div>
-					</li><li class="header-item-container tooltipped" data-btn="comment" aria-label="<%= @_ 'pulp-comment-2' %>">
-						<div class="header-item header-btn">
-							<a href="../../<%= @document.lang %>/<%= @_ "comics-filename" %>/<%= @document.dir %>"><div class="pulp-icon-chat header-btn-icon"></div></a>
-						</div>
-					</li><li class="header-item-container dropdowned" data-btn="share">
+					</li>
+					<li class="header-item-container dropdowned" data-btn="share">
 						<div class="header-item header-btn">
 							<div class="pulp-icon-share header-btn-icon"></div>
 						</div>
 						<ul class="btn-dropdown" data-which="share">
 							<li class="pulp-icon-twitter social-btn" data-which="twitter"></li>
 							<li class="pulp-icon-facebook social-btn" data-which="facebook"></li>
+							<a href="javascript:;" onclick="window.open('https://share.diasporafoundation.org/?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title),'das','location=no,links=no,scrollbars=no,toolbar=no,width=620,height=550'); return false;" rel="nofollow" target="_blank"><li class="pulp-icon-asterisk social-btn" data-which="diaspora"></li></a>
 						</ul>
+					</li>
+					<li class="header-item-container tooltipped" data-btn="comment" aria-label="<%= @_ 'pulp-comment-2' %>">
+						<div class="header-item header-btn">
+							<a href="../../<%= @document.lang %>/<%= @_ "comics-filename" %>/<%= @document.dir %>"><div class="pulp-icon-chat header-btn-icon"></div></a>
+						</div>
 					</li>
 				</ul>
         <ul class="header-group">

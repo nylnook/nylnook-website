@@ -1,7 +1,7 @@
 ---
 title: 'Salon et formations à Gap'
 date: 2016-11-09 14:00
-thumb: '/img/blog/pub-grenouilles-print-700.jpg'
+thumb: '/website-img/support/graph-finance-thumb.jpg'
 tags:
   - annonces
   - formation

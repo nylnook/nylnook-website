@@ -22,6 +22,15 @@
 			<div class="service-button">
 				<a href="https://framasphere.org/u/nylnook"><img src="/website-img/icon-diaspora.svg" alt="Diaspora*" title="Diaspora*" /></a>
 			</div>
+			<!-- Liberapay -->
+			<div class="service-button">
+				<a <% if @document.lang is "fr": %>
+						href="https://fr.liberapay.com/nylnook/"
+					<% else : %>
+						href="https://liberapay.com/nylnook/"
+					<% end %>
+				><img src="/website-img/icon-liberapay.svg" alt="Liberapay" title="Liberapay" /></a>
+			</div>
 			<!-- Tipeee -->
 			<div class="service-button">
 				<a href="https://www.tipeee.com/nylnook"><img src="/website-img/icon-tipeee.svg" alt="Tipeee" title="Tipeee" /></a>

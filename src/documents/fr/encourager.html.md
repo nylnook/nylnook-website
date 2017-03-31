@@ -5,12 +5,12 @@ title: 'Encourager'
 
 Ok, parlons argent !
 
-![Faire de la BD](/website-img/support/faire-de-la-bd-thumb.jpg)
+![Faire de la BD](/website-img/support/faire-de-la-bd-thumb.png)
 
 **Faire de la BD, c'est tout un art** : il faut avoir une idée d'histoire, croire que ça vaut la peine de l'écrire et de la dessiner, se documenter longuement, vérifier ses sources, rédiger un scénario, le jeter à la poubelle, en écrire un autre, être un peu plus content, le relire et le corriger, le relire et le corriger, le changer un peu, le relire et le corriger, se faire relire et corriger, ajouter des détails, le traduire en anglais, corriger la version anglaise, découper le scénario en pages et en cases, dessiner un storyboard (un croquis du dessin définitif) case à case, assembler ces cases en pages dans une première mise en page, reprendre le scénario et le storyboard, refaire quelques cases, en supprimer quelques-unes, en ajouter d'autres, refaire la mise en page, puis enfin passer au dessin de toutes les pages, une à une, d'abord l'encrage (le trait), puis la couleur, et faire la mise en page définitive, sans oublier la couverture et les pages de présentation, corriger encore une fois, puis préparer les ebooks et les fichiers prêts à imprimer, et la même pour la version anglaise, et enfin publier, imprimer, distribuer, présenter, mettre en ligne, mettre en ligne ailleurs, et ailleurs, faire sa petite pub sur les réseaux… et enfin souffler un peu, avant de recommencer !   
 
 Tout ça, c'est long, c'est fastidieux, mais c'est aussi un plaisir quand on aime dessiner et qu'on a envie de raconter une histoire, et c'est une belle récompense quand on peut lire sa propre histoire finie.
-![Auteur Heureux](/website-img/support/auteur-heureux-thumb.jpg)
+![Auteur Heureux](/website-img/support/auteur-heureux-thumb.png)
 
 #### Accès rapide
 - [Le projet](#mokatori)
@@ -50,7 +50,7 @@ Oui, j'ai dit que j'allais parler d'argent !
 Car, pendant tout ce temps, il faut aussi manger, dormir, s'occuper des petits, et les factures tombent. Et puis il y a aussi tout le boulot freelance, intéressant, mais pas personnel. Et puis tout le reste. Alors la BD elle avance, dans les interstices, quand quelques jours ou quelques heures se libèrent. Une petite chose par jour si possible, même 5 minutes. Mais ça fait déjà deux ans que l'idée a pris forme, et je publie enfin le premier épisode.
 
 Aujourd'hui, je gagne 450€/mois de salaire net avec mon travail freelance, en payant aussi mes cotisations et mes frais par ailleurs.
-![Salaire illustrateur freelance](/website-img/support/salaires-1-et-2-thumb.jpg)
+![Salaire illustrateur freelance](/website-img/support/salaires-1-et-2-thumb.png)
 Heureusement, il y en a une qui assure par derrière (et ouf, elle fait aussi ce qu'elle aime !).
 
 Avec ma première petite BD, pour l'instant, j'ai remboursé les frais d'impressions et d'envois que j'avais eu pour la distribuer.
@@ -66,13 +66,13 @@ Heureusement, on est en 2016, et Internet existe. Et l'auto-édition aussi. Et i
 Du mécénat participatif ça s’appelle. Tu connais le financement participatif, le « crowdfunding » ? Où un créateur s'adresse « à la foule » via Internet pour financer ponctuellement un projet, comme l'impression d'un album de BD ?   
 Hé bien, le mécénat participatif, c'est presque pareil, mais ce n'est pas ponctuel, c'est « durable » (hou, il est bien placé ce mot-là !).
 
-![2 chaînes du livre](/website-img/support/2-chaines-du-livre-thumb.jpg)
+![2 chaînes du livre](/website-img/support/2-chaines-du-livre-thumb.png)
 
 Toi, chère lectrice ou cher lecteur, tu deviens coproductrice ou coproducteur de Mokatori en devenant ma ou mon mécène sur [Tipeee](https://www.tipeee.com/nylnook/). Chaque mois, une petite somme de ton choix m'aidera à chasser les soucis du quotidien pour me concentrer sur la création de ce projet. Les petits ruisseaux font les grandes rivières, et 1 € par mois, c'est déjà beaucoup !
 
 Petit à petit, Inch’Allah, je pourrai consacrer de plus en plus de temps à ce projet, et les épisodes suivants sortiront plus vite. Tu commences quand tu veux, tu arrêtes quand tu veux. Et tu participes à la création en tant que coproductrice/teur : je publierais au fur et à mesure l'état de mon travail dans les coulisses (les news Tipeee), et tu pourras me donner ton avis, voir modifier ou ajouter des phrases, des cases et même des personnages. Car je suis persuadé que tu pourras enrichir mon travail, et Mokatori deviendra petit à petit une œuvre collective !
 
-![Coproducteur](/website-img/support/coproducteur-thumb.jpg)
+![Coproducteur](/website-img/support/coproducteur-thumb.png)
 
 <a name="contreparties"></a>
 # Description des contreparties
@@ -81,7 +81,7 @@ Petit à petit, Inch’Allah, je pourrai consacrer de plus en plus de temps à c
 <a name="bd-libre-et-numerique"></a>
 Pour ne rien vous cacher, il y a beaucoup d'autres raisons qui me poussent à choisir l'auto-édition. Voilà comment j'imagine
 # La BD libre et numérique au XXIème siècle
-![La BD libre et numérique au XXIème siècle](/website-img/support/bd-libre-et-et-numerique-thumb.jpg)
+![La BD libre et numérique au XXIème siècle](/website-img/support/bd-libre-et-et-numerique-thumb.png)
 
 ## en tant que lecteur
 - je veux pouvoir lire les BDs qui me plaisent.
@@ -132,13 +132,13 @@ Pour ne rien vous cacher, il y a beaucoup d'autres raisons qui me poussent à ch
 - je publie sur tous les supports que mes lecteurs peuvent choisir, mais je les décourage de brader leur liberté (svp, n'achetez pas des œuvres avec DRMs !).
 - je choisis l'indépendance, l'auto-édition, les formats numériques et l'impression à la demande.
 
-![Mes propres ailes](/website-img/support/ailes-thumb.jpg)
+![Mes propres ailes](/website-img/support/ailes-thumb.png)
 
 <a name="financement"></a>
 # À quoi va servir le financement ?
 Vos tips (pourboires) visent principalement à me donner du temps pour écrire et dessiner. Aujourd'hui je vis de mes contrats freelance, et chaque tip m'éloigne de l'obligation de chercher et réaliser des contrats pour me donner plus de temps sur la BD. De plus cela me permet aussi de réaliser des illustrations bonus et de partager avec vous des outils (brosses, textures, police d'écriture, modèles de pages…) et des making of que je n'aurais pas forcement le temps de réaliser sinon.
 Une petite partie du financement va également venir de la vente des ebooks sur les grosses librairies en ligne (Amazon, la Fnac…), et une autre de la vente des BDs imprimées.
-![Financement de Mokatori](/website-img/support/graph-finance-thumb.jpg)
+![Financement de Mokatori](/website-img/support/graph-finance-thumb.png)
 *NB : 8% du montant des tips va à Tipeee, car eux aussi ils ont besoin de manger ;)*
 
 <a name="a-propos"></a>
@@ -165,4 +165,8 @@ Je posterai les mêmes choses sur la newsletters et les news ouvertes à tous de
 
 Oui, j'ai créé [une page Patreon](https://www.patreon.com/nylnook) si tu préfères, même si la principale restera celle de [Tipeee](https://www.tipeee.com/nylnook/).
 
-![Merci et salut](/website-img/support/merci-thumb.jpg)
+- **Je préfère t'encourager avec des micro-dons sans contreparties, est-ce que c'est possible ?**
+
+Oui, j'ai créé [un profil Liberapay](https://fr.liberapay.com/nylnook/) si tu préfères, même si la principale restera celle de [Tipeee](https://www.tipeee.com/nylnook/).
+
+![Merci et salut](/website-img/support/merci-thumb.png)

@@ -5,12 +5,12 @@ title: 'Support'
 
 Now let's talk money!
 
-![Making Comics](/website-img/support/faire-de-la-bd-thumb.jpg)
+![Making Comics](/website-img/support/faire-de-la-bd-thumb.png)
 
 **Making comics is a whole art**: you must have an idea for a story, believe that it is worthwhile to write and draw, document for a long time, check your sources, write a script, throw it to the trash can, write another one, be a little happier, read it and correct it, review it and correct it, change it a little, review it and correct it, be reviewed and corrected, add details, translate it, correct the translated version, cut the scenario into pages and panels, draw a storyboard (a sketch of the defintive drawing) panel by panel, assemble the panels into pages in a first layout, redo the script and the storyboard, redo some panels, delete some, add others, redo the layout and then finally start the drawing of every page one by one, inking first (the line), then coloring and make the final layout, plus the cover and presentation pages, correct one more time, then prepare ebooks and print-ready files, and the same for the translated version, and finally publish, print, distribute, display, upload, upload elsewhere, and also do your small advertising on networks... and finally have a break, before restarting !   
 
 All this, it's long, it's tedious, but it's also a pleasure when you enjoy to draw and you want to tell a story, and this is a great reward when you can read your own finished story.
-![Happy Author](/website-img/support/auteur-heureux-thumb.jpg)
+![Happy Author](/website-img/support/auteur-heureux-thumb.png)
 
 #### Quick access
 - [The Project](#mokatori)
@@ -51,7 +51,7 @@ Yes, I said I was going to talk about money!
 Because during all this time, I must also eat, sleep, care for children, and the bills are recurring. And then all the freelance work, interesting but not personal. And then everything else. Then the comic progress within the interstices, when a few days or a few hours become available. One small thing a day if possible, even 5 minutes. But it's been two years since the idea took shape, and I finally published the first episode.
 
 Today, I earn 450 €/month of net salary with my freelance work, also paying my dues and my fees otherwise.
-![Freelance Illustrator Salary](/website-img/support/salary-thumb.jpg)
+![Freelance Illustrator Salary](/website-img/support/salary-thumb.png)
 Fortunately, there is one that ensures behind (and phew, she also does what she likes!).
 
 With my first small comic, for now, I have repaid the costs of printing and mailing that I had to distribute it.
@@ -66,13 +66,13 @@ Fortunately, we are in 2016, and Internet exists. And self-publishing too. And t
 It's called fan based patronage. You heard about crowdfunding? Where a creator speaks to "the crowd" via the Internet to fund a project punctually, such as printing a comic album?   
 Well, fan based patronage, it's almost the same, but it's not punctual, it's "sustainable" (wow, well placed word!).  
 
-![2 books chain](/website-img/support/2-books-chain-thumb.jpg)
+![2 books chain](/website-img/support/2-books-chain-thumb.png)
 
 You, dear reader, you become a co-producer of Mokatori by becoming my patron on [Tipeee](https://www.tipeee.com/nylnook/). Each month, a small amount of your choice will help me to drive away the everyday worries to focus on the creation of this project. From small beginnings come great things, and €1 per month, that's already a lot!
 
 Gradually, Inshallah, I can dedicate more time to this project, and the following episodes will come out faster. You start when you want, you stop when you want. And you participate in the creation as co-producer: I will publish the state of my work behind the scenes (into Tipeee News), and you will be able to give me your opinion, or even modify or add sentences, panels, and even characters. Because I am convinced that you can enrich my work, and Mokatori will become gradually a collective work!
 
-![Co-producer](/website-img/support/co-producer-thumb.jpg)
+![Co-producer](/website-img/support/co-producer-thumb.png)
 
 <a name="rewards"></a>
 # Rewards' Description
@@ -81,7 +81,7 @@ Gradually, Inshallah, I can dedicate more time to this project, and the followin
 <a name="digital-and-free-comics"></a>
 To be honest with you, there are many other reasons why I choose self-publishing. Here's how I imagine
 # Digital and Free (as in Freedom) Comics in the XXI Century
-![Digital and Free (as in Freedom) Comics in the XXI Century](/website-img/support/bd-libre-et-et-numerique-thumb.jpg)
+![Digital and Free (as in Freedom) Comics in the XXI Century](/website-img/support/bd-libre-et-et-numerique-thumb.png)
 
 ## as a reader
 - I want to read the comics I like.
@@ -132,13 +132,13 @@ To be honest with you, there are many other reasons why I choose self-publishing
 - I publish on all the medias which my readers can choose, but I discourage them from cheapen their freedom (please, don't buy works with DRMs!).
 - I choose independence, self-publishing, digital formats and print on demand.
 
-![My Own Wings](/website-img/support/ailes-thumb.jpg)
+![My Own Wings](/website-img/support/ailes-thumb.png)
 
 <a name="funding"></a>
 # How Will the Funding Be Used?
 Your tips are primarily intended to give me time to write and draw. Today I make a living from my freelance contracts, and each tip move away from the obligation to seek and carry out contracts to give me more time on the comic. Additionally it also allow me to make bonus illustrations, and share with you tools (brushes, textures, typeface, page templates…) and the "making ofs" that I hardly have time to realize otherwise.
 A small part of the funding will also come from the sale of ebooks on large online bookstores (Amazon…) and another from the sale of printed comics.
-![Mokatori Funding](/website-img/support/funding-graph-thumb.jpg)
+![Mokatori Funding](/website-img/support/funding-graph-thumb.png)
 *Note: 8% of the amount of tips goes to Tipeee because they also need to eat ;)*
 
 <a name="about"></a>
@@ -165,4 +165,8 @@ I'll post the same things in the newsletters and in the Tipeee news open to all,
 
 Yes, I've created [a Patreon page](https://www.patreon.com/nylnook) if you prefer, even if the main one will be the [Tipeee](https://www.tipeee.com/nylnook/) one.
 
-![Thank you and goobye](/website-img/support/thanks-thumb.jpg)
+- **I prefer to support you with micro-donations without rewards, is it possible ?**
+
+Yes, I've created [a Liberapay profil](https://liberapay.com/nylnook/) if you prefer, even if the main one will be the [Tipeee](https://www.tipeee.com/nylnook/) one.
+
+![Thank you and goobye](/website-img/support/thanks-thumb.png)

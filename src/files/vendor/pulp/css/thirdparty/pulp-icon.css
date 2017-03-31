@@ -67,3 +67,6 @@
 .pulp-icon-share:before { content: '\e80a'; } /* '' */
 .pulp-icon-zoom-in:before { content: '\e80b'; } /* '' */
 .pulp-icon-dot-3:before { content: '\e80c'; } /* '' */
+.pulp-icon-sticky-note:before { content: '\e80d'; } /* 'î ' */
+.pulp-icon-bookmarks:before { content: '\e80e'; } /* 'î Ž' */
+.pulp-icon-asterisk:before { content: '\e80f'; } /* 'î ' */
