@@ -28,8 +28,6 @@
 
 	 	<!-- DON'T FORGET TO FILL OUT OpenGraph FIELDS -->
 	 	<!-- http://ogp.me/ -->
-		<meta property="fb:admins" content="100009724127157" />
-		<meta property="fb:app_id" content="185400865127376" />
 		<meta property="og:title" content="<%= @document.title %>">
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="<%- @site.url %><%= @document.url %>/">
@@ -47,6 +45,18 @@
 		<!-- at least 280px x 150px for Twitter (image must be < 1MB) -->
 		<meta name="twitter:description" content="<%= contentastext %>">
 
+		<style>
+		.service-button {
+			display: inline-block;
+			margin: 0.2rem;
+			vertical-align: middle;
+		}
+		.social-small img {
+			width: 20px;
+			height: auto;
+		}
+		</style>
+
 	</head>
 	<body>
     <!--[if lt IE 10]>
@@ -61,9 +71,22 @@
 		<div id="side-drawer-container" class="mobile-scrollable">
       <div id="side-drawer-content">
 				<div class="drawer-section-container" data-which="share">
-					<ul>
-						<li class="pulp-icon-twitter social-btn" data-which="twitter"></li><li class="pulp-icon-facebook social-btn" data-which="facebook"></li><li class="pulp-icon-gplus social-btn" data-which="gplus"></li><li class="pulp-icon-reddit social-btn" data-which="reddit"></li>
-					</ul>
+						<!-- Twitter -->
+						<div class="service-button">
+							<a href="https://twitter.com/nylnook"><img src="/website-img/icon-twitter-white.svg" alt="Twitter" title="Twitter" /></a>
+						</div>
+						<!-- Mastodon -->
+						<div class="service-button">
+							<a href="https://mastodon.network/@nylnook"><img src="/website-img/icon-mastodon-white.svg" alt="Mastodon" title="Mastodon" /></a>
+						</div>
+						<!-- Facebook -->
+						<div class="service-button">
+							<a href="https://www.facebook.com/nylnook/"><img src="/website-img/icon-facebook-white.svg" alt="Facebook" title="Facebook" /></a>
+						</div>
+						<!-- Diaspora* -->
+						<div class="service-button">
+							<a href="https://framasphere.org/u/nylnook"><img src="/website-img/icon-diaspora-white.svg" alt="Diaspora*" title="Diaspora*" /></a>
+						</div>
 				</div>
         <div class="drawer-section-container" data-section="pub-date">
           <div class="section-subtitle"><%= @_ 'pulp-published' %><span class="pub-date-js"></span></div>
@@ -123,9 +146,22 @@
 							<div class="pulp-icon-share header-btn-icon"></div>
 						</div>
 						<ul class="btn-dropdown" data-which="share">
-							<li class="pulp-icon-twitter social-btn" data-which="twitter"></li>
-							<li class="pulp-icon-facebook social-btn" data-which="facebook"></li>
-							<a href="javascript:;" onclick="window.open('https://share.diasporafoundation.org/?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title),'das','location=no,links=no,scrollbars=no,toolbar=no,width=620,height=550'); return false;" rel="nofollow" target="_blank"><li class="pulp-icon-asterisk social-btn" data-which="diaspora"></li></a>
+							<!-- Twitter -->
+							<li class="social-btn social-small">
+								<a href="https://twitter.com/nylnook"><img src="/website-img/icon-twitter-white.svg" alt="Twitter" title="Twitter" /></a>
+							</li>
+							<!-- Mastodon -->
+							<li class="social-btn social-small">
+								<a href="https://mastodon.network/@nylnook"><img src="/website-img/icon-mastodon-white.svg" alt="Mastodon" title="Mastodon" /></a>
+							</li>
+							<!-- Facebook -->
+							<li class="social-btn social-small">
+								<a href="https://www.facebook.com/nylnook/"><img src="/website-img/icon-facebook-white.svg" alt="Facebook" title="Facebook" /></a>
+							</li>
+							<!-- Diaspora* -->
+							<li class="social-btn social-small">
+								<a href="https://framasphere.org/u/nylnook"><img src="/website-img/icon-diaspora-white.svg" alt="Diaspora*" title="Diaspora*" /></a>
+							</li>
 						</ul>
 					</li>
 					<li class="header-item-container tooltipped" data-btn="comment" aria-label="<%= @_ 'pulp-comment-2' %>">

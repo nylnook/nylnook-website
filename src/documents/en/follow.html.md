@@ -25,11 +25,10 @@ To follow latest news on this website, you can subscribe to my RSS feeds :
 - [Wallpapers only](../../wallpaper-en-rss.xml)
 - [Blog posts only](../../blog-en-rss.xml)
 
-![Twitter icon](/website-img/icon-twitter.svg)
-or follow **[@nylnook](https://twitter.com/nylnook)** on [Twitter](https://twitter.com/nylnook)
-
-I may occasionally give news on ![Diaspora icon](/website-img/icon-diaspora.svg) [Diaspora*](https://framasphere.org/u/nylnook) and [Facebook icon](/website-img/icon-facebook.svg) [Facebook](https://www.facebook.com/nylnook) too ;)
+I may occasionally give news on ![Twitter icon](/website-img/icon-twitter.svg) [Twitter](https://twitter.com/nylnook), ![Mastodon icon](/website-img/icon-mastodon.svg) [Mastodon](https://mastodon.network/@nylnook), ![Diaspora icon](/website-img/icon-diaspora.svg) [Diaspora*](https://framasphere.org/u/nylnook) and ![Facebook icon](/website-img/icon-facebook.svg) [Facebook](https://www.facebook.com/nylnook) too ;)
 
 ## Or Even
 
 [![Want to read more of Mokatori ? Become a patron of Nylnook on Tipeee](/website-img/support/become-a-patron-of-nylnook-on-tipeee.jpg)](https://www.tipeee.com/nylnook)
+
+And also on ![Liberapay icon](/website-img/icon-liberapay.svg) [Liberapay](https://liberapay.com/nylnook/) !

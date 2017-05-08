@@ -37,3 +37,9 @@ Tout le monde n'est pas climatologue. Et comme le constate [le Guardian](http://
 
 > **C'est dans un monde de batraciens que l'histoire se déroule, et quelqu'un va passer à la casserole…**
 [Sophie Tallois, France 3 Régions](http://france3-regions.francetvinfo.fr/cop21-le-changement-climatique-explique-aux-grenouilles-en-bande-dessinee-877731.html)     
+
+&nbsp;
+
+**Épilogue**
+
+[![Strip grenouilles Accord de Paris COP21](/img/blog/strip-accord-cop21-paris-web.jpg)](/img/blog/strip-accord-cop21-paris-web.jpg)

@@ -25,11 +25,11 @@ Pour suivre les dernières actualité sur ce site web, vous pouvez vous abonnez 
 - [Les fonds d'écran seulement](../../wallpaper-fr-rss.xml)
 - [Le blog seulement](../../blog-fr-rss.xml)
 
-![Twitter icon](/website-img/icon-twitter.svg)
-ou suivre **[@nylnook](https://twitter.com/nylnook)** sur [Twitter](https://twitter.com/nylnook)
 
-Je pourrais donner des nouvelles sur ![Diaspora icon](/website-img/icon-diaspora.svg) [Diaspora*](https://framasphere.org/u/nylnook), et ![Facebook icon](/website-img/icon-facebook.svg) [Facebook](https://www.facebook.com//nylnook) de temps en temps également ;)
+Je pourrais donner des nouvelles sur ![Twitter icon](/website-img/icon-twitter.svg) [Twitter](https://twitter.com/nylnook), ![Mastodon icon](/website-img/icon-mastodon.svg) [Mastodon](https://mastodon.network/@nylnook), ![Diaspora icon](/website-img/icon-diaspora.svg) [Diaspora*](https://framasphere.org/u/nylnook), et ![Facebook icon](/website-img/icon-facebook.svg) [Facebook](https://www.facebook.com//nylnook) de temps en temps également ;)
 
 ## Ou même
 
 [![Envie de lire la suite de Mokatori ? Devenez mécène de Nylnook sur Tipeee](/website-img/support/devenez-mecene-de-nylnook-sur-tipeee.jpg)](https://www.tipeee.com/nylnook)
+
+et aussi sur ![Liberapay icon](/website-img/icon-liberapay.svg) [Liberapay](https://fr.liberapay.com/nylnook/) !

@@ -36,8 +36,6 @@
 		<% end %>
 		<!-- Open Graph Protocol -->
 		<!-- http://ogp.me/ -->
-		<meta property="fb:admins" content="100009724127157" />
-		<meta property="fb:app_id" content="185400865127376" />
 		<meta property="og:type" content="article" />
 		<meta property="og:title" content="<%- @document.title %>" />
 		<meta property="og:url" content="<%- @site.url %><%- @document.url %>/" />
