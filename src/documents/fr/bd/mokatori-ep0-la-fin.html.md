@@ -14,7 +14,7 @@ relaylink: 'https://livre.relay.com/ebook/9791095663034/mokatori-ep-0-la-fin-nyl
 dialogueslink: 'https://www.librairiedialogues.fr/livre/10697160-mokatori-ep-0-la-fin-nylnook-nylnook'
 ---
 
-Et si les habitants de l'avenir nous envoyait des lettres ?
+Et si les habitants de l'avenir nous envoyaient des lettres ?
 
 De 2054 à 2084, de l'Islande à l'Afghanistan, des cataclysmes aux utopies, cinq récits dessinent nos futurs possibles pendant le « Mokatori », le mot pour changement climatique chez les indiens d'Amazonie  
 **Ép. 0 - « La fin » - Mexico, Mexique, 27 novembre 2015**   

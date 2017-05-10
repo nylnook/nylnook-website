@@ -14,7 +14,7 @@ Enfin, ça y est, après des mois de travail, des tonnes de corrections du scén
 **Il est prêt à décoller, [je publie l'épisode 0, l'introduction, le 7 septembre prochain !](/fr/bd/mokatori-ep0-la-fin/)**
 
 ## Mokatori
-Et si les habitants de l'avenir nous envoyait des lettres ?  
+Et si les habitants de l'avenir nous envoyaient des lettres ?  
 De 2054 à 2084, de l'Islande à l'Afghanistan, des cataclysmes aux utopies, cinq récits dessinent nos futurs possibles pendant le « Mokatori », le mot pour changement climatique chez les indiens d’Amazonie  
 **Ép. 0 - « La fin » - Mexico, Mexique, 27 novembre 2015**  
 Ép. 1 - « Business as usual » - Reykjavík, Islande, 20 mars 2054  
