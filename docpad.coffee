@@ -56,11 +56,11 @@ docpadConfig = {
 		# Non translated definitions (untranslated names, urls ..)
 		site:
 			# The production url of our website
-			url: "http://nylnook.com"
+			url: "http://nylnook.art"
 
 			# Here are some old site urls that you would like to redirect from
 			oldUrls: [
-				'www.nylnook.com'
+				'www.nylnook.art'
 			]
 
 			# The default title of our website
