@@ -45,6 +45,9 @@
 		<!-- at least 280px x 150px for Twitter (image must be < 1MB) -->
 		<meta name="twitter:description" content="<%= contentastext %>">
 
+		<!-- Flattr -->
+		<meta name="flattr:id" content="rjojyn"> 
+
 		<style>
 		.service-button {
 			display: inline-block;
