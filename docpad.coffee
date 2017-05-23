@@ -60,7 +60,9 @@ docpadConfig = {
 
 			# Here are some old site urls that you would like to redirect from
 			oldUrls: [
-				'www.nylnook.art'
+				'www.nylnook.art',
+				'http://nylnook.com',
+				'www.nylnook.com'
 			]
 
 			# The default title of our website
