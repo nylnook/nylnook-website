@@ -12,7 +12,7 @@ Responsable editorial : Camille Bissuel
 1480 route de Corréo – 05400 La Roche-des-Arnauds   
 Téléphone : 06 75 25 90 39   
 Email : welcome *at* nylnook *point* com   
-Site Web : [www.nylnook.com](www.nylnook.com)   
+Site Web : [www.nylnook.com](http://www.nylnook.com)   
 
 ### Activité commerciale
 
@@ -20,7 +20,7 @@ Nylnook est le nom commercial de l'entrepreneur-salarié Camille Bissuel au sein
 Avenue d'Embrun – 05230 Chorges   
 Téléphone : 04 92 48 53 05   
 Email : contact *at* coodyssee *point* fr   
-Site Web : [www.coodyssee.fr](www.coodyssee.fr)   
+Site Web : [www.coodyssee.fr](http://www.coodyssee.fr)   
 N°SIRET : 50853636400021   
 TVA Intra. : FR88508536364   
 
@@ -29,7 +29,7 @@ TVA Intra. : FR88508536364
 Hébergeur : Gandi   
 63-65 boulevard Massena, 75013 Paris   
 Téléphone : +33.1 70 37 76 66   
-Site Web : [www.gandi.net](www.gandi.net)   
+Site Web : [www.gandi.net](http://www.gandi.net)   
 
 ### Déclaration à la CNIL
 
