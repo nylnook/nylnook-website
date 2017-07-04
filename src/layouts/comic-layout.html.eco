@@ -29,7 +29,27 @@
 </nav>
 
 <article class="img-page">
- <div id="picture-zone">
+
+<nav id="language-selector-sub">
+	<%= @_ 'comic-translated-in' %>
+	<% if @document.sublang_fr : %>
+		<a href="<%= @document.sublang_fr %>"><%= @_ 'french' %></a>
+	<% end %>
+	<% if @document.sublang_en : %>
+		<a href="<%= @document.sublang_en %>"><%= @_ 'english' %></a>
+	<% end %>
+	<% if @document.sublang_es : %>
+		<a href="<%= @document.sublang_es %>"><%= @_ 'spanish' %></a>
+	<% end %>
+	<% if @document.sublang_es : %>
+		<a href="<%= @document.sublang_pt_br %>"><%= @_ 'brazilian portuguese' %></a>
+	<% end %>
+	<% if @document.sublang_br : %>
+    <a href="<%= @document.sublang_br %>"><%= @_ 'breton' %></a>
+  <% end %>
+</nav>
+
+<div id="picture-zone">
 	 <a href="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>" ><picture>
 		 <source srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover.jpg" media="(min-width: 981px)"></source>
 		 <source srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover-700.jpg 1x, /<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover.jpg 2x" media="(min-width: 481px)"></source>
@@ -37,6 +57,7 @@
 		 <img src="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover-700.jpg" alt="<%- @document.title %> <%- @_ 'thumbnail' %>">
 	 </picture></a>
 </div>
+
 <section id="actions" class="small-blocks">
 <div class="inside">
 	<script src="https://gumroad.com/js/gumroad.js"></script>

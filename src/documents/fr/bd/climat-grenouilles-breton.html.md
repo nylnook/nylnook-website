@@ -4,9 +4,12 @@ dir: 'climat-grenouilles-breton'
 title: "Ar cheñchamant hin displeget d'ar gleskered..."
 date: 2015-10-08
 license: 'by-sa'
+hidden : true
 productlink: 'https://gumroad.com/l/ClimatGrenouillesBreton'
 sourcelink: 'https://framagit.org/nylnook/climate-frogs-comic'
 bookelislink: 'https://www.bookelis.com/bd/27510-Ar-chenchamant-hin-displeget-d-ar-gleskered.html'
+sublang_fr: '/fr/bd/climat-grenouilles'
+sublang_en: '/en/comics/climate-frogs'
 ---
 *Troet gant Patrick Béchard.*
 

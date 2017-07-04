@@ -93,5 +93,11 @@
 	"pulp-published" : "Publié le ",
 	"translate-adapt" : "Traduire, adapter…",
 	"search-placeholder" : "Rechercher sur ce site web avec DuckDuckGo",
-	"search-alt-submit" : "Recherche DuckDuckGo"
+	"search-alt-submit" : "Recherche DuckDuckGo",
+	"comic-translated-in" : "BD traduite en",
+	"french" : "Français",
+	"english" : "Anglais",
+	"spanish" : "Espagnol",
+	"brazilian portuguese" : "Portugais Brésilien",
+	"breton" : "Breton"
 }
