@@ -12,6 +12,8 @@ sublang_fr: '/fr/bd/mokatori-ep0-la-fin'
 sublang_en: '/en/comics/mokatori-ep0-the-end'
 ---
 
+*Traducción : [Elisa de Castro Guerra](http://www.yemanjalisa.net/) y Choly*
+
 Y si la gente del futuro nos envían cartas ?
 
 De 2054 a 2084, de Islandia a Afganistán, de los cataclismos a las utopías, cinco historias dibujan nuestros futuros posibles para el «&nbsp;Mokatori&nbsp;», palabra para el cambio climático de los indios del Amazonas   
