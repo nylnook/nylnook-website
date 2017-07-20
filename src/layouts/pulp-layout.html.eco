@@ -46,7 +46,7 @@
 		<meta name="twitter:description" content="<%= contentastext %>">
 
 		<!-- Flattr -->
-		<meta name="flattr:id" content="rjojyn"> 
+		<meta name="flattr:id" content="rjojyn">
 
 		<style>
 		.service-button {
@@ -98,8 +98,7 @@
 				<div class="drawer-section-container" data-section="downloads">
 					<div class="section-title"><%= @_ 'pulp-download-1' %></div>
 					<ul>
-						<script src="https://gumroad.com/js/gumroad.js"></script>
-						<a class="gumroad-button" href="<%= @document.productlink %>"><%= @_ 'pulp-download-2' %></a>
+						<a href="/download/<%= @document.download %>"><%= @_ 'pulp-download-2' %></a>
 					</ul>
 				</div>
 				<div class="drawer-section-container">
@@ -135,14 +134,10 @@
 							<a href="https://www.tipeee.com/nylnook"><img src="/website-img/icon-tipeee-black.svg" alt="Tipeee" title="Tipeee" /></a>
 						</div>
 					</li>
-					<li class="header-item-container dropdowned" data-btn="export">
+					<li class="header-item-container tooltipped" data-btn="export" aria-label="<%= @_ 'pulp-download-2' %>">
 						<div class="header-item header-btn">
-							<span class="pulp-icon-download-cloud header-btn-icon"></span>
+							<a href="/download/<%= @document.download %>"><div class="pulp-icon-download-cloud header-btn-icon"></div></a>
 						</div>
-						<ul class="btn-dropdown" data-which="alt-formats">
-							<script src="https://gumroad.com/js/gumroad.js"></script>
-							<a class="gumroad-button" href="<%= @document.productlink %>"><%= @_ 'pulp-download-2' %></a>
-						</ul>
 					</li>
 					<li class="header-item-container dropdowned" data-btn="share">
 						<div class="header-item header-btn">

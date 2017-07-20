@@ -4,7 +4,7 @@ dir: 'climat-grenouilles-breton'
 title: "Ar cheñchamant hin displeget d'ar gleskered..."
 date: 2015-10-08
 keywords: "hin, gleskered, bannoù treset, cop21, cheñchamant hin, creative commons"
-productlink: 'https://gumroad.com/l/ClimatGrenouillesBreton'
+download: "Ar cheñchamant hin displeget d'ar gleskered - HD ebook.pdf"
 ---
 *Troet gant Patrick Béchard.*
 

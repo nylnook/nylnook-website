@@ -4,7 +4,7 @@ dir: 'mokatori-ep0-la-fin'
 title: "Mokatori - Ép. 0 - La fin"
 date: 2016-09-07
 keywords: "bd, bande dessinée, climat, changement climatique, creative commons, libre, gratuit"
-productlink: 'https://gumroad.com/l/Mokatori-ep0-fr'
+download: "Mokatori - Ép. 0 - La fin - HD ebook.pdf"
 ---
 
 Et si les habitants de l'avenir nous envoyaient des lettres ?

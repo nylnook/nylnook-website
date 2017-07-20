@@ -4,7 +4,7 @@ dir: 'climate-frogs'
 title: "Climate Change Explained to Frogs..."
 date: 2015-10-08
 keywords: "comics, graphic novel, climate, climate change, creative commons, libre, free"
-productlink: 'https://gumroad.com/l/ClimateFrogs'
+download: "Climate Change Explained to Frogs - HD ebook.pdf"
 ---
 
 **Everyone talks about it, but you don't really get the problem exactly, what is this famous climate change?**

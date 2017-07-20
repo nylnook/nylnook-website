@@ -4,7 +4,7 @@ dir: 'climat-grenouilles'
 title: "Le changement climatique expliqué aux grenouilles..."
 date: 2015-10-08
 keywords: "bd, bande dessinée, climat, changement climatique, creative commons, libre, gratuit"
-productlink: 'https://gumroad.com/l/ClimatGrenouilles'
+download: "Le changement climatique expliqué aux grenouilles - HD ebook.pdf"
 ---
 
 **Tout le monde en parle, mais vous n'avez pas vraiment compris le problème : au juste, qu'est-ce que c'est que ce fameux changement climatique ?**
