@@ -39,13 +39,12 @@
 </div>
 <section id="actions" class="small-blocks">
 <div class="inside">
-	<script src="https://gumroad.com/js/gumroad.js"></script>
 	<a class="big-button" href="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>"><img src="/website-img/icon-book.svg"  class="book-icon" alt="Book icon" /><h2><%= @_ 'read-online' %></h2></a>
-  <% if @document.productlink? : %>
-    <a class="gumroad-button" href="<%= @document.productlink %>"><%= @_ 'download-gumroad' %></a>
+  <% if @document.download? : %>
+		<a class="medium-button" href="/download/<%= @document.download %>"><img src="/website-img/icon-dowload.svg"  class="dowload-icon" alt="Download icon" /><h3><%= @_ 'download' %></h3></a>
   <% end %>
-  <% if @document.productpaperlink? : %>
-    <a class="gumroad-button" href="<%= @document.productpaperlink %>"><%= @_ 'buy-paper-gumroad' %></a>
+  <% if @document.orderlink? : %>
+    <a class="medium-button" href="<%= @document.orderlink %>" target="_blank"><img src="/website-img/icon-order.svg"  class="order-icon" alt="Order icon" /><h3><%= @_ 'order-book' %></h3></a>
   <% end %>
 </div>
 </section>

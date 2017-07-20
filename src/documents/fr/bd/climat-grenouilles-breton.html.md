@@ -4,7 +4,7 @@ dir: 'climat-grenouilles-breton'
 title: "Ar cheñchamant hin displeget d'ar gleskered..."
 date: 2015-10-08
 license: 'by-sa'
-productlink: 'https://gumroad.com/l/ClimatGrenouillesBreton'
+download: "Ar cheñchamant hin displeget d'ar gleskered - HD ebook.pdf"
 sourcelink: 'https://framagit.org/nylnook/climate-frogs-comic'
 bookelislink: 'https://www.bookelis.com/bd/27510-Ar-chenchamant-hin-displeget-d-ar-gleskered.html'
 ---

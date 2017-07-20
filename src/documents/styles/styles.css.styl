@@ -1379,13 +1379,18 @@ img-base()
 #actions, .modal-button, #become-a-patron, #adapt
 	background: url(../website-img/paper-tilt-rotate.png) repeat, lightbluenyl repeat
 
-	h2, p
+	h2, h3, p
 		margin: 0
 		padding: 0
 
 	h2
 		font-variant: normal
 		font-size: 1.8rem
+		font-weight: normal
+
+	h3
+		font-variant: normal
+		font-size: 1.3rem
 		font-weight: normal
 
 	p
@@ -1399,12 +1404,13 @@ img-base()
 	a:hover, a:focus, a:active
 		text-decoration: none
 
-.big-button, .small-button, .modal-button
+.big-button, .small-button, .medium-button, .modal-button
 	background-color: yellownyl
 	color: black !important
 	box-shadow: 0.2rem 0.2rem 0.2rem 0 rgba(50, 50, 50, 0.75);
 
 .big-button:hover, .big-button:focus, .big-button:active,
+.medium-button:hover, .medium-button:focus, .medium-button:active,
 .small-button:hover, .small-button:focus, .small-button:active,
 .modal-button:hover, .modal-button:focus, .modal-button:active
 	background-color: rgba(193,193,141,0.7)
@@ -1413,6 +1419,10 @@ img-base()
 .big-button
 	text-align: left
 	padding: 8% 1%
+
+.medium-button
+	text-align: left
+	padding: 4% 1%
 
 .small-button
 	text-align: center
@@ -1443,25 +1453,26 @@ img-base()
 	a, a:visited
 		color: black
 
-.gumroad-button
-	width: 100%
-	margin-bottom: 0 !important
-
 .big-button > img, .modal-button img
 	float: left
 	height: 3rem
 	margin: 2%
+
+.medium-button > img
+	float: left
+	height: 1.6rem
+	margin: 0% 3% 2% 4%
+
+.secondary-button img
+	float: left
+	height: 1rem
+	margin: 1% 1% 1% 3%
 
 .book-icon
 	margin: -3% 2% 2% 2% !important
 
 .pen-icon
 	margin: 4% 2% 2% 2% !important
-
-.secondary-button img
-	float: left
-	height: 1rem
-	margin: 1% 1% 1% 3%
 
 .close-button
 	position: relative

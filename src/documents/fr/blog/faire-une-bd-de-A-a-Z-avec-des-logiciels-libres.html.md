@@ -10,11 +10,11 @@ tags:
   - geek
 ---
 
-![Faire de la BD](/website-img/support/faire-de-la-bd-thumb.jpg)
+![Faire de la BD](/website-img/support/faire-de-la-bd-thumb.png)
 
 Il y a de nombreuses façons de créer des BDs, mais comme beaucoup d'auteurs, j'ai trouvé mon propre chemin avec les outils que j'ai choisis, les logiciels libres. Je ne peux pas vraiment travailler en dehors de mon bureau dans ma maison, donc j'ai choisi une méthode entièrement numérique.
 
-Elle a de nombreuses étapes, mais en artisan prudent j'ai besoin de chacune, et j'ai appris que passé du temps sur la phase de conception (scénario, découpage, feuille de personnage, storyboard) me permet de gagner du temps sur la phase de production (dessin final et mise en page).
+Elle a de nombreuses étapes, mais en artisan prudent j'ai besoin de chacune, et j'ai appris que passer du temps sur la phase de conception (scénario, découpage, feuille de personnage, storyboard) me permet de gagner du temps sur la phase de production (dessin final et mise en page).
 
 Je vais décrire ma méthode ici avec l'exemple de [l'épisode 0 de Mokatori](/fr/bd/mokatori-ep0-la-fin) que j'ai publié il y a un peu plus de deux semaines. Espérons que vous pourrez adapter ma méthode à votre propre projet ;)
 
@@ -94,7 +94,7 @@ Vous pouvez aussi écrire une feuille de personnage pour lui donner un nom, une 
 
 ### 2/ Dessiner case par case
 
-En gardant un œil au découpage et aux feuilles de personnage, je commence à dessiner des croquis de l'histoire, case par case. Un dessin par case dans un canevas carré (2048x2048 pixels) dans [Krita](https://krita.org)), en me basant sur le découpage, et sans me préoccuper de la mise en page pour l'instant.
+En gardant un œil au découpage et aux feuilles de personnage, je commence à dessiner des croquis de l'histoire, case par case. Un dessin par case dans un canevas carré (2048x2048 pixels) dans [Krita](https://krita.org), en me basant sur le découpage, et sans me préoccuper de la mise en page pour l'instant.
 
 ![Case de storyboard dans Krita](/img/blog/making-a-comic/panel-in-krita.jpg)
 

@@ -4,7 +4,7 @@ dir: 'climate-frogs'
 title: "Climate Change Explained to Frogs..."
 date: 2015-10-08
 license: 'by-sa'
-productlink: 'https://gumroad.com/l/ClimateFrogs'
+download: "Climate Change Explained to Frogs - HD ebook.pdf"
 sourcelink: 'https://framagit.org/nylnook/climate-frogs-comic'
 bookelislink: 'http://www.bookelis.com/comics/12645-Climate-Change-Explained-to-Frogs.html'
 amazonlink: 'http://www.amazon.com/Climate-Change-Explained-Frogs-Nylnook-ebook/dp/B01BLKWZR8/'

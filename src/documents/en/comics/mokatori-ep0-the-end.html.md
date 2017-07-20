@@ -4,7 +4,7 @@ dir: 'mokatori-ep0-the-end'
 title: "Mokatori - Ep. 0 - The End"
 date: 2016-09-07
 license: 'by-sa'
-productlink: 'https://gumroad.com/l/Mokatori-ep0-en'
+download: "Mokatori - Ep. 0 - The End - HD ebook.pdf"
 sourcelink: 'https://framagit.org/nylnook/mokatori'
 bookelislink: 'http://www.bookelis.com/comics/24540-Mokatori-Ep-0-The-End.html'
 amazonlink: 'https://www.amazon.com/MOKATORI-EP-0-END-French-ebook/dp/B01LB360TY/'
