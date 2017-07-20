@@ -92,5 +92,11 @@
 	"pulp-published" : "Published: ",
 	"translate-adapt" : "Translate, Adapt…",
 	"search-placeholder" : "Search on this website with DuckDuckGo",
-	"search-alt-submit" : "DuckDuckGo Search"
+	"search-alt-submit" : "DuckDuckGo Search",
+	"comic-translated-in" : "Comic translated in",
+	"french" : "French",
+	"english" : "English",
+	"spanish" : "Spanish",
+	"brazilian portuguese" : "Brazilian Portuguese",
+	"breton" : "Breton"
 }

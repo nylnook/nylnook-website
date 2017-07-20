@@ -6,36 +6,42 @@
 </section>
 
   <article class="img-page">
-    <% for comic in @getPageCollection('comics_'+ @document.lang).toJSON().slice(97,98): %>
-     <div id="picture-zone">
-    	 <picture>
-    		 <source srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover.jpg" media="(min-width: 981px)"></source>
-    		 <source srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover-700.jpg 1x, /<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover.jpg 2x" media="(min-width: 481px)"></source>
-    		 <source srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover-550.jpg 1x, /<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover-700.jpg 2x"></source>
-    		 <img src="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= comic.dir %>/<%= comic.dir %>-cover-700.jpg" alt="<%- comic.title %> <%- @_ 'thumbnail' %>">
-    	 </picture>
-       <div class="meta">
-         <h1><a href="<%= comic.url %>"><%- comic.title %></a></h1>
-         <time pubdate="<%- @computerDate(comic.date) %>"><%- @date(comic.date, comic.lang)  %></time>
-       </div>
-    </div>
+    <% for comic in @getPageCollection('comics_'+ @document.lang).toJSON().slice(0,1): %>
+      <% if comic.hidden != true : %>
+       <div id="picture-zone" class="blog-teaser">
+         <a href="<%- comic.url %>">
+        	 <picture>
+        		 <source srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover.jpg" media="(min-width: 981px)"></source>
+        		 <source srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover-700.jpg 1x, /<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover.jpg 2x" media="(min-width: 481px)"></source>
+        		 <source srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover-550.jpg 1x, /<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover-700.jpg 2x"></source>
+        		 <img src="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= comic.dir %>/<%= comic.dir %>-cover-700.jpg" alt="<%- comic.title %> <%- @_ 'thumbnail' %>">
+        	 </picture>
+         </a>
+         <div class="meta">
+           <h1><a href="<%= comic.url %>"><%- comic.title %></a></h1>
+           <time pubdate="<%- @computerDate(comic.date) %>"><%- @date(comic.date, comic.lang)  %></time>
+         </div>
+      </div>
+      <% end %>
     <% end %>
     </article>
 
     <section id="img-browser">
-    <% for comic in @getPageCollection('comics_'+ @document.lang).toJSON().slice(0,96): %>
-      <div class="thumb">
-        <a href="<%- comic.url %>">
-          <picture>
-            <source srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover-550.jpg 1x, /<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover-700.jpg 2x"></source>
-            <img srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= comic.dir %>/<%= comic.dir %>-cover-700.jpg" alt="<%- comic.title %> <%- @_ 'thumbnail' %>">
-          </picture>
-        </a>
-        <div class="meta">
-          <h3><a href="<%= comic.url %>"><%- comic.title %></a></h3>
-          <time pubdate="<%- @computerDate(comic.date) %>"><%- @date(comic.date, comic.lang)  %></time>
-            </div>
-      </div>
+    <% for comic in @getPageCollection('comics_'+ @document.lang).toJSON().slice(1,99): %>
+      <% if comic.hidden != true : %>
+        <div class="thumb">
+          <a href="<%- comic.url %>">
+            <picture>
+              <source srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover-550.jpg 1x, /<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%=comic.dir %>/<%= comic.dir %>-cover-700.jpg 2x"></source>
+              <img srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= comic.dir %>/<%= comic.dir %>-cover-700.jpg" alt="<%- comic.title %> <%- @_ 'thumbnail' %>">
+            </picture>
+          </a>
+          <div class="meta">
+            <h3><a href="<%= comic.url %>"><%- comic.title %></a></h3>
+            <time pubdate="<%- @computerDate(comic.date) %>"><%- @date(comic.date, comic.lang)  %></time>
+          </div>
+        </div>
+      <% end %>
     <% end %>
     </section>
 
