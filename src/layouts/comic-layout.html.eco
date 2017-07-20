@@ -41,8 +41,8 @@
 	<% if @document.sublang_es : %>
 		<a href="<%= @document.sublang_es %>"><%= @_ 'spanish' %></a>
 	<% end %>
-	<% if @document.sublang_es : %>
-		<a href="<%= @document.sublang_pt_br %>"><%= @_ 'brazilian portuguese' %></a>
+	<% if @document.sublang_pt_br : %>
+		<a href="<%= @document.sublang_pt_br %>"><%= @_ 'brazilian-portuguese' %></a>
 	<% end %>
 	<% if @document.sublang_br : %>
     <a href="<%= @document.sublang_br %>"><%= @_ 'breton' %></a>
