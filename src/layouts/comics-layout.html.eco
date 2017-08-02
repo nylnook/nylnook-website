@@ -2,7 +2,6 @@
 
 <section id="intro">
   <h1 class="page-title"><%- @document.title %></h1>
-  <%- @content %>
 </section>
 
   <article class="img-page">
@@ -60,8 +59,15 @@
   <% end %>
 
 
-
-
-
+<div id="welcome-text">
+	<%- @content %>
+	<section class="light-block" id="follow-bar">
+		<form action="https://gumroad.com/follow_from_embed_form" method="post">
+			<input name="seller_id" value="3361448496300" type="hidden">
+			<input name="email" placeholder="<%= @_ 'email-placeholder' %>" type="email">
+			<button type="submit"><%= @_ 'follow' %></button>
+		</form>
+	</section>
+</div>
 
 <%- @partial('footer') %>
