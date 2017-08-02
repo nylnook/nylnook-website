@@ -25,7 +25,7 @@ To follow latest news on this website, you can subscribe to my RSS feeds :
 - [Wallpapers only](../../wallpaper-en-rss.xml)
 - [Blog posts only](../../blog-en-rss.xml)
 
-I may occasionally give news on ![Twitter icon](/website-img/icon-twitter.svg) [Twitter](https://twitter.com/nylnook), ![Mastodon icon](/website-img/icon-mastodon.svg) [Mastodon](https://mastodon.network/@nylnook), ![Diaspora icon](/website-img/icon-diaspora.svg) [Diaspora*](https://framasphere.org/u/nylnook) and ![Facebook icon](/website-img/icon-facebook.svg) [Facebook](https://www.facebook.com/nylnook) too ;)
+I may occasionally give news on ![Twitter icon](/website-img/icon-twitter.svg) [Twitter](https://twitter.com/nylnook), ![Mastodon icon](/website-img/icon-mastodon.svg) [Mastodon](https://framapiaf.org/@nylnook), ![Diaspora icon](/website-img/icon-diaspora.svg) [Diaspora*](https://framasphere.org/u/nylnook) and ![Facebook icon](/website-img/icon-facebook.svg) [Facebook](https://www.facebook.com/nylnook) too ;)
 
 ## Or Even
 

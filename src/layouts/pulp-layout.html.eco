@@ -80,7 +80,7 @@
 						</div>
 						<!-- Mastodon -->
 						<div class="service-button">
-							<a href="https://mastodon.network/@nylnook"><img src="/website-img/icon-mastodon-white.svg" alt="Mastodon" title="Mastodon" /></a>
+							<a href="https://framapiaf.org/@nylnook"><img src="/website-img/icon-mastodon-white.svg" alt="Mastodon" title="Mastodon" /></a>
 						</div>
 						<!-- Facebook -->
 						<div class="service-button">
@@ -150,7 +150,7 @@
 							</li>
 							<!-- Mastodon -->
 							<li class="social-btn social-small">
-								<a href="https://mastodon.network/@nylnook"><img src="/website-img/icon-mastodon-white.svg" alt="Mastodon" title="Mastodon" /></a>
+								<a href="https://framapiaf.org/@nylnook"><img src="/website-img/icon-mastodon-white.svg" alt="Mastodon" title="Mastodon" /></a>
 							</li>
 							<!-- Facebook -->
 							<li class="social-btn social-small">

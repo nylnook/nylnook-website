@@ -138,7 +138,7 @@
     </div>
 		<!-- Mastodon -->
 		<div class="service-button">
-			<a href="https://mastodon.network/@nylnook"><img src="/website-img/icon-mastodon.svg" alt="Mastodon" title="Mastodon" /></a>
+			<a href="https://framapiaf.org/@nylnook"><img src="/website-img/icon-mastodon.svg" alt="Mastodon" title="Mastodon" /></a>
 		</div>
     <!-- Facebook -->
     <div class="service-button">

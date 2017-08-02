@@ -26,7 +26,7 @@ Pour suivre les dernières actualité sur ce site web, vous pouvez vous abonnez 
 - [Le blog seulement](../../blog-fr-rss.xml)
 
 
-Je pourrais donner des nouvelles sur ![Twitter icon](/website-img/icon-twitter.svg) [Twitter](https://twitter.com/nylnook), ![Mastodon icon](/website-img/icon-mastodon.svg) [Mastodon](https://mastodon.network/@nylnook), ![Diaspora icon](/website-img/icon-diaspora.svg) [Diaspora*](https://framasphere.org/u/nylnook), et ![Facebook icon](/website-img/icon-facebook.svg) [Facebook](https://www.facebook.com//nylnook) de temps en temps également ;)
+Je pourrais donner des nouvelles sur ![Twitter icon](/website-img/icon-twitter.svg) [Twitter](https://twitter.com/nylnook), ![Mastodon icon](/website-img/icon-mastodon.svg) [Mastodon](https://framapiaf.org/@nylnook), ![Diaspora icon](/website-img/icon-diaspora.svg) [Diaspora*](https://framasphere.org/u/nylnook), et ![Facebook icon](/website-img/icon-facebook.svg) [Facebook](https://www.facebook.com//nylnook) de temps en temps également ;)
 
 ## Ou même
 
