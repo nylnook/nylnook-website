@@ -11,7 +11,7 @@ tags:
   - écologie
   - vert
   - blanc
-  - bleu
+  - brun
 made:
   - Krita
 ---

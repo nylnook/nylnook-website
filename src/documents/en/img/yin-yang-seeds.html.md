@@ -11,7 +11,7 @@ tags:
   - ecology
   - green
   - white
-  - blue
+  - brown
 made:
   - Krita
 ---

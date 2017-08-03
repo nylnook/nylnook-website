@@ -5,7 +5,6 @@ title: "Mokatori - Ép. 0 - La fin"
 date: 2016-09-07
 license: 'by-sa'
 download: "Mokatori - Ép. 0 - La fin - HD ebook.pdf"
-productlink: 'https://gumroad.com/l/Mokatori-ep0-fr'
 sourcelink: 'https://framagit.org/nylnook/mokatori'
 bookelislink: 'http://www.bookelis.com/bd/24539-Mokatori-Ep-0-La-fin.html'
 amazonlink: 'https://www.amazon.fr/MOKATORI-%C3%89P-0-FIN-Nylnook-ebook/dp/B01LB0ZTXK/'
