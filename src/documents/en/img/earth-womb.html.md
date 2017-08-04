@@ -18,7 +18,7 @@ made:
   - G'mic
 ---
 
-Last time there was as much carbon dioxide (CO2) in the atmosphere as there is today... was 3 million years ago*. Dinosaurs were not even born.
+Last time there was as much carbon dioxide (CO2) in the atmosphere as there is today... was 3 million years ago*. We were not even born.
 
 *Source : Gilles Ramstein, [Voyage à travers les climats de la terre](http://www.odilejacob.fr/catalogue/sciences/sciences-de-la-terre/voyage-a-travers-les-climats-de-la-terre_9782738128539.php) (Literally "Travel through the earth climates"), p.282.*
 

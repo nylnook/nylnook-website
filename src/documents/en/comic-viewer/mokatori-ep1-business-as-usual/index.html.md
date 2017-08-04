@@ -5,6 +5,8 @@ title: "Mokatori - Ep. 1 - Business as Usual"
 date: 2017-08-04
 keywords: "comics, graphic novel, climate, climate change, creative commons, libre, free"
 download: "Mokatori - Ep. 1 - Business as Usual - HD ebook.pdf"
+nav_ep0: 'mokatori-ep0-the-end'
+nav_ep1: 'mokatori-ep1-business-as-usual'
 ---
 
 And if the inhabitants of tomorrow sent us letters?

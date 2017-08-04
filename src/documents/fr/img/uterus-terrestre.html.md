@@ -18,7 +18,7 @@ made:
   - G'mic
 ---
 
-La dernière fois qu'il y a eu autant de dioxyde de carbone (CO2) dans l'atmosphère… c'était il y a 3 millions d'années. Les dinosaures n'étaient pas encore nés.
+La dernière fois qu'il y a eu autant de dioxyde de carbone (CO2) dans l'atmosphère… c'était il y a 3 millions d'années. Nous n'étions pas encore nés.
 
 *Source : Gilles Ramstein, [Voyage à travers les climats de la terre](http://www.odilejacob.fr/catalogue/sciences/sciences-de-la-terre/voyage-a-travers-les-climats-de-la-terre_9782738128539.php), p.282.*
 

@@ -5,6 +5,8 @@ title: "Mokatori - Ép. 0 - La fin"
 date: 2016-09-07
 keywords: "bd, bande dessinée, climat, changement climatique, creative commons, libre, gratuit"
 download: "Mokatori - Ép. 0 - La fin - HD ebook.pdf"
+nav_ep0: 'mokatori-ep0-la-fin'
+nav_ep1: 'mokatori-ep1-business-as-usual'
 ---
 
 Et si les habitants de l'avenir nous envoyaient des lettres ?

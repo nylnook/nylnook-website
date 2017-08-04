@@ -169,12 +169,24 @@
 					</li>
 				</ul>
         <ul class="header-group">
+					<% if @document.nav_ep0 : %>
+					<li class="header-item-container dropdowned" data-btn="export">
+						<div class="header-item header-btn">
+							<div class="pulp-icon-bookmarks header-btn-icon"></div>
+						</div>
+						<ul class="btn-dropdown" data-which="share">
+							<a href="/<%= @document.lang %>/<%= @_ "comic-viewer-filename" %>/<%= @document.nav_ep0 %>"><li><%= @_ "episode" %> 0</li></a>
+							<a href="/<%= @document.lang %>/<%= @_ "comic-viewer-filename" %>/<%= @document.nav_ep1 %>"><li><%= @_ "episode" %> 1</li></a>
+						</ul>
+					</li>
+					<% end %>
           <li class="header-item-container tooltipped-i"  aria-label="<%= @_ 'pulp-shortcuts' %>">
             <div class="header-item" data-which="page-number">
               <div class="header-text">
                 <%= @_ 'pulp-page' %> <input min="1" type="number" id="page-number-input"/> / <span id="pages-max"></span>
               </div>
             </div>
+					</li>
         </ul>
 
         <ul class="header-group desktop">
