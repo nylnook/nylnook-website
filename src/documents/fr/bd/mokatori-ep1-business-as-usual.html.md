@@ -20,7 +20,7 @@ De 2054 à 2084, de l'Islande à l'Afghanistan, des cataclysmes aux utopies, cin
 Ép. 4 - « Maîtres de la stratosphère » - Walvis Bay, Namibie, 29 février 2060   
 Ép. 5 - « Vivants » - Koundouz, کندز, Afghanistan, 3 avril 2072   
 
-À quoi pourrais ressembler notre monde dans 37 ans ?   
+À quoi pourrait ressembler notre monde dans 37 ans ?   
 Le voici «&nbsp;Business as usual&nbsp;» après 6 mois de gouvernement Trump et après la confirmation que la 6ème extinction de masse des animaux s'accélère.    
 À nous de changer l'Histoire !
 
