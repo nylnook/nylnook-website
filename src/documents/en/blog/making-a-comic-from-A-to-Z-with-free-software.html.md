@@ -119,7 +119,7 @@ If I get a better idea while drawing, I correct my cutting file.
 
 ### 3/ Storyboard Layout
 
-When all the panel sketches are ready, I start a first layout, based again on the cutting file, and try to make my panels fit into pages in a readable way (rom top left to bottom right in a Z shape). I also add speech bubbles and text from the scenario with [my font](comili-a-libre-comic-font), plus text for "sounds".
+When all the panel sketches are ready, I start a first layout, based again on the cutting file, and try to make my panels fit into pages in a readable way (rom top left to bottom right in a Z shape). I also add speech bubbles and text from the scenario with [my font](/en/blog/comili-a-libre-comic-font), plus text for "sounds".
 
 ![Storyboard page example](/img/blog/making-a-comic/storyboard-thumb-page-05.jpg)
 
@@ -252,7 +252,7 @@ And I continue until I'm able to finish all the pages artworks.
 
 When I reach the final layout step, almost everything is ready, and I'm usually pretty excited to see my comic assembled.  
 I export my .kra file to .png and I start by copying the .svg files from the storyboard layout in the layout directory (see the folder structure before).  
-Then I update the artworks in Inkscape, and do the final positioning for texts (with [my font](comili-a-libre-comic-font) again):
+Then I update the artworks in Inkscape, and do the final positioning for texts (with [my font](/en/blog/comili-a-libre-comic-font) again):
 
 ![Layout example](/img/blog/making-a-comic/layout-example.jpg)
 
@@ -274,12 +274,12 @@ Let's see what it can do into details. You can [download it here](https://framag
 To use all functions of [the script](https://framagit.org/nylnook/mokatori/blob/master/export-comic.sh), you will need to install Bash 4, Exiftools, Inkscape, ImageMagick, Gostscript, Sed, Calibre, Zip and Unzip.   
 For my Arch based Linux distribution ([Antergos](https://antergos.com/)), the command to install everything is this one:
 ``` bash
-pacman -S bash perl-image-exiftool inkscape imagemagick ghostcript sed calibre zip unzip
+pacman -S bash perl-image-exiftool inkscape imagemagick ghostscript sed calibre zip unzip
 ```
 
 On a Debian based distrib like Ubuntu:
 ``` bash
-apt-get install bash ruby-mini-exiftool inkscape imagemagick ghostcript sed calibre zip unzip
+apt-get install bash ruby-mini-exiftool inkscape imagemagick ghostscript sed calibre zip unzip
 ```
 
 So let's start it, it ask for options flags:

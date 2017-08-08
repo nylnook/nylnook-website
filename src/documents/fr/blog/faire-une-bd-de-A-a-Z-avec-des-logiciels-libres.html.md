@@ -116,7 +116,7 @@ Si j'ai une meilleure idée en dessinant, je corrige mon fichier de découpage.
 
 ### 3/ Mise en page du storyboard
 
-Quand tous les croquis des cases sont prêts, je commence une première mise en page, toujours basée sur le découpage, et j'essaye de faire rentrer mes cases dans des pages de façon lisible (d'en haut à gauche à en bas à droite en forme de Z). J'ajoute aussi les bulles et le texte depuis le scénario avec [ma police de caractères](comili-une-police-libre-pour-la-bd), plus le texte pour les « sons ».
+Quand tous les croquis des cases sont prêts, je commence une première mise en page, toujours basée sur le découpage, et j'essaye de faire rentrer mes cases dans des pages de façon lisible (d'en haut à gauche à en bas à droite en forme de Z). J'ajoute aussi les bulles et le texte depuis le scénario avec [ma police de caractères](/fr/blog/comili-une-police-libre-pour-la-bd), plus le texte pour les « sons ».
 
 ![Storyboard page example](/img/blog/making-a-comic/storyboard-thumb-page-05.jpg)
 
@@ -251,7 +251,7 @@ Et je continue jusqu'à ce que je puisse terminer toutes les planches définitiv
 
 Quand j'arrive à l'étape de la mise en page définitive, tout est presque prêt, et je suis en général assez impatient de voir ma BD assemblée.   
 J'exporte mes fichiers .kra vers .png et je commence par copier les fichiers .svg de la mise en page du storyboard vers le dossier de la mise en page définitive (vor la structure des dossiers précédemment).   
-Ensuite je mets à jour le dessin dans Inkscape, et place définitivement les textes (toujours avec [ma police](comili-une-police-libre-pour-la-bd)) :
+Ensuite je mets à jour le dessin dans Inkscape, et place définitivement les textes (toujours avec [ma police](/fr/blog/comili-une-police-libre-pour-la-bd)) :
 
 ![Exemple de mise en page](/img/blog/making-a-comic/layout-example.jpg)
 
@@ -273,11 +273,11 @@ Regardons ce qu'il permet de faire en détails. Vous pouvez [le télécharger ic
 Pour utiliser toutes les fonctions [du script](https://framagit.org/nylnook/mokatori/blob/master/export-comic.sh), vous aurez besoin d'installer Bash 4, Exiftools, Inkscape, ImageMagick, Gostscript, Sed, Calibre, Zip et Unzip.   
 Pour ma distribution Linux basée sur Arch ([Antergos](https://antergos.com/)), la commande pour tout installer est celle-ci :
 ``` bash
-pacman -S bash perl-image-exiftool inkscape imagemagick ghostcript sed calibre zip unzip
+pacman -S bash perl-image-exiftool inkscape imagemagick ghostscript sed calibre zip unzip
 ```
 Ou sur une distribution basée sur Debian comme Ubuntu :
 ``` bash
-apt-get install bash ruby-mini-exiftool inkscape imagemagick ghostcript sed calibre zip unzip
+apt-get install bash ruby-mini-exiftool inkscape imagemagick ghostscript sed calibre zip unzip
 ```
 
 Donc démarrons-le, il demande de renseigner des options :
@@ -411,7 +411,7 @@ pour (ré)générer les images des ebooks, et puis
 ``` bash
 ./export-comic.sh --ebook layout/ep0\ ebook-en/
 ```
-pour créer les fichiers CBZ, PDF et EPUB. Cela me permet de mettre à jour les ebooks sans régénéré les images si besoin (pour une correction de texte).
+pour créer les fichiers CBZ, PDF et EPUB. Cela me permet de mettre à jour les ebooks sans régénérer les images si besoin (pour une correction de texte).
 
 Pour une version imprimée, c'est :
 ``` bash
