@@ -7,6 +7,11 @@ license: 'by-sa'
 download: "Mokatori - Ep. 1 - Business as Usual - HD ebook.pdf"
 sourcelink: 'https://framagit.org/nylnook/mokatori'
 bookelislink: 'https://www.bookelis.com/bd/28363-Mokatori-Ep-1-Business-as-Usual-English-.html'
+amazonlink: 'https://www.amazon.fr/MOKATORI-EP-BUSINESS-USUAL-ENGLISH-ebook/dp/B074KBPNHN/'
+nolimlink: 'https://ebook.nolim.fr/ebook/9791095663065/mokatori-ep-1-business-as-usual-english--nylnook'
+bookeenlink: 'https://www.bookeenstore.com/ebook/9791095663065/mokatori-ep-1-business-as-usual-english--nylnook'
+relaylink: 'https://livre.relay.com/ebook/9791095663065/mokatori-ep-1-business-as-usual-english--nylnook'
+dialogueslink: 'https://www.librairiedialogues.fr/livre/12875967-mokatori-ep-1-business-as-usual-english--nylnook-nylnook'
 sublang_fr: '/fr/bd/mokatori-ep1-business-as-usual'
 ---
 

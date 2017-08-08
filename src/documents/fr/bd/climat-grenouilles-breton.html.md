@@ -8,6 +8,11 @@ download: "Ar cheñchamant hin displeget d'ar gleskered - HD ebook.pdf"
 hidden : true
 sourcelink: 'https://framagit.org/nylnook/climate-frogs-comic'
 bookelislink: 'https://www.bookelis.com/bd/27510-Ar-chenchamant-hin-displeget-d-ar-gleskered.html'
+amazonlink: 'https://www.amazon.fr/CHEÑCHAMANT-HIN-DISPLEGET-DAR-GLESKERED-ebook/dp/B074CCZGKB/'
+nolimlink: 'https://ebook.nolim.fr/ebook/9791095663072/ar-chenchamant-hin-displeget-d-ar-gleskered-nylnook'
+bookeenlink: 'https://www.bookeenstore.com/ebook/9791095663072/ar-chenchamant-hin-displeget-d-ar-gleskered-nylnook'
+relaylink: 'https://livre.relay.com/ebook/9791095663072/ar-chenchamant-hin-displeget-d-ar-gleskered-nylnook'
+dialogueslink: 'https://www.librairiedialogues.fr/livre/12849560-ar-chenchamant-hin-displeget-d-ar-gleskered-nylnook-nylnook'
 sublang_fr: '/fr/bd/climat-grenouilles'
 sublang_en: '/en/comics/climate-frogs'
 ---

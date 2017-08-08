@@ -8,6 +8,11 @@ download: "Mokatori - Ep. 0 - El fin - HD ebook.pdf"
 hidden : true
 sourcelink: 'https://framagit.org/nylnook/mokatori'
 bookelislink: 'https://www.bookelis.com/bd/28230-Mokatori-Ep-0-El-fin.html'
+amazonlink: 'https://www.amazon.fr/MOKATORI-EP-0-EL-FIN-ebook/dp/B074CM6BBJ/'
+nolimlink: 'https://ebook.nolim.fr/ebook/9791095663089/mokatori-ep-0-el-fin-nylnook'
+bookeenlink: 'https://www.bookeenstore.com/ebook/9791095663089/mokatori-ep-0-el-fin-nylnook'
+relaylink: 'https://livre.relay.com/ebook/9791095663089/mokatori-ep-0-el-fin-nylnook'
+dialogueslink: 'https://www.librairiedialogues.fr/livre/12849622-mokatori-ep-0-el-fin-nylnook-nylnook'
 sublang_fr: '/fr/bd/mokatori-ep0-la-fin'
 sublang_en: '/en/comics/mokatori-ep0-the-end'
 ---
