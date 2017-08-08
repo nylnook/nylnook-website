@@ -1,6 +1,7 @@
 ---
 layout: 'page-layout'
 title: 'À propos'
+lang_en: '/en/about'
 ---
 
 #### Accès rapide

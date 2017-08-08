@@ -2,6 +2,7 @@
 title: "Pack de brosses pour Krita v2"
 date: 2016-09-16 14:00
 thumb: '/img/blog/brush-pack-v2/icon-nylnook-brush-pack-v2-art-pen.jpg'
+lang_en: '/en/blog/krita-brushes-pack-v2'
 tags:
   - téléchargement
   - bande dessinée

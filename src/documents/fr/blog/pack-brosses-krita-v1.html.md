@@ -2,6 +2,7 @@
 title: "Pack de brosses pour Krita v1"
 date: 2016-01-08 17:00
 thumb: '/img/blog/icon-nylnook-brush-pack.png'
+lang_en: '/en/blog/krita-brushes-pack-v1'
 tags:
   - téléchargement
   - croquis

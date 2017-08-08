@@ -2,6 +2,7 @@
 title: "Faire une BD de A à Z avec des logiciels libres"
 date: 2016-09-26 21:00
 thumb: '/img/blog/making-a-comic/model-sheet-hugo-thumb.jpg'
+lang_en: '/en/blog/making-a-comic-from-A-to-Z-with-free-software'
 tags:
   - téléchargement
   - bande dessinée

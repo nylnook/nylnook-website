@@ -2,6 +2,7 @@
 title: "Krita Brushes Presets Pack v1"
 date: 2016-01-08 17:00
 thumb: '/img/blog/icon-nylnook-brush-pack.png'
+lang_fr: '/fr/blog/pack-brosses-krita-v1'
 tags:
   - download
   - sketches

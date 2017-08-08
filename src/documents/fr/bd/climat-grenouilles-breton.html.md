@@ -13,6 +13,7 @@ nolimlink: 'https://ebook.nolim.fr/ebook/9791095663072/ar-chenchamant-hin-disple
 bookeenlink: 'https://www.bookeenstore.com/ebook/9791095663072/ar-chenchamant-hin-displeget-d-ar-gleskered-nylnook'
 relaylink: 'https://livre.relay.com/ebook/9791095663072/ar-chenchamant-hin-displeget-d-ar-gleskered-nylnook'
 dialogueslink: 'https://www.librairiedialogues.fr/livre/12849560-ar-chenchamant-hin-displeget-d-ar-gleskered-nylnook-nylnook'
+lang_en: '/en/comics/climate-frogs'
 sublang_fr: '/fr/bd/climat-grenouilles'
 sublang_en: '/en/comics/climate-frogs'
 ---

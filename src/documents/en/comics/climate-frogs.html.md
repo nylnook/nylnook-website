@@ -12,6 +12,7 @@ nolimlink: 'https://ebook.nolim.fr/ebook/9791095663010/climate-change-explained-
 bookeenlink: 'https://www.bookeenstore.com/ebook/9791095663010/climate-change-explained-to-frogs-nylnook'
 relaylink: 'https://livre.relay.com/ebook/9791095663010/climate-change-explained-to-frogs-nylnook'
 dialogueslink: 'https://www.librairiedialogues.fr/livre/9173460-climate-change-explained-to-frogs-nylnook-nylnook'
+lang_fr: '/fr/bd/climat-grenouilles'
 sublang_fr: '/fr/bd/climat-grenouilles'
 sublang_br: '/fr/bd/climat-grenouilles-breton'
 ---

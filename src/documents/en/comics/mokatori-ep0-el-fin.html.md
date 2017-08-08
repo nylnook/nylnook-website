@@ -13,6 +13,7 @@ nolimlink: 'https://ebook.nolim.fr/ebook/9791095663089/mokatori-ep-0-el-fin-nyln
 bookeenlink: 'https://www.bookeenstore.com/ebook/9791095663089/mokatori-ep-0-el-fin-nylnook'
 relaylink: 'https://livre.relay.com/ebook/9791095663089/mokatori-ep-0-el-fin-nylnook'
 dialogueslink: 'https://www.librairiedialogues.fr/livre/12849622-mokatori-ep-0-el-fin-nylnook-nylnook'
+lang_fr: '/fr/bd/mokatori-ep0-la-fin'
 sublang_fr: '/fr/bd/mokatori-ep0-la-fin'
 sublang_en: '/en/comics/mokatori-ep0-the-end'
 ---

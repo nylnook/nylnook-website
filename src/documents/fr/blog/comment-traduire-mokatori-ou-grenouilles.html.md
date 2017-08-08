@@ -2,6 +2,7 @@
 title: "Comment traduire Mokatori ou les grenouilles"
 date: 2016-10-10 17:30
 thumb: '/img/blog/comic-translation/translation-illustration.jpg'
+lang_en: '/en/blog/how-to-translate-mokatori-or-frogs'
 tags:
   - making of
   - bande dessinée

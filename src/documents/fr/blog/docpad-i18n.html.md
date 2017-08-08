@@ -2,6 +2,7 @@
 title: 'Docpad Internationalizé ?'
 date: 2014-04-07 17:00
 thumb: '/img/blog/sustainable-city-drawing.jpg'
+lang_en: '/en/blog/docpad-i18n'
 tags:
   - geek
   - tutoriels

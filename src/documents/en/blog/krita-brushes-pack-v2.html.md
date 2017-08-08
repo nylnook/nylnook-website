@@ -2,6 +2,7 @@
 title: "Krita Brushes Presets Pack v2"
 date: 2016-09-16 14:00
 thumb: '/img/blog/brush-pack-v2/icon-nylnook-brush-pack-v2-art-pen.jpg'
+lang_fr: '/fr/blog/pack-brosses-krita-v2'
 tags:
   - download
   - graphic novel

@@ -2,6 +2,7 @@
 title: "Making a comic from A to Z with free software"
 date: 2016-09-26 21:00
 thumb: '/img/blog/making-a-comic/model-sheet-hugo-thumb.jpg'
+lang_fr: '/fr/blog/faire-une-bd-de-A-a-Z-avec-des-logiciels-libres'
 tags:
   - download
   - graphic novel

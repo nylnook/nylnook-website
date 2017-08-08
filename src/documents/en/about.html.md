@@ -1,6 +1,7 @@
 ---
 layout: 'page-layout'
 title: 'About'
+lang_fr: '/fr/a-propos'
 ---
 
 #### Quick access

@@ -1,6 +1,7 @@
 ---
 layout: 'page-layout'
 title: 'Support'
+lang_fr: '/fr/encourager'
 ---
 
 #### Quick access

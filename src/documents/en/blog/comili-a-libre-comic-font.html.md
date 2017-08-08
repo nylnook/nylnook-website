@@ -2,6 +2,7 @@
 title: "Comili, a Libre Comic Font"
 date: 2016-09-20 11:30
 thumb: '/img/blog/comili-preview.png'
+lang_fr: '/fr/blog/comili-une-police-libre-pour-la-bd'
 tags:
   - download
   - graphic novel

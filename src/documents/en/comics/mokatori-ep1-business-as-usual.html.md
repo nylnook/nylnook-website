@@ -12,6 +12,7 @@ nolimlink: 'https://ebook.nolim.fr/ebook/9791095663065/mokatori-ep-1-business-as
 bookeenlink: 'https://www.bookeenstore.com/ebook/9791095663065/mokatori-ep-1-business-as-usual-english--nylnook'
 relaylink: 'https://livre.relay.com/ebook/9791095663065/mokatori-ep-1-business-as-usual-english--nylnook'
 dialogueslink: 'https://www.librairiedialogues.fr/livre/12875967-mokatori-ep-1-business-as-usual-english--nylnook-nylnook'
+lang_fr: '/fr/bd/mokatori-ep1-business-as-usual'
 sublang_fr: '/fr/bd/mokatori-ep1-business-as-usual'
 ---
 

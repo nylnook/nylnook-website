@@ -1,7 +1,7 @@
 ---
 layout: 'page-layout'
 title: 'Suivre'
-isPage: true
+lang_en: '/en/follow'
 ---
 
 ## Par mail - Recevoir les newsletters

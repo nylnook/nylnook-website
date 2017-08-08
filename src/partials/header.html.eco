@@ -106,7 +106,13 @@
 				<a href="#" class="current-lang"><%- @document.lang %></a>
 				<% for lang in @languages : %>
 					<% if lang isnt @document.lang : %>
-						<a href="/<%- lang %>" ><%- lang %></a>
+						<% if @document.lang_en : %>
+							<a href="<%- @document.lang_en %>" ><%- lang %></a>
+						<% else if @document.lang_fr : %>
+							<a href="<%- @document.lang_fr %>" ><%- lang %></a>
+						<% else : %>
+							<a href="/<%- lang %>" ><%- lang %></a>
+						<% end %>
 					<% end %>
 				<% end %>
 			</nav>

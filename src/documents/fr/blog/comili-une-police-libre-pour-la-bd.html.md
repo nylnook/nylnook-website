@@ -2,6 +2,7 @@
 title: "Comili, une police libre pour la BD"
 date: 2016-09-20 11:30
 thumb: '/img/blog/comili-preview.png'
+lang_en: '/en/blog/comili-a-libre-comic-font'
 tags:
   - téléchargement
   - bande dessinée
