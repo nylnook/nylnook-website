@@ -2,6 +2,7 @@
 title: 'A Comic Workshop for the 5 Years of my Favorite Bookstore'
 date: 2016-06-13 11:30
 thumb: '/img/blog/strips-a-completer-thumb.png'
+lang_fr: '/fr/blog/atelier-bd-5-ans-mots-passants'
 tags:
   - announcements
   - teaching

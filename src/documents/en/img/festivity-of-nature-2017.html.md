@@ -2,7 +2,8 @@
 file: 'fete-de-la-nature-2017'
 title: 'Festivity of Nature 2017'
 date: 2017-01-16 12:00
-license: 'by-nc-nd'
+license: 'by-sa'
+lang_fr: '/fr/img/fete-de-la-nature-2017'
 tags:
   - 3D
   - digital painting

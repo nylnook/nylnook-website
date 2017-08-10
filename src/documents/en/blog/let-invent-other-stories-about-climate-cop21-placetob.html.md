@@ -3,6 +3,7 @@ title: "Let's Invent Other Stories About Climate!"
 subtitle: "My experience of COP21 and PlaceToB, told one month later"
 date: 2016-02-03 19:00
 thumb: '/img/blog/human-chain-paris-cop21-web.jpg'
+lang_fr: '/fr/blog/inventons-autres-histoires-climat-cop21-placetob'
 tags:
   - experiences
   - sketches

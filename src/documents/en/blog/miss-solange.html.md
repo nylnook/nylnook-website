@@ -2,6 +2,7 @@
 title: 'Miss Solange'
 date: 2016-05-24 11:30
 thumb: '/img/blog/affiche-mademoiselle-solange-thumb.jpg'
+lang_fr: '/fr/blog/mademoiselle-solange'
 tags:
   - other artworks
   - sketches

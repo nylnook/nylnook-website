@@ -2,6 +2,7 @@
 title: "Des grenouilles sur papier"
 date: 2015-11-13 12:00
 thumb: '/img/blog/pub-grenouilles-print-700.jpg'
+lang_en: '/en/blog/some-frogs-on-paper'
 tags:
   - annonces
   - bande dessinée

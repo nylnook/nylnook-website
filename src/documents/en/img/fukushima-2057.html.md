@@ -3,6 +3,7 @@ file: 'fukushima-2057-en'
 title: "Fukushima 2057"
 date: 2016-08-19 18:00
 license: 'by-sa'
+lang_fr: '/fr/img/fukushima-2057'
 tags:
   - 3D
   - digital painting

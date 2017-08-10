@@ -3,6 +3,7 @@ file: 'radical-dreaming'
 title: "Rêve radical"
 date: 2016-04-06
 license: 'by-sa'
+lang_en: '/en/img/radical-dreaming'
 tags:
   - peinture numérique
   - retouche photo

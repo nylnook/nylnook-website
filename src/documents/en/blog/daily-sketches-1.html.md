@@ -2,6 +2,7 @@
 title: "Daily Sketches 1"
 date: 2016-05-13 12:00
 thumb: '/img/blog/nue-au-posca-thumb.jpg'
+lang_fr: '/fr/blog/croquis-du-jour-1'
 tags:
   - sketches
 ---

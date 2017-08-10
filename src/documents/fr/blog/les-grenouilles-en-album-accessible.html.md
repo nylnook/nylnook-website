@@ -2,6 +2,7 @@
 title: "Les grenouilles en album accessible"
 date: 2016-10-05 17:00
 thumb: '/img/blog/screenshot-album-accessible-grenouilles.jpg'
+lang_en: '/en/blog/the-frogs-as-accessible-album'
 tags:
   - annonces
   - bande dessinée

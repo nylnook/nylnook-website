@@ -2,6 +2,7 @@
 title: "Ouvrons le Fab'Alpes !"
 date: 2015-04-23 15:00
 thumb: '/img/blog/ouvrons-le-fabalpes.png'
+lang_en: '/en/blog/open-a-fablab'
 tags:
   - annonces
   - geek

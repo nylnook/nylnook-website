@@ -2,6 +2,7 @@
 title: "Just do it, in a small way"
 date: 2015-10-09 19:00
 thumb: '/img/blog/teaser-climate-frog-2.jpg'
+lang_fr: '/fr/blog/faites-le-petitement'
 tags:
   - tutorials
   - making of

@@ -2,6 +2,7 @@
 title: "Daily Sketches 3"
 date: 2017-01-16 11:00
 thumb: '/img/blog/nue-transparente-thumb.jpg'
+lang_fr: '/fr/blog/croquis-du-jour-3'
 tags:
   - sketches
 ---

@@ -2,6 +2,7 @@
 title: "Modèle de grilles d'exercice pour Krita"
 date: 2015-02-05 12:00
 thumb: '/img/blog/poses-exercise.jpg'
+lang_en: '/en/blog/exercise-templates-for-krita'
 tags:
   - téléchargement
   - tutoriels

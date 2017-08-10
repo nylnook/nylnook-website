@@ -2,6 +2,7 @@
 title: 'Mademoiselle Solange'
 date: 2016-05-24 11:30
 thumb: '/img/blog/affiche-mademoiselle-solange-thumb.jpg'
+lang_en: '/en/blog/miss-solange'
 tags:
   - autres illustrations
   - croquis

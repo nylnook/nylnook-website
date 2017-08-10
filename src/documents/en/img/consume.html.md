@@ -3,6 +3,7 @@ file: 'consume'
 title: "Consume"
 date: 2015-11-30
 license: 'by-sa'
+lang_fr: '/fr/img/consomme'
 tags:
   - digital painting
   - cartoon

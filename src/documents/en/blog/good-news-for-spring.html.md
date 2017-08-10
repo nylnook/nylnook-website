@@ -2,6 +2,7 @@
 title: 'Good News for Spring'
 date: 2017-05-09 15:30
 thumb: '/website-img/support/graph-finance-thumb.jpg'
+lang_fr: '/fr/blog/bonnes-nouvelles-de-printemps'
 tags:
   - announcements
   - graphic novel

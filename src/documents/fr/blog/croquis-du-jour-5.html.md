@@ -2,6 +2,7 @@
 title: "Croquis du jour 5"
 date: 2017-06-09 14:30
 thumb: '/img/blog/nue-cadree-1-thumb.jpg'
+lang_en: '/en/blog/daily-sketches-5'
 tags:
   - croquis
 ---

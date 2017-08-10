@@ -3,6 +3,7 @@ file: 'earth-womb'
 title: "Earth Womb"
 date: 2016-07-04
 license: 'by-sa'
+lang_fr: '/fr/img/uterus-terrestre'
 tags:
   - digital painting
   - photo editing

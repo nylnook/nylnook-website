@@ -2,6 +2,7 @@
 title: 'Un atelier BD pour les 5 ans des Mots passants'
 date: 2016-06-13 11:30
 thumb: '/img/blog/strips-a-completer-thumb.png'
+lang_en: '/en/blog/comic-workshop-5-years-favorite-bookstore'
 tags:
   - annonces
   - formation

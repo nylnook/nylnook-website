@@ -2,6 +2,7 @@
 title: "Ce fameux projet de BD …"
 date: 2015-10-02 17:00
 thumb: '/img/blog/vignette-de2choseslune.jpg'
+lang_en: '/en/blog/comic-project'
 tags:
   - annonces
   - making of

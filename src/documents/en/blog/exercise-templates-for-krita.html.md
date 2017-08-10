@@ -2,6 +2,7 @@
 title: 'Exercise grids templates for Krita'
 date: 2015-02-05 12:00
 thumb: '/img/blog/poses-exercise.jpg'
+lang_fr: '/fr/blog/modeles-de-grilles-exercice-pour-krita'
 tags:
   - download
   - tutorials

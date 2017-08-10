@@ -2,6 +2,7 @@
 title: "Meet you at Place To B in Paris for COP21!"
 date: 2015-11-11 17:00
 thumb: '/img/blog/asnovel1.jpg'
+lang_fr: '/fr/blog/rendez-vous-a-placetob-a-paris-pour-la-cop21'
 tags:
   - announcements
   - experiences

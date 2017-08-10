@@ -2,6 +2,7 @@
 title: "Daily Sketches 2"
 date: 2016-06-10 10:00
 thumb: '/img/blog/nue-rouge-thumb.jpg'
+lang_fr: '/fr/blog/croquis-du-jour-2'
 tags:
   - sketches
 ---

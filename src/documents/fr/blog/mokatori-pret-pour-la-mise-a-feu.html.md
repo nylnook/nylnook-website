@@ -2,6 +2,7 @@
 title: "Mokatori, prêt pour la mise à feu !"
 date: 2016-08-19 19:00
 thumb: '/img/blog/mokatori-teaser-ep0-1-thumb.jpg'
+lang_en: '/en/blog/mokatori-ready-to-launch'
 tags:
   - annonces
   - making of

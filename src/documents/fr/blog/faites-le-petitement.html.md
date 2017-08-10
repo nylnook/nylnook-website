@@ -2,6 +2,7 @@
 title: "Faites-le, petitement"
 date: 2015-10-09 19:00
 thumb: '/img/blog/teaser-grenouilles-2.jpg'
+lang_en: '/en/blog/just-do-it-in-a-small-way'
 tags:
   - tutoriels
   - making of

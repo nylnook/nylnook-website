@@ -3,6 +3,7 @@ file: 'le-logiciel-libre-guidant-le-peuple'
 title: "Free Software Leading the People"
 date: 2016-03-03
 license: 'by-sa'
+lang_fr: '/fr/img/le-logiciel-libre-guidant-le-peuple'
 tags:
   - digital painting
   - photo editing

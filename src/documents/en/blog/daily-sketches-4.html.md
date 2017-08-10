@@ -2,6 +2,7 @@
 title: "Daily Sketches 4"
 date: 2017-06-07 11:00
 thumb: '/img/blog/nue-complementaires-rouge-vert-3-thumb.jpg'
+lang_fr: '/fr/blog/croquis-du-jour-4'
 tags:
   - sketches
 ---

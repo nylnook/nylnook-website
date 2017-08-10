@@ -3,6 +3,7 @@ file: 'nous-sommes-les-arbres-qui-portons-les-fruits-de-demain'
 title: "We are the trees bearing fruits of tomorrow"
 date: 2015-11-14
 license: 'by-sa'
+lang_fr: '/fr/img/nous-sommes-les-arbres-qui-portons-les-fruits-de-demain'
 tags:
   - digital painting
   - typography

@@ -3,6 +3,7 @@ file: 'yin-yang-seeds'
 title: 'Yin-Yang Seeds'
 date: 2017-06-19 11:15
 license: 'by-sa'
+lang_fr: '/fr/img/yin-yang-graines'
 tags:
   - digital painting
   - photo editing

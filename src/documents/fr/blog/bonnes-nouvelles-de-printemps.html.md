@@ -2,6 +2,7 @@
 title: 'Bonnes nouvelles de printemps'
 date: 2017-05-09 15:30
 thumb: '/img/blog/mokatori-galerie-2-thumb.jpg'
+lang_en: '/en/blog/good-news-for-spring'
 tags:
   - annonces
   - bande dessinée

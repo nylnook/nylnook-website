@@ -3,6 +3,7 @@ file: 'rainbow-serpent'
 title: "Serpent arc-en-ciel"
 date: 2016-11-30 18:00
 license: 'by-nc-sa'
+lang_en: '/en/img/rainbow-serpent'
 tags:
   - peinture numérique
   - animaux

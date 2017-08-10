@@ -3,6 +3,7 @@ file: 'consomme'
 title: "Consomme"
 date: 2015-11-30
 license: 'by-sa'
+lang_en: '/en/img/consume'
 tags:
   - peinture numérique
   - caricature

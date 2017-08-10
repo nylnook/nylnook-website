@@ -3,6 +3,7 @@ file: 'earth-womb'
 title: "Utérus terrestre"
 date: 2016-07-04
 license: 'by-sa'
+lang_en: '/en/img/earth-womb'
 tags:
   - peinture numérique
   - retouche photo

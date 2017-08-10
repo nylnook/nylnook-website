@@ -3,6 +3,7 @@ file: 'placetob-live-drawings'
 title: "Dessins en direct à PlaceToB"
 date: 2015-12-11
 license: 'by-sa'
+lang_en: '/en/img/placetob-live-drawings'
 tags:
   - peinture numérique
   - personnages

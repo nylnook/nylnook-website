@@ -3,6 +3,7 @@ file: 'yin-yang-seeds'
 title: 'Yin-Yang graines'
 date: 2017-06-19 11:15
 license: 'by-sa'
+lang_en: '/en/img/yin-yang-seeds'
 tags:
   - peinture numérique
   - retouche photo

@@ -2,6 +2,7 @@
 title: "Some frogs on paper"
 date: 2015-11-13 12:00
 thumb: '/img/blog/pub-grenouilles-print-700.jpg'
+lang_fr: '/fr/blog/des-grenouilles-sur-papier'
 tags:
   - annonces
   - graphic novel

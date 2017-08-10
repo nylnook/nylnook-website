@@ -2,7 +2,8 @@
 file: 'nylnook-wishes-of-metamorphoses'
 title: 'Wishes of Metamorphoses'
 date: 2016-01-05
-license: 'by-nc-nd'
+license: 'by-sa'
+lang_fr: '/fr/img/nylnook-voeux-de-metamorphoses'
 tags:
   - 3D
   - digital painting

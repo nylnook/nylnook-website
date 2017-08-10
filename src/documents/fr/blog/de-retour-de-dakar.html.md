@@ -2,6 +2,7 @@
 title: 'De retour de Dakar'
 date: 2014-11-13 14:00
 thumb: '/img/blog/facade-ker-thiossane.jpg'
+lang_en: '/en/blog/back-from-dakar'
 tags:
   - expériences
   - formation

@@ -2,6 +2,7 @@
 title: 'The Aboriginal Painting, my first illustrations for a board game'
 date: 2016-11-30 15:00
 thumb: '/img/blog/peinture-aborigene/ag-peinture-abo-atelier.jpg'
+lang_fr: '/fr/blog/peinture-aborigene-illustration-jeu-societe'
 tags:
   - announcements
   - freelance

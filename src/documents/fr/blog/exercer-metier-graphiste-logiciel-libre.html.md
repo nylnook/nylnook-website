@@ -2,6 +2,7 @@
 title: 'Exercer le métier de graphiste avec des logiciels libres'
 date: 2014-06-12 11:00
 thumb: '/img/blog/sustainable-city-drawing.jpg'
+lang_en: '/en/blog/work-graphic-designer-free-software'
 tags:
   - geek
   - making of

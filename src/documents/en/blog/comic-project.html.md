@@ -2,6 +2,7 @@
 title: "This famous comic project…"
 date: 2015-10-02 17:00
 thumb: '/img/blog/vignette-de2choseslune.jpg'
+lang_fr: '/fr/blog/projet-bd'
 tags:
   - announcements
   - making of

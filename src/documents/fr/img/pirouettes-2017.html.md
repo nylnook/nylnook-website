@@ -2,7 +2,8 @@
 file: 'pirouette-2017'
 title: 'Pirouettes 2017'
 date: 2017-01-04
-license: 'by-nc-nd'
+license: 'by-sa'
+lang_en: '/en/img/2017-spins'
 tags:
   - peinture numérique
   - fun

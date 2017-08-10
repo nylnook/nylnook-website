@@ -2,6 +2,7 @@
 title: "Croquis du jour 3"
 date: 2017-01-16 11:00
 thumb: '/img/blog/nue-transparente-thumb.jpg'
+lang_en: '/en/blog/daily-sketches-3'
 tags:
   - croquis
 ---

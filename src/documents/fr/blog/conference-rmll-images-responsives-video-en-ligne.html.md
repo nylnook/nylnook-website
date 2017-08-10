@@ -2,6 +2,7 @@
 title: 'Comment créer des images adaptables à tous les écrans ? Vidéo en ligne'
 date: 2014-09-09 15:00
 thumb: '/img/blog/icon-presentation.png'
+lang_en: '/en/blog/conference-lsm-responsives-images-video-online'
 tags:
   - geek
   - tutoriels

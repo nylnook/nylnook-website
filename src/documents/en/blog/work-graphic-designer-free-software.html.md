@@ -2,6 +2,7 @@
 title: 'Work as a graphic designer with free software'
 date: 2014-06-12 11:00
 thumb: '/img/blog/sustainable-city-drawing.jpg'
+lang_fr: '/fr/blog/exercer-metier-graphiste-logiciel-libre'
 tags:
   - geek
   - making of

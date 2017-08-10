@@ -2,6 +2,7 @@
 title: "Croquis du jour 1"
 date: 2016-05-13 12:00
 thumb: '/img/blog/nue-au-posca-thumb.jpg'
+lang_en: '/en/blog/daily-sketches-1'
 tags:
   - croquis
 ---

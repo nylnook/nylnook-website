@@ -3,6 +3,7 @@ file: 'le-logiciel-libre-guidant-le-peuple'
 title: "Le logiciel libre guidant le peuple"
 date: 2016-03-03
 license: 'by-sa'
+lang_en: '/en/img/free-software-leading-the-people'
 tags:
   - peinture numérique
   - retouche photo

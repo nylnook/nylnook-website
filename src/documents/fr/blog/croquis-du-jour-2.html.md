@@ -2,6 +2,7 @@
 title: "Croquis du jour 2"
 date: 2016-06-10 10:00
 thumb: '/img/blog/nue-rouge-thumb.jpg'
+lang_en: '/en/blog/daily-sketches-2'
 tags:
   - croquis
 ---

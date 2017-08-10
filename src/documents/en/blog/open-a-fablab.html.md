@@ -2,6 +2,7 @@
 title: "Open a FabLab !"
 date: 2015-04-23 15:00
 thumb: '/img/blog/ouvrons-le-fabalpes.png'
+lang_fr: '/fr/blog/ouvrons-le-fabalpes'
 tags:
   - announcements
   - geek

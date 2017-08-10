@@ -2,6 +2,7 @@
 title: "Croquis du jour 4"
 date: 2017-06-07 11:00
 thumb: '/img/blog/nue-complementaires-rouge-vert-3-thumb.jpg'
+lang_en: '/en/blog/daily-sketches-4'
 tags:
   - croquis
 ---

@@ -2,6 +2,7 @@
 title: 'Back from Dakar'
 date: 2014-11-13 14:00
 thumb: '/img/blog/facade-ker-thiossane.jpg'
+lang_fr: '/fr/blog/de-retour-de-dakar'
 tags:
   - experiences
   - teaching

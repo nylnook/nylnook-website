@@ -2,6 +2,7 @@
 title: 'How to create responsive pictures for every screen ? Video online'
 date: 2014-09-09 15:00
 thumb: '/img/blog/icon-presentation.png'
+lang_fr: '/fr/blog/conference-rmll-images-responsives-video-en-ligne'
 tags:
   - geek
   - tutorials

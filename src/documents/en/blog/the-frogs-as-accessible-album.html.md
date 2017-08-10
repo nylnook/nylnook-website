@@ -2,6 +2,7 @@
 title: "The frogs as an Accessible Album"
 date: 2016-10-05 17:00
 thumb: '/img/blog/screenshot-album-accessible-grenouilles.jpg'
+lang_fr: '/fr/blog/les-grenouilles-en-album-accessible'
 tags:
   - announcements
   - graphic novel

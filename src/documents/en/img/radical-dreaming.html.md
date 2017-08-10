@@ -3,6 +3,7 @@ file: 'radical-dreaming'
 title: "Radical Dreaming"
 date: 2016-04-06
 license: 'by-sa'
+lang_fr: '/fr/img/reve-radical'
 tags:
   - digital painting
   - photo editing

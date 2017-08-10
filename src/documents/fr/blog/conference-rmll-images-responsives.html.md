@@ -2,6 +2,7 @@
 title: 'Comment créer des images adaptables à tous les écrans ? Retrouvez-moi aux RMLL !'
 date: 2014-06-11 13:00
 thumb: '/img/blog/icon-presentation.png'
+lang_en: '/en/blog/conference-lsm-responsives-images'
 tags:
   - geek
   - tutoriels

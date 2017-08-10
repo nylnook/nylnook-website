@@ -2,6 +2,7 @@
 title: 'How to create responsive pictures for every screen ? Meet me at LSM !'
 date: 2014-06-11 13:00
 thumb: '/img/blog/icon-presentation.png'
+lang_fr: '/fr/blog/conference-rmll-images-responsives'
 tags:
   - geek
   - tutorials
