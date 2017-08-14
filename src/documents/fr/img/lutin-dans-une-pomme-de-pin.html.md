@@ -3,6 +3,7 @@ file: 'pixie-in-a-pincone'
 title: 'Lutin dans une pomme de pin'
 date: 2014-06-26
 license: 'by-sa'
+lang_en: '/en/img/pixie-in-a-pincone'
 tags:
   - peinture numérique
   - fantastique

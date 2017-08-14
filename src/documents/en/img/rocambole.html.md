@@ -3,6 +3,7 @@ file: 'rocambole'
 title: 'Rocambole'
 date: 2015-01-05
 license: 'by-nc-sa'
+lang_fr: '/fr/img/rocambole'
 tags:
   - digital painting
   - characters

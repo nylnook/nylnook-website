@@ -2,7 +2,8 @@
 file: 'nylnook-wishes-for-freedom'
 title: 'Wishes For Freedom'
 date: 2015-01-13
-license: 'by-nc-nd'
+license: 'by-sa'
+lang_fr: '/fr/img/nylnook-voeux-de-liberte'
 tags:
   - 3D
   - landscape

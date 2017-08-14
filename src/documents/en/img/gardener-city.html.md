@@ -3,6 +3,7 @@ file: 'gardener-city'
 title: 'Gardener City'
 date: 2014-01-22
 license: 'by-sa'
+lang_fr: '/fr/img/cite-de-jardiniers'
 tags:
   - 3D
   - digital painting

@@ -3,6 +3,7 @@ file: 'dominique-chaix'
 title: 'Dominique Chaix'
 date: 2014-12-17
 license: 'by-nc-sa'
+lang_en: '/en/img/dominique-chaix'
 tags:
   - peinture numérique
   - personnages

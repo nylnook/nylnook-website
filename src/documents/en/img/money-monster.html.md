@@ -3,6 +3,7 @@ file: 'money-monster'
 title: 'Money Monster'
 date: 2015-02-26
 license: 'by-sa'
+lang_fr: '/fr/img/monstre-argent'
 tags:
   - digital painting
   - surreal

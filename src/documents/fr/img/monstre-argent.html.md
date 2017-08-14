@@ -3,6 +3,7 @@ file: 'money-monster'
 title: "Monstre d'argent"
 date: 2015-02-26
 license: 'by-sa'
+lang_en: '/en/img/money-monster'
 tags:
   - peinture numérique
   - surréaliste

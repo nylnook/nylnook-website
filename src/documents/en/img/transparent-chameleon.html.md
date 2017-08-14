@@ -3,6 +3,7 @@ file: 'transparent-chameleon'
 title: 'Transparent Chameleon'
 date: 2014-01-27
 license: 'by-sa'
+lang_fr: '/fr/img/cameleon-transparent'
 tags:
   - digital painting
   - animals

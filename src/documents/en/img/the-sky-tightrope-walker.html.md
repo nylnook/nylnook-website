@@ -3,6 +3,7 @@ file: 'the-sky-tightrope-walker'
 title: 'The Sky Tightrope Walker'
 date: 2014-05-14
 license: 'by-sa'
+lang_fr: '/fr/img/le-funambule-celeste'
 tags:
   - digital painting
   - photo editing

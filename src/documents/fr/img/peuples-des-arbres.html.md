@@ -3,6 +3,7 @@ file: 'tree-peoples'
 title: 'Peuples des arbres'
 date: 2014-09-12
 license: 'by-nc-sa'
+lang_en: '/en/img/tree-peoples'
 tags:
   - peinture numérique
   - personnages

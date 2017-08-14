@@ -3,6 +3,7 @@ file: 'tribal-tree'
 title: 'Arbre tribal'
 date: 2014-09-23
 license: 'by-nc-sa'
+lang_en: '/en/img/tribal-tree'
 tags:
   - peinture numérique
   - personnages

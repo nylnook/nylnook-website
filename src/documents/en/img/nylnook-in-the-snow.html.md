@@ -2,7 +2,8 @@
 file: 'nylnook-in-the-snow'
 title: 'Nylnook in the Snow'
 date: 2014-02-26
-license: 'by-nc-nd'
+license: 'by-sa'
+lang_fr: '/fr/img/nylnook-dans-la-neige'
 tags:
   - 3D
   - landscape

@@ -3,6 +3,7 @@ file: 'hidden-giant'
 title: "Hidden Giant"
 date: 2015-06-18
 license: 'by-sa'
+lang_fr: '/fr/img/geant-cache'
 tags:
   - digital painting
   - photo editing

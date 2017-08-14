@@ -3,6 +3,7 @@ file: 'aristide'
 title: "Aristide, cosmonaut rabbit"
 date: 2015-03-26
 license: 'by'
+lang_fr: '/fr/img/aristide'
 tags:
   - 3D
   - digital painting

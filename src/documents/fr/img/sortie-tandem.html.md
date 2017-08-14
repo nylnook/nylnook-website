@@ -3,6 +3,7 @@ file: 'tandem-ride'
 title: 'Sortie tandem'
 date: 2014-03-24
 license: 'by'
+lang_en: '/en/img/tandem-ride'
 tags:
   - 3D
   - paysage

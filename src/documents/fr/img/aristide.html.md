@@ -3,6 +3,7 @@ file: 'aristide'
 title: "Aristide, le lapin cosmonaute"
 date: 2015-03-26
 license: 'by'
+lang_en: '/en/img/aristide'
 tags:
   - 3D
   - peinture numérique

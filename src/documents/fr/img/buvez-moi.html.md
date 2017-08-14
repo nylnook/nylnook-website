@@ -3,6 +3,7 @@ file: 'drink-me'
 title: "Buvez-moi"
 date: 2015-03-17
 license: 'by-sa'
+lang_en: '/en/img/drink-me'
 tags:
   - peinture numérique
   - fantastique

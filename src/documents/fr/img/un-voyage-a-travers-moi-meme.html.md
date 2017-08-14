@@ -3,6 +3,7 @@ file: 'a-journey-through-myself'
 title: "Un voyage à travers moi même"
 date: 2015-04-23
 license: 'by-sa'
+lang_en: '/en/img/a-journey-through-myself'
 tags:
   - 3D
   - peinture numérique

@@ -3,6 +3,7 @@ file: 'not-energy-saving-fr'
 title: 'Pas vraiment économe en énergie'
 date: 2014-01-15
 license: 'zero'
+lang_en: '/en/img/not-energy-saving'
 tags:
   - dessin vectoriel
   - écologie

@@ -3,6 +3,7 @@ file: 'pixie-in-a-pincone'
 title: 'Pixie in a Pincone'
 date: 2014-06-26
 license: 'by-sa'
+lang_fr: '/fr/img/lutin-dans-une-pomme-de-pin'
 tags:
   - digital painting
   - fantasy

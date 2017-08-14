@@ -3,6 +3,7 @@ file: 'finally-found-the-mirror-boat'
 title: 'Finally Found the Mirror Boat'
 date: 2014-03-18
 license: 'by-sa'
+lang_fr: '/fr/img/finalement-jai-trouve-le-bateau-miroir'
 tags:
   - fractal
   - abstract

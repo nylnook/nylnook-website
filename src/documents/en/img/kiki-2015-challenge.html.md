@@ -3,6 +3,7 @@ file: 'kiki-2015-challenge'
 title: "Kiki 2015 Challenge"
 date: 2015-09-07
 license: 'by-sa'
+lang_fr: '/fr/img/kiki-2015-challenge'
 tags:
   - digital painting
   - typography
