@@ -3,7 +3,7 @@
 
 /* TEAM */
 	Everything: Camille Bissuel
-	Contact: welcome [at] nylnook.com
+	Contact: welcome [at] nylnook.art
 	Twitter: @nylnook
 	From: Gap, France
 
@@ -11,13 +11,11 @@
 /* THANKS */
 
 	Best supporter: Sophie Bissuel
-	Twitter: 
 	From: Gap, France
 		
 
 /* SITE */
-	Last update: 2014/03/05
+	Last update: 2017/10/05
 	Language: English / French
 	Standards: HTML5, CSS3...                            
-	Components: Modernizr, jQuery...
 	Software: Docpad, Firefox, Git, Linux...

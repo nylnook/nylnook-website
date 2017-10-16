@@ -1,0 +1,4 @@
+# Force to HTTPS
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://nylnook.art/$1 [R,L]
