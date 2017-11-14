@@ -1,7 +1,7 @@
 ---
 title: 'Soutien au Centre de Ressources'
 date: 2017-10-20 10:45
-thumb: '/img/blog/cdr-meleze.gif'
+thumb: '/img/blog/cdr-meleze.jpg'
 tags:
   - autres illustrations
 ---
