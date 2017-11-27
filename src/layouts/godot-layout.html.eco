@@ -13,8 +13,15 @@
 			border: 0 none;
 			padding: 0;
 			text-align: center;
-			background-color: #222226;
 			font-family: 'Noto Sans', Arial, sans-serif;
+			background-color: #222226;
+			/* custom */
+			color: white;
+		}
+
+		/* custom */
+		a {
+			color: white;
 		}
 
 
@@ -222,7 +229,9 @@
 		</div>
 	</div>
 	<!-- custom -->
-	<div id="techno-warning"><%= @_ 'webassembly-techno-warning' %></div>
+	<div id="techno-warning" style="margin-top:10px;">
+	<%- @_ 'webassembly-techno-warning', Wasm: '<a href="https://caniuse.com/#feat=wasm">WebAssembly</a>', WebGL2: '<a href="https://caniuse.com/#feat=webgl2">WebGL2</a>', Firefox: '<a href="https://www.mozilla.org/">Firefox</a>' %>
+	</div>
 	<div id="output-panel" class="godot">
 		<div id="output-header">
 			Output:

@@ -100,5 +100,5 @@
 	"brazilian-portuguese" : "Portugais Brésilien",
 	"breton" : "Breton",
 	"episode" : "Épisode",
-	"webassembly-techno-warning" : "Cette BD utilise une technologie très récente (WebAssembly et WebGL2), et ne marche que dans un navigateur récent et à jour comme Chrome ou Firefox. Au 27/11/2017, c'est plus fluide pour moi dans Firefox."
+	"webassembly-techno-warning" : "Cette BD utilise une technologie très récente ({Wasm} et {WebGL2}), et ne marche que dans un navigateur récent et à jour comme Chrome ou {Firefox}. Au 27/11/2017, c'est plus fluide pour moi dans {Firefox}."
 }
