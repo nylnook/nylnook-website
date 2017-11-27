@@ -1,0 +1,123 @@
+<%- @partial('header') %>
+
+	<noscript>
+	<article class="warning">
+		<div id="noscript-message">
+			<%- @_ 'noscript-message', Enable: '<a href="http://www.enable-javascript.com" target="_blank">enable-javascript.com</a>', Framagit: '<a href="https://framagit.org/nylnook/nylnook-website/">Framagit</a>' %>
+		</div>
+	</article>
+	</noscript>
+
+<nav class="prevnextnav">
+<!-- Previous or Next links-->
+<!-- Get the next and previous document from the current document -->
+<% for document,documentIndex in @getCollection('comics_' + @document.lang).toJSON(): %>
+	<% if @document.id is document.id: %>
+		<!-- We have the current document, do the next and previous buttons -->
+		<!-- Check if we have a previous page -->
+		<% if documentIndex >= 1: %>
+		<a href="<%= @getCollection('comics_' + @document.lang).toJSON()[documentIndex-1].url %>" class="previous"><img src="/website-img/icon-previous.svg" alt="next" /><%= @_ 'next' %></a>
+		<% end %>
+		❄
+		<!-- Check if we have a next page -->
+		<% if documentIndex < @getCollection('comics_' + @document.lang).length - 1: %>
+		<a href="<%= @getCollection('comics_' + @document.lang).toJSON()[documentIndex+1].url %>" class="next"><%= @_ 'previous' %><img src="/website-img/icon-next.svg" alt="previous" /></a>
+		<% end %>
+
+	<% end %>
+<% end %>
+</nav>
+
+<article class="img-page">
+
+<div id="picture-zone">
+	 <a href="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/" ><picture>
+		 <source srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover.jpg" media="(min-width: 981px)"></source>
+		 <source srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover-700.jpg 1x, /<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover.jpg 2x" media="(min-width: 481px)"></source>
+		 <source srcset="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover-550.jpg 1x, /<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover-700.jpg 2x"></source>
+		 <img src="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/<%= @document.dir %>-cover-700.jpg" alt="<%- @document.title %> <%- @_ 'thumbnail' %>">
+	 </picture></a>
+</div>
+
+<section id="actions" class="small-blocks">
+<div class="inside">
+	<a class="big-button" href="/<%= @document.lang %>/<%= @_ 'comic-viewer-filename' %>/<%= @document.dir %>/"><img src="/website-img/icon-book.svg"  class="book-icon" alt="Book icon" /><h2><%= @_ 'read-online' %></h2></a>
+  <% if @document.download? : %>
+		<a class="medium-button" href="/download/<%= @document.download %>"><img src="/website-img/icon-dowload.svg"  class="dowload-icon" alt="Download icon" /><h3><%= @_ 'download' %></h3></a>
+  <% end %>
+  <% if @document.orderlink? : %>
+    <a class="medium-button" href="<%= @document.orderlink %>" target="_blank"><img src="/website-img/icon-order.svg"  class="order-icon" alt="Order icon" /><h3><%= @_ 'order-book' %></h3></a>
+  <% end %>
+</div>
+</section>
+
+<section id="become-a-patron" class="small-blocks">
+<div class="inside">
+  <a href="https://www.tipeee.com/nylnook"><img src="/website-img/support/<%= @_ 'become-a-patron-img' %>.jpg" alt="<%= @_ 'become-a-patron' %>"/></a>
+</div>
+</section>
+
+<section id="img-description">
+	<h1><%- @document.title %></h1>
+	<time pubdate="<%- @computerDate(@document.date) %>"><%- @date(@document.date, @document.lang)  %></time>
+	<%- @document.contentRenderedWithoutLayouts %>
+
+</section>
+<section id="licence" class="small-blocks">
+	<div class="inside">
+		<h2><%= @_ 'license' %></h2>
+		<%- @partial('license') %>
+  </div>
+</section>
+
+<!-- Share -->
+<section id="share" class="small-blocks">
+	<div class="inside">
+		<h2><%= @_ 'share' %></h2>
+    <!-- Twitter -->
+    <div class="service-button">
+      <a href="https://twitter.com/nylnook"><img src="/website-img/icon-twitter.svg" alt="Twitter" title="Twitter" /></a>
+    </div>
+		<!-- Mastodon -->
+		<div class="service-button">
+			<a href="https://framapiaf.org/@nylnook"><img src="/website-img/icon-mastodon.svg" alt="Mastodon" title="Mastodon" /></a>
+		</div>
+    <!-- Facebook -->
+    <div class="service-button">
+      <a href="https://www.facebook.com/nylnook/"><img src="/website-img/icon-facebook.svg" alt="Facebook" title="Facebook" /></a>
+    </div>
+    <!-- Diaspora* -->
+    <div class="service-button">
+      <a href="https://framasphere.org/u/nylnook"><img src="/website-img/icon-diaspora.svg" alt="Diaspora*" title="Diaspora*" /></a>
+    </div>
+		<!-- Liberapay & Tipeee -->
+		<div class="service-button">
+			<a <% if @document.lang is "fr": %>
+					href="https://fr.liberapay.com/nylnook/"
+				<% else : %>
+					href="https://liberapay.com/nylnook/"
+				<% end %>
+			><img src="/website-img/icon-liberapay.svg" alt="Liberapay" title="Liberapay" /></a>
+			<a href="https://www.tipeee.com/nylnook"><img src="/website-img/icon-tipeee.svg" alt="Tipeee" title="Tipeee" /></a>
+		</div>
+	</div>
+</section>
+
+<section id="comments">
+	<h2><%= @_ 'comments' %></h2>
+		<!-- Disqus -->
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+		var disqus_shortname = 'nylnook';
+		(function() {
+			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+</article>
+
+<%- @partial('footer') %>

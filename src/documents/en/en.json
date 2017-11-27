@@ -99,5 +99,6 @@
 	"spanish" : "Spanish",
 	"brazilian-portuguese" : "Brazilian Portuguese",
 	"breton" : "Breton",
-	"episode" : "Episode"
+	"episode" : "Episode",
+	"webassembly-techno-warning" : "This comic use a very recent technology (WebAssembly et WebGL2), and works only in a recent and up to date browser like Chrome or Firefox. At 2017/11/27, it's fluider for me in Firefox"
 }
