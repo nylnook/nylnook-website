@@ -48,6 +48,9 @@
   <% if @document.orderlink? : %>
     <a class="medium-button" href="<%= @document.orderlink %>" target="_blank"><img src="/website-img/icon-order.svg"  class="order-icon" alt="Order icon" /><h3><%= @_ 'order-book' %></h3></a>
   <% end %>
+	<% if @document.sourcelink : %>
+		<a class="secondary-button" href="<%= @document.sourcelink %>" target="_blank"><img src="/website-img/icon-search.svg"  alt="Search icon" /><%= @_ 'study-sources' %></a>
+	<% end %>
 </div>
 </section>
 

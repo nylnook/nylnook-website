@@ -6,6 +6,7 @@ title: "Turbo Argument"
 date: 2017-11-27
 license: 'by-sa'
 lang_fr: '/fr/bd/turbo-dispute'
+sourcelink: 'https://framagit.org/nylnook/turbo-argument'
 ---
 
 The grandson of Captain Haddock and the niece of the Grumphy Smurf made the mistake to go as a couple. Explore the possibles ends of this conflict!

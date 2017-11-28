@@ -6,6 +6,7 @@ title: "Turbo Dispute"
 date: 2017-11-27
 license: 'by-sa'
 lang_en: '/en/comics/turbo-argument'
+sourcelink: 'https://framagit.org/nylnook/turbo-argument'
 ---
 
 Le petit-fils du Capitaine Haddock et la nièce du Schtroumpf Grognon ont fait l'erreur de se mettre en couple. Explore les fins possibles de ce conflit !
