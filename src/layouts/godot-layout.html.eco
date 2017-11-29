@@ -17,7 +17,7 @@
 			background-color: #222226;
 			/* custom */
 			color: white;
-			font-size: 0.8rem
+			font-size: 0.8rem;
 		}
 
 		/* custom */
