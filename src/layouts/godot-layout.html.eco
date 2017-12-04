@@ -229,7 +229,11 @@
 	</div>
 	<!-- custom -->
 	<div id="techno-warning" style="margin-top:10px;">
-	<%- @_ 'webassembly-techno-warning', Wasm: '<a href="https://caniuse.com/#feat=wasm">WebAssembly</a>', WebGL2: '<a href="https://caniuse.com/#feat=webgl2">WebGL2</a>', Firefox: '<a href="https://www.mozilla.org/">Firefox</a>' %>
+	<% if @document.lang is 'fr': %>
+		<%- @_ 'webassembly-techno-warning', Wasm: '<a href="https://caniuse.com/#feat=wasm">WebAssembly</a>', WebGL2: '<a href="https://get.webgl.org/webgl2/">WebGL2</a>', Firefox: '<a href="https://www.mozilla.org/">Firefox</a>', Driver1: '<a href="https://support.mozilla.org/fr/kb/mettre-jour-pilotes-graphiques">', Driver2:'</a>' %>
+	<% else: %>
+		<%- @_ 'webassembly-techno-warning', Wasm: '<a href="https://caniuse.com/#feat=wasm">WebAssembly</a>', WebGL2: '<a href="https://get.webgl.org/webgl2/">WebGL2</a>', Firefox: '<a href="https://www.mozilla.org/">Firefox</a>', Driver1: '<a href="https://support.mozilla.org/en-US/kb/upgrade-graphics-drivers-use-hardware-acceleration">', Driver2:'</a>' %>
+	<% end %>
 	</div>
 	<div id="output-panel" class="godot">
 		<div id="output-header">

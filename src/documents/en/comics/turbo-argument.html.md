@@ -20,8 +20,8 @@ An experimental digital comic, both in technology and narration !
 ### Font  
 "chawp" by [AWP](http:/www.awpny.com), SIL Open Font License   
 
-### Made with
-[Krita](http://krita.org/) 3.3.2 and the [Godot](https://godotengine.org/) Game Engine 3.0 alpha 2
+### Made
+with [Krita](http://krita.org/) 3.3.2 and the [Godot](https://godotengine.org/) Game Engine 3.0 alpha 2
 for [Angoulême Comic Festival Digital Challenge 2018](http://www.bdangouleme.com/1184,edition-2018-du-concours-challenge-digital)
 
 ### Thanks

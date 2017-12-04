@@ -100,5 +100,5 @@
 	"brazilian-portuguese" : "Brazilian Portuguese",
 	"breton" : "Breton",
 	"episode" : "Episode",
-	"webassembly-techno-warning" : "This comic use a very recent technology ({Wasm} et {WebGL2}), and works only in a recent and up to date browser like Chrome or {Firefox}. At 2017/11/27, it's faster for me in {Firefox}."
+	"webassembly-techno-warning" : "This comic use a very recent technology ({Wasm} and {WebGL2}), and works only in a recent and up to date browser like Chrome or {Firefox}. At 2017/11/27, it's faster for me in {Firefox}. If you get a <em>WebGL 2 not available</em> error, you should probably {Driver1}update your graphics drivers{Driver2}... If it still don't work, I'm sorry your graphic card is probably too old."
 }
