@@ -7,6 +7,10 @@ date: 2017-11-27
 license: 'by-sa'
 lang_en: '/en/comics/turbo-argument'
 sourcelink: 'https://framagit.org/nylnook/turbo-argument'
+linuxlink: 'turbo-argument-linux64.zip'
+windows64link: 'turbo-argument-windows64.zip'
+windows32link: 'turbo-argument-windows32.zip'
+macoslink: 'turbo-argument-macos.zip'
 ---
 
 Le petit-fils du Capitaine Haddock et la nièce du Schtroumpf Grognon ont fait l'erreur de se mettre en couple. Explore les fins possibles de ce conflit !

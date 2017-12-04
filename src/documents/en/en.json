@@ -18,6 +18,7 @@
 	"footer-message": "© <a href=\"/en/about\" rel=\"author\">Camille Bissuel</a> - Images are licensed under various {CC} licences, see each image for details   /   This website is {MIT} licensed and based on {Docpad} - Fork it on {Framagit}   /  {Comili} Font © Camille Bissuel, SIL Open Font License {Cantarell} Font by Dave Crossland, GPLv3 licence",
 	"by": "by",
 	"download": "Download",
+	"download-for": "Download for",
 	"order-book": "Order the book",
 	"buy-ebook-at": "The ebook at",
 	"for-my-screen": "for my screen size",
