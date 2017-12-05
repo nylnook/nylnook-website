@@ -208,7 +208,7 @@
 	<!-- custom -->
 	<!-- <div style="float:left"><a href="/<%= @document.lang %>/<%= @_ 'comics-filename' %>/<%= @document.dir %>"><img title="<%= @_ 'pulp-back-to-website' %>" alt="<%= @_ 'pulp-back-to-website' %>" src="/website-img/logo-nylnook-comic.png" /></a></div> -->
 	<div id="container">
-		<canvas id="canvas" oncontextmenu="event.preventDefault();" width="1280" height="720">
+		<canvas id="canvas" oncontextmenu="event.preventDefault();" width="640" height="480">
 			HTML5 canvas appears to be unsupported in the current browser.<br />
 			Please try updating or use a different browser.
 		</canvas>
