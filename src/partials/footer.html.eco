@@ -8,14 +8,14 @@
 		<footer>
 			<section class="light-block" id="search-bar">
 				<% if @document.lang is "en" : %>
-				<form method="get" id="search" action="http://duckduckgo.com/" autocomplete="off">
+				<form method="get" id="search" action="https://duckduckgo.com/" autocomplete="off">
 					<input type="hidden" name="sites" value="nylnook.art/en/"/>
 					<input type="hidden" name="kae" value="d"/>
 					<input type="text" name="q" maxlength="255" placeholder="<%= @_ 'search-placeholder' %>"/>
 					<input type="image" src="/website-img/icon-search.svg" alt="<%= @_ 'search-alt-submit' %>" />
 				</form>
 				<% else if @document.lang is "fr" : %>
-					<form method="get" id="search" action="http://duckduckgo.com/" autocomplete="off">
+					<form method="get" id="search" action="https://duckduckgo.com/" autocomplete="off">
 						<input type="hidden" name="sites" value="nylnook.art/fr/"/>
 						<input type="hidden" name="kae" value="d"/>
 						<input type="text" name="q" maxlength="255" placeholder="<%= @_ 'search-placeholder' %>"/>
