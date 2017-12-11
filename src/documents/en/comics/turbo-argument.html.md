@@ -11,6 +11,7 @@ linuxlink: 'turbo-argument-linux64.zip'
 windows64link: 'turbo-argument-windows64.zip'
 windows32link: 'turbo-argument-windows32.zip'
 macoslink: 'turbo-argument-macos.zip'
+androidlink: 'turbo-argument.apk'
 ---
 
 The grandson of Captain Haddock and the niece of the Grumphy Smurf made the mistake to go as a couple. Explore the possibles ends of this conflict!

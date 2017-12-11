@@ -62,20 +62,21 @@
 
 <section id="actions" class="small-blocks">
 <div class="inside">
+	<h2><%= @_ 'download-for' %></h2>
 	<% if @document.androidlink : %>
-		<a class="secondary-button" href="/download/<%= @document.androidlink %>"><img src="/website-img/icon-download.svg"  alt="Download icon" /><%= @_ 'download-for' %> Android</a>
+		<a class="secondary-button" href="/download/<%= @document.androidlink %>"><img src="/website-img/icon-download.svg"  alt="Download icon" />Android</a>
 	<% end %>
   <% if @document.linuxlink : %>
-    <a class="secondary-button" href="/download/<%= @document.linuxlink %>"><img src="/website-img/icon-download.svg"  alt="Download icon" /><%= @_ 'download-for' %> Linux(64b)</a>
+    <a class="secondary-button" href="/download/<%= @document.linuxlink %>"><img src="/website-img/icon-download.svg"  alt="Download icon" />Linux (64b)</a>
   <% end %>
   <% if @document.windows64link : %>
-    <a class="secondary-button" href="/download/<%= @document.windows64link %>"><img src="/website-img/icon-download.svg"  alt="Download icon" /><%= @_ 'download-for' %> Windows(64b)</a>
+    <a class="secondary-button" href="/download/<%= @document.windows64link %>"><img src="/website-img/icon-download.svg"  alt="Download icon" />Windows (64b)</a>
   <% end %>
   <% if @document.windows32link : %>
-    <a class="secondary-button" href="/download/<%= @document.windows32link %>"><img src="/website-img/icon-download.svg"  alt="Download icon" /><%= @_ 'download-for' %> Windows(32b)</a>
+    <a class="secondary-button" href="/download/<%= @document.windows32link %>"><img src="/website-img/icon-download.svg"  alt="Download icon" /> Windows (32b)</a>
   <% end %>
   <% if @document.macoslink : %>
-    <a class="secondary-button" href="/download/<%= @document.macoslink %>"><img src="/website-img/icon-download.svg"  alt="Download icon" /><%= @_ 'download-for' %> MacOS</a>
+    <a class="secondary-button" href="/download/<%= @document.macoslink %>"><img src="/website-img/icon-download.svg"  alt="Download icon" /> MacOS</a>
   <% end %>
 </div>
 </section>
