@@ -1,5 +1,5 @@
 ---
-title: "Daily Sketches 5"
+title: "Daily Sketches 6"
 date: 2017-09-26 12:30
 thumb: '/img/blog/nue-negatif-thumb.jpg'
 lang_fr: '/fr/blog/croquis-du-jour-6'

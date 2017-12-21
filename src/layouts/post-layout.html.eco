@@ -88,7 +88,21 @@
 		</section>
 	</article>
 
-  <% for doc in @getPageCollection('all_'+ @document.lang).toJSON().slice(0,12): %>
+  <% for doc in @getPageCollection('all_'+ @document.lang).toJSON().slice(1,13): %>
+		<% if doc.relativeOutDirPath is @document.lang+'/img': %>
+		<div class="thumb">
+			<a href="<%- doc.url %>">
+				<picture>
+					<source srcset="/img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-350x350.jpg 1x, /img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-700x700.jpg 2x"></source>
+					<img srcset="/img/<%=doc.file %>/thumb-nylnook-<%=doc.file %>-350x350.jpg" alt="<%- doc.title %> <%- @_ 'thumbnail' %>">
+				</picture>
+			</a>
+			<div class="meta">
+				<h3><a href="<%= doc.url %>"><%- doc.title %></a></h3>
+				<time pubdate="<%- @computerDate(doc.date) %>"><%- @date(doc.date, doc.lang)  %></time>
+			</div>
+		</div>
+		<% end %>
     <% if doc.relativeOutDirPath is @document.lang+'/comics' or doc.relativeOutDirPath is @document.lang+'/bd' : %>
     <div class="thumb">
       <a href="<%- doc.url %>">
