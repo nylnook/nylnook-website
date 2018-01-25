@@ -1,18 +1,18 @@
 {
   "name": "nylnook-website",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "private": true,
   "description": "nylnook website at nylnook.com, based on DocPad",
-  "homepage": "http://nylnook.com",
+  "homepage": "https://nylnook.art",
   "keywords": [
     "nylnook",
     "docpad",
     "website",
     "grunt"
   ],
-  "author": "Camille Bissuel <welcome@nylnook.com> (http://www.nylnook.com)",
+  "author": "Camille Bissuel <welcome@nylnook.art> (https://www.nylnook.art)",
   "maintainers": [
-    "Camille Bissuel <welcome@nylnook.com> (http://www.nylnook.com)"
+    "Camille Bissuel <welcome@nylnook.art> (https://www.nylnook.art)"
   ],
   "contributors": [
     "Benjamin Lupton <b@lupton.cc> (http://balupton.com)",
@@ -39,7 +39,7 @@
     "docpad-plugin-marked": "~2.4.0",
     "docpad-plugin-moment": "~2.0.2",
     "docpad-plugin-paged": "~2.5.0",
-    "docpad-plugin-partials": "~2.11.0",
+    "docpad-plugin-partials": "~2.12.0",
     "docpad-plugin-rss": "~2.3.1",
     "docpad-plugin-sitemap": "~2.4.0",
     "docpad-plugin-stylus": "~2.13.0",
